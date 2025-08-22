@@ -1,0 +1,286 @@
+{{ 'component-pack.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'pack.js' | asset_url }}" defer="defer"></script>
+
+{% style %}
+  variant-radios {
+    display: none;
+  }
+
+  {{ block.settings.font_title | font_face: font_display: 'swap' }}
+  {{ block.settings.font_price | font_face: font_display: 'swap' }}
+  {{ block.settings.font_price_before | font_face: font_display: 'swap' }}
+  {{ block.settings.font_additional_text | font_face: font_display: 'swap' }}
+  {{ block.settings.font-disclaimer-family | font_face: font_display: 'swap' }}
+  {{ block.settings.option_label_font | font_face: font_display: 'swap' }}
+  {{ block.settings.option_button_font | font_face: font_display: 'swap' }}
+  
+  :root,
+  .pack-hyperflow {
+    --pack-color-selected: {{ block.settings.color_selected.red }}, {{ block.settings.color_selected.green }}, {{ block.settings.color_selected.blue }};
+    --pack-color-selected-background: {{ block.settings.color_selected_background }};
+    --pack-color-background: {{ block.settings.color_background }};
+    --pack-color-title: {{ block.settings.color_title }};
+    --pack-color-price: {{ block.settings.color_price }};
+    --pack-color-discount-price: {{ block.settings.color_discount_price }};
+    --pack-color-texts: {{ block.settings.color_texts }};
+    --pack-color-variants-title: {{ block.settings.color_variants_title }};    
+    --border-color-pack: {{ block.settings.border_color_pack }};
+    --pack-border-radius: {{ block.settings.pack_border_radius }}px; 
+    --pack-border-thickness: {{ block.settings.pack_border_thickness }}px;
+    --pack-non-selected-background-color: {{ block.settings.non_selected_background_color }};
+    --pack-selected-box-shadow: 
+      {% if block.settings.shadow_enabled %}
+      {{ block.settings.shadow_horizontal }}px 
+      {{ block.settings.shadow_vertical }}px 
+      {{ block.settings.shadow_blur }}px 
+      {{ block.settings.shadow_spread_radius }}px
+      rgba(
+        {{ block.settings.shadow_color | color_extract: 'red' }},
+        {{ block.settings.shadow_color | color_extract: 'green' }},
+        {{ block.settings.shadow_color | color_extract: 'blue' }},
+        {{ block.settings.shadow_opacity }}
+      );
+      {% else %}
+      none;
+      {% endif %};
+    --pack-non-selected-box-shadow: 
+    {% if block.settings.non_selected_shadow_enabled %} 
+    {{ block.settings.non_selected_shadow_horizontal }}px 
+    {{ block.settings.non_selected_shadow_vertical }}px 
+    {{ block.settings.non_selected_shadow_blur }}px 
+    {{ block.settings.non_selected_shadow_spread_radius }}px
+    rgba(
+      {{ block.settings.non_selected_shadow_color | color_extract: 'red' }},
+      {{ block.settings.non_selected_shadow_color | color_extract: 'green' }},
+      {{ block.settings.non_selected_shadow_color | color_extract: 'blue' }},
+      {{ block.settings.non_selected_shadow_opacity }}
+    );
+    {% else %} none; {% endif %};
+    
+      /* Image */
+    --pack-image-width-desktop: {{ block.settings.pack_image_width_desktop }}rem;
+    --pack-image-width-mobile: {{ block.settings.pack_image_width_mobile }}rem;
+    --pack-image-border-radius: {{ block.settings.pack_image_border_radius }}px;
+    
+     /* Titre */
+    --font-title: {% if block.settings.font_title_custom %}{{ block.settings.font_title.family }}{% else %}inherit{% endif %};   
+    --font-weight-title: {% if block.settings.font_title_custom %}{{ block.settings.font_title.weight }}{% else %}normal{% endif %};  
+    --font-style-title: {% if block.settings.font_title_custom %}{{ block.settings.font_title.style }}{% else %}normal{% endif %};  
+    --font-size-title-desktop: {{ block.settings.font_size_title_desktop }}px;
+    --font-size-title-mobile: {{ block.settings.font_size_title_mobile }}px;
+
+    /* Prix */
+    --font-price: {% if block.settings.font_price_custom %}{{ block.settings.font_price.family }}{% else %}inherit{% endif %};  
+    --font-weight-price: {% if block.settings.font_price_custom %}{{ block.settings.font_price.weight }}{% else %}normal{% endif %}; 
+    --font-style-price: {% if block.settings.font_price_custom %}{{ block.settings.font_price.style }}{% else %}normal{% endif %}; 
+    --font-size-price-desktop: {{ block.settings.font_size_price_desktop }}px;
+    --font-size-price-mobile: {{ block.settings.font_size_price_mobile }}px;
+
+    /* Prix avant réduction */
+    --font-price-before: {% if block.settings.font_price-before_custom %}{{ block.settings.font_price_before.family }}{% else %}inherit{% endif %};  
+    --font-weight-price-before: {% if block.settings.font_price-before_custom %}{{ block.settings.font_price_before.weight }}{% else %}normal{% endif %}; 
+    --font-style-price-before: {% if block.settings.font_price-before_custom %}{{ block.settings.font_price_before.style }}{% else %}normal{% endif %}; 
+    --font-size-price-before-desktop: {{ block.settings.font_size_price_before_desktop }}px;
+    --font-size-price-before-mobile: {{ block.settings.font_size_price_before_mobile }}px;
+
+    /* Texte supplémentaire */
+    --font-additional-text: {% if block.settings.font_additional-text_custom %}{{ block.settings.font_additional_text.family }}{% else %}inherit{% endif %};  
+    --font-weight-additional-text: {% if block.settings.font_additional-text_custom %}{{ block.settings.font_additional_text.weight }}{% else %}normal{% endif %}; 
+    --font-style-additional-text: {% if block.settings.font_additional-text_custom %}{{ block.settings.font_additional_text.style }}{% else %}normal{% endif %}; 
+    --font-size-additional-text-desktop: {{ block.settings.font_size_additional_text_desktop }}px;
+    --font-size-additional-text-mobile: {{ block.settings.font_size_additional_text_mobile }}px;
+
+    /* Définir l’épaisseur de la bordure pour le pack sélectionné */
+    --selected-border-width: {{ block.settings.selected_border_width }}px;
+
+    /* Disclaimer */
+   --disclaimer-text-color: {{ block.settings.disclaimer_text_color }}; 
+   --disclaimer-background: {{ block.settings.disclaimer_background }};
+   --disclaimer-border-thickness: {{ block.settings.disclaimer_border_thickness }}px;
+   --disclaimer-border-radius: {{ block.settings.disclaimer_border_radius }}px;
+   --disclaimer-border-color: {{ block.settings.disclaimer_border_color }};
+   --font-disclaimer-family: {% if block.settings.font_disclaimer_custom %}{{ block.settings.font_disclaimer.family }}{% else %}inherit{% endif %};
+   --font-disclaimer-weight: {% if block.settings.font_disclaimer_custom %}{{ block.settings.font_disclaimer.weight }}{% else %}normal{% endif %};  
+   --font-disclaimer-style: {% if block.settings.font_disclaimer_custom %}{{ block.settings.font_disclaimer.style }}{% else %}normal{% endif %};  
+   --font-disclaimer-size-desktop: {{ block.settings.font_size_disclaimer_desktop }}px;
+   --font-disclaimer-size-mobile: {{ block.settings.font_size_disclaimer_mobile }}px;
+
+    /* Variables pour le label des options dans .pack__select--container */
+  --option-label-font-family: {% if block.settings.font_label_custom %}{{ block.settings.option_label_font.family }}{% else %}inherit{% endif %};
+  --option-label-font-weight: {% if block.settings.font_label_custom %}{{ block.settings.option_label_font.weight }}{% else %}normal{% endif %};  
+  --option-label-font-style: {% if block.settings.font_label_custom %}{{ block.settings.option_label_font.style }}{% else %}normal{% endif %};  
+  --option-label-font-size: {{ block.settings.option_label_font_size }}px;
+  --option-label-font-size-mobile: {{ block.settings.option_label_font_size_mobile }}px;
+  --option-label-color: {{ block.settings.option_label_color }};
+
+      /* Variables pour les boutons d'options dans .pack__select--item.select */
+  --option-button-font-family: {% if block.settings.font_button_custom %}{{ block.settings.option_button_font.family }}{% else %}inherit{% endif %};
+  --option-button-font-weight: {% if block.settings.font_button_custom %}{{ block.settings.option_button_font.weight }}{% else %}normal{% endif %};  
+  --option-button-font-style: {% if block.settings.font_button_custom %}{{ block.settings.option_button_font.style }}{% else %}normal{% endif %};  
+  --option-button-font-size: {{ block.settings.option_button_font_size }}px;
+  --option-button-font-size-mobile: {{ block.settings.option_button_font_size_mobile }}px;
+  --option-button-text-color: {{ block.settings.option_button_text_color }};
+  --option-button-background-color: {{ block.settings.option_button_background }};
+  --option-button-border-thickness: {{ block.settings.option_button_border_thickness }}px;
+  --option-button-border-radius: {{ block.settings.option_button_border_radius }}px;
+  --option-button-border-color: {{ block.settings.option_button_border_color }};
+    
+      /* Variables pour les cercles de sélection */
+  --pack-selection-border-color: {{ block.settings.pack_selection_border_color }};
+  --pack-selected-selection-background-color-red: {{ block.settings.pack_selected_selection_background_color.red }};
+  --pack-selected-selection-background-color-green: {{ block.settings.pack_selected_selection_background_color.green }};
+  --pack-selected-selection-background-color-blue: {{ block.settings.pack_selected_selection_background_color.blue }};
+  --pack-selected-selection-background-color: rgb(
+    var(--pack-selected-selection-background-color-red),
+    var(--pack-selected-selection-background-color-green),
+    var(--pack-selected-selection-background-color-blue)
+  );
+
+      /* Couleurs pour l'état sélectionné */
+  --pack-title-color-selected: {{ block.settings.pack_title_color_selected }};
+  --pack-price-color-selected: {{ block.settings.pack_price_color_selected }};
+  --pack-price-before-color-selected: {{ block.settings.pack_price_before_color_selected }};
+  --pack-additional-text-color-selected: {{ block.settings.pack_additional_text_color_selected }};
+  --pack-disclaimer-text-color-selected: {{ block.settings.pack_disclaimer_text_color_selected }};
+  --pack-disclaimer-background-color-selected: {{ block.settings.pack_disclaimer_background_color_selected }};  
+} 
+{% endstyle %}
+
+{%- assign style = block.settings.pack_style -%}
+
+{% if block.settings.quantity1 != 0 or block.settings.quantity2 != 0 %}
+  <pack-hyperflow
+    class="pack"
+    data-style="{{ block.settings.pack_style }}"
+    data-section-id="{{ section.id }}"
+    data-product-id="{{ product.selected_or_first_available_variant.id }}"
+  >
+
+    <div class="pack__wrapper">
+      {% for i in (0..2) %}
+        {% capture quantity_key %}quantity{{ i }}{% endcapture %}
+        {% capture image_key %}image{{ i }}{% endcapture %}
+        {% capture price_key %}price{{ i }}{% endcapture %}
+        {% capture price_before_key %}price_before{{ i }}{% endcapture %}
+        {% capture title_key %}title{{ i }}{% endcapture %}
+        {% capture disclaimer_key %}disclaimer{{ i }}{% endcapture %}
+        {% capture additional_text_key %}additional_text{{ i }}{% endcapture %}
+      
+        {% assign quantity = block.settings[quantity_key] %}
+        {% assign image = block.settings[image_key] %}
+        {% assign price = block.settings[price_key] %}
+        {% assign price_before = block.settings[price_before_key] %}
+        {% assign title = block.settings[title_key] %}
+        {% assign disclaimer = block.settings[disclaimer_key] %}
+        {% assign additional_text = block.settings[additional_text_key] %}
+      
+        {% if quantity != 0 %}
+         <component-pack
+  class="pack{% if image != blank %} pack__with-image{% endif %} pack-accordion__shadow--{{ block.settings.pack_accordions_shadow }} pack-accordion__border--{{ block.settings.pack_accordions_border }}{% if i == 0 %} pack__selected{% endif %}"
+  data-quantity="{{ quantity }}"
+  data-regular-price="{{ price }}"
+  data-compare-price="{{ price_before }}"
+>
+
+  <div class="pack__main-content">
+    <div class="pack__selection">
+      &nbsp; 
+    </div>
+
+    <div class="pack__content">
+      {% if image != blank %}
+        {{ image | image_url: width: 200 | image_tag: loading: 'lazy', class: 'pack__image' }}
+      {% endif %}
+      
+      <div class="pack__infos">
+        {%- render "pack-items",
+           title: title,
+           disclaimer: disclaimer,
+           price_color: block.settings.pack_price_color,
+           text_color: block.settings.pack_text_color,
+           price: price,
+           price_before: price_before,
+           text: additional_text,
+        -%}
+      </div>
+    </div>
+  </div>
+
+  <div class="pack__options">
+    {%- render "pack-selects",
+       product: product,
+       quantity: quantity
+    -%}
+  </div>
+</component-pack>
+
+        {% endif %}
+      {% endfor %}
+          
+        {% for i in (0..2) %}
+          {% capture quantity_key %}quantity{{ i }}{% endcapture %}
+          {% assign quantity = block.settings[quantity_key] %}
+          {% if quantity != 0 %}
+            <div class="pack__stack--selects pack__stack--{{ i }}{% if i == 0 %} stack-active{% endif %}">
+              {%- render "pack-selects",
+                 product: product,
+                 style: style,
+                 quantity: quantity
+              -%}
+            </div>
+          {% endif %}
+        {% endfor %}
+    </div>
+
+      {%- form 'product',
+    product,
+    id: 'pack-hyperflow-form',
+    class: "form",
+    novalidate: 'novalidate',
+    data-type: 'add-to-cart-form'
+  -%}
+    <button
+      type="submit"
+      name="add"
+      id="pack-hyperflow-submit"
+      class="product-form__submit button button--full-width button--primary add-to-cart-btn default_pointer_cs"
+      {% if product.selected_or_first_available_variant.available == false %}
+        disabled
+      {% endif %}
+    >
+      <span class="buy-buttons__text-flex addbtntext">
+        {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+          {{ 'products.product.sold_out' | t }}
+        {%- else -%}
+          {{- block.settings.button_text -}}
+        {%- endif -%}
+      </span>
+      <div class="loading-overlay__spinner hidden">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          role="presentation"
+          class="loading__spinner"
+          viewBox="0 0 66 66"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+        </svg>
+      </div>
+    </button>
+  {%- endform -%}
+
+    <template id="pack-hyperflow-variants">
+      {%- for _variant in product.variants -%}
+        <option
+          value="{{ _variant.id }}"
+          data-option="{{ _variant.title }}"
+          data-id="{{ _variant.id }}"
+          data-available="{{ _variant.available }}"
+        >
+          {{ _variant.title }}
+        </option>
+      {%- endfor -%}
+    </template>
+  </pack-hyperflow>
+{% endif %}

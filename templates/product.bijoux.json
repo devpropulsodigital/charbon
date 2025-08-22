@@ -1,0 +1,1456 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "product_title_margin_top": 2,
+            "product_title_margin_bottom": 2
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "display_price_inline": true,
+            "price_margin_top": 2,
+            "price_margin_bottom": 2
+          }
+        },
+        "rating_custom_e7fQLG": {
+          "type": "rating_custom",
+          "settings": {
+            "stars_count": 5,
+            "stars_size_desktop": 25,
+            "stars_size_mobile": 22,
+            "stars_color": "#ffffff",
+            "stars_bg_color": "#00b67a",
+            "rating_custom_text": "<p><strong>4,8/5</strong> basé sur <strong>267 avis.</strong></p>",
+            "font_title_custom": false,
+            "font_title": "roboto_n4",
+            "font_size_desktop": 14,
+            "font_size_mobile": 12,
+            "text_color": "#000000",
+            "link_url": "#shopify-section-template--24756106035466__reviews_testimonials_VN3dzD",
+            "rating_margin_top": 0,
+            "rating_margin_bottom": 4
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "none"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "margin_top_quantity": 2,
+            "margin_bottom_quantity": 2
+          }
+        },
+        "inventory_And9Ui": {
+          "type": "inventory",
+          "settings": {
+            "inventory_display_type": "fake",
+            "fake_inventory_text": "Bientôt en rupture de stock",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true,
+            "font_family": "roboto_n4",
+            "text_color": "#ff0000",
+            "text_style": "uppercase",
+            "alignment": "right",
+            "font_size_desktop": 12,
+            "font_size_mobile": 10,
+            "margin_top": 2,
+            "margin_bottom": 0
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true,
+            "margin_top": 1.5,
+            "margin_bottom": 2.5
+          }
+        },
+        "visitor_indicator_MEpw7z": {
+          "type": "visitor_indicator",
+          "settings": {
+            "visitor_text": "X visiteurs consultent actuellement ce produit.",
+            "text_color": "#000000",
+            "min_visitors_offpeak": 0,
+            "max_visitors_offpeak": 5,
+            "min_visitors_midpeak": 5,
+            "max_visitors_midpeak": 15,
+            "min_visitors_peak": 10,
+            "max_visitors_peak": 20,
+            "update_interval": 5,
+            "font_text_custom": false,
+            "text_font": "roboto_n4",
+            "desktop_font_size": 16,
+            "mobile_font_size": 13,
+            "alignment": "center",
+            "desktop_svg_size": 18,
+            "mobile_svg_size": 12,
+            "svg_color": "#000000",
+            "margin_top": 2,
+            "margin_bottom": 2
+          }
+        },
+        "icon_with_text_XbXDVe": {
+          "type": "icon-with-text",
+          "settings": {
+            "hide_on_mobile": false,
+            "hide_on_tablet": false,
+            "hide_on_desktop": false,
+            "layout": "vertical",
+            "icon_1": "check_mark",
+            "image_1": "shopify://shop_images/sparkler.png",
+            "heading_1": "Argent fin 925 / Dorure Or 18 carats",
+            "description_1": "",
+            "icon_2": "check_mark",
+            "image_2": "shopify://shop_images/drop-of-liquid.png",
+            "heading_2": "Résiste à l'eau",
+            "description_2": "",
+            "icon_3": "check_mark",
+            "image_3": "shopify://shop_images/package.png",
+            "heading_3": "30 jours pour changer d'avis",
+            "description_3": "",
+            "font_title_custom": false,
+            "title_font": "quattrocento_sans_n4",
+            "title_font_size_desktop": 14,
+            "title_font_size_mobile": 14,
+            "title_color": "#000000",
+            "font_description_custom": false,
+            "description_font": "roboto_n4",
+            "description_font_size_desktop": 14,
+            "description_font_size_mobile": 14,
+            "description_color": "#000000",
+            "icon_size_desktop": 20,
+            "icon_size_mobile": 20,
+            "horizontal_gap": 1.5,
+            "vertical_margin_bottom": 1.5,
+            "icon_with_text_margin_top": 2.5,
+            "icon_with_text_margin_bottom": 0
+          }
+        },
+        "icon_with_text_dP7GhP": {
+          "type": "icon-with-text",
+          "settings": {
+            "hide_on_mobile": false,
+            "hide_on_tablet": false,
+            "hide_on_desktop": false,
+            "layout": "vertical",
+            "icon_1": "check_mark",
+            "image_1": "shopify://shop_images/calendar.png",
+            "heading_1": "Paiement en 3x sans frais avec Scalapay dès 50€",
+            "description_1": "",
+            "icon_2": "return",
+            "heading_2": "",
+            "description_2": "",
+            "icon_3": "pepper",
+            "heading_3": "",
+            "description_3": "",
+            "font_title_custom": false,
+            "title_font": "quattrocento_sans_n4",
+            "title_font_size_desktop": 14,
+            "title_font_size_mobile": 14,
+            "title_color": "#000000",
+            "font_description_custom": false,
+            "description_font": "roboto_n4",
+            "description_font_size_desktop": 14,
+            "description_font_size_mobile": 12,
+            "description_color": "#000000",
+            "icon_size_desktop": 20,
+            "icon_size_mobile": 20,
+            "horizontal_gap": 1.5,
+            "vertical_margin_bottom": 1.5,
+            "icon_with_text_margin_top": 1.5,
+            "icon_with_text_margin_bottom": 2.5
+          }
+        },
+        "collapsible_tab_pTdXeD": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "content": "<p>Ce site est un site demo. Vous pouvez retrouver les articles sur https://nebuleusebijoux.com ✨</p>",
+            "page": "",
+            "accordion_bg_color": "rgba(0,0,0,0)",
+            "accordion_border_radius": 10,
+            "accordion_padding": 1
+          }
+        },
+        "collapsible_tab_CwrA9X": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Livraison & retour",
+            "icon": "none",
+            "content": "<h4><strong>Livraison</strong></h4><ul><li><strong>Livraison Standard (5-7 jours ouvrables)</strong> : Gratuite à partir de 50 €. Sinon, 5 € de frais.</li><li><strong>Livraison Express (1-3 jours ouvrables)</strong> : 10 €.</li><li><strong>Livraison Internationale (7-14 jours ouvrables)</strong> : Tarifs variables selon la destination.</li></ul><p><strong>Traitement</strong> : Les commandes sont expédiées sous 1-2 jours ouvrables.</p><h4><strong>Retours</strong></h4><ul><li><strong>Période de retour</strong> : 30 jours après réception.</li><li><strong>Conditions</strong> : Articles non portés, non lavés, avec étiquettes.</li><li><strong>Frais de retour</strong> : Gratuits en France métropolitaine. À la charge du client à l'international.</li><li><strong>Remboursements</strong> : Traitement en 7 jours ouvrables après réception.</li></ul><p>Pour les <strong>échanges</strong>, suivez la procédure de retour et passez une nouvelle commande.</p>",
+            "page": "",
+            "accordion_bg_color": "rgba(0,0,0,0)",
+            "accordion_border_radius": 10,
+            "accordion_padding": 1
+          }
+        },
+        "collapsible_tab_Jfh793": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Entretien et soins",
+            "icon": "none",
+            "content": "<p>Nos bijoux sont faits pour être portés au quotidien, l'entretien est donc une étape vitale dans leur longévité !</p><p>🧼 Nettoyez-les régulièrement afin d’éviter l’accumulation de saletés : rincez votre bijou à l’eau claire et frottez avec une brosse à dent souple (consacrée uniquement au nettoyage des bijoux bien entendu). Puis essuyez le bijou avec un chiffon doux.<br/></p><p>🧴 Faites attention aux produits pour le corps (savon, crème, etc.) qui peuvent laisser des résidus et se positionner dans les pierres.<br/></p><p>🐠 Vous prévoyez une baignade ? Ça tombe bien, nos bijoux sont résistants à l’eau, mais il faudra simplement penser à rincer vos bijoux à l’eau claire après chaque baignade et les essuyer.</p>",
+            "page": "",
+            "accordion_bg_color": "rgba(0,0,0,0)",
+            "accordion_border_radius": 10,
+            "accordion_padding": 1
+          }
+        },
+        "complementary_tbew4M": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "S’associe bien avec",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 1,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "rating_custom_e7fQLG",
+        "variant_picker",
+        "quantity_selector",
+        "inventory_And9Ui",
+        "buy_buttons",
+        "visitor_indicator_MEpw7z",
+        "icon_with_text_XbXDVe",
+        "icon_with_text_dP7GhP",
+        "collapsible_tab_pTdXeD",
+        "collapsible_tab_CwrA9X",
+        "collapsible_tab_Jfh793",
+        "complementary_tbew4M"
+      ],
+      "settings": {
+        "display_id": false,
+        "enable_group_media": true,
+        "media_grouping_option": "Couleur",
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "scrolling_text_bar_Wxckgr": {
+      "type": "scrolling-text-bar",
+      "blocks": {
+        "image_nUUURa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo_bhv_400x_675338c6-a6ae-4f11-b6f7-2e071efb05ee.png",
+            "image_width": 150,
+            "image_width_mobile": 120,
+            "image_mr": 50,
+            "image_mr_mobile": 20,
+            "image_radius": 0,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000"
+          }
+        },
+        "image_HbbqhA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo_eclaireuses_300x_ba9c87dd-c8c5-4fb0-9998-3fdf69b9591b.png",
+            "image_width": 150,
+            "image_width_mobile": 120,
+            "image_mr": 50,
+            "image_mr_mobile": 20,
+            "image_radius": 0,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000"
+          }
+        },
+        "image_zNGkrJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo_gala_300x_c3679a90-a519-407a-b975-ef2b86fb26c1.png",
+            "image_width": 150,
+            "image_width_mobile": 120,
+            "image_mr": 50,
+            "image_mr_mobile": 20,
+            "image_radius": 0,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000"
+          }
+        },
+        "image_HLwdzL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo_galerieslafayette_400x_ec678ca5-8054-4a87-9675-ab595f78e34b.png",
+            "image_width": 150,
+            "image_width_mobile": 120,
+            "image_mr": 50,
+            "image_mr_mobile": 20,
+            "image_radius": 0,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000"
+          }
+        },
+        "image_XJtNhb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo_glamour_300x_0f181d4c-664e-4a2b-ba39-5aea274fe8cb.png",
+            "image_width": 150,
+            "image_width_mobile": 120,
+            "image_mr": 50,
+            "image_mr_mobile": 20,
+            "image_radius": 0,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000"
+          }
+        },
+        "image_pX9qxQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo_lebonbon_300x_3f429190-c7e2-40e8-bf49-130924ee5122.png",
+            "image_width": 150,
+            "image_width_mobile": 120,
+            "image_mr": 50,
+            "image_mr_mobile": 20,
+            "image_radius": 0,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000"
+          }
+        },
+        "image_NGew97": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo_madamefigaro_400x_33741840-731f-451e-a2dc-a109fdbd2e13.png",
+            "image_width": 150,
+            "image_width_mobile": 120,
+            "image_mr": 50,
+            "image_mr_mobile": 20,
+            "image_radius": 0,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000"
+          }
+        },
+        "image_cgTeWC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo_marieclaire_400x_f7c53f7b-97f9-4bfa-b109-ac8b9ba2985b.png",
+            "image_width": 150,
+            "image_width_mobile": 120,
+            "image_mr": 50,
+            "image_mr_mobile": 20,
+            "image_radius": 0,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000"
+          }
+        },
+        "image_VLp9aT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo_vanityfair_300x_7bbd4647-a603-4f49-81d9-f84c24c8286e.png",
+            "image_width": 150,
+            "image_width_mobile": 120,
+            "image_mr": 50,
+            "image_mr_mobile": 20,
+            "image_radius": 0,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000"
+          }
+        },
+        "image_8CnWNQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo_voici_300x_d2704599-c49f-4412-998a-da01c5c45400.png",
+            "image_width": 150,
+            "image_width_mobile": 120,
+            "image_mr": 50,
+            "image_mr_mobile": 20,
+            "image_radius": 0,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "image_nUUURa",
+        "image_HbbqhA",
+        "image_zNGkrJ",
+        "image_HLwdzL",
+        "image_XJtNhb",
+        "image_pX9qxQ",
+        "image_NGew97",
+        "image_cgTeWC",
+        "image_VLp9aT",
+        "image_8CnWNQ"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "background_color": "#000000",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "enable_shadow": true,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 0,
+        "shadow_blur": 26,
+        "shadow_spread": 0,
+        "shadow_opacity": 0.1,
+        "shadow_color": "#000000",
+        "scrolling_velocity": 80,
+        "scrolling_velocity_mobile": 70,
+        "reverse_direction": false,
+        "pause_hover": true,
+        "margin_top": 32,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "delivery_date_RLMegR": {
+      "type": "delivery-date",
+      "blocks": {
+        "delivery_step_89LqyK": {
+          "type": "delivery_step",
+          "settings": {
+            "icon_image_width": 50,
+            "min_days": 0,
+            "enable_range": false,
+            "max_days": 0,
+            "include_weekends": false,
+            "title": "Commande passée"
+          }
+        },
+        "delivery_step_VdLQkR": {
+          "type": "delivery_step",
+          "settings": {
+            "icon_image_width": 50,
+            "min_days": 1,
+            "enable_range": true,
+            "max_days": 2,
+            "include_weekends": false,
+            "title": "Expédiée"
+          }
+        },
+        "delivery_step_rFFFww": {
+          "type": "delivery_step",
+          "settings": {
+            "icon_image_width": 50,
+            "min_days": 2,
+            "enable_range": true,
+            "max_days": 4,
+            "include_weekends": false,
+            "title": "Livrée"
+          }
+        }
+      },
+      "block_order": [
+        "delivery_step_89LqyK",
+        "delivery_step_VdLQkR",
+        "delivery_step_rFFFww"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "delivery_position": "below_buy",
+        "display_mode": "simple",
+        "text_before_min_date": "Commandez aujourd'hui, recevez votre commande entre le",
+        "text_after_min_date": "et le",
+        "font_family_custom": false,
+        "font_family": "quattrocento_sans_n4",
+        "text_color": "#000000",
+        "text_size": 14,
+        "text_line_height": 20,
+        "text_alignment": "center",
+        "circle_size_desktop": 40,
+        "icon_svg_size_desktop": 50,
+        "circle_size_mobile": 36,
+        "icon_svg_size_mobile": 50,
+        "icon_color": "#ffffff",
+        "icon_bg_color": "#000000",
+        "line_color": "#000000",
+        "date_format_type": "dd Mmmm",
+        "date_font_custom": false,
+        "date_font": "roboto_n4",
+        "date_color": "#000000",
+        "date_size": 12,
+        "date_line_height": 10,
+        "date_margin_top": 15,
+        "step_font_custom": false,
+        "step_font": "roboto_n4",
+        "step_color": "#000000",
+        "step_size": 12,
+        "step_line_height": 12,
+        "step_margin_top": 5,
+        "widget_margin_top": 20,
+        "widget_margin_bottom": 20,
+        "widget_margin_sides": 0,
+        "widget_padding_top": 15,
+        "widget_padding_bottom": 10,
+        "widget_padding_sides": 15,
+        "widget_background_color": "#fdfbf8",
+        "widget_border_width": 0,
+        "widget_border_color": "#cccccc",
+        "widget_border_radius": 0,
+        "enable_shadow": true,
+        "shadow_color": "#bababa",
+        "shadow_horizontal_offset": 7,
+        "shadow_vertical_offset": 4,
+        "shadow_blur_radius": 16,
+        "shadow_opacity": 0.7,
+        "shadow_spread_radius": -2
+      }
+    },
+    "menu_story_VYLbiU": {
+      "type": "menu-story",
+      "blocks": {
+        "image_AVaAGp": {
+          "type": "Image",
+          "settings": {
+            "cercle_img": "shopify://shop_images/diana1_3000x_207c3662-1fe2-4a7b-aba9-031df660c9f8.webp",
+            "cercle_text": "Diana",
+            "cercle_link": "/"
+          }
+        },
+        "image_TBbhd4": {
+          "type": "Image",
+          "settings": {
+            "cercle_img": "shopify://shop_images/image_3000x_12e07c95-d81f-4f5b-8f95-df13283ce73e.jpg",
+            "cercle_text": "Bella",
+            "cercle_link": "/"
+          }
+        },
+        "image_qY3qYE": {
+          "type": "Image",
+          "settings": {
+            "cercle_img": "shopify://shop_images/Maria-Argent_3000x_422b0a8a-e007-4be3-8926-850737b2c1f8.jpg",
+            "cercle_text": "Maria",
+            "cercle_link": "/"
+          }
+        },
+        "image_MaRfJ4": {
+          "type": "Image",
+          "settings": {
+            "cercle_img": "shopify://shop_images/IMG_1306_3000x_cda791fc-1b44-4a5c-bd35-9188447c9272.webp",
+            "cercle_text": "Belle Étoile Blanche",
+            "cercle_link": "/"
+          }
+        },
+        "image_JDiDyV": {
+          "type": "Image",
+          "settings": {
+            "cercle_img": "shopify://shop_images/image_3000x_398fa855-1922-4647-bf19-0627d8bca19e.webp",
+            "cercle_text": "Julianne Blanche",
+            "cercle_link": "/"
+          }
+        }
+      },
+      "block_order": [
+        "image_AVaAGp",
+        "image_TBbhd4",
+        "image_qY3qYE",
+        "image_MaRfJ4",
+        "image_JDiDyV"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "menu_width": 100,
+        "menu_gap": 30,
+        "menu_gap_mobile": 30,
+        "cercle_size": 100,
+        "cercle_size_mobile": 80,
+        "cercle_space": 4,
+        "cercle_space_mobile": 4,
+        "cercle_border_thickness": 2,
+        "cercle_border_color": "#000000",
+        "cercle_border_gradient": "",
+        "transform_square": false,
+        "font_text_custom": false,
+        "text_font": "poppins_n5",
+        "Couleur": "#000000",
+        "text_size": 12,
+        "text_size_mobile": 10,
+        "text_height": 100,
+        "text_mt": 10,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 2,
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "border_gradient": "",
+        "full_width": true,
+        "content_width": 150,
+        "lazy": true
+      }
+    },
+    "product_features_XdNA9y": {
+      "type": "product-features",
+      "blocks": {
+        "hotspot_qi96TL": {
+          "type": "hotspot",
+          "settings": {
+            "image": "shopify://shop_images/template-blog-image-2-1683295850947_7c870c67-89cf-4ca2-afe9-2a33eb5d4d46.webp",
+            "title": "Or 18 carats",
+            "text": "",
+            "alignment": "center",
+            "offset_x": 72,
+            "offset_y": 15,
+            "enable_mobile_position": true,
+            "mobile_offset_x": 79,
+            "mobile_offset_y": 16
+          }
+        },
+        "hotspot_jy7LXn": {
+          "type": "hotspot",
+          "settings": {
+            "image": "shopify://shop_images/template-blog-image-1694091686917_4454dfd5-a45e-4bf1-87a4-c44c24e56cab.webp",
+            "title": "Résiste à l'eau",
+            "text": "",
+            "alignment": "center",
+            "offset_x": 78,
+            "offset_y": 36,
+            "enable_mobile_position": true,
+            "mobile_offset_x": 93,
+            "mobile_offset_y": 36
+          }
+        },
+        "hotspot_A9LrgJ": {
+          "type": "hotspot",
+          "settings": {
+            "image": "shopify://shop_images/template-blog-image-3-2_768d36e2-2b35-406d-a0d4-8c82e1a876a5.webp",
+            "title": "Argent Fin 925 dorure 18k",
+            "text": "",
+            "alignment": "center",
+            "offset_x": 70,
+            "offset_y": 56,
+            "enable_mobile_position": true,
+            "mobile_offset_x": 70,
+            "mobile_offset_y": 62
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_qi96TL",
+        "hotspot_jy7LXn",
+        "hotspot_A9LrgJ"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "title": "Des bijoux à la fois beaux et safe, sans risque d’allergie",
+        "text": "<p>Nous sélectionnons nos matériaux avec soin pour garantir une longue vie à vos bijoux. Conçus pour accompagner partout, ils résistent parfaitement à l’eau et garderont leur éclat.</p><p>⬝ Les boucles d'oreilles et faux piercings sont en argent fin 925 doré à l'or 18 carats ou Rhodium.  </p><p>⬝ Les piercings sont composés de Titane ASTM-F 136 ou d’acier inoxydable 304. </p><p>Nos créations sont distribuées et recommandées par plus de 50 perceurs français.</p>",
+        "button_label": "",
+        "link": "",
+        "button_style_secondary": false,
+        "desktop_content_position": "right",
+        "desktop_content_alignment": "left",
+        "hide_content_on_mobile": false,
+        "mobile_content_position": "top",
+        "content_corner_radius": false,
+        "content_color_scheme": "",
+        "color_scheme": "",
+        "content_width": 120,
+        "image": "shopify://shop_images/template-blog-image-1-1680259306940_3dbce1c2-d7fa-49f8-bc57-31ef1295793a.webp",
+        "desktop_image_width": "limited",
+        "image_max_width": 1000,
+        "full_page_width": false,
+        "image_corner_radius": false,
+        "mobile_image": "shopify://shop_images/template-blog-image-1-1680259306940_3dbce1c2-d7fa-49f8-bc57-31ef1295793a.jpg",
+        "hotspot_open_event": "hover",
+        "hotspots_color_scheme": "scheme-3",
+        "display_hotspots_animation": true,
+        "hotspot_content_color_scheme": "",
+        "hotspot_image_size": "full",
+        "contain_hotspot_modal": false,
+        "hotspot_modal_desktop_width": 600,
+        "hotspot_modal_mobile_width": 300,
+        "bullet_points_color": "",
+        "bullet_size_desktop": 1.5,
+        "bullet_size_mobile": 1,
+        "line_width_desktop": 0.3,
+        "line_width_mobile": 0.2,
+        "contain_bullet_points": false,
+        "bullet_point_desktop_width": 400,
+        "bullet_point_mobile_width": 60,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "carrousel_video_gzwQgp": {
+      "type": "carrousel-video",
+      "blocks": {
+        "slide_VRhRyH": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        },
+        "slide_rgYmrk": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        },
+        "slide_bhpWLt": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        },
+        "slide_x7KRxn": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        },
+        "slide_G7mmH3": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        },
+        "slide_9NCHCt": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        }
+      },
+      "block_order": [
+        "slide_VRhRyH",
+        "slide_rgYmrk",
+        "slide_bhpWLt",
+        "slide_x7KRxn",
+        "slide_G7mmH3",
+        "slide_9NCHCt"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "slider_view": 5,
+        "slider_view_mobile": 1.5,
+        "slider_gap": 10,
+        "slider_gap_mobile": 10,
+        "slider_rotate": 30,
+        "card_padding_vertical": 20,
+        "card_padding_vertical_mobile": 20,
+        "card_padding_horizontal": 20,
+        "card_padding_horizontal_mobile": 20,
+        "card_radius": 10,
+        "card_border_thickness": 0,
+        "card_shadow": true,
+        "card_ratio": "portrait",
+        "card_ratio_mobile": "portrait",
+        "card_overlay": 0,
+        "content_horizontal_position": "center",
+        "content_horizontal_position_mobile": "center",
+        "content_vertical_position": "end",
+        "content_vertical_position_mobile": "end",
+        "title_custom": false,
+        "title_font": "montserrat_n6",
+        "title_size": 16,
+        "title_size_mobile": 16,
+        "title_height": 100,
+        "stars_size": 16,
+        "stars_size_mobile": 16,
+        "stars_mt": 16,
+        "stars_mt_mobile": 16,
+        "hide_stars": true,
+        "use_action": true,
+        "action_size": 26,
+        "action_size_mobile": 26,
+        "action_icon_size": 16,
+        "action_icon_size_mobile": 16,
+        "action_border_thickness": 0,
+        "use_sound": true,
+        "sound_size": 26,
+        "sound_size_mobile": 26,
+        "sound_icon_size": 16,
+        "sound_icon_size_mobile": 16,
+        "sound_border_thickness": 0,
+        "arrow_size": 30,
+        "arrow_size_mobile": 30,
+        "arrow_icon_size": 8,
+        "arrow_icon_size_mobile": 8,
+        "arrow_border_thickness": 1,
+        "arrow_radius": 100,
+        "arrow_hover_effect": "scale",
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "card_border_color": "#000000",
+        "card_shadow_color": "#000000",
+        "card_overlay_color": "#000000",
+        "title_color": "#ffffff",
+        "stars_color": "#ffffff",
+        "action_color": "#ffffff",
+        "action_hover_color": "#ffffff",
+        "action_bg_color": "#ffffff",
+        "action_bg_hover_color": "#ffffff",
+        "action_border_color": "#ffffff",
+        "action_border_hover_color": "#ffffff",
+        "arrow_color": "#ffffff",
+        "arrow_hover_color": "#434343",
+        "arrow_bg_color": "#434343",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#000000",
+        "arrow_border_hover_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 36,
+        "margin_bottom": 36,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": false,
+        "content_width": 180,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "reviews_testimonials_VN3dzD": {
+      "type": "reviews-testimonials",
+      "blocks": {
+        "slide_iHeTQe": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Excellent produit !",
+            "text": "Je suis vraiment impressionné par la qualité de ce produit. Il dépasse toutes mes attentes et je le recommande vivement à tous ceux qui cherchent quelque chose de fiable.",
+            "author_name": "Sophie",
+            "review_date": "21 sept. 2024",
+            "image1": "shopify://shop_images/IMG_1112_3000x_140fe2f3-96ba-4886-93f3-de90866a46e3.webp",
+            "image2": "shopify://shop_images/image_3000x_56fbcfff-e72c-4868-97b5-8cc85825a12a.webp",
+            "image3": "shopify://shop_images/4-5-OK_NEBULEUSE_CREPUSCULE83719COMPO7_GOLD-1_3000x_5d3f4ba3-dd41-418c-9323-59b86240da80.webp"
+          }
+        },
+        "slide_rzytiw": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Très satisfait",
+            "text": "Le service et la qualité du produit sont exceptionnels. L'emballage était soigné et la livraison rapide. J'en suis très content.",
+            "author_name": "Thomas",
+            "review_date": "23 sept. 2024",
+            "image1": "shopify://shop_images/CLOSE-4-5_WEB-NEBULEUSE_DUNES78938copie_3000x_36939b1a-dec7-4ddd-9da8-ec2e02f8fa1a.webp",
+            "image2": "shopify://shop_images/Instafeed_2.jpg"
+          }
+        },
+        "slide_p3Pfcn": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Une belle découverte",
+            "text": "J'avais des doutes avant de commander, mais je suis agréablement surpris. Le produit est de bonne qualité et fonctionne parfaitement.",
+            "author_name": "Camille",
+            "review_date": "21 aout 2024",
+            "image1": "shopify://shop_images/image_3000x_398fa855-1922-4647-bf19-0627d8bca19e.webp"
+          }
+        },
+        "slide_p6eL3H": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Produit de qualité",
+            "text": "Ce produit a vraiment répondu à mes attentes. La finition est soignée et il est très performant. Je le recommande sans hésitation.",
+            "author_name": "Marc",
+            "review_date": "28 aout 2024"
+          }
+        },
+        "slide_iQLBUL": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Parfait pour l'usage quotidien",
+            "text": "Utilisé tous les jours depuis plusieurs semaines, ce produit est solide et fiable. Je suis très satisfait de mon achat.",
+            "author_name": "Émilie",
+            "review_date": "7 sept. 2024"
+          }
+        },
+        "slide_hJMFt4": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Très bon rapport qualité-prix",
+            "text": "Pour le prix, je ne m'attendais pas à une telle qualité. C'est un excellent produit qui offre de très bonnes performances.",
+            "author_name": "Antoine",
+            "review_date": "18 sept. 2024"
+          }
+        },
+        "slide_FzLgnU": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Un incontournable",
+            "text": "C'est désormais un produit indispensable pour moi. Très pratique et facile à utiliser, je suis ravi de cet achat.",
+            "author_name": "Marie",
+            "review_date": "15 sept. 2024"
+          }
+        },
+        "slide_yycEV4": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Complètement satisfait",
+            "text": "Tout a été parfait, de la commande à la livraison. Le produit est conforme à la description et fonctionne très bien.",
+            "author_name": "Julien",
+            "review_date": "13 sept. 2024"
+          }
+        },
+        "slide_fNdcmL": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Je recommande sans hésitation",
+            "text": "Si vous cherchez un produit fiable et de bonne qualité, c'est celui qu'il vous faut. J'en suis très content.",
+            "author_name": "Clara",
+            "review_date": "8 sept. 2024"
+          }
+        },
+        "slide_QBCaWA": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Très pratique et efficace",
+            "text": "Ce produit me facilite la vie au quotidien. Je suis impressionné par son efficacité et sa robustesse.",
+            "author_name": "Maxime",
+            "review_date": "2 sept. 2024"
+          }
+        }
+      },
+      "block_order": [
+        "slide_iHeTQe",
+        "slide_rzytiw",
+        "slide_p3Pfcn",
+        "slide_p6eL3H",
+        "slide_iQLBUL",
+        "slide_hJMFt4",
+        "slide_FzLgnU",
+        "slide_yycEV4",
+        "slide_fNdcmL",
+        "slide_QBCaWA"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "Avis clients",
+        "heading_custom": false,
+        "heading_font": "times_new_roman_n7",
+        "heading_size": 40,
+        "heading_size_mobile": 24,
+        "heading_height": 130,
+        "heading_align": "center",
+        "rating_text_hide": false,
+        "rating_text": "Excellent",
+        "rating_text_custom": false,
+        "rating_text_font": "quattrocento_sans_n7",
+        "rating_text_size": 24,
+        "rating_text_size_mobile": 20,
+        "rating_text_height": 130,
+        "rating_text_mt": 16,
+        "rating_hide": false,
+        "rating": 4.8,
+        "rating_align": "center",
+        "stars_count": 5,
+        "stars_size": 28,
+        "stars_size_mobile": 20,
+        "text": "<p>basé sur <strong>267</strong> avis</p>",
+        "text_custom": false,
+        "text_font": "quattrocento_sans_n4",
+        "text_size": 20,
+        "text_size_mobile": 16,
+        "text_height": 130,
+        "text_align": "center",
+        "text_mt": 16,
+        "slider_width": 60,
+        "slider_view": 3,
+        "slider_view_mobile": 1.2,
+        "slider_gap": 12,
+        "slider_gap_mobile": 12,
+        "slider_mt": 36,
+        "card_padding_vertical": 32,
+        "card_padding_vertical_mobile": 16,
+        "card_padding_horizontal": 16,
+        "card_padding_horizontal_mobile": 16,
+        "card_radius": 0,
+        "card_border_thickness": 0,
+        "enable_shadow": true,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 0,
+        "shadow_blur": 15,
+        "shadow_spread": 0,
+        "shadow_opacity": 0.1,
+        "shadow_color": "#000000",
+        "circle_width": 50,
+        "circle_custom": false,
+        "circle_font": "quattrocento_sans_n4",
+        "author_font_size": 16,
+        "card_author_name_text_custom": false,
+        "card_author_name_text_font": "quattrocento_sans_n4",
+        "card_author_name_text_size": 16,
+        "card_author_name_text_size_mobile": 16,
+        "profile_info_margin_bottom": 40,
+        "icon_color": "#333333",
+        "icon_size": 12,
+        "verified_text": "Vérifié",
+        "verified_custom": false,
+        "verified_font": "roboto_n4",
+        "verified_font_size": 12,
+        "verified_color": "#333333",
+        "card_heading_custom": false,
+        "card_heading_font": "quattrocento_sans_n7",
+        "card_heading_size": 20,
+        "card_heading_size_mobile": 16,
+        "card_heading_height": 130,
+        "card_heading_mt": 16,
+        "card_text_custom": false,
+        "card_text_font": "quattrocento_sans_n4",
+        "card_text_size": 14,
+        "card_text_size_mobile": 14,
+        "card_text_height": 150,
+        "card_text_mt": 16,
+        "card_text_more": "Voir plus",
+        "card_text_less": "Voir moins",
+        "card_count_words": 20,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "arrow_size": 50,
+        "arrow_size_mobile": 30,
+        "arrow_icon_size": 30,
+        "arrow_icon_size_mobile": 28,
+        "arrow_border_thickness": 0,
+        "dots_show_desktop": false,
+        "dots_show_mobile": false,
+        "dots_size": 12,
+        "dots_size_mobile": 12,
+        "circle_text_color": "#000000",
+        "circle_bg_color": "#ececec",
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#000000",
+        "card_heading_color": "#000000",
+        "card_text_color": "#000000",
+        "card_author_name_text_color": "#000000",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#ffffff",
+        "arrow_border_hover_color": "#ffffff",
+        "dots_color": "#000000",
+        "heading_color": "#000000",
+        "rating_text_color": "#000000",
+        "stars_bg_color": "#00b67a",
+        "stars_color": "#ffffff",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "margin_top": 0,
+        "margin_bottom": 72,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 240,
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "lazy": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Découvrez également",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    },
+    "instafeed_r7NP8E": {
+      "type": "instafeed",
+      "blocks": {
+        "slide_P6Nre7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Instafeed_6.jpg",
+            "url": ""
+          }
+        },
+        "slide_arPBRH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Instafeed_5.jpg",
+            "url": ""
+          }
+        },
+        "slide_UAYnjj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Instafeed_3.jpg",
+            "url": ""
+          }
+        },
+        "slide_8YHYgL": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Instafeed_2.jpg",
+            "url": ""
+          }
+        },
+        "slide_mziDQj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Instafeed_4.jpg",
+            "url": ""
+          }
+        },
+        "slide_kzMepY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Instafeed_1.jpg",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_P6Nre7",
+        "slide_arPBRH",
+        "slide_UAYnjj",
+        "slide_8YHYgL",
+        "slide_mziDQj",
+        "slide_kzMepY"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "@HYPERFLOW",
+        "font_heading_custom": false,
+        "heading_font": "times_new_roman_n7",
+        "heading_color": "#383b38",
+        "heading_size": 30,
+        "heading_height": 130,
+        "heading_align": "center",
+        "subheading": "<h3>Retrouvez-nous sur Instagram</h3>",
+        "font_subheading_custom": false,
+        "subheading_font": "quattrocento_sans_n4",
+        "subheading_color": "#383b38",
+        "subheading_size": 16,
+        "subheading_height": 130,
+        "subheading_align": "center",
+        "subheading_mt": 12,
+        "slider_mt": 60,
+        "slider_row": "3",
+        "slider_row_mobile": "1",
+        "image_radius": 0,
+        "slider_gap": 20,
+        "slider_gap_mobile": 10,
+        "autoplay": true,
+        "autoplay_speed": 2,
+        "nav_btn_bg": "#ffffff",
+        "nav_btn_hover_bg": "#383b38",
+        "nav_border": "#383b38",
+        "nav_border_hover": "#383b38",
+        "nav_icon": "#383b38",
+        "nav_hover_icon": "#ffffff",
+        "nav_size": 40,
+        "nav_size_mobile": 30,
+        "hide_nav": false,
+        "hide_nav_mobile": true,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 72,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, rgba(245, 245, 245, 1), rgba(255, 255, 255, 1) 100%)",
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "full_width": false,
+        "content_width": 180
+      }
+    },
+    "double_section_TeWjmq": {
+      "type": "double-section",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "color_scheme": "",
+        "section_1_id": "#shopify-section-template--24756106035466__multicolumn_tAFfPc",
+        "padding_top_one": 0,
+        "padding_bottom_one": 0,
+        "mobile_reverse_grid": false,
+        "section_2_id": "#shopify-section-template--24756106035466__faq_zeiQpL",
+        "padding_top_two": 0,
+        "padding_bottom_two": 0,
+        "column_one_width": 50,
+        "alignment": "center",
+        "spacing_desktop": 80,
+        "spacing_mobile": 50,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "content_width": 160
+      }
+    },
+    "multicolumn_tAFfPc": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_m7yQDd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/hero_1_desk.jpg",
+            "title": "Où nous trouver",
+            "text": "<p>Venez découvrir notre boutique au <strong>133 rue vieille du Temple 75003 Paris </strong>pour une expérience galactique et dénicher vos futurs coups de cœur, ou pour vous faire percer avec nous !</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_m7yQDd"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "title_over_image": true,
+        "font_title_custom": false,
+        "title_font": "times_new_roman_i7",
+        "title_font_size": 35,
+        "title_font_size_mobile": 18,
+        "title_color": "#f9f9f9",
+        "font_description_custom": false,
+        "description_font": "quattrocento_n4",
+        "description_font_size": 18,
+        "description_font_size_mobile": 12,
+        "description_color": "#ffffff",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "faq_zeiQpL": {
+      "type": "FAQ",
+      "blocks": {
+        "text_PMLHkU": {
+          "type": "text",
+          "settings": {
+            "question": "Puis-je porter mes bijoux à la plage ?",
+            "answer": "<p>Nos bijoux sont résistants à l'eau, mais non au sel ou aux produits cosmétiques!<br/>Vous pouvez porter vos bijoux à la plage ou sous la douche du moment que vous les rincez à l'eau claire avant de vous sécher. ♡</p>"
+          }
+        },
+        "text_g6WYRy": {
+          "type": "text",
+          "settings": {
+            "question": "Je fais souvent des allergies lorsque je porte des boucles d'oreilles. Vos bijoux contiennent-ils du nickel ?",
+            "answer": "<p>Nos bijoux ne contiennent aucun nickel.<br/>Ils sont constitués d'Argent Fin, plaqué Or pour les boucles & earcuffs et d'Acier Inoxydable pour les piercings.</p>"
+          }
+        },
+        "text_WtfBNU": {
+          "type": "text",
+          "settings": {
+            "question": "Pourquoi vendez-vous vos bijoux à l'unité et non à la paire ?",
+            "answer": "<p>On adore porter nos bijoux de façon asymétrique!<br/><br/>Nous vous proposons nos bijoux à l'unité pour vous permettre de créer vos propres compositions qui ne ressemblent qu'à vous.♡<br/><br/>À ce propos, pensez à nous taguer sur vos compositions pour que l'on puisse vous reposter sur Instagram! </p>"
+          }
+        },
+        "text_jzpVb4": {
+          "type": "text",
+          "settings": {
+            "question": "Puis-je mettre un piercing sur mon lobe ?",
+            "answer": "<p>Nos boucles d'oreilles sont conçues pour se placer sur le lobe de votre oreille, elles sont fabriquées en Argent Fin plaqué Or 18k et ont une épaisseur de tige de 1mm.<br/>Concernant nos piercings, ils sont fabriqués en Acier Inoxydable plaqué Or 18k on été conçus pour se placer sur le cartilage de votre oreille avec une épaisseur de tige de 1,2mm. Leur tige est donc légèrement plus grande que celle des boucles d'oreilles. Néanmoins, vous pouvez tout à fait poser un piercing à votre lobe si la taille de votre trou le permet! 🌟</p>"
+          }
+        },
+        "text_UjAKKM": {
+          "type": "text",
+          "settings": {
+            "question": "Votre site est-il sécurisé ?",
+            "answer": "<p>Notre site est sécurisé à 100%. </p><p>Nous protégeons vos données grâce à un serveur en HTTPS muni d'un certificat SSL (cadenas vert à gauche de l'URL).</p><p>La plupart des sites ne sécurisent que les transactions bancaires et tout ce qui touche au règlement des commandes. Sur Nébuleuse, le transfert de vos données et vos informations de connexions sont sécurisées et ne peuvent pas être piratées ou ne peuvent pas être la cible de logiciels malveillants. </p><p>Pour finir, concernant le règlement, nous utilisons Paypal et Stripe qui sont les références en matière de sécurité des transactions sur Internet.<br/><br/>Vous pouvez donc faire votre shopping sur notre boutique sans aucune inquiétude.</p>"
+          }
+        },
+        "text_bxpbf9": {
+          "type": "text",
+          "settings": {
+            "question": "Quels sont les modes de paiements disponibles ?",
+            "answer": "<p>Vous pouvez effectuer vos achats avec votre carte bancaire ou via votre compte Paypal. Nous n'acceptons ni les chèques bancaires, ni les virements ou encore les paiements à la réception. </p>"
+          }
+        },
+        "text_DgVgGm": {
+          "type": "text",
+          "settings": {
+            "question": "Je ne suis pas satisfait(e) de ma commande, que faire ?",
+            "answer": "<p>Nous vous offrons une garantie \"satisfait ou remboursé\".</p><p><br/>Si, pour n'importe quelle raison, le produit ne convient pas à vos attentes, vous pouvez nous le renvoyer sous 30 jours après réception et nous vous remboursons intégralement le prix de l'article dès qu'il sera arrivé chez nous.</p><p>Cependant, tous les produits renvoyés doivent être en parfait état - donc jamais portés - et les frais de retour doivent être payés par vos soins. La preuve de l'affranchissement devra ensuite nous être envoyée par email comme preuve de livraison. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_PMLHkU",
+        "text_g6WYRy",
+        "text_WtfBNU",
+        "text_jzpVb4",
+        "text_UjAKKM",
+        "text_bxpbf9",
+        "text_DgVgGm"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "Questions fréquentes",
+        "font_family_custom": false,
+        "title_font_family": "times_new_roman_n7",
+        "title_font_size_desktop": 3,
+        "title_font_size_mobile": 2.2,
+        "title_color": "#000000",
+        "font_question_custom": false,
+        "question_font_family": "quattrocento_sans_n4",
+        "questions_font_size": 1.7,
+        "questions_font_size_mobile": 1.5,
+        "question_color": "#121212",
+        "hover_color": "#686868",
+        "background_color": "rgba(0,0,0,0)",
+        "question_margin_bottom": 3,
+        "question_border_radius": 5,
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "add_line_between_questions": "oui",
+        "line_thickness": 1,
+        "line_color": "#e3e3e3",
+        "font_answer_custom": false,
+        "answer_font_family": "quattrocento_sans_n4",
+        "answer_font_size_desktop": 1.5,
+        "answer_font_size_mobile": 1.5,
+        "answer_color": "#000000",
+        "answer_bg_color": "#ffffff",
+        "answer_padding_vertical": 9,
+        "answer_padding_horizontal": 24,
+        "answer_margin_top": 10,
+        "answer_margin_bottom": 10,
+        "answer_border_radius": 10,
+        "icon_color": "#121212",
+        "accordion_toggle": true,
+        "background_type": "fixed",
+        "section_background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, rgba(216, 248, 255, 1), rgba(255, 255, 255, 1) 100%)",
+        "section_margin_top_desktop": 0,
+        "section_margin_bottom_desktop": 0,
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 20,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0,
+        "section_padding_top_mobile": 10,
+        "section_padding_bottom_mobile": 10
+      }
+    }
+  },
+  "order": [
+    "main",
+    "scrolling_text_bar_Wxckgr",
+    "delivery_date_RLMegR",
+    "menu_story_VYLbiU",
+    "product_features_XdNA9y",
+    "carrousel_video_gzwQgp",
+    "reviews_testimonials_VN3dzD",
+    "related-products",
+    "instafeed_r7NP8E",
+    "double_section_TeWjmq",
+    "multicolumn_tAFfPc",
+    "faq_zeiQpL"
+  ]
+}

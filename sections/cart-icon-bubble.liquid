@@ -1,0 +1,91 @@
+{%- assign selected_icon = settings.cart_icon_choice | default: 'icon-cart' -%}
+  {%- case selected_icon -%}
+    {%- when 'icon-backpack' -%}
+      {% if cart == empty %}
+        <span class="svg-wrapper">{{ 'icon-backpack-empty.svg' | inline_asset_content }}</span>
+      {% else %}
+        <span class="svg-wrapper">{{ 'icon-backpack.svg' | inline_asset_content }}</span>
+      {% endif %}
+    {%- when 'icon-backpack2' -%}
+      {% if cart == empty %}
+        <span class="svg-wrapper">{{ 'icon-backpack2-empty.svg' | inline_asset_content }}</span>
+      {% else %}
+        <span class="svg-wrapper">{{ 'icon-backpack2.svg' | inline_asset_content }}</span>
+      {% endif %}
+    {%- when 'icon-backpack3' -%}
+      {% if cart == empty %}
+        <span class="svg-wrapper">{{ 'icon-backpack3-empty.svg' | inline_asset_content }}</span>
+      {% else %}
+        <span class="svg-wrapper">{{ 'icon-backpack3.svg' | inline_asset_content }}</span>
+      {% endif %}
+    {%- when 'icon-backpack4' -%}
+      {% if cart == empty %}
+        <span class="svg-wrapper">{{ 'icon-backpack4-empty.svg' | inline_asset_content }}</span>
+      {% else %}
+        <span class="svg-wrapper">{{ 'icon-backpack4.svg' | inline_asset_content }}</span>
+      {% endif %}
+    {%- when 'icon-backpack5' -%}
+      {% if cart == empty %}
+        <span class="svg-wrapper">{{ 'icon-backpack5-empty.svg' | inline_asset_content }}</span>
+      {% else %}
+        <span class="svg-wrapper">{{ 'icon-backpack5.svg' | inline_asset_content }}</span>
+      {% endif %}
+    {%- when 'icon-handbag' -%}
+      {% if cart == empty %}
+        <span class="svg-wrapper">{{ 'icon-handbag-empty.svg' | inline_asset_content }}</span>
+      {% else %}
+        <span class="svg-wrapper">{{ 'icon-handbag.svg' | inline_asset_content }}</span>
+      {% endif %}
+    {%- when 'icon-handbag2' -%}
+      {% if cart == empty %}
+        <span class="svg-wrapper">{{ 'icon-handbag2-empty.svg' | inline_asset_content }}</span>
+      {% else %}
+        <span class="svg-wrapper">{{ 'icon-handbag2.svg' | inline_asset_content }}</span>
+      {% endif %}
+    {%- when 'icon-handbag3' -%}
+      {% if cart == empty %}
+        <span class="svg-wrapper">{{ 'icon-handbag3-empty.svg' | inline_asset_content }}</span>
+      {% else %}
+        <span class="svg-wrapper">{{ 'icon-handbag3.svg' | inline_asset_content }}</span>
+      {% endif %}
+    {%- when 'icon-handbag4' -%}
+      {% if cart == empty %}
+        <span class="svg-wrapper">{{ 'icon-handbag4-empty.svg' | inline_asset_content }}</span>
+      {% else %}
+        <span class="svg-wrapper">{{ 'icon-handbag4.svg' | inline_asset_content }}</span>
+      {% endif %}
+    {%- when 'icon-giftbox' -%}
+      {% if cart == empty %}
+        <span class="svg-wrapper">{{ 'icon-giftbox-empty.svg' | inline_asset_content }}</span>
+      {% else %}
+        <span class="svg-wrapper">{{ 'icon-giftbox.svg' | inline_asset_content }}</span>
+      {% endif %}
+    {%- when 'icon-openbox' -%}
+      {% if cart == empty %}
+        <span class="svg-wrapper">{{ 'icon-openbox-empty.svg' | inline_asset_content }}</span>
+      {% else %}
+        <span class="svg-wrapper">{{ 'icon-openbox.svg' | inline_asset_content }}</span>
+      {% endif %}
+    {%- when 'icon-shopping' -%}
+      {% if cart == empty %}
+        <span class="svg-wrapper">{{ 'icon-shopping-empty.svg' | inline_asset_content }}</span>
+      {% else %}
+        <span class="svg-wrapper">{{ 'icon-shopping.svg' | inline_asset_content }}</span>
+      {% endif %}
+    {%- else -%}
+      {% if cart == empty %}
+        <span class="svg-wrapper">{{ 'icon-cart-empty.svg' | inline_asset_content }}</span>
+      {% else %}
+        <span class="svg-wrapper">{{ 'icon-cart.svg' | inline_asset_content }}</span>
+      {% endif %}
+  {%- endcase -%}
+
+<span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+{%- if cart != empty -%}
+  <div class="cart-count-bubble">
+    {%- if cart.item_count < 100 -%}
+      <span aria-hidden="true">{{ cart.item_count }}</span>
+    {%- endif -%}
+    <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+  </div>
+{%- endif -%}

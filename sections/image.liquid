@@ -1,0 +1,452 @@
+{%- style -%}
+
+#ImageSection-{{ section.id }} {
+  background: 
+  {% if section.settings.enable_gradient %}
+    {{ section.settings.gradient_background }};
+  {% else %}
+    {{ section.settings.background_color }};
+  {% endif %}
+  {% if section.settings.enable_margin_fix %}
+    margin-top: calc(-1 * var(--header-height) - 40px) !important;
+  {% endif %}
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+  padding-left: {{ section.settings.padding_left_desktop }}px;
+  padding-right: {{ section.settings.padding_right_desktop }}px;
+  margin-top: {{ section.settings.margin_top_desktop }}px;
+  margin-bottom: {{ section.settings.margin_bottom_desktop }}px;
+  text-align: center;
+  
+}
+
+#ImageSection-{{ section.id }} img {
+  max-width: 100%; 
+  width: {{ section.settings.image_width }}px; 
+  border-radius: {{ section.settings.border_radius }}px;
+  border-width: {{ section.settings.border_width }}px;
+  border-color: {{ section.settings.border_color }};
+  border-style: solid;
+  {% if section.settings.enable_shadow %}
+  box-shadow: 
+    {{ section.settings.shadow_offset_x }}px 
+    {{ section.settings.shadow_offset_y }}px 
+    {{ section.settings.shadow_blur }}px 
+    {{ section.settings.shadow_spread }}px
+    rgba(
+      {{ section.settings.shadow_color | color_extract: 'red' }},
+      {{ section.settings.shadow_color | color_extract: 'green' }},
+      {{ section.settings.shadow_color | color_extract: 'blue' }},
+      {{ section.settings.shadow_opacity }}
+    );
+  {% endif %}
+}
+
+#ImageSection-{{ section.id }} .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  #ImageSection-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+    padding-left: {{ section.settings.padding_left_mobile }}px;
+    padding-right: {{ section.settings.padding_right_mobile }}px;
+    margin-top: {{ section.settings.margin_top_mobile }}px;
+    margin-bottom: {{ section.settings.margin_bottom_mobile }}px;
+  }
+  
+  #ImageSection-{{ section.id }} img {
+    width: {{ section.settings.image_width_mobile }}px; 
+  }
+}
+
+{%- endstyle -%}
+  
+<div id="ImageSection-{{ section.id }}" class="image-section content-for-grouping {% if section.settings.mobile-hidden %} mobile-hidden {% endif %} {% if section.settings.tablet-hidden %} tablet-hidden {% endif %} {% if section.settings.laptop-hidden %} laptop-hidden {% endif %} {% if section.settings.desktop-hidden %} desktop-hidden {% endif %} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+  {% if section.settings.display_id %}
+    <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
+      <span class="copy-text">Cliquez pour copier l'ID de la section</span>
+      <span class="copy-success">ID de la section copié !</span>
+    </copy-button>
+  {% endif %}
+  <div class="image-wrapper">
+    <picture>
+      {% if section.settings.image %}
+        {% assign width_half = section.settings.image_width | times: 0.5 | round %}
+        {% assign width_full = section.settings.image_width %}
+        {% assign width_one_half = section.settings.image_width | times: 1.5 | round %}
+        {% assign width_double = section.settings.image_width | times: 2 | round %}
+        <source
+          srcset="
+            {{ section.settings.image | image_url: width: width_half, format: 'avif', quality: '90' }} {{ width_half }}w,
+            {{ section.settings.image | image_url: width: width_full, format: 'avif', quality: '90' }} {{ width_full }}w,
+            {{ section.settings.image | image_url: width: width_one_half, format: 'avif', quality: '90' }} {{ width_one_half }}w,
+            {{ section.settings.image | image_url: width: width_double, format: 'avif', quality: '90' }} {{ width_double }}w
+          "
+          type="image/avif"
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) {{ section.settings.image_width }}px, {{ section.settings.image_width }}px"
+        >
+        <source
+          srcset="
+            {{ section.settings.image | image_url: width: width_half, format: 'webp', quality: '90' }} {{ width_half }}w,
+            {{ section.settings.image | image_url: width: width_full, format: 'webp', quality: '90' }} {{ width_full }}w,
+            {{ section.settings.image | image_url: width: width_one_half, format: 'webp', quality: '90' }} {{ width_one_half }}w,
+            {{ section.settings.image | image_url: width: width_double, format: 'webp', quality: '90' }} {{ width_double }}w
+          "
+          type="image/webp"
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) {{ section.settings.image_width }}px, {{ section.settings.image_width }}px"
+        >
+      <img
+        srcset="
+          {{ section.settings.image | image_url: width: width_half }} {{ width_half }}w,
+          {{ section.settings.image | image_url: width: width_full }} {{ width_full }}w,
+          {{ section.settings.image | image_url: width: width_one_half }} {{ width_one_half }}w,
+          {{ section.settings.image | image_url: width: width_double }} {{ width_double }}w
+        "
+        src="{{ section.settings.image | image_url: width: width_full }}"
+        width="{{ width_full }}"
+        height="auto"
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) {{ section.settings.image_width }}px, {{ section.settings.image_width }}px"
+        alt="Image Section"
+        id="Image-{{ section.id }}"
+        class="image-element"
+        loading="lazy"
+      />
+      {% else %}
+          <div style="width: 500px; height: auto; margin: 0 auto;">{{ 'image' | placeholder_svg_tag }}</div>
+      {% endif %}
+    </picture>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Image",
+  "settings": [
+    {
+      "type": "header",
+      "content": "ID de la section"
+      },
+      {
+      "type": "checkbox",
+      "id": "display_id",
+      "label": "Afficher le bouton pour copier l'ID de la section",
+      "info": "L'ID peut être utilisé dans la section 'Double section' pour afficher 2 sections sur la même ligne ou dans la section 'Onglets' pour afficher la section dans des onglets. L'ID peut également être utilisé dans un lien de bouton pour faire défiler la page jusqu'à cette section.",
+      "default": false
+      },
+      {
+      "type": "header",
+      "content": "Masquer la section selon le type d'appareil"
+      },
+      {
+        "type": "checkbox",
+        "id": "mobile-hidden",
+        "label": "Masquer sur mobile",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "tablet-hidden",
+        "label": "Masquer sur tablette",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "laptop-hidden",
+        "label": "Masquer sur ordinateur portable",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "desktop-hidden",
+        "label": "Masquer sur ordinateur",
+        "default": false
+      },
+    {
+      "type": "header",
+      "content": "Chevauchement"
+      },
+    {
+      "type": "checkbox",
+      "id": "enable_margin_fix",
+      "label": "Activer le chevauchement avec le design moderne du menu",
+      "info": "Si cette section est placée tout en haut de la page, activer cette option permettra à cette section d'être positionnée sous le menu dès le départ.",
+      "default": false
+    }, 
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Choisir une image à afficher"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "label": "Largeur de l'image",
+      "default": 700,
+      "min": 500,
+      "max": 1500,
+      "unit": "px",
+      "step": 10
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius de l'image",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "Épaisseur du contour de l'image",
+      "default": 0,
+      "min": 0,
+      "max": 10,
+      "unit": "px",
+      "step": 1
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Couleur du contour",
+      "default": "#000000"
+    },  
+    {
+      "type": "header",
+      "content": "Ombre"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_shadow",
+      "label": "Activer l'ombre",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "shadow_color",
+      "label": "Couleur de l'ombre",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "shadow_opacity",
+      "label": "Opacité de l'ombre",
+      "default": 0.5,
+      "min": 0,
+      "max": 1,
+      "step": 0.1
+    },
+    {
+      "type": "range",
+      "id": "shadow_offset_x",
+      "label": "Décalage de l'ombre horizontal",
+      "default": 0,
+      "min": -50,
+      "max": 50,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "shadow_offset_y",
+      "label": "Décalage de l'ombre vertical",
+      "default": 0,
+      "min": -50,
+      "max": 50,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "shadow_blur",
+      "label": "Flou de l'ombre",
+      "default": 10,
+      "min": 0,
+      "max": 100,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "shadow_spread",
+      "label": "Propagation de l'ombre",
+      "default": 0,
+      "min": 0,
+      "max": 50,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Marge intérieure sur ordinateur"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "label": "Marge supérieure",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "label": "Marge inférieure",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "padding_left_desktop",
+      "label": "Marge gauche",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "padding_right_desktop",
+      "label": "Marge droite",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 1
+    },
+    {
+      "type": "header",
+      "content": "Marge intérieure sur mobile"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Marge supérieure",
+      "default": 10,
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Marge inférieure",
+      "default": 10,
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "padding_left_mobile",
+      "label": "Marge gauche",
+      "default": 10,
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "padding_right_mobile",
+      "label": "Marge droite",
+      "default": 10,
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 1
+    },
+    {
+      "type": "header",
+      "content": "Marge extérieure sur ordinateur"
+    },
+    {
+      "type": "range",
+      "id": "margin_top_desktop",
+      "label": "Marge supérieure",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_desktop",
+      "label": "Marge inférieure",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 1
+    },
+    {
+      "type": "header",
+      "content": "Marge extérieure sur mobile"
+    },
+    {
+      "type": "range",
+      "id": "margin_top_mobile",
+      "label": "Marge supérieure",
+      "default": 10,
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_mobile",
+      "label": "Marge inférieure",
+      "default": 10,
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 1
+    },
+
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur du fond de la section",
+      "default": "#ffffff"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_gradient",
+      "label": "Activer le dégradé de fond",
+      "default": false
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_background",
+      "label": "Dégradé du fond de la section",
+      "default": "linear-gradient(180deg, rgba(216, 248, 255, 1), rgba(255, 255, 255, 1) 100%)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}

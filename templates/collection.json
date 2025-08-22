@@ -1,0 +1,362 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_YHeCRf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cjaV7H": {
+          "type": "heading",
+          "settings": {
+            "heading": "LA QUALITÉ PRO, SANS COMPROMIS, À PORTÉE DE TOUS.",
+            "font_heading_custom": false,
+            "heading_font": "poppins_n9",
+            "heading_size_desktop": 3,
+            "heading_size_mobile": 2.5,
+            "heading_color": "#000000",
+            "heading_alignment": "center",
+            "heading_margin_bottom_desktop": 20,
+            "heading_margin_bottom_mobile": 15
+          }
+        },
+        "text_LAbaJR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Des produits coiffants efficaces et stylés, pensés par des pros</p>",
+            "font_description_custom": false,
+            "description_font": "poppins_n4",
+            "description_size_desktop": 1.6,
+            "description_size_mobile": 1.4,
+            "description_color": "#000000",
+            "description_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cjaV7H",
+        "text_LAbaJR"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "section_width": 100,
+        "content_width": 1200,
+        "fit_content": false,
+        "full_width": true,
+        "desktop_content_position": "left",
+        "rich_text_background_color": "#f5f5f5",
+        "border_radius": 0,
+        "enable_shadow": false,
+        "shadow_color": "#000000",
+        "shadow_opacity": 0.5,
+        "shadow_horizontal_offset": 0,
+        "shadow_vertical_offset": 10,
+        "shadow_blur_radius": 20,
+        "shadow_spread_radius": 0,
+        "padding_desktop": 0,
+        "padding_mobile": 10,
+        "padding_vertical_desktop": 40,
+        "padding_vertical_mobile": 20,
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "title_color_desktop": "#000000",
+        "title_color_mobile": "#000000",
+        "title_size_desktop": 3.2,
+        "title_size_mobile": 2,
+        "description_color_desktop": "#ffffff",
+        "description_color_mobile": "#000000",
+        "description_size_desktop": 1.6,
+        "description_size_mobile": 1.3,
+        "inner_background_color_mobile": "#ffffff"
+      }
+    },
+    "icon_blocks_bVkMrM": {
+      "type": "icon-blocks",
+      "blocks": {
+        "image_d8wK3P": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "pas de compromis",
+            "icon-blocks_text": "",
+            "icon-blocks_image": "shopify://shop_images/5_1.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        },
+        "image_RxqWqB": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "98% d'origine naturelle",
+            "icon-blocks_text": "",
+            "icon-blocks_image": "shopify://shop_images/6_1_088fe88b-8286-4d8e-b788-6bfa44f4622b.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        },
+        "image_7mUNYf": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "aucun perturbateur endocrinien",
+            "icon-blocks_text": "",
+            "icon-blocks_image": "shopify://shop_images/7_1.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        },
+        "image_QYTRfF": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "fabriqué en Suisse",
+            "icon-blocks_text": "",
+            "icon-blocks_image": "shopify://shop_images/8_12bb3493-fe1a-4ac2-8343-fb34d496b517.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        }
+      },
+      "block_order": [
+        "image_d8wK3P",
+        "image_RxqWqB",
+        "image_7mUNYf",
+        "image_QYTRfF"
+      ],
+      "name": "Blocs d'icônes cliquables",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "icon-blocks_row": 4,
+        "icon-blocks_row_mobile": 2,
+        "icon-blocks_gap": 20,
+        "icon-blocks_gap_mobile": 20,
+        "icon-blocks_padding_vertical": 20,
+        "icon-blocks_padding_horizontal": 0,
+        "icon-blocks_radius": 0,
+        "icon-blocks_border_thickness": 0,
+        "icon-blocks_border_color": "#000000",
+        "icon-blocks_shadow": false,
+        "icon-blocks_shadow_color": "#000000",
+        "icon-blocks_bg": "#f5f5f5",
+        "icon-blocks_bg_gradient": "",
+        "transform_to_circle": false,
+        "box_width_desktop": 155,
+        "box_width_mobile": 125,
+        "wrapper_box_width": 100,
+        "wrapper_box_width_mobile": 82,
+        "box_padding_vertical": 0,
+        "box_padding_horizontal": 16,
+        "box_background_color": "#f5f5f5",
+        "box_background_gradient": "",
+        "box_border_thickness": 0,
+        "box_border_color": "#000000",
+        "box_border_radius": 10,
+        "box_shadow_enable": false,
+        "box_shadow_color": "#000000",
+        "box_shadow_opacity": 0.2,
+        "box_shadow_x": 0,
+        "box_shadow_y": 0,
+        "box_shadow_blur": 10,
+        "box_shadow_spread": 0,
+        "font_title_custom": true,
+        "icon-blocks_heading_font": "roboto_n4",
+        "icon-blocks_heading_size": 14,
+        "icon-blocks_heading_size_mobile": 12,
+        "icon-blocks_heading_height": 120,
+        "icon-blocks_heading_mt": 8,
+        "icon-blocks_heading_color": "#000000",
+        "font_description_custom": false,
+        "icon-blocks_text_font": "poppins_n4",
+        "icon-blocks_text_size": 12,
+        "icon-blocks_text_size_mobile": 12,
+        "icon-blocks_text_height": 120,
+        "icon-blocks_text_mt": 4,
+        "icon-blocks_text_color": "#000000",
+        "icon-blocks_icon_size": 32,
+        "icon-blocks_icon_size_mobile": 26,
+        "icon-blocks_icon_color": "#000000",
+        "background_color": "#f5f5f5",
+        "background_gradient": "",
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "full_width": false,
+        "content_width": 120,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0
+      }
+    },
+    "double_section_hTMY4X": {
+      "type": "double-section",
+      "disabled": true,
+      "name": "Double section",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "color_scheme": "",
+        "section_1_id": "#shopify-section-template--25619930808707__featured_collection_feMQRb",
+        "padding_top_one": 15,
+        "padding_bottom_one": 15,
+        "mobile_reverse_grid": true,
+        "section_2_id": "#shopify-section-template--25619930808707__featured_collection_feMQRb",
+        "padding_top_two": 15,
+        "padding_bottom_two": 15,
+        "column_one_width": 50,
+        "alignment": "center",
+        "spacing_desktop": 80,
+        "spacing_mobile": 50,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "content_width": 160
+      }
+    },
+    "tabs_LFwtrB": {
+      "type": "tabs",
+      "blocks": {
+        "tab_yj9hpx": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "CHEVEUX BOUCLÉS",
+            "image_width": 20,
+            "section_id": "#shopify-section-template--25619930546563__featured_collection_tyLpe6"
+          }
+        },
+        "tab_pDX87Q": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "CHEVEUX LISSES",
+            "image_width": 20,
+            "section_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_yj9hpx",
+        "tab_pDX87Q"
+      ],
+      "name": "Onglets",
+      "settings": {
+        "display_id": true,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "font_family_custom": false,
+        "font_family": "barlow_condensed_n6",
+        "tab_font_size": 16,
+        "tab_color": "#000000",
+        "tab_selected_color": "#ffffff",
+        "glider_height": 45,
+        "glider_color": "#000000",
+        "glider_border_radius": 10,
+        "tabs_menu_border_color": "#5e59ff",
+        "tabs_menu_border_width": 0,
+        "tabs_menu_border_style": "solid",
+        "tabs_menu_border_radius": 10,
+        "enable_shadow": true,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 4,
+        "shadow_blur": 18,
+        "shadow_spread": -5,
+        "shadow_opacity": 0.3,
+        "shadow_color": "#cccccc",
+        "tabs_header_padding_top": 20,
+        "tabs_header_padding_bottom": 20,
+        "section_margin_top": 20,
+        "section_background_color": "#ffffff"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "none",
+        "enable_filtering": false,
+        "filter_type": "vertical",
+        "enable_sorting": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_tyLpe6": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "cheveux-boucles",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "rich_text_YHeCRf",
+    "banner",
+    "icon_blocks_bVkMrM",
+    "double_section_hTMY4X",
+    "tabs_LFwtrB",
+    "product-grid",
+    "featured_collection_tyLpe6"
+  ]
+}

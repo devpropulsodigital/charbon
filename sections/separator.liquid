@@ -1,0 +1,407 @@
+{%- assign svg_separator = section.settings.svg_separator -%}
+{%- assign svg_color = section.settings.svg_color -%}
+{%- assign solid_color = section.settings.solid_color -%}
+{%- assign use_gradient = section.settings.use_gradient -%}
+{%- assign background_gradient = section.settings.background_gradient -%}
+{%- assign invert_separator = section.settings.invert_separator | default: "no" -%}
+{%- assign absolute_position = section.settings.absolute_position | default: "no" -%}
+{%- assign padding_top_value = section.settings.padding_top_value | default: 0 -%}
+{%- assign padding_bottom_value = section.settings.padding_bottom_value | default: 0 -%}
+{%- assign padding_top_mobile = section.settings.padding_top_mobile | default: 0 -%}
+{%- assign padding_bottom_mobile = section.settings.padding_bottom_mobile | default: 0 -%}
+{%- assign margin_top_value = section.settings.margin_top_value | default: 0 -%}
+{%- assign margin_bottom_value = section.settings.margin_bottom_value | default: 0 -%}
+{%- assign margin_top_mobile = section.settings.margin_top_mobile | default: 0 -%}
+{%- assign margin_bottom_mobile = section.settings.margin_bottom_mobile | default: 0 -%}
+{%- assign svg_height = section.settings.svg_height | default: 80 -%}
+{%- assign svg_height_mobile = section.settings.svg_height_mobile | default: 50 -%}
+
+<div class="separator-section-{{ section.id }} content-for-grouping animate-section animate--hidden {% if section.settings.mobile-hidden %} mobile-hidden {% endif %} {% if section.settings.tablet-hidden %} tablet-hidden {% endif %} {% if section.settings.laptop-hidden %} laptop-hidden {% endif %} {% if section.settings.desktop-hidden %} desktop-hidden {% endif %}">
+  {% if section.settings.display_id %}
+    <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
+      <span class="copy-text">Cliquez pour copier l'ID de la section</span>
+      <span class="copy-success">ID de la section copié !</span>
+    </copy-button>
+  {% endif %}
+  <div class="svg-separator-{{ section.id }}">
+    <svg viewBox="0 0 1000 100" width="100%" height="auto" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      
+      {%- case svg_separator -%}
+        {%- when 'divider-style-1.svg' -%}
+          {{ 'divider-style-1.svg' | inline_asset_content }}
+        {%- when 'divider-style-2.svg' -%}
+          {{ 'divider-style-2.svg' | inline_asset_content }}
+        {%- when 'divider-style-3.svg' -%}
+          {{ 'divider-style-3.svg' | inline_asset_content }}
+        {%- when 'divider-style-4.svg' -%}
+          {{ 'divider-style-4.svg' | inline_asset_content }}
+        {%- when 'divider-style-5.svg' -%}
+          {{ 'divider-style-5.svg' | inline_asset_content }}
+        {%- when 'divider-style-6.svg' -%}
+          {{ 'divider-style-6.svg' | inline_asset_content }}
+        {%- when 'divider-style-7.svg' -%}
+          {{ 'divider-style-7.svg' | inline_asset_content }}
+        {%- when 'divider-style-8.svg' -%}
+          {{ 'divider-style-8.svg' | inline_asset_content }}
+        {%- when 'divider-style-9.svg' -%}
+          {{ 'divider-style-9.svg' | inline_asset_content }}
+        {%- when 'divider-style-10.svg' -%}
+          {{ 'divider-style-10.svg' | inline_asset_content }}
+        {%- when 'divider-style-11.svg' -%}
+          {{ 'divider-style-11.svg' | inline_asset_content }}
+        {%- when 'divider-style-12.svg' -%}
+          {{ 'divider-style-12.svg' | inline_asset_content }}
+        {%- when 'divider-style-13.svg' -%}
+          {{ 'divider-style-13.svg' | inline_asset_content }}
+        {%- when 'divider-style-14.svg' -%}
+          {{ 'divider-style-14.svg' | inline_asset_content }}
+        {%- when 'divider-style-15.svg' -%}
+          {{ 'divider-style-15.svg' | inline_asset_content }}
+        {%- when 'divider-style-16.svg' -%}
+          {{ 'divider-style-16.svg' | inline_asset_content }}
+        {%- when 'divider-style-17.svg' -%}
+          {{ 'divider-style-17.svg' | inline_asset_content }}
+        {%- when 'divider-style-18.svg' -%}
+          {{ 'divider-style-18.svg' | inline_asset_content }}
+        {%- when 'divider-style-19.svg' -%}
+          {{ 'divider-style-19.svg' | inline_asset_content }}
+        {%- when 'divider-style-20.svg' -%}
+          {{ 'divider-style-20.svg' | inline_asset_content }}
+        {%- when 'divider-style-21.svg' -%}
+          {{ 'divider-style-21.svg' | inline_asset_content }}
+        {%- when 'divider-style-22.svg' -%}
+          {{ 'divider-style-22.svg' | inline_asset_content }}
+        {%- when 'divider-style-23.svg' -%}
+          {{ 'divider-style-23.svg' | inline_asset_content }}
+        {%- when 'divider-style-24.svg' -%}
+          {{ 'divider-style-24.svg' | inline_asset_content }}
+        {%- when 'divider-style-25.svg' -%}
+          {{ 'divider-style-25.svg' | inline_asset_content }}
+        {%- else -%}
+          {{ 'divider-style-1.svg' | inline_asset_content }}
+      {%- endcase -%}
+      
+    </svg>
+  </div>
+</div>
+
+
+{%- style -%}
+.separator-section-{{ section.id }} {
+  {% if use_gradient == 'yes' %}
+    background-image: {{ background_gradient }};
+  {% else %}
+    background-color: {{ solid_color }};
+  {% endif %}
+  {% if invert_separator == 'yes' %}
+    transform: rotate(180deg);
+  {% else %}
+    transform: rotate(0deg);
+  {% endif %}
+  {% if absolute_position == 'enabled' %}
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    bottom: 0px;
+  {% endif %}
+}
+
+.svg-separator-{{ section.id }} {
+  fill: {{ svg_color }};
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.svg-separator-{{ section.id }} svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: {{ svg_height }}px;
+    {% if section.settings.flip_svg == 'yes' %}
+      transform: rotateY(180deg);
+    {% endif %}
+}
+
+  @media (max-width: 768px) {
+.svg-separator-{{ section.id }} svg {
+    height: {{ svg_height_mobile }}px;
+  }
+}
+
+#shopify-section-{{ section.id }} {
+  position: relative;
+  margin-top: {{ margin_top_value }}px;
+  margin-bottom: {{ margin_bottom_value }}px;
+  padding-top: {{ padding_top_value }}px;
+  padding-bottom: {{ padding_bottom_value }}px;
+}
+
+@media (max-width: 768px) {
+  #shopify-section-{{ section.id }} {
+    margin-top: {{ margin_top_mobile }}px;
+    margin-bottom: {{ margin_bottom_mobile }}px;
+    padding-top: {{ padding_top_mobile }}px;
+    padding-bottom: {{ padding_bottom_mobile }}px;
+  }
+}
+{%- endstyle -%}
+
+
+
+
+
+
+{% schema %}
+{
+  "name": "Séparateur",
+  "settings": [
+      {
+      "type": "header",
+      "content": "ID de la section"
+      },
+      {
+      "type": "checkbox",
+      "id": "display_id",
+      "label": "Afficher le bouton pour copier l'ID de la section",
+      "info": "L'ID peut être utilisé dans la section 'Double section' pour afficher 2 sections sur la même ligne ou dans la section 'Onglets' pour afficher la section dans des onglets. L'ID peut également être utilisé dans un lien de bouton pour faire défiler la page jusqu'à cette section.",
+      "default": false
+      },
+      {
+      "type": "header",
+      "content": "Masquer la section selon le type d'appareil"
+      },
+      {
+        "type": "checkbox",
+        "id": "mobile-hidden",
+        "label": "Masquer sur mobile",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "tablet-hidden",
+        "label": "Masquer sur tablette",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "laptop-hidden",
+        "label": "Masquer sur ordinateur portable",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "desktop-hidden",
+        "label": "Masquer sur ordinateur",
+        "default": false
+      },
+    {
+      "type": "header",
+      "content": "Paramètres de la section"
+      },
+    {
+      "type": "select",
+      "id": "svg_separator",
+      "label": "Choisissez un séparateur",
+      "options": [
+        { "value": "divider-style-1.svg", "label": "Séparateur 1" },
+        { "value": "divider-style-2.svg", "label": "Séparateur 2" },
+        { "value": "divider-style-3.svg", "label": "Séparateur 3" },
+        { "value": "divider-style-4.svg", "label": "Séparateur 4" },
+        { "value": "divider-style-5.svg", "label": "Séparateur 5" },
+        { "value": "divider-style-6.svg", "label": "Séparateur 6" },
+        { "value": "divider-style-7.svg", "label": "Séparateur 7" },
+        { "value": "divider-style-8.svg", "label": "Séparateur 8" },
+        { "value": "divider-style-9.svg", "label": "Séparateur 9" },
+        { "value": "divider-style-10.svg", "label": "Séparateur 10" },
+        { "value": "divider-style-11.svg", "label": "Séparateur 11" },
+        { "value": "divider-style-12.svg", "label": "Séparateur 12" },
+        { "value": "divider-style-13.svg", "label": "Séparateur 13" },
+        { "value": "divider-style-14.svg", "label": "Séparateur 14" },
+        { "value": "divider-style-15.svg", "label": "Séparateur 15" },
+        { "value": "divider-style-16.svg", "label": "Séparateur 16" },
+        { "value": "divider-style-17.svg", "label": "Séparateur 17" },
+        { "value": "divider-style-18.svg", "label": "Séparateur 18" },
+        { "value": "divider-style-19.svg", "label": "Séparateur 19" },
+        { "value": "divider-style-20.svg", "label": "Séparateur 20" },
+        { "value": "divider-style-21.svg", "label": "Séparateur 21" },
+        { "value": "divider-style-22.svg", "label": "Séparateur 22" },
+        { "value": "divider-style-23.svg", "label": "Séparateur 23" },
+        { "value": "divider-style-24.svg", "label": "Séparateur 24" },
+        { "value": "divider-style-25.svg", "label": "Séparateur 25" }
+      ],
+      "default": "divider-style-1.svg"
+    },
+    {
+      "type": "select",
+      "id": "invert_separator",
+      "label": "Effectuer une rotation de 180°",
+      "options": [
+        { "value": "yes", "label": "Oui" },
+        { "value": "no", "label": "Non" }
+      ],
+      "default": "no"
+    },
+    {
+      "type": "select",
+      "id": "flip_svg",
+      "label": "Effet miroir horizontal",
+      "options": [
+        { "value": "yes", "label": "Oui" },
+        { "value": "no", "label": "Non" }
+      ],
+      "default": "no"
+    },
+    {
+      "type": "select",
+      "id": "absolute_position",
+      "label": "Activer le chevauchement avec la section au dessus",
+      "options": [
+        { "value": "enabled", "label": "Oui" },
+        { "value": "disabled", "label": "Non" }
+      ],
+      "default": "disabled"
+    },
+    {
+      "type": "range",
+      "id": "svg_height",
+      "label": "Hauteur du séparateur",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "svg_height_mobile",
+      "label": "Hauteur du séparateur sur mobile",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Couleur"
+    },
+    {
+      "type": "color",
+      "id": "svg_color",
+      "label": "Couleur du séparateur",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "solid_color",
+      "label": "Couleur du fond",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "use_gradient",
+      "label": "Appliquer un dégradé pour le fond",
+      "options": [
+        { "value": "yes", "label": "Oui" },
+        { "value": "no", "label": "Non" }
+      ],
+      "default": "no"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Dégradé du fond de la section",
+      "default": "linear-gradient(180deg, rgba(216, 248, 255, 1), rgba(255, 255, 255, 1) 100%)"
+    },
+    {
+      "type": "header",
+      "content": "Marge extérieure"
+    },
+    {
+      "type": "range",
+      "id": "margin_top_value",
+      "label": "Marge supérieure",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_value",
+      "label": "Marge inférieure",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "margin_top_mobile",
+      "label": "Marge supérieure sur mobile",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_mobile",
+      "label": "Marge inférieure sur mobile",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Marge intérieure"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_value",
+      "label": "Marge supérieure",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_value",
+      "label": "Marge inférieure",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Marge supérieure sur mobile",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Marge inférieure sur mobile",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "default": 0
+    },
+  ],
+  "presets": [
+    {
+      "name": "Séparateur",
+      "category": "Custom"
+    }
+  ]
+}
+
+{% endschema %}
+

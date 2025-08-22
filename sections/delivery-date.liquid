@@ -1,0 +1,1073 @@
+{%- liquid
+  assign delivery_position = section.settings.delivery_position
+  assign icon_svg_size_desktop = section.settings.icon_svg_size_desktop
+  assign circle_size_desktop = section.settings.circle_size_desktop
+  assign icon_svg_size_mobile = section.settings.icon_svg_size_mobile
+  assign circle_size_mobile = section.settings.circle_size_mobile
+  assign icon_color = section.settings.icon_color
+  assign icon_bg_color = section.settings.icon_bg_color
+  assign line_color = section.settings.line_color
+  assign date_format = section.settings.date_format
+  assign date_font = section.settings.date_font
+  assign date_color = section.settings.date_color
+  assign date_size = section.settings.date_size
+  assign date_line_height = section.settings.date_line_height
+  assign date_margin_top = section.settings.date_margin_top
+  assign step_font = section.settings.step_font
+  assign step_color = section.settings.step_color
+  assign step_size = section.settings.step_size
+  assign step_line_height = section.settings.step_line_height
+  assign step_margin_top = section.settings.step_margin_top
+  assign font_family = section.settings.font_family
+-%}
+
+{%- style -%}
+
+  {{ section.settings.date_font | font_face: font_display: 'swap' }}
+  {{ section.settings.step_font | font_face: font_display: 'swap' }}
+  {{ section.settings.font_family | font_face: font_display: 'swap' }}
+  
+  .delivery-widget {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+    margin-top: {{ section.settings.widget_margin_top }}px;
+    margin-bottom: {{ section.settings.widget_margin_bottom }}px;
+    background-color: {{ section.settings.widget_background_color }}; 
+    padding-top: {{ section.settings.widget_padding_top }}px; 
+    padding-bottom: {{ section.settings.widget_padding_bottom }}px; 
+    padding-left: {{ section.settings.widget_padding_sides }}px; 
+    padding-right: {{ section.settings.widget_padding_sides }}px; 
+    margin-left: {{ section.settings.widget_margin_sides }}px;
+    margin-right: {{ section.settings.widget_margin_sides }}px;
+    border: {{ section.settings.widget_border_width }}px solid {{ section.settings.widget_border_color }};
+    border-radius: {{ section.settings.widget_border_radius }}px;
+    {% if section.settings.enable_shadow %}
+      box-shadow: {{ section.settings.shadow_horizontal_offset }}px {{ section.settings.shadow_vertical_offset }}px {{ section.settings.shadow_blur_radius }}px {{ section.settings.shadow_spread_radius }}px rgba({{ section.settings.shadow_color | color_extract: 'red' }}, {{ section.settings.shadow_color | color_extract: 'green' }}, {{ section.settings.shadow_color | color_extract: 'blue' }}, {{ section.settings.shadow_opacity }});
+    {% else %}
+      box-shadow: none;
+    {% endif %}
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .delivery-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex: 1;
+  }
+
+  .delivery-step.step-1 {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .delivery-step.step-2 {
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .delivery-step.step-3 {
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .delivery-icon {
+    background-color: {{ icon_bg_color }};
+    width: {{ circle_size_desktop }}px;
+    height: {{ circle_size_desktop }}px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .delivery-icon svg {
+    width: {{ icon_svg_size_desktop }}%;
+    height: auto;
+    fill: {{ icon_color }};
+  }
+
+  .delivery-line {
+    display: block !important;
+    position: absolute;
+    top: calc({{ circle_size_desktop }}px / 2); 
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: {{ line_color }};
+    z-index: 1; 
+  }
+
+  {% if section.settings.date_font_custom %}
+          .delivery-date {
+            font-family: {{ date_font.family }}; {{ date_font.family.fallback_families }};
+            font-style: {{ date_font.style }};
+            font-weight: {{ date_font.weight }};
+          }
+  {% endif %} 
+  
+  .delivery-date {
+    color: {{ date_color }};
+    font-size: {{ date_size }}px;
+    line-height: {{ date_line_height }}px;
+    margin-top: {{ date_margin_top }}px;
+    margin-bottom: 0px;
+  }
+
+  {% if section.settings.step_font_custom %}
+  .delivery-step-title {
+     font-family: {{ step_font.family }}; {{ step_font.family.fallback_families }};
+     font-style: {{ step_font.style }};
+     font-weight: {{ step_font.weight }};
+   }
+ {% endif %}
+  
+  .delivery-step-title {
+    color: {{ step_color }};
+    font-size: {{ step_size }}px;
+    margin-top: {{ step_margin_top }}px;
+    line-height: {{ step_line_height }}px;
+  }
+
+  @media (max-width: 767px) {
+    .delivery-icon {
+      width: {{ circle_size_mobile }}px;
+      height: {{ circle_size_mobile }}px;
+      z-index: 2;
+    }
+
+    .delivery-icon svg {
+      width: {{ icon_svg_size_mobile }}%;
+    }
+
+    .delivery-line {
+      top: calc({{ circle_size_mobile }}px / 2); 
+    }
+  }
+ 
+    .custom-delivery-text {
+        color: {{ section.settings.text_color }};
+        font-size: {{ section.settings.text_size }}px;
+        line-height: {{ section.settings.text_line_height }}px;
+        text-align: {{ section.settings.text_alignment }};
+        margin: 0;
+      }
+
+     {% if section.settings.font_family_custom %}
+          .custom-delivery-text {
+            font-family: {{ section.settings.font_family.family }};
+            font-style: {{ section.settings.font_family.style }};
+            font-weight: {{ section.settings.font_family.weight }};
+          }
+      {% endif %}  
+  
+{%- endstyle -%}
+
+   {% if section.settings.font_family_custom %}
+        <style>
+          .custom-delivery-text {
+            font-family: {{ font_family.family }}; {{ font_family.family.fallback_families }};
+            font-style: {{ font_family.style }};
+            font-weight: {{ font_family.weight }};
+          }
+        </style>
+    {% endif %}  
+
+
+
+<template id="delivery-date-{{ section.id }}">
+ {% if section.settings.display_id %}
+    <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
+      <span class="copy-text">Cliquez pour copier l'ID de la section</span>
+      <span class="copy-success">ID de la section copié !</span>
+    </copy-button>
+  {% endif %} 
+  <div class="delivery-widget content-for-grouping {% if section.settings.mobile-hidden %} mobile-hidden {% endif %} {% if section.settings.tablet-hidden %} tablet-hidden {% endif %} {% if section.settings.laptop-hidden %} laptop-hidden {% endif %} {% if section.settings.desktop-hidden %} desktop-hidden {% endif %}" >
+    {% assign current_max_date = 'now' | date: '%s' %}
+
+    <!-- Ajout d'un choix de mode d'affichage -->
+    {% if section.settings.display_mode == 'steps' %}
+    
+      <!-- Affichage par étapes -->
+      {% for step in section.blocks %}
+        <div class="delivery-step {% if forloop.index == 1 %}step-1{% elsif forloop.index == 2 %}step-2{% elsif forloop.index == 3 %}step-3{% endif %}">
+          
+          <!-- Icône abrégée pour optimiser le code -->
+          <div class="delivery-icon">
+            {% if step.settings.icon_image != blank %}
+              <!-- Image personnalisée pour l'étape -->
+              <img src="{{ step.settings.icon_image | img_url: '100x' }}" alt="Custom Icon" style="width: {{ step.settings.icon_image_width }}%;">
+            {% else %}
+              <!-- Icône SVG par défaut si aucune image personnalisée n'est sélectionnée -->
+              {% if forloop.index == 1 %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="bi bi-bag-check">
+                  <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                </svg>
+              {% elsif forloop.index == 2 %}
+                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="139.636" cy="384" r="11.636"/>
+                  <circle cx="407.273" cy="384" r="11.636"/>
+                  <path d="M498.036,262.982l-34.909-25.6l-33.745-101.236c-1.164-4.655-5.818-8.145-10.473-8.145H314.182
+                  c-6.982,0-11.636,4.655-11.636,11.636v232.727H196.655c-5.818-26.764-29.091-46.545-57.018-46.545
+                  c-27.927,0-51.2,19.782-57.018,46.545H34.909c-6.982,0-11.636-4.655-11.636-11.636v-256c0-6.982,4.655-11.636,11.636-11.636
+                  h267.636c0,6.982,4.655,11.636,11.636,11.636s11.636-4.655,11.636-11.636V81.455c0-6.982-4.655-11.636-11.636-11.636H34.909
+                  C15.127,69.818,0,84.945,0,104.727v256c0,19.782,15.127,34.909,34.909,34.909h47.709c5.818,26.764,29.091,46.545,57.018,46.545
+                  c27.927,0,51.2-19.782,57.018-46.545h117.527c6.982,0,11.636-4.655,11.636-11.636V151.273h84.945l26.764,81.455h-23.273
+                  l3.491-6.982c2.327-5.818,0-12.8-4.655-15.127c-4.655-2.327-12.8,0-15.127,4.655l-9.309,17.455h-27.927
+                  c-6.982,0-11.636,4.655-11.636,11.636S353.745,256,360.727,256h89.6l33.745,25.6c2.327,2.327,4.655,5.818,4.655,9.309v69.818
+                  c0,6.982-4.655,11.636-11.636,11.636h-12.8c-5.818-26.764-29.091-46.545-57.018-46.545c-32.582,0-58.182,25.6-58.182,58.182
+                  c0,32.582,25.6,58.182,58.182,58.182c27.927,0,51.2-19.782,57.018-46.545h12.8c19.782,0,34.909-15.127,34.909-34.909v-69.818
+                  C512,280.436,507.345,269.964,498.036,262.982z"/>
+                </svg>
+              {% elsif forloop.index == 3 %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="bi bi-geo-alt">
+                  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg>
+              {% endif %}
+            {% endif %}
+          </div>
+          
+          <div class="delivery-line"></div>
+
+          <!-- Calcul des dates pour cette étape -->
+          {%- assign min_days = step.settings.min_days | times: 86400 -%}
+          {%- assign max_days = step.settings.max_days | times: 86400 -%}
+          {%- assign extra_min_days = 0 -%}
+          {%- assign extra_max_days = 0 -%}
+          {%- assign include_weekends = step.settings.include_weekends -%}
+          
+          <!-- Ajout de jours si les week-ends sont exclus -->
+          {%- if include_weekends == false -%}
+            {% assign total_extra_min_days = 0 %}
+            {% assign total_extra_max_days = 0 %}
+          
+            <!-- Calcul des jours supplémentaires pour le min_days -->
+            {%- for i in (0..step.settings.min_days) %}
+              {% assign adjusted_i = i | plus: total_extra_min_days %}
+              {%- assign day_in_seconds = adjusted_i | times: 86400 -%}
+              {%- assign future_day = current_max_date | plus: day_in_seconds -%}
+              {%- assign wday = future_day | date: '%u' %}
+              <!-- Si samedi (6), ajouter deux jours, si dimanche (7), ajouter un jour -->
+              {%- if wday == '6' %}
+                {%- assign total_extra_min_days = total_extra_min_days | plus: 2 %}
+              {%- elsif wday == '7' %}
+                {%- assign total_extra_min_days = total_extra_min_days | plus: 1 %}
+              {%- endif %}
+            {%- endfor %}
+            {% assign extra_min_days = total_extra_min_days %}
+          
+            <!-- Calcul des jours supplémentaires pour le max_days -->
+            {%- for i in (0..step.settings.max_days) %}
+              {% assign adjusted_i = i | plus: total_extra_max_days %}
+              {%- assign day_in_seconds = adjusted_i | times: 86400 -%}
+              {%- assign future_day = current_max_date | plus: day_in_seconds -%}
+              {%- assign wday = future_day | date: '%u' %}
+              <!-- Si samedi (6), ajouter deux jours, si dimanche (7), ajouter un jour -->
+              {%- if wday == '6' %}
+                {%- assign total_extra_max_days = total_extra_max_days | plus: 2 %}
+              {%- elsif wday == '7' %}
+                {%- assign total_extra_max_days = total_extra_max_days | plus: 1 %}
+              {%- endif %}
+            {%- endfor %}
+            {% assign extra_max_days = total_extra_max_days %}
+          {%- endif %}
+          
+          <!-- Calcul des dates finales -->
+          {% assign extra_min_days_in_seconds = extra_min_days | times: 86400 %}
+          {% assign final_min_date_in_seconds = current_max_date | plus: min_days | plus: extra_min_days_in_seconds %}
+          {% assign extra_max_days_in_seconds = extra_max_days | times: 86400 %}
+          {% assign final_max_date_in_seconds = current_max_date | plus: max_days | plus: extra_max_days_in_seconds %}
+          
+          <!-- Si enable_range est activé -->
+          {%- if step.settings.enable_range %}
+            {% assign final_max_date_in_seconds = current_max_date | plus: max_days | plus: extra_max_days_in_seconds %}
+            {% assign final_max_date = final_max_date_in_seconds | date: date_format %}
+            {% assign current_max_date = final_max_date_in_seconds %}
+          {%- else %}
+            {% assign final_max_date = final_min_date %}
+            {% assign current_max_date = final_min_date_in_seconds %}
+          {%- endif %}
+
+          <!-- Affichage des dates pour l'étape -->
+          <p class="delivery-date">
+            {%- if section.settings.date_format_type == "dd/MM" -%}
+              {% assign final_min_date = final_min_date_in_seconds | date: "%d/%m" %}
+              {% assign final_max_date = final_max_date_in_seconds | date: "%d/%m" %}
+            {%- else -%}
+              {% assign final_min_date = final_min_date_in_seconds | date: "%d %b" %}
+              {% assign final_max_date = final_max_date_in_seconds | date: "%d %b" %}
+          
+              {% if shop.locale == 'fr' %}
+                {% assign final_min_date = final_min_date | replace: 'Janv', 'Janv' | replace: 'Fév', 'Févr' | replace: 'Mar', 'Mars' | replace: 'Avr', 'Avr' | replace: 'Mai', 'Mai' | replace: 'Jui', 'Juin' | replace: 'Jui', 'Juil' | replace: 'Aoû', 'Août' | replace: 'Sep', 'Sept' | replace: 'Oct', 'Oct' | replace: 'Nov', 'Nov' | replace: 'Déc', 'Déc' %}
+                {% assign final_max_date = final_max_date | replace: 'Janv', 'Janv' | replace: 'Fév', 'Févr' | replace: 'Mar', 'Mars' | replace: 'Avr', 'Avr' | replace: 'Mai', 'Mai' | replace: 'Jui', 'Juin' | replace: 'Jui', 'Juil' | replace: 'Aoû', 'Août' | replace: 'Sep', 'Sept' | replace: 'Oct', 'Oct' | replace: 'Nov', 'Nov' | replace: 'Déc', 'Déc' %}
+              {% elsif shop.locale == 'en' %}
+                {% assign final_min_date = final_min_date | replace: 'Jan', 'Janu' | replace: 'Feb', 'Febr' | replace: 'Mar', 'Marc' | replace: 'Apr', 'Apri' | replace: 'May', 'May' | replace: 'Jun', 'June' | replace: 'Jul', 'July' | replace: 'Aug', 'Augu' | replace: 'Sep', 'Sept' | replace: 'Oct', 'Octo' | replace: 'Nov', 'Nove' | replace: 'Dec', 'Dece' %}
+                {% assign final_max_date = final_max_date | replace: 'Jan', 'Janu' | replace: 'Feb', 'Febr' | replace: 'Mar', 'Marc' | replace: 'Apr', 'Apri' | replace: 'May', 'May' | replace: 'Jun', 'June' | replace: 'Jul', 'July' | replace: 'Aug', 'Augu' | replace: 'Sep', 'Sept' | replace: 'Oct', 'Octo' | replace: 'Nov', 'Nove' | replace: 'Dec', 'Dece' %}
+              {% elsif shop.locale == 'es' %}
+                {% assign final_min_date = final_min_date | replace: 'Ene', 'Ener' | replace: 'Feb', 'Febr' | replace: 'Mar', 'Marz' | replace: 'Abr', 'Abri' | replace: 'May', 'Mayo' | replace: 'Jun', 'Juni' | replace: 'Jul', 'Juli' | replace: 'Ago', 'Agos' | replace: 'Sep', 'Sept' | replace: 'Oct', 'Octu' | replace: 'Nov', 'Novi' | replace: 'Dic', 'Dici' %}
+                {% assign final_max_date = final_max_date | replace: 'Ene', 'Ener' | replace: 'Feb', 'Febr' | replace: 'Mar', 'Marz' | replace: 'Abr', 'Abri' | replace: 'May', 'Mayo' | replace: 'Jun', 'Juni' | replace: 'Jul', 'Juli' | replace: 'Ago', 'Agos' | replace: 'Sep', 'Sept' | replace: 'Oct', 'Octu' | replace: 'Nov', 'Novi' | replace: 'Dic', 'Dici' %}
+              {% elsif shop.locale == 'it' %}
+                {% assign final_min_date = final_min_date | replace: 'Gen', 'Genn' | replace: 'Feb', 'Febb' | replace: 'Mar', 'Marz' | replace: 'Apr', 'Apri' | replace: 'Mag', 'Magg' | replace: 'Giu', 'Giug' | replace: 'Lug', 'Lugl' | replace: 'Ago', 'Agos' | replace: 'Set', 'Sett' | replace: 'Ott', 'Otto' | replace: 'Nov', 'Nove' | replace: 'Dic', 'Dici' %}
+                {% assign final_max_date = final_max_date | replace: 'Gen', 'Genn' | replace: 'Feb', 'Febb' | replace: 'Mar', 'Marz' | replace: 'Apr', 'Apri' | replace: 'Mag', 'Magg' | replace: 'Giu', 'Giug' | replace: 'Lug', 'Lugl' | replace: 'Ago', 'Agos' | replace: 'Set', 'Sett' | replace: 'Ott', 'Otto' | replace: 'Nov', 'Nove' | replace: 'Dic', 'Dici' %}
+              {% endif %}
+            {%- endif -%}
+          
+            {{ final_min_date }}{% if step.settings.enable_range %} - {{ final_max_date }}{% endif %}
+          </p>
+
+          <p class="delivery-step-title">{{ step.settings.title }}</p>
+
+        </div>
+      {% endfor %}
+    
+    {% else %}
+
+            <!-- Initialisation de la date actuelle -->
+      {% assign current_date = 'now' | date: '%s' %}
+      
+      <!-- Calcul des étapes 1 et 2 pour mettre à jour la date courante -->
+      {% for step in section.blocks limit:2 %}
+        {% assign min_days = step.settings.min_days | times: 86400 %}
+        {% assign max_days = step.settings.max_days | times: 86400 %}
+        {% assign extra_min_days = 0 %}
+        {% assign extra_max_days = 0 %}
+        {% assign include_weekends = step.settings.include_weekends %}
+      
+        <!-- Ajout de jours si les week-ends sont exclus pour les étapes 1 et 2 -->
+        {%- if include_weekends == false -%}
+          {% assign total_extra_days = 0 %}
+          {% for i in (0..step.settings.min_days) %}
+            {% assign adjusted_i = i | plus: total_extra_days %}
+            {%- assign day_in_seconds = adjusted_i | times: 86400 -%}
+            {%- assign future_day = current_date | plus: day_in_seconds -%}
+            {%- assign wday = future_day | date: '%u' %}
+            <!-- Sauter le week-end : si samedi (6) ou dimanche (7), ajouter des jours supplémentaires -->
+            {%- if wday == '6' %}
+              {%- assign total_extra_days = total_extra_days | plus: 2 %}
+            {%- elsif wday == '7' %}
+              {%- assign total_extra_days = total_extra_days | plus: 1 %}
+            {%- endif %}
+          {%- endfor %}
+          {% assign extra_min_days = total_extra_days %}
+          
+          {% assign total_extra_days = 0 %}
+          {% for i in (0..step.settings.max_days) %}
+            {% assign adjusted_i = i | plus: total_extra_days %}
+            {%- assign day_in_seconds = adjusted_i | times: 86400 -%}
+            {%- assign future_day = current_date | plus: day_in_seconds -%}
+            {%- assign wday = future_day | date: '%u' %}
+            {%- if wday == '6' %}
+              {%- assign total_extra_days = total_extra_days | plus: 2 %}
+            {%- elsif wday == '7' %}
+              {%- assign total_extra_days = total_extra_days | plus: 1 %}
+            {%- endif %}
+          {%- endfor %}
+          {% assign extra_max_days = total_extra_days %}
+        {%- endif %}
+      
+        <!-- Mise à jour de la date courante pour l'étape suivante -->
+        {% assign extra_min_days_in_seconds = extra_min_days | times: 86400 %}
+        {% assign extra_max_days_in_seconds = extra_max_days | times: 86400 %}
+        {% assign current_min_date = current_date | plus: min_days | plus: extra_min_days_in_seconds %}
+        {% assign current_max_date = current_date | plus: max_days | plus: extra_max_days_in_seconds %}
+        {% assign current_date = current_max_date %}
+      {% endfor %}
+      
+      <!-- Calcul des dates pour la dernière étape (étape 3) -->
+      {% assign last_step = section.blocks[2] %}
+      {% assign final_min_days = last_step.settings.min_days %}
+      {% assign final_max_days = last_step.settings.max_days %}
+      {% assign final_include_weekends = last_step.settings.include_weekends %}
+      
+      <!-- Calcul des dates pour l'étape 3 -->
+      {%- assign min_days = final_min_days | times: 86400 -%}
+      {%- assign max_days = final_max_days | times: 86400 -%}
+      {%- assign extra_min_days = 0 -%}
+      {%- assign extra_max_days = 0 -%}
+      
+      <!-- Ajout de jours si les week-ends sont exclus pour l'étape 3 -->
+      {%- if final_include_weekends == false -%}
+        {% assign total_extra_days = 0 %}
+        {%- for i in (0..final_min_days) %}
+          {% assign adjusted_i = i | plus: total_extra_days %}
+          {%- assign day_in_seconds = adjusted_i | times: 86400 -%}
+          {%- assign future_day = current_date | plus: day_in_seconds -%}
+          {%- assign wday = future_day | date: '%u' %}
+          {%- if wday == '6' %}
+            {%- assign total_extra_days = total_extra_days | plus: 2 %}
+          {%- elsif wday == '7' %}
+            {%- assign total_extra_days = total_extra_days | plus: 1 %}
+          {%- endif %}
+        {%- endfor %}
+        {% assign extra_min_days = total_extra_days %}
+        
+        {% assign total_extra_days = 0 %}
+        {%- for i in (0..final_max_days) %}
+          {% assign adjusted_i = i | plus: total_extra_days %}
+          {%- assign day_in_seconds = adjusted_i | times: 86400 -%}
+          {%- assign future_day = current_date | plus: day_in_seconds -%}
+          {%- assign wday = future_day | date: '%u' %}
+          {%- if wday == '6' %}
+            {%- assign total_extra_days = total_extra_days | plus: 2 %}
+          {%- elsif wday == '7' %}
+            {%- assign total_extra_days = total_extra_days | plus: 1 %}
+          {%- endif %}
+        {%- endfor %}
+        {% assign extra_max_days = total_extra_days %}
+      {%- endif %}
+      
+      <!-- Calcul des dates finales pour l'étape 3 -->
+      {% assign extra_min_days_in_seconds = extra_min_days | times: 86400 %}
+      {% assign final_min_date_in_seconds = current_date | plus: min_days | plus: extra_min_days_in_seconds %}
+      {% assign extra_max_days_in_seconds = extra_max_days | times: 86400 %}
+      {% assign final_max_date_in_seconds = current_date | plus: max_days | plus: extra_max_days_in_seconds %}
+      
+      <!-- Conversion des dates finales au format choisi selon la configuration -->
+      {% if section.settings.date_format_type == "dd/MM" %}
+        {% assign final_min_date = final_min_date_in_seconds | date: "%d/%m" %}
+        {% assign final_max_date = final_max_date_in_seconds | date: "%d/%m" %}
+      {% else %}
+        {% assign final_min_date = final_min_date_in_seconds | date: "%d %b" %}
+        {% assign final_max_date = final_max_date_in_seconds | date: "%d %b" %}
+        
+        <!-- Ajustement selon la locale du magasin -->
+        {% if shop.locale == 'fr' %}
+          {% assign final_min_date = final_min_date | replace: 'Janv', 'Janv' | replace: 'Fév', 'Févr' | replace: 'Mar', 'Mars' | replace: 'Avr', 'Avr' | replace: 'Mai', 'Mai' | replace: 'Jui', 'Juin' | replace: 'Jui', 'Juil' | replace: 'Aoû', 'Août' | replace: 'Sep', 'Sept' | replace: 'Oct', 'Oct' | replace: 'Nov', 'Nov' | replace: 'Déc', 'Déc' %}
+          {% assign final_max_date = final_max_date | replace: 'Janv', 'Janv' | replace: 'Fév', 'Févr' | replace: 'Mar', 'Mars' | replace: 'Avr', 'Avr' | replace: 'Mai', 'Mai' | replace: 'Jui', 'Juin' | replace: 'Jui', 'Juil' | replace: 'Aoû', 'Août' | replace: 'Sep', 'Sept' | replace: 'Oct', 'Oct' | replace: 'Nov', 'Nov' | replace: 'Déc', 'Déc' %}
+        {% elsif shop.locale == 'en' %}
+          {% assign final_min_date = final_min_date | replace: 'Jan', 'Janu' | replace: 'Feb', 'Febr' | replace: 'Mar', 'Marc' | replace: 'Apr', 'Apri' | replace: 'May', 'May' | replace: 'Jun', 'June' | replace: 'Jul', 'July' | replace: 'Aug', 'Augu' | replace: 'Sep', 'Sept' | replace: 'Oct', 'Octo' | replace: 'Nov', 'Nove' | replace: 'Dec', 'Dece' %}
+          {% assign final_max_date = final_max_date | replace: 'Jan', 'Janu' | replace: 'Feb', 'Febr' | replace: 'Mar', 'Marc' | replace: 'Apr', 'Apri' | replace: 'May', 'May' | replace: 'Jun', 'June' | replace: 'Jul', 'July' | replace: 'Aug', 'Augu' | replace: 'Sep', 'Sept' | replace: 'Oct', 'Octo' | replace: 'Nov', 'Nove' | replace: 'Dec', 'Dece' %}
+        {% elsif shop.locale == 'es' %}
+          {% assign final_min_date = final_min_date | replace: 'Ene', 'Ener' | replace: 'Feb', 'Febr' | replace: 'Mar', 'Marz' | replace: 'Abr', 'Abri' | replace: 'May', 'Mayo' | replace: 'Jun', 'Juni' | replace: 'Jul', 'Juli' | replace: 'Ago', 'Agos' | replace: 'Sep', 'Sept' | replace: 'Oct', 'Octu' | replace: 'Nov', 'Novi' | replace: 'Dic', 'Dici' %}
+          {% assign final_max_date = final_max_date | replace: 'Ene', 'Ener' | replace: 'Feb', 'Febr' | replace: 'Mar', 'Marz' | replace: 'Abr', 'Abri' | replace: 'May', 'Mayo' | replace: 'Jun', 'Juni' | replace: 'Jul', 'Juli' | replace: 'Ago', 'Agos' | replace: 'Sep', 'Sept' | replace: 'Oct', 'Octu' | replace: 'Nov', 'Novi' | replace: 'Dic', 'Dici' %}
+        {% elsif shop.locale == 'it' %}
+          {% assign final_min_date = final_min_date | replace: 'Gen', 'Genn' | replace: 'Feb', 'Febb' | replace: 'Mar', 'Marz' | replace: 'Apr', 'Apri' | replace: 'Mag', 'Magg' | replace: 'Giu', 'Giug' | replace: 'Lug', 'Lugl' | replace: 'Ago', 'Agos' | replace: 'Set', 'Sett' | replace: 'Ott', 'Otto' | replace: 'Nov', 'Nove' | replace: 'Dic', 'Dici' %}
+          {% assign final_max_date = final_max_date | replace: 'Gen', 'Genn' | replace: 'Feb', 'Febb' | replace: 'Mar', 'Marz' | replace: 'Apr', 'Apri' | replace: 'Mag', 'Magg' | replace: 'Giu', 'Giug' | replace: 'Lug', 'Lugl' | replace: 'Ago', 'Agos' | replace: 'Set', 'Sett' | replace: 'Ott', 'Otto' | replace: 'Nov', 'Nove' | replace: 'Dic', 'Dici' %}
+        {% endif %}
+      {% endif %}
+      
+      <!-- Affichage de la phrase unique avec les dates -->
+      <p class="delivery-date custom-delivery-text">
+        {{ section.settings.text_before_min_date }} {{ final_min_date }} {{ section.settings.text_after_min_date }} {{ final_max_date }}.
+      </p>
+    
+    {% endif %}
+  </div>
+</template>
+
+ <script>
+  (function () {
+    function moreLoadProductForm() {
+      var productForm = document.querySelector('#delivery-date');
+      if (!productForm){
+        var productForm = document.querySelector('{% if delivery_position == "below_title" or delivery_position == "above_title" %}.product__title{% elsif delivery_position == "below_description" %}.product__description{% else %}.button--add-to-cart, .product .product-form, .product-single__add-to-cart, .shopify-payment-button, .shopify-payment-button__button, .ProductForm__BuyButtons, .add-to-cart{% endif %}');
+        if (!productForm) return;
+      }
+      const templateContent = document.querySelector(
+        '#delivery-date-{{ section.id }}'
+      ).content;
+
+      productForm.insertAdjacentElement(
+        '{% if delivery_position == "below_buy" or delivery_position == "below_title" or delivery_position == "below_description" %}afterend{% else %}beforebegin{% endif %}',
+        templateContent.firstElementChild
+      );
+    }
+
+    window.addEventListener('DOMContentLoaded', moreLoadProductForm);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Date de livraison",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+      {
+      "type": "header",
+      "content": "INFO"
+      },
+      {
+      "type": "paragraph",
+      "content": "Enregistrez pour voir le bouton de l'ID et tout autres modifications"
+      },
+      {
+      "type": "header",
+      "content": "ID de la section"
+      },
+      {
+      "type": "checkbox",
+      "id": "display_id",
+      "label": "Afficher le bouton pour copier l'ID de la section",
+      "info": "L'ID peut être utilisé dans la section 'Double section' pour afficher 2 sections sur la même ligne ou dans la section 'Onglets' pour afficher la section dans des onglets. L'ID peut également être utilisé dans un lien de bouton pour faire défiler la page jusqu'à cette section.",
+      "default": false
+      },
+      {
+      "type": "header",
+      "content": "Masquer la section selon le type d'appareil"
+      },
+      {
+        "type": "checkbox",
+        "id": "mobile-hidden",
+        "label": "Masquer sur mobile",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "tablet-hidden",
+        "label": "Masquer sur tablette",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "laptop-hidden",
+        "label": "Masquer sur ordinateur portable",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "desktop-hidden",
+        "label": "Masquer sur ordinateur",
+        "default": false
+      },
+    {
+      "type": "header",
+      "content": "Paramètres de la section"
+      },
+    {
+  "type": "paragraph",
+  "content": "Pour placer cette section à un endroit spécifique dans la section 'Informations produits', suivez ces étapes :"
+    },
+    {
+      "type": "paragraph",
+      "content": "1. Ajoutez un bloc « Liquid personnalisé »"
+    },
+    {
+      "type": "paragraph",
+      "content": "2. Ajoutez ce code dans votre bloc : <div id='delivery-date'></div>"
+    },
+    {
+      "type": "paragraph",
+      "content": "3. Le widget de la date de livraison apparaîtra automatiquement à cet emplacement une fois que vous aurez enregistré les modifications"
+    },
+    {
+      "type": "paragraph",
+      "content": "Sinon utilisez le placement automatique ci-dessous pour le placer en dessous ou au dessus du bouton d'ajout au panier."
+    },
+    {
+      "type": "select",
+      "id": "delivery_position",
+      "label": "Position",
+      "default": "below_buy",
+      "options": [
+        { "value": "above_buy", "label": "Au dessus du bouton ajout au panier" },
+        { "value": "below_buy", "label": "En dessous du bouton ajout au panier" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "display_mode",
+      "label": "Mode d'affichage",
+      "default": "steps",
+      "options": [
+        { "value": "steps", "label": "3 étapes" },
+        { "value": "simple", "label": "Phrase" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Paramètres de la phrase"
+    },
+    {
+      "type": "text",
+      "id": "text_before_min_date",
+      "label": "Texte avant la date minimum",
+      "default": "Commandez aujourd'hui, recevez votre commande entre le"
+    },
+    {
+      "type": "text",
+      "id": "text_after_min_date",
+      "label": "Texte après la date minimum",
+      "default": "et le"
+    },
+    {
+       "type": "checkbox",
+       "id": "font_family_custom",
+       "label": "Appliquer une police différente du thème",
+       "default": false
+    },
+    {
+      "type": "font_picker",
+      "id": "font_family",
+      "label": "Police du texte",
+      "default": "poppins_n4"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Taille de la phrase",
+      "min": 12,
+      "max": 40,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "text_line_height",
+      "label": "Interligne de la phrase",
+      "min": 20,
+      "max": 60,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Alignement du texte",
+      "options": [
+        { "value": "left", "label": "Gauche" },
+        { "value": "center", "label": "Centre" },
+        { "value": "right", "label": "Droite" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Cercles et icônes"
+    },
+    {
+      "type": "range",
+      "id": "circle_size_desktop",
+      "label": "Taille du cercle (ordinateur)",
+      "default": 40,
+      "unit": "px",
+      "min": 10,
+      "max": 100
+    },
+    {
+      "type": "range",
+      "id": "icon_svg_size_desktop",
+      "label": "Taille de l'icône (ordinateur)",
+      "default": 50,
+      "unit": "%",
+      "min": 10,
+      "max": 100
+    },
+    {
+      "type": "range",
+      "id": "circle_size_mobile",
+      "label": "Taille du cercle (mobile)",
+      "default": 36,
+      "unit": "px",
+      "min": 10,
+      "max": 100
+    },
+    {
+      "type": "range",
+      "id": "icon_svg_size_mobile",
+      "label": "Taille de l'icône (mobile)",
+      "default": 50,
+      "unit": "%",
+      "min": 10,
+      "max": 100
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Couleur de l'icône",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "icon_bg_color",
+      "label": "Couleur de fond de l'icône",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "line_color",
+      "label": "Couleur de la ligne entre les étapes",
+      "default": "#000000"
+    },
+    
+    {
+      "type": "header",
+      "content": "Date"
+    },
+    {
+      "type": "select",
+      "id": "date_format_type",
+      "label": "Format de la date",
+      "default": "dd Mmmm",
+      "options": [
+        { "value": "dd/MM", "label": "24/09" },
+        { "value": "dd Mmmm", "label": "24 Sept" }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "date_font_custom",
+      "label": "Appliquer une police différente du thème",
+      "default": false
+     },
+    {
+      "type": "font_picker",
+      "id": "date_font",
+      "label": "Police de la date",
+      "default": "poppins_n4"
+    },
+    {
+      "type": "color",
+      "id": "date_color",
+      "label": "Couleur de la date",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "date_size",
+      "label": "Taille de la date",
+      "default": 12,
+      "unit": "px",
+      "min": 10,
+      "max": 30
+    },
+    {
+      "type": "range",
+      "id": "date_line_height",
+      "label": "Interligne de la date",
+      "default": 10,
+      "unit": "px",
+      "min": 10,
+      "max": 40
+    },
+    {
+      "type": "range",
+      "id": "date_margin_top",
+      "label": "Marge supérieure de la date",
+      "default": 15,
+      "unit": "px",
+      "min": 0,
+      "max": 30
+    }, 
+    {
+      "type": "header",
+      "content": "Étape"
+    },
+    {
+       "type": "checkbox",
+       "id": "step_font_custom",
+       "label": "Appliquer une police différente du thème",
+       "default": false
+    },
+    {
+      "type": "font_picker",
+      "id": "step_font",
+      "label": "Police de l'étape",
+      "default": "poppins_n4"
+    },
+    {
+      "type": "color",
+      "id": "step_color",
+      "label": "Couleur du texte de l'étape",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "step_size",
+      "label": "Taille du texte de l'étape",
+      "default": 12,
+      "unit": "px",
+      "min": 10,
+      "max": 30
+    },
+    {
+      "type": "range",
+      "id": "step_line_height",
+      "label": "Interligne du texte de l'étape",
+      "default": 12,
+      "unit": "px",
+      "min": 10,
+      "max": 40
+    },
+    {
+      "type": "range",
+      "id": "step_margin_top",
+      "label": "Marge supérieure du texte de l'étape",
+      "default": 5,
+      "unit": "px",
+      "min": 0,
+      "max": 30
+    },
+    {
+      "type": "header",
+      "content": "Marge extérieure"
+    },
+    {
+      "type": "range",
+      "id": "widget_margin_top",
+      "label": "Marge supérieure",
+      "default": 20,
+      "unit": "px",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "type": "range",
+      "id": "widget_margin_bottom",
+      "label": "Marge inférieure",
+      "default": 20,
+      "unit": "px",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "type": "range",
+      "id": "widget_margin_sides",
+      "label": "Marge latérale",
+      "default": 0,
+      "unit": "px",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "type": "header",
+      "content": "Marge intérieure"
+    },
+    {
+      "type": "range",
+      "id": "widget_padding_top",
+      "label": "Marge supérieure",
+      "default": 15,
+      "unit": "px",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "type": "range",
+      "id": "widget_padding_bottom",
+      "label": "Marge inférieure",
+      "default": 10,
+      "unit": "px",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "type": "range",
+      "id": "widget_padding_sides",
+      "label": "Marge latérale",
+      "default": 15,
+      "unit": "px",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "type": "header",
+      "content": "Fond et bordure de la section"
+    },
+    {
+      "type": "color",
+      "id": "widget_background_color",
+      "label": "Couleur de fond de la section",
+      "default": "#F9F9F9"
+    },
+    {
+      "type": "range",
+      "id": "widget_border_width",
+      "label": "Épaisseur de la bordure",
+      "default": 0,
+      "unit": "px",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "type": "color",
+      "id": "widget_border_color",
+      "label": "Couleur de la bordure",
+      "default": "#cccccc"
+    },
+    {
+      "type": "range",
+      "id": "widget_border_radius",
+      "label": "Arrondi des angles",
+      "default": 10,
+      "unit": "px",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "type": "header",
+      "content": "Ombre de la section"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_shadow",
+      "label": "Activer l'ombre",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "shadow_color",
+      "label": "Couleur de l'ombre",
+      "default": "#BABABA"
+    },
+    {
+      "type": "range",
+      "id": "shadow_horizontal_offset",
+      "label": "Décalage horizontal de l'ombre",
+      "default": 7,
+      "unit": "px",
+      "min": -50,
+      "max": 50
+    },
+    {
+      "type": "range",
+      "id": "shadow_vertical_offset",
+      "label": "Décalage vertical de l'ombre",
+      "default": 4,
+      "unit": "px",
+      "min": -50,
+      "max": 50
+    },
+    {
+      "type": "range",
+      "id": "shadow_blur_radius",
+      "label": "Rayon de flou de l'ombre",
+      "default": 16,
+      "unit": "px",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "type": "range",
+      "id": "shadow_opacity",
+      "label": "Opacité de l'ombre",
+      "default": 0.7,
+      "min": 0,
+      "max": 1,
+      "step": 0.1
+    },
+    {
+      "type": "range",
+      "id": "shadow_spread_radius",
+      "label": "Étendue de l'ombre",
+      "default": -2,
+      "unit": "px",
+      "min": -50,
+      "max": 50
+    }
+  ],
+  "blocks": [
+    {
+      "type": "delivery_step",
+      "name": "Étape de livraison",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Image personnalisée de l'icône"
+        },
+        {
+          "type": "range",
+          "id": "icon_image_width",
+          "label": "Largeur de l'image",
+          "default": 50,
+          "min": 10,
+          "max": 100,
+          "unit": "%"
+        },
+        {
+          "type": "range",
+          "id": "min_days",
+          "label": "Minimum de jours",
+          "default": 0,
+          "min": 0,
+          "max": 30,
+          "unit": " j"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_range",
+          "label": "Activer une tranche de jours",
+          "default": false
+        },
+        {
+          "type": "range",
+          "id": "max_days",
+          "label": "Maximum de jours",
+          "default": 0,
+          "min": 0,
+          "max": 30,
+          "unit": " j"
+        },
+        {
+          "type": "checkbox",
+          "id": "include_weekends",
+          "label": "Inclure le samedi et dimanche",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titre de l'étape",
+          "default": "Commande passée"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Date de livraison",
+      "category": "Livraison",
+      "blocks": [
+        {
+          "type": "delivery_step",
+          "settings": {
+            "min_days": 0,
+            "max_days": 0,
+            "enable_range": false,
+            "include_weekends": false,
+            "title": "Commande passée"
+          }
+        },
+        {
+          "type": "delivery_step",
+          "settings": {
+            "min_days": 2,
+            "max_days": 5,
+            "enable_range": true,
+            "include_weekends": false,
+            "title": "Expédiée"
+          }
+        },
+        {
+          "type": "delivery_step",
+          "settings": {
+            "min_days": 4,
+            "max_days": 7,
+            "enable_range": true,
+            "include_weekends": true,
+            "title": "Livrée"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

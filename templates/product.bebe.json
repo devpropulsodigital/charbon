@@ -1,0 +1,1456 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scrolling_text_bar_neWB7F": {
+      "type": "scrolling-text-bar",
+      "blocks": {
+        "text_cextjp": {
+          "type": "text",
+          "settings": {
+            "text": "Livraison offerte dès 50€",
+            "text_custom": true,
+            "text_font": "quicksand_n7",
+            "text_color": "#5c5c5c",
+            "text_size": 16,
+            "text_size_mobile": 14,
+            "text_height": 130,
+            "text_mr": 50,
+            "text_mr_mobile": 40,
+            "url": "",
+            "stencil_all": false,
+            "stencil_text": ""
+          }
+        },
+        "text_qyB4L8": {
+          "type": "text",
+          "settings": {
+            "text": "SAV disponible du lun. au sam.",
+            "text_custom": true,
+            "text_font": "quicksand_n7",
+            "text_color": "#5c5c5c",
+            "text_size": 16,
+            "text_size_mobile": 14,
+            "text_height": 130,
+            "text_mr": 50,
+            "text_mr_mobile": 40,
+            "url": "",
+            "stencil_all": false,
+            "stencil_text": ""
+          }
+        },
+        "text_LFNepa": {
+          "type": "text",
+          "settings": {
+            "text": "30 jours satisfait ou remboursé",
+            "text_custom": true,
+            "text_font": "quicksand_n7",
+            "text_color": "#5c5c5c",
+            "text_size": 16,
+            "text_size_mobile": 14,
+            "text_height": 130,
+            "text_mr": 50,
+            "text_mr_mobile": 40,
+            "url": "",
+            "stencil_all": false,
+            "stencil_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_cextjp",
+        "text_qyB4L8",
+        "text_LFNepa"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "background_color": "#e6e6fa",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "enable_shadow": false,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 0,
+        "shadow_blur": 26,
+        "shadow_spread": 0,
+        "shadow_opacity": 0.1,
+        "shadow_color": "#000000",
+        "scrolling_velocity": 60,
+        "scrolling_velocity_mobile": 60,
+        "reverse_direction": false,
+        "pause_hover": true,
+        "margin_top": 0,
+        "margin_bottom": 12,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 4,
+        "padding_bottom": 4,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "product_title_margin_top": 2,
+            "product_title_margin_bottom": 0
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "display_price_inline": true,
+            "price_margin_top": 2,
+            "price_margin_bottom": 2
+          }
+        },
+        "rating_custom_E7LimL": {
+          "type": "rating_custom",
+          "settings": {
+            "stars_count": 5,
+            "stars_size_desktop": 25,
+            "stars_size_mobile": 22,
+            "stars_color": "#ffffff",
+            "stars_bg_color": "#00b67a",
+            "rating_custom_text": "<p><strong>4,8/5</strong> basé sur <strong>267 avis.</strong></p>",
+            "font_title_custom": false,
+            "font_title": "roboto_n4",
+            "font_size_desktop": 14,
+            "font_size_mobile": 12,
+            "text_color": "#000000",
+            "link_url": "#shopify-section-template--24538517569881__reviews_testimonials_VN3dzD",
+            "rating_margin_top": 0,
+            "rating_margin_bottom": 4
+          }
+        },
+        "icon_with_text_XbXDVe": {
+          "type": "icon-with-text",
+          "settings": {
+            "hide_on_mobile": true,
+            "hide_on_tablet": false,
+            "hide_on_desktop": false,
+            "layout": "horizontal",
+            "icon_1": "check_mark",
+            "image_1": "shopify://shop_images/soft_04a3610a-27d6-41f7-b424-14a5f9f16bae.png",
+            "heading_1": "ULTRA-DOUCE",
+            "description_1": "",
+            "icon_2": "check_mark",
+            "image_2": "shopify://shop_images/hypoallergenic_1.png",
+            "heading_2": "HYPOALLERGÉNIQUE",
+            "description_2": "",
+            "icon_3": "check_mark",
+            "image_3": "shopify://shop_images/gift-box.png",
+            "heading_3": "CADEAU PARFAIT",
+            "description_3": "",
+            "font_title_custom": false,
+            "title_font": "montserrat_n7",
+            "title_font_size_desktop": 16,
+            "title_font_size_mobile": 14,
+            "title_color": "#000000",
+            "font_description_custom": false,
+            "description_font": "roboto_n4",
+            "description_font_size_desktop": 14,
+            "description_font_size_mobile": 12,
+            "description_color": "#000000",
+            "icon_size_desktop": 40,
+            "icon_size_mobile": 40,
+            "horizontal_gap": 1.5,
+            "vertical_margin_bottom": 1.5,
+            "icon_with_text_margin_top": 2.5,
+            "icon_with_text_margin_bottom": 2.5
+          }
+        },
+        "icon_with_text_DpQDpg": {
+          "type": "icon-with-text",
+          "settings": {
+            "hide_on_mobile": false,
+            "hide_on_tablet": true,
+            "hide_on_desktop": true,
+            "layout": "vertical",
+            "icon_1": "check_mark",
+            "image_1": "shopify://shop_images/soft.png",
+            "heading_1": "ULTRA-DOUCE",
+            "description_1": "",
+            "icon_2": "check_mark",
+            "image_2": "shopify://shop_images/hypoallergenic_1.png",
+            "heading_2": "HYPOALLERGÉNIQUE",
+            "description_2": "",
+            "icon_3": "check_mark",
+            "image_3": "shopify://shop_images/gift-box.png",
+            "heading_3": "CADEAU PARFAIT",
+            "description_3": "",
+            "font_title_custom": false,
+            "title_font": "montserrat_n7",
+            "title_font_size_desktop": 16,
+            "title_font_size_mobile": 14,
+            "title_color": "#000000",
+            "font_description_custom": false,
+            "description_font": "roboto_n4",
+            "description_font_size_desktop": 14,
+            "description_font_size_mobile": 12,
+            "description_color": "#000000",
+            "icon_size_desktop": 40,
+            "icon_size_mobile": 40,
+            "horizontal_gap": 1.5,
+            "vertical_margin_bottom": 1.5,
+            "icon_with_text_margin_top": 2.5,
+            "icon_with_text_margin_bottom": 2.5
+          }
+        },
+        "short_text_mPthjb": {
+          "type": "short_text",
+          "settings": {
+            "label_text": "Renseignez le prénom",
+            "placeholder_text": "Entrez votre texte d'indication",
+            "character_limit": 12,
+            "required": true,
+            "margin_top": 2,
+            "margin_bottom": 2
+          }
+        },
+        "checkbox_option_NWiLUC": {
+          "type": "checkbox_option",
+          "settings": {
+            "label_text": "Emballer dans un papier cadeau ? (Offert)",
+            "checkbox_value": "Oui",
+            "required": false,
+            "margin_top": 2,
+            "margin_bottom": 2
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "none"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+            "margin_top_quantity": 2,
+            "margin_bottom_quantity": 2
+          }
+        },
+        "inventory_9fhB8k": {
+          "type": "inventory",
+          "settings": {
+            "inventory_display_type": "fake",
+            "fake_inventory_text": "Bientôt en rupture de stock",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true,
+            "font_family": "roboto_n4",
+            "text_color": "#ff0000",
+            "text_style": "uppercase",
+            "alignment": "right",
+            "font_size_desktop": 12,
+            "font_size_mobile": 10,
+            "margin_top": 2,
+            "margin_bottom": 0
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true,
+            "margin_top": 1.5,
+            "margin_bottom": 2.5
+          }
+        },
+        "visitor_indicator_MEpw7z": {
+          "type": "visitor_indicator",
+          "settings": {
+            "visitor_text": "X visiteurs consultent actuellement ce produit.",
+            "text_color": "#000000",
+            "min_visitors_offpeak": 0,
+            "max_visitors_offpeak": 5,
+            "min_visitors_midpeak": 5,
+            "max_visitors_midpeak": 15,
+            "min_visitors_peak": 10,
+            "max_visitors_peak": 20,
+            "update_interval": 5,
+            "font_text_custom": false,
+            "text_font": "roboto_n4",
+            "desktop_font_size": 16,
+            "mobile_font_size": 13,
+            "alignment": "center",
+            "desktop_svg_size": 18,
+            "mobile_svg_size": 12,
+            "svg_color": "#000000",
+            "margin_top": 2,
+            "margin_bottom": 2
+          }
+        },
+        "collapsible_tab_pTdXeD": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "content": "<p>Ce site est un site demo. Vous pouvez retrouver les articles sur www.vertbaudet.fr ❤️️</p>",
+            "page": "",
+            "accordion_bg_color": "#f9f9f9",
+            "accordion_border_radius": 10,
+            "accordion_padding": 1
+          }
+        },
+        "collapsible_tab_CwrA9X": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Livraison & retour",
+            "icon": "none",
+            "content": "<h4><strong>Livraison</strong></h4><ul><li><strong>Livraison Standard (5-7 jours ouvrables)</strong> : Gratuite à partir de 50 €. Sinon, 5 € de frais.</li><li><strong>Livraison Express (1-3 jours ouvrables)</strong> : 10 €.</li><li><strong>Livraison Internationale (7-14 jours ouvrables)</strong> : Tarifs variables selon la destination.</li></ul><p><strong>Traitement</strong> : Les commandes sont expédiées sous 1-2 jours ouvrables.</p><h4><strong>Retours</strong></h4><ul><li><strong>Période de retour</strong> : 30 jours après réception.</li><li><strong>Conditions</strong> : Articles non portés, non lavés, avec étiquettes.</li><li><strong>Frais de retour</strong> : Gratuits en France métropolitaine. À la charge du client à l'international.</li><li><strong>Remboursements</strong> : Traitement en 7 jours ouvrables après réception.</li></ul><p>Pour les <strong>échanges</strong>, suivez la procédure de retour et passez une nouvelle commande.</p>",
+            "page": "",
+            "accordion_bg_color": "#f9f9f9",
+            "accordion_border_radius": 10,
+            "accordion_padding": 1
+          }
+        },
+        "collapsible_tab_Jfh793": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Caractéristiques",
+            "icon": "none",
+            "content": "<ul><li><strong>Amuseable Sun Soother</strong></li><li><strong>Conforme à la norme européenne EN71 parties 1, 2 et 3</strong></li><li>Matière : Polyester</li><li>Dimensions : l. 34 x P. 34 cm</li><li>Forme : Soleil</li><li>Coloris : Jaune</li><li><strong>Âge : A partir de la naissance</strong></li></ul>",
+            "page": "",
+            "accordion_bg_color": "#f9f9f9",
+            "accordion_border_radius": 10,
+            "accordion_padding": 1
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "rating_custom_E7LimL",
+        "icon_with_text_XbXDVe",
+        "icon_with_text_DpQDpg",
+        "short_text_mPthjb",
+        "checkbox_option_NWiLUC",
+        "variant_picker",
+        "quantity_selector",
+        "inventory_9fhB8k",
+        "buy_buttons",
+        "visitor_indicator_MEpw7z",
+        "collapsible_tab_pTdXeD",
+        "collapsible_tab_CwrA9X",
+        "collapsible_tab_Jfh793"
+      ],
+      "settings": {
+        "display_id": false,
+        "enable_group_media": true,
+        "media_grouping_option": "Modèle",
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "delivery_date_RLMegR": {
+      "type": "delivery-date",
+      "blocks": {
+        "delivery_step_bT6F8r": {
+          "type": "delivery_step",
+          "settings": {
+            "icon_image_width": 51,
+            "min_days": 0,
+            "enable_range": false,
+            "max_days": 0,
+            "include_weekends": false,
+            "title": "Commande passée"
+          }
+        },
+        "delivery_step_VdLQkR": {
+          "type": "delivery_step",
+          "settings": {
+            "icon_image_width": 50,
+            "min_days": 1,
+            "enable_range": true,
+            "max_days": 2,
+            "include_weekends": false,
+            "title": "Expédiée"
+          }
+        },
+        "delivery_step_rFFFww": {
+          "type": "delivery_step",
+          "settings": {
+            "icon_image_width": 50,
+            "min_days": 2,
+            "enable_range": true,
+            "max_days": 4,
+            "include_weekends": false,
+            "title": "Livrée"
+          }
+        }
+      },
+      "block_order": [
+        "delivery_step_bT6F8r",
+        "delivery_step_VdLQkR",
+        "delivery_step_rFFFww"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "delivery_position": "below_buy",
+        "display_mode": "steps",
+        "text_before_min_date": "Commandez aujourd'hui, recevez votre commande entre le",
+        "text_after_min_date": "et le",
+        "font_family_custom": false,
+        "font_family": "roboto_n4",
+        "text_color": "#000000",
+        "text_size": 16,
+        "text_line_height": 24,
+        "text_alignment": "left",
+        "circle_size_desktop": 40,
+        "icon_svg_size_desktop": 50,
+        "circle_size_mobile": 36,
+        "icon_svg_size_mobile": 50,
+        "icon_color": "#797979",
+        "icon_bg_color": "#e6e6fa",
+        "line_color": "#e6e6fa",
+        "date_format_type": "dd Mmmm",
+        "date_font_custom": false,
+        "date_font": "roboto_n4",
+        "date_color": "#797979",
+        "date_size": 12,
+        "date_line_height": 10,
+        "date_margin_top": 15,
+        "step_font_custom": false,
+        "step_font": "roboto_n4",
+        "step_color": "#797979",
+        "step_size": 12,
+        "step_line_height": 12,
+        "step_margin_top": 5,
+        "widget_margin_top": 20,
+        "widget_margin_bottom": 20,
+        "widget_margin_sides": 0,
+        "widget_padding_top": 15,
+        "widget_padding_bottom": 10,
+        "widget_padding_sides": 15,
+        "widget_background_color": "#ffdab9",
+        "widget_border_width": 0,
+        "widget_border_color": "#cccccc",
+        "widget_border_radius": 10,
+        "enable_shadow": true,
+        "shadow_color": "#bababa",
+        "shadow_horizontal_offset": 7,
+        "shadow_vertical_offset": 4,
+        "shadow_blur_radius": 16,
+        "shadow_opacity": 0.7,
+        "shadow_spread_radius": -2
+      }
+    },
+    "payment_icons_g4mG7T": {
+      "type": "payment-icons",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "delivery_position": "below_buy",
+        "icon_size_desktop": 40,
+        "icon_size_mobile": 30,
+        "content_alignment": "center",
+        "shadow_enabled": false,
+        "shadow_color": "#000000",
+        "shadow_horizontal": 0,
+        "shadow_vertical": 5,
+        "shadow_blur": 10,
+        "shadow_spread_radius": 0,
+        "shadow_opacity": 0.5,
+        "margin_top": 20,
+        "margin_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "separator_k94b3J": {
+      "type": "separator",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "svg_separator": "divider-style-13.svg",
+        "invert_separator": "yes",
+        "flip_svg": "no",
+        "absolute_position": "disabled",
+        "svg_height": 80,
+        "svg_height_mobile": 50,
+        "svg_color": "#ffdab9",
+        "solid_color": "#ffffff",
+        "use_gradient": "no",
+        "background_gradient": "linear-gradient(180deg, rgba(216, 248, 255, 1), rgba(255, 255, 255, 1) 100%)",
+        "margin_top_value": 30,
+        "margin_bottom_value": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "padding_top_value": 0,
+        "padding_bottom_value": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "product_features_RdJn3U": {
+      "type": "product-features",
+      "blocks": {
+        "hotspot_zntxfa": {
+          "type": "hotspot",
+          "settings": {
+            "image": "shopify://shop_images/grande-peluche-dactivites-ecureuil-les-amis-de-la-foret.jpg",
+            "title": "Ultra-douce",
+            "text": "",
+            "alignment": "center",
+            "offset_x": 30,
+            "offset_y": 30,
+            "enable_mobile_position": false,
+            "mobile_offset_x": 30,
+            "mobile_offset_y": 30
+          }
+        },
+        "hotspot_ajfd6D": {
+          "type": "hotspot",
+          "settings": {
+            "image": "shopify://shop_images/peluche-a-bisous-manchot-complices-kaloo.jpg",
+            "title": "Hypoallergénique",
+            "text": "",
+            "alignment": "center",
+            "offset_x": 40,
+            "offset_y": 70,
+            "enable_mobile_position": false,
+            "mobile_offset_x": 30,
+            "mobile_offset_y": 30
+          }
+        },
+        "hotspot_YiKmne": {
+          "type": "hotspot",
+          "settings": {
+            "image": "shopify://shop_images/veilleuse-peluche-moonie-lapin.jpg",
+            "title": "Cadeau parfait",
+            "text": "",
+            "alignment": "center",
+            "offset_x": 70,
+            "offset_y": 50,
+            "enable_mobile_position": false,
+            "mobile_offset_x": 30,
+            "mobile_offset_y": 30
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_zntxfa",
+        "hotspot_ajfd6D",
+        "hotspot_YiKmne"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "title": "La Peluche parfaite pour bébé",
+        "text": "<p>Nos peluches sont toutes douces et accompagneront votre bébé dans tous ses moments de tendresse et de sommeil. Conçues avec des matériaux sûrs et ultra-confortables, elles deviendront vite ses compagnons préférés !</p>",
+        "button_label": "",
+        "link": "",
+        "button_style_secondary": false,
+        "desktop_content_position": "right",
+        "desktop_content_alignment": "left",
+        "hide_content_on_mobile": false,
+        "mobile_content_position": "top",
+        "content_corner_radius": true,
+        "content_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "content_width": 120,
+        "image": "shopify://shop_images/balancoireinterieurenfantaprileleven.jpg",
+        "desktop_image_width": "limited",
+        "image_max_width": 900,
+        "full_page_width": false,
+        "image_corner_radius": true,
+        "hotspot_open_event": "hover",
+        "hotspots_color_scheme": "scheme-1",
+        "display_hotspots_animation": true,
+        "hotspot_content_color_scheme": "",
+        "hotspot_image_size": "full",
+        "contain_hotspot_modal": false,
+        "hotspot_modal_desktop_width": 340,
+        "hotspot_modal_mobile_width": 200,
+        "bullet_points_color": "",
+        "bullet_size_desktop": 1.5,
+        "bullet_size_mobile": 1,
+        "line_width_desktop": 0.3,
+        "line_width_mobile": 0.2,
+        "contain_bullet_points": false,
+        "bullet_point_desktop_width": 400,
+        "bullet_point_mobile_width": 60,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "separator_Qjwahg": {
+      "type": "separator",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "svg_separator": "divider-style-13.svg",
+        "invert_separator": "no",
+        "flip_svg": "yes",
+        "absolute_position": "disabled",
+        "svg_height": 80,
+        "svg_height_mobile": 50,
+        "svg_color": "#ffdab9",
+        "solid_color": "#ffffff",
+        "use_gradient": "no",
+        "background_gradient": "linear-gradient(180deg, rgba(216, 248, 255, 1), rgba(255, 255, 255, 1) 100%)",
+        "margin_top_value": 0,
+        "margin_bottom_value": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "padding_top_value": 0,
+        "padding_bottom_value": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "comparison_table_kM98ML": {
+      "type": "comparison-table",
+      "blocks": {
+        "features_row_kzDnUG": {
+          "type": "features_row",
+          "settings": {
+            "text": "Matériaux ultra-doux",
+            "this_store": "yes",
+            "use_custom_color_this_store": false,
+            "svg_color_this_store_yes": "#000000",
+            "svg_color_this_store_no": "#000000",
+            "others_store": "no",
+            "use_custom_color_others_store": false,
+            "svg_color_others_store_yes": "#000000",
+            "svg_color_others_store_no": "#000000"
+          }
+        },
+        "features_row_AXF8KQ": {
+          "type": "features_row",
+          "settings": {
+            "text": "Hypoallergénique",
+            "this_store": "yes",
+            "use_custom_color_this_store": false,
+            "svg_color_this_store_yes": "#000000",
+            "svg_color_this_store_no": "#000000",
+            "others_store": "no",
+            "use_custom_color_others_store": false,
+            "svg_color_others_store_yes": "#000000",
+            "svg_color_others_store_no": "#000000"
+          }
+        },
+        "features_row_dKGqhV": {
+          "type": "features_row",
+          "settings": {
+            "text": "Designs personnalisables et uniques",
+            "this_store": "yes",
+            "use_custom_color_this_store": false,
+            "svg_color_this_store_yes": "#000000",
+            "svg_color_this_store_no": "#000000",
+            "others_store": "no",
+            "use_custom_color_others_store": false,
+            "svg_color_others_store_yes": "#000000",
+            "svg_color_others_store_no": "#000000"
+          }
+        },
+        "features_row_zpqhwr": {
+          "type": "features_row",
+          "settings": {
+            "text": "Durabilité et résistance au lavage",
+            "this_store": "yes",
+            "use_custom_color_this_store": false,
+            "svg_color_this_store_yes": "#000000",
+            "svg_color_this_store_no": "#000000",
+            "others_store": "no",
+            "use_custom_color_others_store": false,
+            "svg_color_others_store_yes": "#000000",
+            "svg_color_others_store_no": "#000000"
+          }
+        },
+        "features_row_iyPcjc": {
+          "type": "features_row",
+          "settings": {
+            "text": "Certifications de sécurité et écoresponsabilité",
+            "this_store": "yes",
+            "use_custom_color_this_store": false,
+            "svg_color_this_store_yes": "#000000",
+            "svg_color_this_store_no": "#000000",
+            "others_store": "yes",
+            "use_custom_color_others_store": true,
+            "svg_color_others_store_yes": "#101660",
+            "svg_color_others_store_no": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "features_row_kzDnUG",
+        "features_row_AXF8KQ",
+        "features_row_dKGqhV",
+        "features_row_zpqhwr",
+        "features_row_iyPcjc"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "headline_text": "Les parents et les bébés sont fans de nos peluches",
+        "font_headline_custom": false,
+        "headline_font_picker": "quicksand_n7",
+        "headline_font_size": 32,
+        "headline_font_size_mobile": 24,
+        "headline_text_color": "#2e2a39",
+        "headline_line_height": 60,
+        "headline_line_height_mobile": 45,
+        "headline_alignment": "left",
+        "headline_alignment_mobile": "center",
+        "description_text": "<p>Découvrez les raisons de notre <strong>succès</strong>.</p>",
+        "font_description_custom": false,
+        "description_font_picker": "poppins_n4",
+        "description_text_color": "#414141",
+        "description_font_size": 17,
+        "description_font_size_mobile": 15,
+        "description_alignment": "left",
+        "description_alignment_mobile": "center",
+        "description_margin_top": 10,
+        "description_margin_bottom": 10,
+        "description_margin_top_mobile": 5,
+        "description_margin_bottom_mobile": 20,
+        "comparison_feature_padding_side": 20,
+        "comparison_feature_padding_vertical": 20,
+        "comparison_feature_padding_side_mobile": 10,
+        "comparison_feature_padding_vertical_mobile": 10,
+        "own_store_logo": "shopify://shop_images/Logo_-_style_bebe_et_enfant-Kittl.svg",
+        "own_store_logo_width": 140,
+        "other_store_text": "Les autres",
+        "font_comparison_text_custom": false,
+        "comparison_text_font_picker": "poppins_n4",
+        "comparison_text_font_size": 14,
+        "other_store_color": "#000000",
+        "comparison_text_margin_top": 10,
+        "comparison_text_margin_bottom": 10,
+        "comparison_text_margin_top_mobile": 7,
+        "comparison_text_margin_bottom_mobile": 11,
+        "font_first_child_custom": false,
+        "first_child_font_picker": "poppins_n4",
+        "features_font_size": 18,
+        "features_font_size_mobile": 14,
+        "features_text_color": "#000000",
+        "features_background_color": "#f9f9f9",
+        "second_column_background_color": "#101660",
+        "svg_size": 40,
+        "svg_size_mobile": 30,
+        "svg_color_yes": "#ffffff",
+        "svg_color_no": "#ff0000",
+        "enable_shadow": true,
+        "table_shadow_color": "#8a8a8a",
+        "shadow_opacity": 0.2,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 0,
+        "shadow_blur": 27,
+        "shadow_spread": 4,
+        "table_border_width": 2,
+        "table_border_color": "#ebebeb",
+        "border_radius_table": 20,
+        "border_radius_brand": 20,
+        "section_height": 300,
+        "section_background_color": "#ffffff",
+        "section_border_radius": 0,
+        "comparison_table_margin_top": 0,
+        "comparison_table_margin_bottom": 0,
+        "comparison_table_margin_top_mobile": 0,
+        "comparison_table_margin_bottom_mobile": 0,
+        "section_padding_top": 50,
+        "section_padding_bottom": 50,
+        "section_padding_top_mobile": 15,
+        "section_padding_bottom_mobile": 30,
+        "max_width": 200,
+        "single_column": "row",
+        "comparison_table_only": false
+      }
+    },
+    "carrousel_video_XqDrWV": {
+      "type": "carrousel-video",
+      "blocks": {
+        "slide_mQCBai": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        },
+        "slide_LiTFbW": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        },
+        "slide_rJirxb": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        },
+        "slide_WaDnNP": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        },
+        "slide_cPjUhg": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        },
+        "slide_xNM86e": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        }
+      },
+      "block_order": [
+        "slide_mQCBai",
+        "slide_LiTFbW",
+        "slide_rJirxb",
+        "slide_WaDnNP",
+        "slide_cPjUhg",
+        "slide_xNM86e"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "slider_view": 5,
+        "slider_view_mobile": 1.5,
+        "slider_gap": 10,
+        "slider_gap_mobile": 10,
+        "slider_rotate": 0,
+        "card_padding_vertical": 20,
+        "card_padding_vertical_mobile": 20,
+        "card_padding_horizontal": 20,
+        "card_padding_horizontal_mobile": 20,
+        "card_radius": 10,
+        "card_border_thickness": 0,
+        "card_shadow": false,
+        "card_ratio": "portrait",
+        "card_ratio_mobile": "portrait",
+        "card_overlay": 0,
+        "content_horizontal_position": "center",
+        "content_horizontal_position_mobile": "center",
+        "content_vertical_position": "end",
+        "content_vertical_position_mobile": "end",
+        "title_custom": false,
+        "title_font": "montserrat_n6",
+        "title_size": 16,
+        "title_size_mobile": 16,
+        "title_height": 100,
+        "stars_size": 16,
+        "stars_size_mobile": 16,
+        "stars_mt": 16,
+        "stars_mt_mobile": 16,
+        "hide_stars": true,
+        "use_action": true,
+        "action_size": 26,
+        "action_size_mobile": 26,
+        "action_icon_size": 16,
+        "action_icon_size_mobile": 16,
+        "action_border_thickness": 0,
+        "use_sound": true,
+        "sound_size": 26,
+        "sound_size_mobile": 26,
+        "sound_icon_size": 16,
+        "sound_icon_size_mobile": 16,
+        "sound_border_thickness": 0,
+        "arrow_size": 30,
+        "arrow_size_mobile": 30,
+        "arrow_icon_size": 8,
+        "arrow_icon_size_mobile": 8,
+        "arrow_border_thickness": 0,
+        "arrow_radius": 100,
+        "arrow_hover_effect": "scale",
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "card_border_color": "#000000",
+        "card_shadow_color": "#000000",
+        "card_overlay_color": "#000000",
+        "title_color": "#ffffff",
+        "stars_color": "#ffffff",
+        "action_color": "#ffffff",
+        "action_hover_color": "#ffffff",
+        "action_bg_color": "#ffffff",
+        "action_bg_hover_color": "#ffffff",
+        "action_border_color": "#ffffff",
+        "action_border_hover_color": "#ffffff",
+        "arrow_color": "#ffffff",
+        "arrow_hover_color": "#434343",
+        "arrow_bg_color": "#434343",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#000000",
+        "arrow_border_hover_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": false,
+        "content_width": 180,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "separator_cTWU7L": {
+      "type": "separator",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "svg_separator": "divider-style-4.svg",
+        "invert_separator": "no",
+        "flip_svg": "no",
+        "absolute_position": "disabled",
+        "svg_height": 80,
+        "svg_height_mobile": 50,
+        "svg_color": "#ffffff",
+        "solid_color": "#d3f8e2",
+        "use_gradient": "no",
+        "background_gradient": "linear-gradient(180deg, rgba(216, 248, 255, 1), rgba(255, 255, 255, 1) 100%)",
+        "margin_top_value": 0,
+        "margin_bottom_value": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "padding_top_value": 0,
+        "padding_bottom_value": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "reviews_testimonials_VN3dzD": {
+      "type": "reviews-testimonials",
+      "blocks": {
+        "slide_iHeTQe": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Excellent produit !",
+            "text": "Je suis vraiment impressionné par la qualité de ce produit. Il dépasse toutes mes attentes et je le recommande vivement à tous ceux qui cherchent quelque chose de fiable.",
+            "author_name": "Sophie",
+            "review_date": "21 sept. 2024",
+            "image1": "shopify://shop_images/grande-peluche-dactivites-lapin.jpg",
+            "image2": "shopify://shop_images/grande-peluche-dactivites-ecureuil-les-amis-de-la-foret.jpg",
+            "image3": "shopify://shop_images/peluche-a-bisous-manchot-complices-kaloo.jpg"
+          }
+        },
+        "slide_rzytiw": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Très satisfait",
+            "text": "Le service et la qualité du produit sont exceptionnels. L'emballage était soigné et la livraison rapide. J'en suis très content.",
+            "author_name": "Thomas",
+            "review_date": "23 sept. 2024",
+            "image1": "shopify://shop_images/veilleuse-peluche-moonie-lapin.jpg"
+          }
+        },
+        "slide_p3Pfcn": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Une belle découverte",
+            "text": "J'avais des doutes avant de commander, mais je suis agréablement surpris. Le produit est de bonne qualité et fonctionne parfaitement.",
+            "author_name": "Camille",
+            "review_date": "21 aout 2024",
+            "image1": "shopify://shop_images/nid-dange-transformable-en-peluche-ourson.jpg",
+            "image2": "shopify://shop_images/Crocodile_1.jpg"
+          }
+        },
+        "slide_p6eL3H": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Produit de qualité",
+            "text": "Ce produit a vraiment répondu à mes attentes. La finition est soignée et il est très performant. Je le recommande sans hésitation.",
+            "author_name": "Marc",
+            "review_date": "28 aout 2024"
+          }
+        },
+        "slide_iQLBUL": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Parfait pour l'usage quotidien",
+            "text": "Utilisé tous les jours depuis plusieurs semaines, ce produit est solide et fiable. Je suis très satisfait de mon achat.",
+            "author_name": "Émilie",
+            "review_date": "7 sept. 2024"
+          }
+        },
+        "slide_hJMFt4": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Très bon rapport qualité-prix",
+            "text": "Pour le prix, je ne m'attendais pas à une telle qualité. C'est un excellent produit qui offre de très bonnes performances.",
+            "author_name": "Antoine",
+            "review_date": "18 sept. 2024"
+          }
+        },
+        "slide_FzLgnU": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Un incontournable",
+            "text": "C'est désormais un produit indispensable pour moi. Très pratique et facile à utiliser, je suis ravi de cet achat.",
+            "author_name": "Marie",
+            "review_date": "15 sept. 2024"
+          }
+        },
+        "slide_yycEV4": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Complètement satisfait",
+            "text": "Tout a été parfait, de la commande à la livraison. Le produit est conforme à la description et fonctionne très bien.",
+            "author_name": "Julien",
+            "review_date": "13 sept. 2024"
+          }
+        },
+        "slide_fNdcmL": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Je recommande sans hésitation",
+            "text": "Si vous cherchez un produit fiable et de bonne qualité, c'est celui qu'il vous faut. J'en suis très content.",
+            "author_name": "Clara",
+            "review_date": "8 sept. 2024"
+          }
+        },
+        "slide_QBCaWA": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Très pratique et efficace",
+            "text": "Ce produit me facilite la vie au quotidien. Je suis impressionné par son efficacité et sa robustesse.",
+            "author_name": "Maxime",
+            "review_date": "2 sept. 2024"
+          }
+        }
+      },
+      "block_order": [
+        "slide_iHeTQe",
+        "slide_rzytiw",
+        "slide_p3Pfcn",
+        "slide_p6eL3H",
+        "slide_iQLBUL",
+        "slide_hJMFt4",
+        "slide_FzLgnU",
+        "slide_yycEV4",
+        "slide_fNdcmL",
+        "slide_QBCaWA"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "Les avis de nos clients",
+        "heading_custom": false,
+        "heading_font": "quicksand_n7",
+        "heading_size": 32,
+        "heading_size_mobile": 24,
+        "heading_height": 130,
+        "heading_align": "center",
+        "rating_text_hide": false,
+        "rating_text": "Excellent",
+        "rating_text_custom": false,
+        "rating_text_font": "poppins_n7",
+        "rating_text_size": 24,
+        "rating_text_size_mobile": 20,
+        "rating_text_height": 130,
+        "rating_text_mt": 16,
+        "rating_hide": false,
+        "rating": 4.8,
+        "rating_align": "center",
+        "stars_count": 5,
+        "stars_size": 28,
+        "stars_size_mobile": 20,
+        "text": "<p>basé sur <strong>267</strong> avis</p>",
+        "text_custom": false,
+        "text_font": "poppins_n4",
+        "text_size": 20,
+        "text_size_mobile": 16,
+        "text_height": 130,
+        "text_align": "center",
+        "text_mt": 16,
+        "slider_width": 80,
+        "slider_view": 3,
+        "slider_view_mobile": 1.2,
+        "slider_gap": 12,
+        "slider_gap_mobile": 12,
+        "slider_mt": 36,
+        "card_padding_vertical": 32,
+        "card_padding_vertical_mobile": 16,
+        "card_padding_horizontal": 16,
+        "card_padding_horizontal_mobile": 16,
+        "card_radius": 16,
+        "card_border_thickness": 0,
+        "enable_shadow": true,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 0,
+        "shadow_blur": 26,
+        "shadow_spread": 0,
+        "shadow_opacity": 0.2,
+        "shadow_color": "#5066ff",
+        "circle_width": 50,
+        "circle_custom": false,
+        "circle_font": "roboto_n9",
+        "author_font_size": 16,
+        "card_author_name_text_custom": false,
+        "card_author_name_text_font": "roboto_n9",
+        "card_author_name_text_size": 16,
+        "card_author_name_text_size_mobile": 16,
+        "profile_info_margin_bottom": 40,
+        "icon_color": "#333333",
+        "icon_size": 12,
+        "verified_text": "Vérifié",
+        "verified_custom": false,
+        "verified_font": "roboto_n4",
+        "verified_font_size": 12,
+        "verified_color": "#333333",
+        "card_heading_custom": false,
+        "card_heading_font": "roboto_n7",
+        "card_heading_size": 24,
+        "card_heading_size_mobile": 20,
+        "card_heading_height": 130,
+        "card_heading_mt": 16,
+        "card_text_custom": false,
+        "card_text_font": "roboto_n4",
+        "card_text_size": 14,
+        "card_text_size_mobile": 14,
+        "card_text_height": 150,
+        "card_text_mt": 16,
+        "card_text_more": "Voir plus",
+        "card_text_less": "Voir moins",
+        "card_count_words": 20,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "arrow_size": 50,
+        "arrow_size_mobile": 30,
+        "arrow_icon_size": 30,
+        "arrow_icon_size_mobile": 28,
+        "arrow_border_thickness": 0,
+        "dots_show_desktop": false,
+        "dots_show_mobile": false,
+        "dots_size": 12,
+        "dots_size_mobile": 12,
+        "circle_text_color": "#000000",
+        "circle_bg_color": "#ececec",
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#000000",
+        "card_heading_color": "#000000",
+        "card_text_color": "#000000",
+        "card_author_name_text_color": "#000000",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#ffffff",
+        "arrow_border_hover_color": "#ffffff",
+        "dots_color": "#000000",
+        "heading_color": "#000000",
+        "rating_text_color": "#000000",
+        "stars_bg_color": "#00b67a",
+        "stars_color": "#ffffff",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, rgba(211, 248, 226, 1), rgba(255, 255, 255, 1) 100%)",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 32,
+        "padding_bottom": 80,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "lazy": true
+      }
+    },
+    "double_section_dVU4Ya": {
+      "type": "double-section",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "color_scheme": "",
+        "section_1_id": "#shopify-section-template--24538517569881__multicolumn_CrRdr4",
+        "padding_top_one": 0,
+        "padding_bottom_one": 0,
+        "mobile_reverse_grid": false,
+        "section_2_id": "#shopify-section-template--24538517569881__faq_Yr36pB",
+        "padding_top_two": 0,
+        "padding_bottom_two": 0,
+        "column_one_width": 50,
+        "alignment": "center",
+        "spacing_desktop": 80,
+        "spacing_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "content_width": 160
+      }
+    },
+    "multicolumn_CrRdr4": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Ym6XqK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/grande-peluche-dactivites-lapin.jpg",
+            "title": "Comment pouvons-nous vous aider ?",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Ym6XqK"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "title_over_image": true,
+        "font_title_custom": false,
+        "title_font": "quicksand_n7",
+        "title_font_size": 35,
+        "title_font_size_mobile": 18,
+        "title_color": "#fff500",
+        "font_description_custom": false,
+        "description_font": "poppins_n4",
+        "description_font_size": 16,
+        "description_font_size_mobile": 12,
+        "description_color": "#ffffff",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "faq_Yr36pB": {
+      "type": "FAQ",
+      "blocks": {
+        "text_McAgTL": {
+          "type": "text",
+          "settings": {
+            "question": "Quels sont les matériaux utilisés pour ctte peluche ?",
+            "answer": "<p>La peluche est fabriquée en coton bio et en polyester hypoallergénique, garantissant douceur et sécurité pour la peau sensible de bébé.</p>"
+          }
+        },
+        "text_DDcwfA": {
+          "type": "text",
+          "settings": {
+            "question": "À partir de quel âge cette peluche convient-elle ?",
+            "answer": "<p>Cette peluche convient dès la naissance et est conçu pour accompagner bébé dans ses moments de réconfort et de sommeil.</p>"
+          }
+        },
+        "text_HqJ9ia": {
+          "type": "text",
+          "settings": {
+            "question": "Quels sont les délais de livraison ?",
+            "answer": "<p>Les délais de livraison varient selon votre emplacement. En général, vous pouvez vous attendre à recevoir votre commande dans un délai de 3 à 7 jours ouvrables. Nous proposons également des options de livraison express pour les commandes urgentes. Vous recevrez un numéro de suivi dès que votre commande sera expédiée.</p>"
+          }
+        },
+        "text_8gzkDc": {
+          "type": "text",
+          "settings": {
+            "question": "Puis-je retourner ou échanger un article ?",
+            "answer": "<p>Oui, nous acceptons les retours et échanges dans un délai de 30 jours à compter de la date de réception de votre commande. Les articles doivent être dans leur état d'origine, non portés et avec toutes les étiquettes attachées. Pour initier un retour, veuillez suivre les instructions sur notre page de retour.</p>"
+          }
+        },
+        "text_fpMnNR": {
+          "type": "text",
+          "settings": {
+            "question": "Comment suivre mon colis ?",
+            "answer": "<p>Vous pouvez à tout moment accéder au suivi de votre commande dans votre espace client.</p>"
+          }
+        },
+        "text_BqKKb3": {
+          "type": "text",
+          "settings": {
+            "question": "Comment suis-je prévenu(e) de l'arrivée de mon colis ?",
+            "answer": "<p>Quelque soit votre mode de livraison, vous serez averti(e) par sms ou mail.</p><p>Pour les articles très volumineux signalés par un picto \"camion\", un sms ou un email est envoyé la veille de la livraison de vos articles avec un créneau de livraison affiné à 2h.</p><p>Le jour de la livraison, vous êtes informé sur l’identité du livreur arrivant chez vous ou sur votre lieu de livraison (prénom, photo, plaque d’immatriculation). Vous avez la possibilité de le géolocaliser en temps réel et même de lui envoyer un sms pour lui préciser une information si vous en avez besoin.</p>"
+          }
+        },
+        "text_Ejk3gm": {
+          "type": "text",
+          "settings": {
+            "question": "Je n’ai pas reçu l’ensemble de mes articles dans le même colis",
+            "answer": "<p>En fonction de la composition de votre commande, par exemple : commande de vêtements et de mobilier, la confection de votre colis est réalisée dans des entrepôts dédiés ou acheminés par des transporteurs différents, ce qui entraine l’envoi séparé de vos articles avec un délai différent et/ou additionnel.<br/>En cas d’articles différés, nous vous expédions les articles disponibles dans un 1e temps. La livraison des articles différés interviendra dans un 2nd temps dès leur retour en stock</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_McAgTL",
+        "text_DDcwfA",
+        "text_HqJ9ia",
+        "text_8gzkDc",
+        "text_fpMnNR",
+        "text_BqKKb3",
+        "text_Ejk3gm"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "",
+        "font_family_custom": false,
+        "title_font_family": "quicksand_n7",
+        "title_font_size_desktop": 3,
+        "title_font_size_mobile": 2.2,
+        "title_color": "#000000",
+        "font_question_custom": false,
+        "question_font_family": "poppins_n4",
+        "questions_font_size": 1.5,
+        "questions_font_size_mobile": 1.3,
+        "question_color": "#000000",
+        "hover_color": "#ffffff",
+        "background_color": "#d3f8e2",
+        "question_margin_bottom": 3,
+        "question_border_radius": 20,
+        "border_thickness": 1,
+        "border_color": "#000000",
+        "add_line_between_questions": "non",
+        "line_thickness": 1,
+        "line_color": "#e3e3e3",
+        "font_answer_custom": false,
+        "answer_font_family": "poppins_n4",
+        "answer_font_size_desktop": 1.5,
+        "answer_font_size_mobile": 1.3,
+        "answer_color": "#454545",
+        "answer_bg_color": "#ffffff",
+        "answer_padding_vertical": 9,
+        "answer_padding_horizontal": 24,
+        "answer_margin_top": 10,
+        "answer_margin_bottom": 10,
+        "answer_border_radius": 10,
+        "icon_color": "#454545",
+        "accordion_toggle": true,
+        "background_type": "fixed",
+        "section_background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, rgba(216, 248, 255, 1), rgba(255, 255, 255, 1) 100%)",
+        "section_margin_top_desktop": 0,
+        "section_margin_bottom_desktop": 0,
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 20,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 10
+      }
+    }
+  },
+  "order": [
+    "scrolling_text_bar_neWB7F",
+    "main",
+    "delivery_date_RLMegR",
+    "payment_icons_g4mG7T",
+    "related-products",
+    "separator_k94b3J",
+    "product_features_RdJn3U",
+    "separator_Qjwahg",
+    "comparison_table_kM98ML",
+    "carrousel_video_XqDrWV",
+    "separator_cTWU7L",
+    "reviews_testimonials_VN3dzD",
+    "double_section_dVU4Ya",
+    "multicolumn_CrRdr4",
+    "faq_Yr36pB"
+  ]
+}

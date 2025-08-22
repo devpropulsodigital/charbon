@@ -1,0 +1,403 @@
+{% comment %}
+  Renders icon with text block
+
+  Accepts:
+  - block: {Object} passes in the block information.
+
+
+  Usage:
+  {% render 'icon-with-text',
+    block: block
+  %}
+{% endcomment %}
+
+{% style %}
+
+/* Présentation horizontale */
+.icon-with-text--horizontal-{{ block.id }} .text-container-{{ block.id }} {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden; /* Empêche tout dépassement */
+}
+
+/* Présentation verticale : alignement du texte à gauche */
+.icon-with-text--vertical-{{ block.id }} .text-container-{{ block.id }} {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: left;
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Styles spécifiques au paragraphe dans la description pour la présentation verticale */
+.icon-with-text--vertical-{{ block.id }} .icon-description-{{ block.id }} p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2; /* Réduire la hauteur de ligne */
+}
+
+/* Réduire la hauteur de ligne pour le paragraphe dans la présentation horizontale */
+.icon-with-text--horizontal-{{ block.id }} .icon-description-{{ block.id }} p {
+  line-height: 1.2; /* Réduire la hauteur de ligne */
+}
+
+.icon-with-text--vertical-{{ block.id }} .icon-title-{{ block.id }},
+.icon-with-text--vertical-{{ block.id }} .icon-description-{{ block.id }} {
+  text-align: left;
+  max-width: 100%;
+  display: block;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+/* Assurez-vous que chaque élément de texte et icône prenne 100% de la largeur disponible en présentation verticale */
+.icon-with-text--vertical-{{ block.id }} .icon-with-text__item-{{ block.id }} {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  align-items: center;
+  margin-bottom: {{ block.settings.vertical_margin_bottom }}rem;
+}
+
+.icon-with-text--vertical-{{ block.id }} .icon-with-text__item-{{ block.id }}:nth-child(3) {
+  margin-bottom: 0;
+}
+
+/* Ajustement de l'icône dans la présentation verticale pour qu'elle ne dépasse pas */
+.icon-container-{{ block.id }} {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  margin-right: 5px;
+}
+
+.icon-img-{{ block.id }} {
+  object-fit: contain;
+  width: {{ block.settings.icon_size_desktop }}px;
+  height: {{ block.settings.icon_size_desktop }}px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Styles Desktop */
+
+{% if block.settings.font_title_custom %}
+  .icon-title-{{ block.id }} {
+     font-family: {{ block.settings.title_font.family }}; {{ block.settings.title_font.fallback_families }};
+     font-style: {{ block.settings.title_font.style }};
+     font-weight: {{ block.settings.title_font.weight }};
+  }
+{% endif %} 
+  
+.icon-title-{{ block.id }} {
+  font-size: {{ block.settings.title_font_size_desktop }}px;
+  color: {{ block.settings.title_color }};
+  margin: 0;
+}
+
+{% if block.settings.font_description_custom %}
+  .icon-description-{{ block.id }} {
+     font-family: {{ block.settings.description_font.family }}; {{ block.settings.description_font.fallback_families }};
+     font-style: {{ block.settings.description_font.style }};
+     font-weight: {{ block.settings.description_font.weight }};
+  }
+{% endif %} 
+  
+.icon-description-{{ block.id }} {
+  font-size: {{ block.settings.description_font_size_desktop }}px;
+  color: {{ block.settings.description_color }};
+  margin: 0;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Présentation horizontale */
+.icon-with-text--horizontal-{{ block.id }} .icon-with-text__item-{{ block.id }} {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  box-sizing: border-box;
+  flex-basis: calc(33.33% - 20px);
+  min-width: 150px;
+  gap: 10px;
+}
+
+  .icon-with-text__item-{{ block.id }}:nth-child(1),
+.icon-with-text__item-{{ block.id }}:nth-child(2) {
+  flex-basis: calc(50% - 20px); /* Les deux premiers éléments prennent 50% chacun */
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.icon-with-text--horizontal-{{ block.id }}.icon-with-text--items-3 .icon-with-text__item:nth-child(3) {
+    flex-basis: calc(33.33% - 20px); /* Le troisième élément prend 33.33% */
+    min-width: 200px; /* Il reste sur la première ligne tant que l'espace est suffisant */
+    flex-shrink: 1; /* Il peut se réduire pour aller à la ligne si nécessaire */
+}
+  
+@media screen and (max-width: 1024px) {
+  .icon-with-text__item-{{ block.id }}:nth-child(1),
+  .icon-with-text__item-{{ block.id }}:nth-child(2) {
+    flex-basis: 100%; /* Les deux premiers éléments occupent 100% de la largeur sur des écrans moyens */
+     
+  }
+  .icon-with-text__item-{{ block.id }} {
+    flex-basis: calc(50% - 20px); /* Les autres éléments prennent 50% sur les écrans moyens */
+  }
+}
+
+/* Ajustement de la largeur des éléments en fonction du nombre d'éléments dans la disposition horizontale */
+.icon-with-text--horizontal-{{ block.id }}.icon-with-text--items-1 .icon-with-text__item-{{ block.id }} {
+  flex-basis: calc(100% - 20px); /* Largeur de base pour trois éléments */
+}
+
+.icon-with-text--horizontal-{{ block.id }}.icon-with-text--items-2 .icon-with-text__item-{{ block.id }} {
+  flex-basis: calc(50% - 20px); /* Largeur de base pour trois éléments */
+}
+
+.icon-with-text--horizontal-{{ block.id }}.icon-with-text--items-3 .icon-with-text__item-{{ block.id }} {
+  flex-grow: 1; /* Les éléments grandissent pour remplir l'espace */
+  flex-basis: calc(33.33% - 20px); /* Largeur de base pour trois éléments */
+  min-width: 150px;
+}
+
+/* Présentation horizontale : règle générale */
+.icon-with-text--horizontal-{{ block.id }} {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  gap: {{ block.settings.horizontal_gap}}rem;
+}
+
+/* Largeur des éléments avec 1 élément */
+.icon-with-text--horizontal-{{ block.id }}.icon-with-text--items-1 .icon-with-text__item {
+  flex-grow: 1; /* L'élément s'agrandit pour occuper tout l'espace disponible */
+  flex-basis: calc(100% - 20px);
+}
+
+/* Largeur des éléments avec 2 éléments */
+.icon-with-text--horizontal-{{ block.id }}.icon-with-text--items-2 .icon-with-text__item {
+  flex-grow: 1; /* Les éléments s'agrandissent également */
+  flex-basis: calc(50% - 20px);
+}
+
+/* Largeur des éléments avec 3 éléments */
+.icon-with-text--horizontal-{{ block.id }}.icon-with-text--items-3 .icon-with-text__item {
+  flex-grow: 1; /* Les éléments s'agrandissent également */
+  flex-basis: calc(33.33% - 20px);
+}
+
+/* Conteneur de texte : assurez-vous que les textes respectent la largeur de leur conteneur */
+.icon-with-text--horizontal-{{ block.id }} .text-container {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Masquage en fonction de l'écran */
+{% if block.settings.hide_on_mobile %}
+@media screen and (max-width: 767px) {
+  .icon-with-text-{{ block.id }} {
+    display: none !important;
+  }
+}
+{% endif %}
+
+/* Cacher sur tablette */
+{% if block.settings.hide_on_tablet %}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .icon-with-text-{{ block.id }} {
+    display: none !important;
+  }
+}
+{% endif %}
+
+/* Cacher sur desktop */
+{% if block.settings.hide_on_desktop %}
+@media screen and (min-width: 1024px) {
+  .icon-with-text-{{ block.id }} {
+    display: none !important;
+  }
+}
+{% endif %}
+
+.icon-with-text-{{ block.id }} {
+    margin-top: {{ block.settings.icon_with_text_margin_top }}rem !important;
+    margin-bottom: {{ block.settings.icon_with_text_margin_bottom }}rem !important;
+}
+
+/* Dimensions des icônes et SVG */
+.icon-img-{{ block.id }}, 
+.svg-wrapper-accordion-{{ block.id }} {
+  width: {{ block.settings.icon_size_desktop }}px;
+  height: {{ block.settings.icon_size_desktop }}px;
+}
+
+@media screen and (max-width: 767px) {
+  .icon-img-{{ block.id }}, 
+  .svg-wrapper-accordion-{{ block.id }} {
+    width: {{ block.settings.icon_size_mobile }}px !important;
+    height: {{ block.settings.icon_size_mobile }}px !important;
+  }
+}
+
+/* Styles pour les tailles du titre et de la description sur mobile */
+@media screen and (max-width: 767px) {
+  .icon-title-{{ block.id }} {
+    font-size: {{ block.settings.title_font_size_mobile }}px;
+  }
+
+  .icon-description-{{ block.id }} {
+    font-size: {{ block.settings.description_font_size_mobile }}px;
+  }
+}
+
+{% endstyle %}
+
+
+
+{%- liquid
+  assign heading_1_empty = false
+  assign heading_2_empty = false
+  assign heading_3_empty = false
+  assign text_only_all_items = true
+
+  if block.settings.heading_1 == empty
+    assign heading_1_empty = true
+  endif
+
+  if block.settings.heading_2 == empty
+    assign heading_2_empty = true
+  endif
+
+  if block.settings.heading_3 == empty
+    assign heading_3_empty = true
+  endif
+
+  if heading_1_empty == false and block.settings.icon_1 != 'none' or block.settings.image_1 != null
+    assign text_only_all_items = false
+  elsif heading_2_empty == false and block.settings.icon_2 != 'none' or block.settings.image_2 != null
+    assign text_only_all_items = false
+  elsif heading_3_empty == false and block.settings.icon_3 != 'none' or block.settings.image_3 != null
+    assign text_only_all_items = false
+  endif
+
+  assign total_items = 0
+
+  unless heading_1_empty
+    assign total_items = total_items | plus: 1
+  endunless
+
+  unless heading_2_empty
+    assign total_items = total_items | plus: 1
+  endunless
+
+  unless heading_3_empty
+    assign total_items = total_items | plus: 1
+  endunless
+-%}
+
+<ul class="icon-with-text icon-with-text--{{ block.settings.layout }}-{{ block.id }} list-unstyled icon-with-text-{{ block.id }} icon-with-text--items-{{ total_items }}">
+
+  {%- unless heading_1_empty -%}
+    <li class="icon-with-text__item icon-with-text__item-{{ block.id }}">
+      <div class="icon-container-{{ block.id }}">
+        {%- if block.settings.image_1 == null and block.settings.icon_1 != 'none' -%}
+          <div class="svg-wrapper-accordion svg-wrapper-accordion-{{ block.id }}">
+            {%- render 'icon-accordion', icon: block.settings.icon_1 -%}
+          </div>
+        {%- elsif block.settings.image_1 != null -%}
+          <img
+            src="{{ block.settings.image_1 | image_url }}"
+            alt="{{ block.settings.image_1.alt | escape }}"
+            class="icon-img icon-img-{{ block.id }}"
+            width="auto"
+            height="auto"
+          >
+        {%- endif -%}
+      </div>
+      <div class="text-container-{{ block.id }}">
+        <h3 class="icon-title icon-title-{{ block.id }}">{{ block.settings.heading_1 }}</h3>
+        {%- if block.settings.description_1 != blank -%}
+          <div class="icon-description icon-description-{{ block.id }}">{{ block.settings.description_1 }}</div>
+        {%- endif -%}
+      </div>
+    </li>
+  {%- endunless -%}
+
+  {%- unless heading_2_empty -%}
+    <li class="icon-with-text__item icon-with-text__item-{{ block.id }}">
+      <div class="icon-container-{{ block.id }}">
+        {%- if block.settings.image_2 == null and block.settings.icon_2 != 'none' -%}
+          <div class="svg-wrapper-accordion svg-wrapper-accordion-{{ block.id }}">
+            {%- render 'icon-accordion', icon: block.settings.icon_2 -%}
+          </div>
+        {%- elsif block.settings.image_2 != null -%}
+          <img
+            src="{{ block.settings.image_2 | image_url }}"
+            alt="{{ block.settings.image_2.alt | escape }}"
+            class="icon-img icon-img-{{ block.id }}"
+            width="auto"
+            height="auto"
+          >
+        {%- endif -%}
+      </div>
+      <div class="text-container-{{ block.id }}">
+        <h3 class="icon-title icon-title-{{ block.id }}">{{ block.settings.heading_2 }}</h3>
+        {%- if block.settings.description_2 != blank -%}
+          <div class="icon-description icon-description-{{ block.id }}">{{ block.settings.description_2 }}</div>
+        {%- endif -%}
+      </div>
+    </li>
+  {%- endunless -%}
+
+  {%- unless heading_3_empty -%}
+    <li class="icon-with-text__item icon-with-text__item-{{ block.id }}">
+      <div class="icon-container-{{ block.id }}">
+        {%- if block.settings.image_3 == null and block.settings.icon_3 != 'none' -%}
+          <div class="svg-wrapper-accordion svg-wrapper-accordion-{{ block.id }}">
+            {%- render 'icon-accordion', icon: block.settings.icon_3 -%}
+          </div>
+        {%- elsif block.settings.image_3 != null -%}
+          <img
+            src="{{ block.settings.image_3 | image_url }}"
+            alt="{{ block.settings.image_3.alt | escape }}"
+            class="icon-img icon-img-{{ block.id }}"
+            width="auto"
+            height="auto"
+          >
+        {%- endif -%}
+      </div>
+      <div class="text-container-{{ block.id }}">
+        <h3 class="icon-title icon-title-{{ block.id }}">{{ block.settings.heading_3 }}</h3>
+        {%- if block.settings.description_3 != blank -%}
+          <div class="icon-description icon-description-{{ block.id }}">{{ block.settings.description_3 }}</div>
+        {%- endif -%}
+      </div>
+    </li>
+  {%- endunless -%}
+</ul>

@@ -1,0 +1,187 @@
+{%- assign container_text = block.settings.container_text -%}
+{%- assign button_alignment = block.settings.button_alignment | default: "left" -%}
+
+{% style %}
+.product-popup-modal__button {
+  display: flex; 
+}
+
+.product-popup-modal__button .icon {
+  width: 3rem; 
+  height: auto;
+  margin-right: 8px; 
+}
+
+  .product-popup-modal__button.link {
+  text-decoration: none; 
+}
+
+#ProductPopup-{{ block.id }} {
+  color: {{ block.settings.popup_text_color }};
+  font-size: {{ block.settings.title_size }}rem;
+
+}
+
+.product-popup-modal__opener-{{ block.id }} {
+  margin-top: {{ block.settings.margin_top }}rem;
+  margin-bottom: {{ block.settings.margin_bottom }}rem;
+} 
+{% endstyle %}
+
+<modal-opener
+  class="product-popup-modal__opener-{{ block.id }} quick-add-hidden"
+  data-modal="#PopupModal-{{ block.id }}"
+  {{ block.shopify_attributes }}
+>
+  <button
+    id="ProductPopup-{{ block.id }}"
+    class="product-popup-modal__button link"
+    type="button"
+    aria-haspopup="dialog"
+  >
+    {%- case block.settings.icon -%}
+      {%- when 'icon-size-chart-style1' -%}
+        <span class="icon" style="width: {{ block.settings.icon_size }}rem;">
+          <svg viewBox="0 0 {{ block.settings.icon_size | times: 100 }} {{ block.settings.icon_size | times: 100 }}" width="{{ block.settings.icon_size }}rem">
+            {{ 'icon-size-chart-style1.svg' | inline_asset_content }}
+          </svg>
+        </span>
+      {%- when 'icon-ruler' -%}
+        <span class="icon" style="width: {{ block.settings.icon_size }}rem;">
+          <svg viewBox="0 0 {{ block.settings.icon_size | times: 100 }} {{ block.settings.icon_size | times: 100 }}" width="{{ block.settings.icon_size }}rem">
+            {{ 'icon-ruler.svg' | inline_asset_content }}
+          </svg>
+        </span>
+      {%- when 'icon-size-chart-style3' -%}
+        <span class="icon" style="width: {{ block.settings.icon_size }}rem;">
+          <svg viewBox="0 0 {{ block.settings.icon_size | times: 100 }} {{ block.settings.icon_size | times: 100 }}" width="{{ block.settings.icon_size }}rem">
+            {{ 'icon-size-chart-style3.svg' | inline_asset_content }}
+          </svg>
+        </span>
+      {%- when 'icon-size-chart-style4' -%}
+        <span class="icon" style="width: {{ block.settings.icon_size }}rem;">
+          <svg viewBox="0 0 {{ block.settings.icon_size | times: 100 }} {{ block.settings.icon_size | times: 100 }}" width="{{ block.settings.icon_size }}rem">
+            {{ 'icon-size-chart-style4.svg' | inline_asset_content }}
+          </svg>
+        </span>
+      {%- when 'icon-size-chart-style5' -%}
+        <span class="icon" style="width: {{ block.settings.icon_size }}rem;">
+          <svg viewBox="0 0 {{ block.settings.icon_size | times: 100 }} {{ block.settings.icon_size | times: 100 }}" width="{{ block.settings.icon_size }}rem">
+            {{ 'icon-size-chart-style5.svg' | inline_asset_content }}
+          </svg>
+        </span>
+      {%- when 'icon-size-chart-style6' -%}
+        <span class="icon" style="width: {{ block.settings.icon_size }}rem;">
+          <svg viewBox="0 0 {{ block.settings.icon_size | times: 100 }} {{ block.settings.icon_size | times: 100 }}" width="{{ block.settings.icon_size }}rem">
+            {{ 'icon-size-chart-style6.svg' | inline_asset_content }}
+          </svg>
+        </span>
+      {%- when 'none' -%}
+    {%- endcase -%}
+
+    {{ block.settings.text | default: block.settings.page.title | escape }}
+  </button>
+</modal-opener>
+
+<modal-dialog id="PopupModal-{{ block.id }}" class="product-popup-modal" {{ block.shopify_attributes }}>
+  <div
+    role="dialog"
+    aria-label="{{ block.settings.text }}"
+    aria-modal="true"
+    class="product-popup-modal__content"
+    tabindex="-1"
+  >
+    <button
+      id="ModalClose-{{ block.id }}"
+      type="button"
+      class="product-popup-modal__toggle"
+      aria-label="{{ 'accessibility.close' | t }}"
+    >
+      {{- 'icon-close.svg' | inline_asset_content -}}
+    </button>
+    <div class="product-popup-modal__content-info">
+      <h1 class="h2">{{ block.settings.page.title | escape }}</h1>
+      {{ block.settings.page.content }}
+    </div>
+  </div>
+</modal-dialog>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  window.injectSizeChartButton = function() {
+    var elements = document.querySelectorAll(".js.product-form__input.product-form__input--pill");
+    var legendTexts = "{{ container_text }}".split(",").map(function(text) { return text.trim(); });
+    var popupButton = document.getElementById("ProductPopup-{{ block.id }}");
+    var wrapper = popupButton ? popupButton.parentNode : null;
+    var legendProvided = legendTexts.length > 0 && legendTexts[0] !== ""; 
+
+    var matched = false;
+
+    if (!popupButton) {
+      console.log("Popup button not found, creating a new one...");
+      tt
+      if (wrapper) {
+        var newButton = document.createElement('button');
+        newButton.id = 'ProductPopup-{{ block.id }}';
+        newButton.classList.add('product-popup-modal__button', 'link');
+        newButton.textContent = 'Guide des tailles';  // Vous pouvez ajuster le texte ici.
+        wrapper.appendChild(newButton);
+        popupButton = newButton; // Mettre à jour la référence pour utilisation ultérieure
+      } else {
+        console.log("Wrapper non trouvé, impossible de créer le bouton.");
+        return;
+      }
+    }
+
+    if (legendProvided) {
+      elements.forEach(function(element) {
+        var legendElement = element.querySelector("legend");
+
+        if (legendElement) {
+          var legendContent = legendElement.textContent.trim();
+          matched = legendTexts.some(function(text) {
+            return legendContent.includes(text);
+          });
+
+          if (matched && wrapper) {
+            wrapper.style.position = 'absolute';
+            wrapper.style.right = '0';
+            wrapper.style.top = legendElement.offsetTop + 'px';
+            wrapper.style.display = 'inline-block';
+            wrapper.style.transform = 'none';
+            element.appendChild(wrapper);
+          }
+        }
+      });
+    }
+
+    if (!matched && !legendProvided && wrapper) {
+      wrapper.style.position = 'relative'; 
+      wrapper.style.display = 'flex'; 
+      wrapper.style.width = '100%';
+
+      switch ("{{ button_alignment }}") {
+        case 'left':
+          wrapper.style.justifyContent = 'flex-start';
+          break;
+        case 'center':
+          wrapper.style.justifyContent = 'center';
+          break;
+        case 'right':
+          wrapper.style.justifyContent = 'flex-end';
+          break;
+        default:
+          wrapper.style.justifyContent = 'center'; 
+          break;
+      }
+    }
+  }
+
+  injectSizeChartButton();
+
+  document.addEventListener('variant:change', function() {
+    console.log('Changement de variante détecté, réinjection du bouton...');
+    injectSizeChartButton(); 
+  });
+});
+</script>

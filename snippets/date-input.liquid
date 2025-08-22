@@ -1,0 +1,29 @@
+<style>
+  .custom.form__label { margin-bottom: 0.6rem; }
+  .field.custom { margin-top: 0; }
+  .custom .field__input {
+    color: rgba(var(--color-foreground), 0.75);
+  }
+  .date-input-{{ section.id }} {
+    margin-top: {{ block.settings.margin_top }}rem;
+    margin-bottom: {{ block.settings.margin_bottom }}rem;
+  }
+</style>
+
+<div class="date-input-{{ section.id }}">
+ <label class="form__label custom" style="margin-bottom: 0.9rem;">{{ block.settings.label_text }}{% if block.settings.required %} *{% endif %}</label>
+  <div class="field custom">
+  <input class="field__input"
+         type="date"
+         form="{{ 'product-form-' | append: section.id }}"
+         name="properties[{{ block.settings.label_text }}]"
+         placeholder="{{ block.settings.placeholder_text }}"
+         {% if block.settings.required %} required {% endif %}>
+  </div>
+</div>
+
+{% if block.settings.required %}
+ <script>
+    document.addEventListener("DOMContentLoaded", ()=>{document.querySelector("form[novalidate]").removeAttribute("novalidate")})
+    </script>
+{% endif %}

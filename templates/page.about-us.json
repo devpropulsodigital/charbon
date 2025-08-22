@@ -1,0 +1,356 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_with_text_jbxeFc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Ny9dck": {
+          "type": "heading",
+          "settings": {
+            "heading": "L'ORIGINE DE CHARBON",
+            "heading_size": "h1"
+          }
+        },
+        "text_WjeaK8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fort de plus d'une décennie d'expérience dans le secteur de la coiffure, j'ai expérimenté une multitude de cires sans jamais trouver la perfection. Cela m'a motivé à relever un nouveau challenge en développant ma ligne de produits. J'ai méticuleusement veillé à chaque aspect, de la senteur à la texture, en passant par une application aisée ne laissant aucun résidu et un rinçage doux. </p><p>Le résultat ? Une gamme qui me ressemble vraiment et qui incarne pleinement mes valeurs.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_6RBbJw": {
+          "type": "button",
+          "settings": {
+            "button_label": "REJOINS NOUS",
+            "button_link": "#",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ny9dck",
+        "text_WjeaK8",
+        "button_6RBbJw"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "enable_margin_fix": false,
+        "image": "shopify://shop_images/media2.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_border_radius": 10,
+        "image_border_thickness": 0,
+        "image_border_color": "#000000",
+        "enable_image_shadow": false,
+        "image_shadow_color": "#000000",
+        "image_shadow_opacity": 0.7,
+        "image_shadow_horizontal": 0,
+        "image_shadow_vertical": 0,
+        "image_shadow_blur": 10,
+        "image_shadow_spread": 0,
+        "align_items_center": true,
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "custom_radius": 10,
+        "image_text_gap": 30,
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "background_size": "cover",
+        "background_position": "center center",
+        "background_repeat": "no-repeat",
+        "background_attachment": "scroll",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "image_behavior": "none",
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "padding_top_desktop": 40,
+        "padding_bottom_desktop": 40,
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "max_width_content": 150,
+        "image_with_text_width": 200,
+        "full_width": true
+      }
+    },
+    "announcement_bar_ngMhRp": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_GxxJje": {
+          "type": "announcement",
+          "settings": {
+            "text": "ENGAGEMENT",
+            "link": ""
+          }
+        },
+        "announcement_GGXXiD": {
+          "type": "announcement",
+          "settings": {
+            "text": "ACCESSIBILITÉ",
+            "link": ""
+          }
+        },
+        "announcement_UbmhW9": {
+          "type": "announcement",
+          "settings": {
+            "text": "EXCELLENCE",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_GxxJje",
+        "announcement_GGXXiD",
+        "announcement_UbmhW9"
+      ],
+      "disabled": true,
+      "name": "t:sections.announcement-bar.presets.name",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "double_section_X6zNJg": {
+      "type": "double-section",
+      "disabled": true,
+      "name": "Double section",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "color_scheme": "",
+        "section_1_id": "",
+        "padding_top_one": 15,
+        "padding_bottom_one": 15,
+        "mobile_reverse_grid": false,
+        "section_2_id": "",
+        "padding_top_two": 15,
+        "padding_bottom_two": 15,
+        "column_one_width": 50,
+        "alignment": "start",
+        "spacing_desktop": 80,
+        "spacing_mobile": 50,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "content_width": 160
+      }
+    },
+    "scrolling_text_bar_wHRjjR": {
+      "type": "scrolling-text-bar",
+      "blocks": {
+        "text_79Hxim": {
+          "type": "text",
+          "settings": {
+            "text": "ENGAGEMENT",
+            "text_custom": false,
+            "text_font": "poppins_n4",
+            "text_color": "#000000",
+            "text_size": 36,
+            "text_size_mobile": 28,
+            "text_height": 130,
+            "text_mr": 50,
+            "text_mr_mobile": 40,
+            "url": "",
+            "stencil_all": false,
+            "stencil_text": ""
+          }
+        },
+        "text_NwJk4T": {
+          "type": "text",
+          "settings": {
+            "text": "ACCESSIBILITÉ",
+            "text_custom": false,
+            "text_font": "poppins_n4",
+            "text_color": "#000000",
+            "text_size": 36,
+            "text_size_mobile": 28,
+            "text_height": 130,
+            "text_mr": 50,
+            "text_mr_mobile": 40,
+            "url": "",
+            "stencil_all": false,
+            "stencil_text": ""
+          }
+        },
+        "text_Y3iFJQ": {
+          "type": "text",
+          "settings": {
+            "text": "EXCELLENCE",
+            "text_custom": false,
+            "text_font": "poppins_n4",
+            "text_color": "#000000",
+            "text_size": 36,
+            "text_size_mobile": 28,
+            "text_height": 140,
+            "text_mr": 50,
+            "text_mr_mobile": 40,
+            "url": "",
+            "stencil_all": false,
+            "stencil_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_79Hxim",
+        "text_NwJk4T",
+        "text_Y3iFJQ"
+      ],
+      "name": "Bannière défilante",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "background_color": "#f5f5f5",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "enable_shadow": true,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 0,
+        "shadow_blur": 26,
+        "shadow_spread": 0,
+        "shadow_opacity": 0.1,
+        "shadow_color": "#000000",
+        "scrolling_velocity": 40,
+        "scrolling_velocity_mobile": 42,
+        "reverse_direction": false,
+        "pause_hover": true,
+        "margin_top": 32,
+        "margin_bottom": 32,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "image_with_text_49pdDj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ct7AhD": {
+          "type": "heading",
+          "settings": {
+            "heading": "LA GAMME DE PRODUITS",
+            "heading_size": "h1"
+          }
+        },
+        "text_hA9feT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Quand j'ai commencé à réfléchir sur le produit en lui-même, je me suis vite aperçu que si je voulais avoir quelque chose dont je veux être fier, j'allais devoir donner tout ce que j'avais. On ne parle pas d'un simple t-shirt avec un logo. On parle de vos cheveux, et ce n'est pas quelque chose que je prends à la légère. C'est pour cette raison que je voulais trouver les meilleurs ingrédients et la meilleure composition pour trouver l'équilibre parfait entre qualité et prix. Et je pense avoir fait les bon choix. Si tu souhaites en apprendre plus sur la création des produits, clique sur le bouton en dessous.<br/><br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_GdeihX": {
+          "type": "button",
+          "settings": {
+            "button_label": "DÉCOUVRIR LES PRODUITS",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ct7AhD",
+        "text_hA9feT",
+        "button_GdeihX"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "enable_margin_fix": false,
+        "image": "shopify://shop_images/18.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_border_radius": 10,
+        "image_border_thickness": 0,
+        "image_border_color": "#000000",
+        "enable_image_shadow": false,
+        "image_shadow_color": "#000000",
+        "image_shadow_opacity": 0.7,
+        "image_shadow_horizontal": 0,
+        "image_shadow_vertical": 0,
+        "image_shadow_blur": 10,
+        "image_shadow_spread": 0,
+        "align_items_center": true,
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "custom_radius": 10,
+        "image_text_gap": 30,
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "background_size": "cover",
+        "background_position": "center center",
+        "background_repeat": "no-repeat",
+        "background_attachment": "scroll",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "image_behavior": "none",
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "padding_top_desktop": 40,
+        "padding_bottom_desktop": 40,
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "max_width_content": 150,
+        "image_with_text_width": 200,
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_jbxeFc",
+    "announcement_bar_ngMhRp",
+    "double_section_X6zNJg",
+    "scrolling_text_bar_wHRjjR",
+    "image_with_text_49pdDj"
+  ]
+}

@@ -1,0 +1,232 @@
+{% comment %}
+  Section: Popup Ingredients List
+  - Renders a button that opens a modal window with a list of ingredients.
+  - Ingredients are added as blocks in the theme customizer.
+{% endcomment %}
+
+{%- if section.blocks.size > 0 -%}
+  <div class="page-width">
+    <div class="popup-ingredients-trigger">
+      <button type="button" id="open-ingredients-{{ section.id }}" class="button button--secondary">
+        {{ section.settings.button_label | escape }}
+      </button>
+    </div>
+  </div>
+
+  <div id="ingredients-modal-{{ section.id }}" class="ingredients-modal" role="dialog" aria-modal="true" aria-labelledby="ingredients-modal-heading-{{ section.id }}">
+    <div class="ingredients-modal__overlay"></div>
+    <div class="ingredients-modal__content">
+      <div class="ingredients-modal__header">
+        <h2 id="ingredients-modal-heading-{{ section.id }}" class="h3">{{ section.settings.popup_heading | escape }}</h2>
+        <button type="button" class="ingredients-modal__close" aria-label="Close">
+          ×
+        </button>
+      </div>
+      <div class="ingredients-modal__body">
+        <ul class="ingredients-modal__list">
+          {%- for block in section.blocks -%}
+            <li {{ block.shopify_attributes }}>
+              {{ block.settings.name | escape }}
+              {%- if block.settings.subtext != blank -%}
+                <span class="ingredients-modal__subtext">({{ block.settings.subtext | escape }})</span>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+<style>
+  .popup-ingredients-trigger {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* You can customize the button style to match your theme */
+  .popup-ingredients-trigger .button {
+    cursor: pointer;
+  }
+
+  .ingredients-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ingredients-modal.is-active {
+    display: flex; /* Shown when active */
+  }
+
+  .ingredients-modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
+
+  .ingredients-modal__content {
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 1001;
+  }
+
+  .ingredients-modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+  .ingredients-modal__header h2 {
+    margin: 0;
+  }
+  
+  .ingredients-modal__close {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    line-height: 1;
+    padding: 0;
+    cursor: pointer;
+    color: #555;
+  }
+
+  .ingredients-modal__list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    columns: 2; /* Creates a two-column layout on larger screens */
+    column-gap: 25px;
+  }
+  
+  .ingredients-modal__list li {
+    padding-bottom: 10px;
+  }
+
+  .ingredients-modal__subtext {
+    color: #777;
+    font-style: italic;
+    margin-left: 4px;
+  }
+
+  /* Single column for mobile devices */
+  @media screen and (max-width: 749px) {
+    .ingredients-modal__list {
+      columns: 1;
+    }
+    .ingredients-modal__content {
+      padding: 20px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // We use section.id to make sure this script only affects this specific section
+    const sectionId = '{{ section.id }}';
+    const openBtn = document.getElementById(`open-ingredients-${sectionId}`);
+    const modal = document.getElementById(`ingredients-modal-${sectionId}`);
+
+    // If the button or modal doesn't exist (e.g., no ingredients added), stop the script.
+    if (!openBtn || !modal) {
+      return;
+    }
+
+    const closeBtn = modal.querySelector('.ingredients-modal__close');
+    const overlay = modal.querySelector('.ingredients-modal__overlay');
+    
+    const openModal = () => {
+      modal.classList.add('is-active');
+      document.body.style.overflow = 'hidden'; // Prevents scrolling the page behind the modal
+    };
+    
+    const closeModal = () => {
+      modal.classList.remove('is-active');
+      document.body.style.overflow = ''; // Re-enables scrolling
+    };
+
+    openBtn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', closeModal);
+    
+    // Also allow closing the modal with the Escape key
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && modal.classList.contains('is-active')) {
+        closeModal();
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Popup Ingredients",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Liste complète des ingrédients"
+    },
+    {
+      "type": "text",
+      "id": "popup_heading",
+      "label": "Popup Heading",
+      "default": "Full Ingredients List"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "ingredient",
+      "name": "Ingredient",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Ingredient Name",
+          "default": "Aqua (Water)"
+        },
+        {
+          "type": "text",
+          "id": "subtext",
+          "label": "Optional Subtext",
+          "info": "E.g., Organic, Ethically Sourced"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Popup Ingredients",
+      "blocks": [
+        { "type": "ingredient" },
+        { "type": "ingredient" },
+        { "type": "ingredient" },
+        { "type": "ingredient" }
+      ]
+    }
+  ]
+}
+{% endschema %}

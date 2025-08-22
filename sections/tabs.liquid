@@ -1,0 +1,797 @@
+{%- liquid
+  assign font_family = section.settings.font_family
+  assign tab_font_size = section.settings.tab_font_size
+  assign tab_color = section.settings.tab_color
+  assign tab_selected_color = section.settings.tab_selected_color
+  assign glider_color = section.settings.glider_color
+  assign glider_border_radius = section.settings.glider_border_radius
+  assign tabs_menu_border_radius = section.settings.tabs_menu_border_radius
+  assign shadow_offset_x = section.settings.shadow_offset_x
+  assign shadow_offset_y = section.settings.shadow_offset_y
+  assign shadow_blur = section.settings.shadow_blur
+  assign shadow_spread = section.settings.shadow_spread
+  assign shadow_color_red = section.settings.shadow_color | color_extract: 'red'
+  assign shadow_color_green = section.settings.shadow_color | color_extract: 'green'
+  assign shadow_color_blue = section.settings.shadow_color | color_extract: 'blue'
+  assign shadow_opacity = section.settings.shadow_opacity
+  assign enable_shadow = section.settings.enable_shadow
+  assign tabs_menu_border_color = section.settings.tabs_menu_border_color
+  assign tabs_menu_border_width = section.settings.tabs_menu_border_width
+  assign tabs_menu_border_style = section.settings.tabs_menu_border_style
+  assign section_margin_top = section.settings.section_margin_top
+  assign section_background_color = section.settings.section_background_color
+  assign glider_height = section.settings.glider_height
+  assign tabs_header_padding_top = section.settings.tabs_header_padding_top
+  assign tabs_header_padding_bottom = section.settings.tabs_header_padding_bottom
+-%}
+
+{%- style -%}
+  
+{{  font_family | font_face: font_display: 'swap' }}
+  
+:root {
+  --primary-color: #185ee0;
+  --secondary-color: #e6eef9;
+  --tab-width: auto;
+  --glider-translate: 0px;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.tabs-{{ section.id }} {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: {{ section_margin_top }}px;
+  background-color: {{ section_background_color }};
+}
+
+.tabs-menu-{{ section.id }} {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 
+    {% if enable_shadow %}
+    {{ shadow_offset_x }}px 
+    {{ shadow_offset_y }}px 
+    {{ shadow_blur }}px 
+    {{ shadow_spread }}px 
+    rgba(
+      {{ shadow_color_red }},
+      {{ shadow_color_green }},
+      {{ shadow_color_blue }},
+      {{ shadow_opacity }}
+    );
+    {% else %}
+    none;
+    {% endif %};
+  padding: 0.75rem;
+  border-radius: {{ tabs_menu_border_radius }}px;
+  width: fit-content;
+  margin: 0;
+  border-color: {{ tabs_menu_border_color }};
+  border-width: {{ tabs_menu_border_width }}px;
+  border-style: {{ tabs_menu_border_style }};
+}
+
+.tabs-menu-{{ section.id }} li {
+  list-style: none;
+  text-align: center;
+}
+
+.tabs-menu-{{ section.id }} input[type="radio"] {
+  display: none;
+}
+
+.tab-{{ section.id }} {
+  font-size: {{ tab_font_size }}px;
+  color: {{ tab_color }};
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 8px; 
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 99px;
+  transition: color 0.3s ease-in;
+  white-space: nowrap; 
+}
+
+{% if section.settings.font_family_custom %}
+  .tab-{{ section.id }} {
+       font-family: {{ font_family.family }}; {{ font_family.fallback_families }};
+       font-weight: {{ font_family.weight }};
+       font-style: {{ font_family.style }};
+  }
+{% endif %}   
+
+.tabs-menu-{{ section.id }} input:checked + .tab-{{ section.id }} {
+  color: {{ tab_selected_color }};
+}
+  
+.tab-image {
+  display: block;
+  height: auto;
+  width: 100%;
+  z-index: 2;
+  image-rendering: auto;
+}  
+  
+.tab-image-container {
+  z-index: 2;
+  display: inline-block;
+  height: auto;
+  overflow: hidden;
+}  
+  
+.tab-title {
+  display: inline-block;
+  flex-grow: 1;
+  z-index: 2;
+}
+  
+.tabs-content-{{ section.id }} {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.tabs-content-{{ section.id }} .content {
+  display: none;
+}
+
+.tabs-content-{{ section.id }} .content.active {
+  display: block;
+}
+
+.glider-{{ section.id }} {
+  position: absolute;
+  width: var(--tab-width);
+  z-index: 1;
+  transition: transform 0.25s ease-out;
+  transform: translateX(var(--glider-translate));
+  background-color: {{ glider_color }};
+  border-radius: {{ glider_border_radius }}px;
+  height: {{ glider_height }}px;
+}
+
+.tabs-header-{{ section.id }} {
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    align-items: center;
+    padding-top: {{ tabs_header_padding_top }}px;
+    padding-bottom: {{ tabs_header_padding_bottom }}px;
+}
+
+  .tab-{{ section.id }} {
+  -webkit-tap-highlight-color: transparent; 
+  outline: none; 
+}  
+  
+{%- endstyle -%}
+
+
+{%- if section.blocks != blank -%}
+<div class="tabs-{{ section.id }} content-for-grouping {% if section.settings.mobile-hidden %} mobile-hidden {% endif %} {% if section.settings.tablet-hidden %} tablet-hidden {% endif %} {% if section.settings.laptop-hidden %} laptop-hidden {% endif %} {% if section.settings.desktop-hidden %} desktop-hidden {% endif %}">
+  <div class="tabs-header-{{ section.id }}">
+    <ul class="tabs-menu-{{ section.id }}">
+      {% for block in section.blocks %}
+        {% capture image_width %}{{ block.settings.image_width | default: 20 }}{% endcapture %}
+        {% capture image_width_2x %}{{ image_width | times: 2 }}{% endcapture %}
+        {% capture image_width_3x %}{{ image_width | times: 3 }}{% endcapture %}
+        <li>
+          <input type="radio" id="tab{{ block.id }}-{{ section.id }}" name="tab-control-{{ section.id }}" {% if forloop.first %}checked{% endif %}>
+          <label class="tab-{{ section.id }}" for="tab{{ block.id }}-{{ section.id }}">
+            {% if block.settings.tab_image != blank %}
+              <div 
+                class="tab-image-container" 
+                style="width: {{ image_width }}px;"
+              >
+                <img 
+                  src="{{ block.settings.tab_image | image_url: width: image_width_2x, format: 'webp' }}" 
+                  srcset="
+                    {{ block.settings.tab_image | image_url: width: image_width_2x, format: 'webp' }} 1x,
+                    {{ block.settings.tab_image | image_url: width: image_width_3x, format: 'webp' }} 2x
+                  "
+                  sizes="(max-width: 600px) {{ image_width }}px, {{ image_width }}px"
+                  width="{{ image_width }}" 
+                  height="auto"
+                  alt="{{ block.settings.tab_title }}"
+                  class="tab-image"
+                  loading="lazy"
+                />
+              </div>
+            {% endif %}
+            <span class="tab-title">{{ block.settings.tab_title }}</span>
+          </label>
+        </li>
+      {% endfor %}
+    </ul>
+    <span class="glider-{{ section.id }}"></span>
+  </div>
+
+ <div class="tabs-content-{{ section.id }}">
+  {% for block in section.blocks %}
+    <div class="content {% if forloop.first %}active{% endif %}" id="content{{ block.id }}" data-tab-id="tab{{ block.id }}">
+      <section id="section-{{ block.id }}" data-section-id="{{ block.settings.section_id }}">
+        <!-- Le contenu de la section sera injecté ici par JavaScript -->
+      </section>
+    </div>
+  {% endfor %}
+</div>
+</div>
+{%- else -%}
+<h2 class="title center h1">Ajoutez des blocs pour configurer les onglets avec des IDs de sections.</h2>
+{%- endif -%}
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const tabsMenu = document.querySelector(".tabs-menu-{{ section.id }}");
+  const glider = document.querySelector(".glider-{{ section.id }}");
+  const tabs = tabsMenu.querySelectorAll("input[type='radio'] + .tab-{{ section.id }}");
+
+  if (!tabsMenu || !glider || tabs.length === 0) {
+    return;
+  }
+
+  const updateGliderPosition = (index) => {
+    const activeTab = tabs[index];
+    const tabRect = activeTab.getBoundingClientRect();
+    const menuRect = tabsMenu.getBoundingClientRect();
+    const translateValue = tabRect.left - menuRect.left + tabsMenu.scrollLeft;
+
+    glider.style.width = `${tabRect.width}px`;
+    glider.style.transform = `translateX(${translateValue}px)`;
+  };
+
+  tabsMenu.querySelectorAll("input[type='radio']").forEach((input, index) => {
+    input.addEventListener("change", () => {
+      updateGliderPosition(index);
+
+      document.querySelectorAll(".tabs-content-{{ section.id }} .content").forEach((content, contentIndex) => {
+        const isActive = contentIndex === index;
+        content.classList.toggle("active", isActive);
+
+        if (isActive) {
+          executeSectionScripts(content);
+        }
+      });
+    });
+  });
+
+  const firstCheckedInput = tabsMenu.querySelector("input[type='radio']:checked");
+  if (firstCheckedInput) {
+    const activeIndex = Array.from(tabsMenu.querySelectorAll("input[type='radio']")).indexOf(firstCheckedInput);
+    updateGliderPosition(activeIndex);
+  }
+
+  // Fonction pour exécuter les scripts des sections activées
+  function executeSectionScripts(content) {
+
+  const featureItemsWrapper = content.querySelector("[class*='feature-items-wrapper']");
+  if (featureItemsWrapper) {
+    initializeFeatureItems(featureItemsWrapper);
+  }
+
+  // Vérification du before-after-wrapper
+  let retryCount = 0;
+  const maxRetries = 10;
+
+  const checkBeforeAfterWrapper = () => {
+    const beforeAfterWrapper = content.querySelector("[class*='before-after-image-wrapper']"); 
+
+    if (beforeAfterWrapper) {
+      initBeforeAfter(beforeAfterWrapper);
+    } else if (retryCount < maxRetries) {
+      retryCount++;
+      setTimeout(checkBeforeAfterWrapper, 50); // Réessayer après 50ms
+    } 
+  };
+
+  checkBeforeAfterWrapper();
+}
+
+  function initializeFeatureItems(wrapper) {
+    const circles = wrapper.querySelectorAll("[class*='feature-circle']");
+    circles.forEach((circle) => {
+      circle.style.setProperty("--percent", "0%");
+      const percent = parseInt(circle.getAttribute("data-percent"));
+
+      let currentPercent = 0;
+      const duration = 1000; // Duration in milliseconds
+      const increment = percent / (duration / 50);
+
+      const interval = setInterval(() => {
+        currentPercent += increment;
+        circle.style.setProperty("--percent", `${currentPercent}%`);
+        if (currentPercent >= percent) {
+          circle.style.setProperty("--percent", `${percent}%`);
+          clearInterval(interval);
+        }
+      }, 10);
+    });
+  }
+
+  function initBeforeAfter(wrapper) {
+
+    const cursor = wrapper.querySelector("[class*='before-after-cursor']"); 
+    if (!cursor) {
+      return;
+    }
+
+    let startX, originalOffset;
+
+    const dragStart = (event) => {
+      startX = event.clientX;
+      originalOffset = parseFloat(getComputedStyle(wrapper).getPropertyValue('--clip-path-offset')) || 0;
+
+      document.addEventListener('pointermove', dragMove);
+      document.addEventListener('pointerup', dragEnd);
+    };
+
+    const dragMove = (event) => {
+      const currentX = event.clientX;
+      const deltaX = currentX - startX;
+
+      let newOffset = deltaX + originalOffset;
+      const cursorOffsetPercent = 50;
+      const containerWidth = wrapper.offsetWidth;
+      const pixelsOffset = (cursorOffsetPercent / 100) * containerWidth;
+
+      const minOffset = -pixelsOffset;
+      const maxOffset = containerWidth - pixelsOffset;
+
+      newOffset = Math.max(minOffset, Math.min(maxOffset, newOffset));
+
+      wrapper.style.setProperty('--clip-path-offset', `${newOffset}px`);
+    };
+
+    const dragEnd = () => {
+      document.removeEventListener('pointermove', dragMove);
+      document.removeEventListener('pointerup', dragEnd);
+    };
+
+    const activateDrag = () => {
+      cursor.addEventListener('pointerdown', dragStart);
+    };
+
+    const checkVisibilityInterval = setInterval(() => {
+      if (isElementVisible(wrapper)) {
+        clearInterval(checkVisibilityInterval);
+        activateDrag();
+      } 
+    }, 100);
+  }
+
+  function isElementVisible(el) {
+    if (!el) return false;
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+});
+
+// Initialisation supplémentaire pour les onglets
+document.addEventListener("DOMContentLoaded", () => {
+  class TabsContainer {
+    constructor(container) {
+      this.container = container;
+      this.initTabs();
+      this.setupTabChangeListener();
+    }
+
+    initTabs() {
+      const tabs = this.container.querySelectorAll(".tabs-content-{{ section.id }} .content section");
+
+      tabs.forEach((tab) => {
+        const sectionId = tab.dataset.sectionId;
+
+        if (!sectionId) {
+          return;
+        }
+
+        const sectionElement = document.querySelector(
+          `[id="${sectionId.replace("#", "")}"], [data-id="${sectionId.replace("#", "")}"]`
+        );
+
+        if (!sectionElement) {
+          return;
+        }
+
+        const sectionContent = sectionElement.querySelector(".content-for-grouping");
+
+        if (sectionContent && !tab.querySelector("*")) {
+          tab.appendChild(sectionContent.cloneNode(true));
+          sectionElement.style.display = "none";
+        }
+      });
+    }
+
+setupTabChangeListener() {
+  const tabButtons = this.container.querySelectorAll(".tabs-menu-{{ section.id }} input[type='radio']");
+  const contentSections = this.container.querySelectorAll(".tabs-content-{{ section.id }} .content");
+
+  tabButtons.forEach((button, index) => {
+    button.addEventListener("change", () => {
+      contentSections.forEach((content, contentIndex) => {
+        const isActive = contentIndex === index;
+        content.classList.toggle("active", isActive);
+
+        if (isActive) {
+  setTimeout(() => {
+    const beforeAfterWrapper = content.querySelector(`.before-after-image-wrapper-{{ section.id }}`);
+    if (beforeAfterWrapper) {
+      initBeforeAfter(beforeAfterWrapper);
+    } 
+  }, 50); // Donne du temps pour que le DOM se mette à jour
+}
+
+      });
+    });
+  });
+}
+  }
+
+  const tabsContainers = document.querySelectorAll(".tabs-{{ section.id }}");
+
+  tabsContainers.forEach((container) => {
+    new TabsContainer(container);
+  });
+});
+</script>
+
+{% schema %}
+{
+  "name": "Onglets",
+  "tag": "section",
+  "class": "section",
+  "settings": [  
+      {
+      "type": "header",
+      "content": "ID de la section"
+      },
+      {
+      "type": "checkbox",
+      "id": "display_id",
+      "label": "Afficher le bouton pour copier l'ID de la section",
+      "info": "L'ID peut être utilisé dans la section 'Double section' pour afficher 2 sections sur la même ligne. L'ID peut également être utilisé dans un lien de bouton pour faire défiler la page jusqu'à cette section.",
+      "default": false
+      },
+      {
+      "type": "header",
+      "content": "Masquer la section selon le type d'appareil"
+      },
+      {
+        "type": "checkbox",
+        "id": "mobile-hidden",
+        "label": "Masquer sur mobile",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "tablet-hidden",
+        "label": "Masquer sur tablette",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "laptop-hidden",
+        "label": "Masquer sur ordinateur portable",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "desktop-hidden",
+        "label": "Masquer sur ordinateur",
+        "default": false
+      },
+    {
+      "type": "header",
+      "content": "Titre des onglets"
+    },
+    {
+      "type": "checkbox",
+      "id": "font_family_custom",
+      "label": "Appliquer une police différente du thème",
+      "default": false
+    },
+    {
+      "type": "font_picker",
+      "id": "font_family",
+      "label": "Police",
+      "default": "poppins_i7"
+    },
+    {
+      "type": "range",
+      "id": "tab_font_size",
+      "label": "Taille",
+      "unit": "px",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "tab_color",
+      "label": "Couleur des titres non sélectionnés",
+      "default": "#5E59FF"
+    },
+    {
+      "type": "color",
+      "id": "tab_selected_color",
+      "label": "Couleur des titres sélectionnés",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Glider",
+      "info": "Enregistrez pour voir le résultat sur le glider"
+    },
+    {
+      "type": "range",
+      "id": "glider_height",
+      "label": "Épaisseur",
+      "min": 5,
+      "max": 300,
+      "step": 5,
+      "unit": "px",
+      "default": 45
+    },
+    {
+      "type": "color",
+      "id": "glider_color",
+      "label": "Couleur",
+      "default": "#5E59FF"
+    },
+    {
+      "type": "range",
+      "id": "glider_border_radius",
+      "label": "Arrondi des angles",
+      "unit": "px",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Menu",
+    },
+    {
+      "type": "color",
+      "id": "tabs_menu_border_color",
+      "label": "Couleur du contour",
+      "default": "#5E59FF"
+    },
+    {
+      "type": "range",
+      "id": "tabs_menu_border_width",
+      "label": "Épaisseur du contour",
+      "unit": "px",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "select",
+      "id": "tabs_menu_border_style",
+      "label": "Style du contour",
+      "options": [
+        { "value": "solid", "label": "Solide" },
+        { "value": "dashed", "label": "Pointillés" },
+        { "value": "dotted", "label": "Points" },
+        { "value": "double", "label": "Double" },
+        { "value": "groove", "label": "Rainure" },
+        { "value": "ridge", "label": "Crête" },
+        { "value": "inset", "label": "Enfoncé" },
+        { "value": "outset", "label": "En relief" }
+      ],
+      "default": "solid"
+    },
+    {
+      "type": "range",
+      "id": "tabs_menu_border_radius",
+      "label": "Arrondi des angles",
+      "unit": "px",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 10
+    },
+     {
+      "type": "checkbox",
+      "id": "enable_shadow",
+      "label": "Activer l'ombre",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "shadow_offset_x",
+      "label": "Décalage horizontal (X)",
+      "min": -50,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "shadow_offset_y",
+      "label": "Décalage vertical (Y)",
+      "min": -50,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "shadow_blur",
+      "label": "Flou",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "shadow_spread",
+      "label": "Propagation",
+      "min": -50,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": -5
+    },
+    {
+      "type": "range",
+      "id": "shadow_opacity",
+      "label": "Opacité",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.3
+    },
+    {
+      "type": "color",
+      "id": "shadow_color",
+      "label": "Couleur de l'ombre",
+      "default": "#0300FF"
+    },
+    {
+      "type": "range",
+      "id": "tabs_header_padding_top",
+      "label": "Marge intérieure haute",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "tabs_header_padding_bottom",
+      "label": "Marge intérieure basse",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Paramètres de la section",
+      "info": "La marge basse est gérée par chaque section injectée dans la section Onglets"
+    },
+    {
+      "type": "range",
+      "id": "section_margin_top",
+      "label": "Marge haute de la section",
+      "unit": "px",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "section_background_color",
+      "label": "Couleur de fond de la section",
+       "info": "Pour modifier la couleur de fond du contenu des onglets, modifiez la couleur de fond de chaque section injectée",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Onglet",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_title",
+          "label": "Titre de l'onglet",
+          "default": "Nouvel onglet"
+        },
+        {
+          "type": "image_picker",
+          "id": "tab_image",
+          "label": "Image de l'onglet"
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "label": "Largeur de l'image",
+          "unit": "px",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 20
+        },
+        {
+          "type": "text",
+          "id": "section_id",
+          "label": "ID de la section à afficher"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Onglets",
+      "category": "Sections",
+      "blocks": [
+        {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Onglet #1",
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Onglet #2",
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Onglet #3",
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Onglet #4",
+          }
+        }
+      ],
+    }
+  ]
+}
+
+{% endschema %}

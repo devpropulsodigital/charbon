@@ -1,0 +1,125 @@
+{%- liquid 
+  assign rating_margin_top = block.settings.rating_margin_top
+  assign rating_margin_bottom = block.settings.rating_margin_bottom
+  assign stars_color = block.settings.stars_color
+  assign stars_size_desktop = block.settings.stars_size_desktop
+  assign stars_size_mobile = block.settings.stars_size_mobile
+  assign stars_bg_color = block.settings.stars_bg_color
+  assign stars_count = block.settings.stars_count
+  assign full_stars = stars_count | floor
+  assign next_star = full_stars | plus: 1
+  assign rating_custom_text = block.settings.rating_custom_text
+  assign font_title = block.settings.font_title
+  assign font_size_desktop = block.settings.font_size_desktop
+  assign font_size_mobile = block.settings.font_size_mobile
+  assign text_color = block.settings.text_color
+  assign link_url = block.settings.link_url
+-%}
+
+<div class="rating-block">
+  {% if link_url != blank %}
+  <a href="{{ link_url }}" class="rating-link">
+  {% endif %}
+  <div class="stars-container">
+    {% for i in (1..5) %}
+      {% if i <= full_stars %}
+        <svg class="star-icon" viewBox="0 0 32 32">
+          <rect width="32" height="32" fill="{{ stars_bg_color }}" />
+          <g clip-path="url(#clip0_25_4)">
+          <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}" class="default_cursor_cs"></path>
+          </g>
+        </svg>
+      {% elsif i == next_star and stars_count > full_stars %}
+        <svg class="star-icon" viewBox="0 0 32 32">
+          <defs>
+            <linearGradient id="half-bg">
+              <stop offset="50%" stop-color="{{ stars_bg_color }}" />
+              <stop offset="50%" stop-color="#DCDCE6" />
+            </linearGradient>
+          </defs>
+          <rect width="32" height="32" fill="url(#half-bg)" />
+          <g clip-path="url(#clip0_25_4)">
+          <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}" class="default_cursor_cs"></path>
+          </g>
+        </svg>
+      {% else %}
+        <svg class="star-icon" viewBox="0 0 32 32">
+          <rect width="32" height="32" fill="#DCDCE6" />
+          <g clip-path="url(#clip0_25_4)">
+          <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}" class="default_cursor_cs"></path>
+          </g>
+        </svg>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% if link_url != blank %}
+  </a>
+  {% endif %}
+
+  {% if link_url != blank %}
+  <a href="{{ link_url }}" class="rating-link">
+  {% endif %}
+  <div class="rating-custom-text">
+    {{ rating_custom_text }}
+  </div>
+  {% if link_url != blank %}
+  </a>
+  {% endif %}
+</div>
+
+
+{% style %}
+  {{ font_title | font_face: font_display: 'swap' }}
+
+  .rating-block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: {{ rating_margin_top }}rem;
+    margin-bottom: {{ rating_margin_bottom }}rem;
+  }
+
+  .stars-container {
+    display: flex;
+    gap: 4px;
+  }
+
+  .star-icon {
+    width: {{ stars_size_desktop }}px;
+    height: {{ stars_size_desktop }}px;
+  }
+
+  .rating-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+ }
+
+  .rating-custom-text {
+    margin-left: 8px;
+    color: {{ text_color }};
+  }
+
+  {% if block.settings.font_title_custom %}
+   .rating-custom-text {
+    font-family: {{ font_title.family }}; {{ font_title.fallback_families }};
+    font-weight: {{ font_title.weight }};
+    font-style: {{ font_title.style }};
+  }
+{% endif %} 
+  
+  .rating-custom-text p {
+    font-size: {{ font_size_desktop }}px;
+  }
+
+  @media (max-width: 768px) {
+    .star-icon {
+      width: {{ stars_size_mobile }}px;
+      height: {{ stars_size_mobile }}px;
+    }
+    
+    .rating-custom-text p {
+      font-size: {{ font_size_mobile }}px;
+    }
+  }
+{% endstyle %}

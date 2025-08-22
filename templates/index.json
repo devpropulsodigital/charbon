@@ -1,0 +1,1187 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_2_HYERwq": {
+      "type": "image-banner-2",
+      "blocks": {
+        "review_YCmiU9": {
+          "type": "review",
+          "settings": {
+            "stars_count": 5,
+            "stars_color": "#ffffff",
+            "stars_bg_color": "#2d2a26",
+            "stars_size": 18,
+            "stars_size_mobile": 14,
+            "review": "<p>Plus de 3.000 clients satisfaits</p>",
+            "review_custom": false,
+            "review_font": "poppins_n4",
+            "review_color": "#ffffff",
+            "review_size": 16,
+            "review_size_mobile": 12,
+            "review_height": 130,
+            "review_padding_horizontal": 14,
+            "review_padding_horizontal_mobile": 14,
+            "review_padding_vertical": 14,
+            "review_padding_vertical_mobile": 14,
+            "review_radius": 10,
+            "review_bg_opacity": 0.4,
+            "review_mt": 16,
+            "review_mt_mobile": 10,
+            "review_bg_color": "#ffffff"
+          }
+        },
+        "heading_pRpcqD": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>Des produits à la hauteur</strong></p><p><strong>de vos exigences</strong></p>",
+            "heading_custom": true,
+            "heading_font": "barlow_condensed_n6",
+            "heading_color": "#ffffff",
+            "heading_size": 60,
+            "heading_size_mobile": 28,
+            "heading_height": 130,
+            "heading_mt": 24,
+            "heading_mt_mobile": 24
+          }
+        },
+        "text_LUgw8T": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Redécouvrez vos cheveux grâce aux produits naturels Charbon</p>",
+            "text_custom": false,
+            "text_font": "poppins_n4",
+            "text_color": "#ffffff",
+            "text_size": 18,
+            "text_size_mobile": 16,
+            "text_height": 150,
+            "text_mt": 16,
+            "text_mt_mobile": 10
+          }
+        },
+        "feature_yRcBBt": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "icon": "atc",
+            "icon_color": "#000000",
+            "icon_size": 20,
+            "icon_size_mobile": 16,
+            "text": "Caractéristique",
+            "text_custom": false,
+            "text_font": "poppins_n4",
+            "text_color": "#000000",
+            "text_size": 16,
+            "text_size_mobile": 14,
+            "text_height": 100,
+            "feature_gap": 12,
+            "feature_gap_mobile": 12,
+            "feature_mt": 30,
+            "feature_mt_mobile": 20,
+            "hide_mobile": false
+          }
+        },
+        "feature_UCBjri": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "icon": "atc",
+            "icon_color": "#000000",
+            "icon_size": 20,
+            "icon_size_mobile": 16,
+            "text": "Caractéristique",
+            "text_custom": false,
+            "text_font": "poppins_n4",
+            "text_color": "#000000",
+            "text_size": 16,
+            "text_size_mobile": 14,
+            "text_height": 100,
+            "feature_gap": 12,
+            "feature_gap_mobile": 12,
+            "feature_mt": 14,
+            "feature_mt_mobile": 14,
+            "hide_mobile": false
+          }
+        },
+        "feature_inTgLV": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "icon": "atc",
+            "icon_color": "#000000",
+            "icon_size": 20,
+            "icon_size_mobile": 16,
+            "text": "Caractéristique",
+            "text_custom": false,
+            "text_font": "poppins_n4",
+            "text_color": "#000000",
+            "text_size": 16,
+            "text_size_mobile": 14,
+            "text_height": 100,
+            "feature_gap": 12,
+            "feature_gap_mobile": 12,
+            "feature_mt": 14,
+            "feature_mt_mobile": 14,
+            "hide_mobile": false
+          }
+        },
+        "button_88LfLG": {
+          "type": "button",
+          "settings": {
+            "button": "DÉCOUVRIR NOS PRODUITS",
+            "url": "shopify://collections/all",
+            "button_custom": false,
+            "button_font": "poppins_n4",
+            "button_color": "#000000",
+            "button_hover_color": "#000000",
+            "button_size": 16,
+            "button_size_mobile": 14,
+            "button_height": 100,
+            "button_style": "non_outline_arrow",
+            "button_border_thickness": 1,
+            "button_border_color": "#000000",
+            "button_border_hover_color": "#000000",
+            "button_radius": 8,
+            "button_padding_horizontal": 62,
+            "button_padding_horizontal_mobile": 62,
+            "button_padding_vertical": 26,
+            "button_padding_vertical_mobile": 26,
+            "button_mt": 36,
+            "button_mt_mobile": 24,
+            "button_bg_color": "#ffffff",
+            "button_bg_hover_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "review_YCmiU9",
+        "heading_pRpcqD",
+        "text_LUgw8T",
+        "feature_yRcBBt",
+        "feature_UCBjri",
+        "feature_inTgLV",
+        "button_88LfLG"
+      ],
+      "custom_css": [
+        "@media (min-width: 1024px) {.image-banner-content-template--25619930808707__image_banner_2_HYERwq {justify-content: center; align-items: end; margin-right: 200px; }}"
+      ],
+      "name": "Bannière avec image #2",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "enable_margin_fix": false,
+        "image-banner_height": "auto",
+        "image-banner_fixed_height": 550,
+        "body_layout": "image_text",
+        "body_layout_mobile": "image_text",
+        "body_gap": 100,
+        "body_gap_mobile": 22,
+        "content_align": "right",
+        "content_align_mobile": "center",
+        "content_vertical_align": "start",
+        "image": "shopify://shop_images/charbon1.webp",
+        "image_mobile": "shopify://shop_images/charbon1.webp",
+        "image_width": 40,
+        "image_ratio_mobile": "original",
+        "image_radius": 6,
+        "background_image": "shopify://shop_images/baner_bg.jpg",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "background_overlay": 0,
+        "background_overlay_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "section_radius": 0,
+        "lazy": false
+      }
+    },
+    "image_banner_aaTrmn": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_h7Q3yt": {
+          "type": "heading",
+          "settings": {
+            "heading": "DES PRODUITS À LA  HAUTEUR DE VOS EXIGENCES",
+            "heading_size": "h0"
+          }
+        },
+        "text_3Ez7qq": {
+          "type": "text",
+          "settings": {
+            "text": "Redécouvrez vos cheveux grâce aux produits naturels Charbon",
+            "text_style": "body"
+          }
+        },
+        "buttons_YPKQ44": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "DÉCOUVRIR NOS PRODUITS",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_h7Q3yt",
+        "text_3Ez7qq",
+        "buttons_YPKQ44"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "enable_margin_fix": false,
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "tabs_zmH7Rx": {
+      "type": "tabs",
+      "blocks": {
+        "tab_RKgYzX": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Nettoyants et Lotions",
+            "image_width": 20,
+            "section_id": "#shopify-section-template--24462234452314__featured_collection"
+          }
+        },
+        "tab_iqLRpm": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Gommages et Masques",
+            "image_width": 20,
+            "section_id": "#shopify-section-template--24462234452314__featured_collection"
+          }
+        },
+        "tab_dfUpbt": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Sérums Visages",
+            "image_width": 20,
+            "section_id": "#shopify-section-template--24462234452314__featured_collection"
+          }
+        },
+        "tab_zCwzmz": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Soins Yeux et Lèvres",
+            "image_width": 20,
+            "section_id": "#shopify-section-template--24462234452314__featured_collection"
+          }
+        }
+      },
+      "block_order": [
+        "tab_RKgYzX",
+        "tab_iqLRpm",
+        "tab_dfUpbt",
+        "tab_zCwzmz"
+      ],
+      "disabled": true,
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "font_family_custom": false,
+        "font_family": "poppins_i7",
+        "tab_font_size": 16,
+        "tab_color": "#2d2a26",
+        "tab_selected_color": "#ffffff",
+        "glider_height": 45,
+        "glider_color": "#000000",
+        "glider_border_radius": 0,
+        "tabs_menu_border_color": "#5e59ff",
+        "tabs_menu_border_width": 0,
+        "tabs_menu_border_style": "solid",
+        "tabs_menu_border_radius": 0,
+        "enable_shadow": true,
+        "shadow_offset_x": 2,
+        "shadow_offset_y": 2,
+        "shadow_blur": 16,
+        "shadow_spread": 0,
+        "shadow_opacity": 0.2,
+        "shadow_color": "#4e4e4e",
+        "tabs_header_padding_top": 20,
+        "tabs_header_padding_bottom": 20,
+        "section_margin_top": 20,
+        "section_background_color": "#fafafa"
+      }
+    },
+    "icon_blocks_QFdHLP": {
+      "type": "icon-blocks",
+      "blocks": {
+        "image_UAkGXW": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "Formules clean, sans compromis",
+            "icon-blocks_text": "",
+            "icon-blocks_image": "shopify://shop_images/1_d56cfabc-7494-401b-8de7-0d86c07e1c9c.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        },
+        "image_4RNNUL": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "Par des pros,pour des résultats pro",
+            "icon-blocks_text": "",
+            "icon-blocks_image": "shopify://shop_images/2_3578d107-ffc4-43a7-a39b-1fc9bc9f63fa.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        },
+        "image_KqErcW": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "Fondé et siégé en Suisse",
+            "icon-blocks_text": "",
+            "icon-blocks_image": "shopify://shop_images/3_711649a3-fe22-4ff0-bfb9-8488391f9d44.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        }
+      },
+      "block_order": [
+        "image_UAkGXW",
+        "image_4RNNUL",
+        "image_KqErcW"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "icon-blocks_row": 3,
+        "icon-blocks_row_mobile": 3,
+        "icon-blocks_gap": 20,
+        "icon-blocks_gap_mobile": 10,
+        "icon-blocks_padding_vertical": 20,
+        "icon-blocks_padding_horizontal": 0,
+        "icon-blocks_radius": 0,
+        "icon-blocks_border_thickness": 0,
+        "icon-blocks_border_color": "#000000",
+        "icon-blocks_shadow": false,
+        "icon-blocks_shadow_color": "#000000",
+        "icon-blocks_bg": "#f1f1f1",
+        "icon-blocks_bg_gradient": "",
+        "transform_to_circle": false,
+        "box_width_desktop": 210,
+        "box_width_mobile": 150,
+        "wrapper_box_width": 100,
+        "wrapper_box_width_mobile": 100,
+        "box_padding_vertical": 20,
+        "box_padding_horizontal": 20,
+        "box_background_color": "#f1f1f1",
+        "box_background_gradient": "",
+        "box_border_thickness": 0,
+        "box_border_color": "#000000",
+        "box_border_radius": 10,
+        "box_shadow_enable": false,
+        "box_shadow_color": "#000000",
+        "box_shadow_opacity": 0.2,
+        "box_shadow_x": 0,
+        "box_shadow_y": 0,
+        "box_shadow_blur": 10,
+        "box_shadow_spread": 0,
+        "font_title_custom": true,
+        "icon-blocks_heading_font": "poppins_n5",
+        "icon-blocks_heading_size": 14,
+        "icon-blocks_heading_size_mobile": 12,
+        "icon-blocks_heading_height": 120,
+        "icon-blocks_heading_mt": 8,
+        "icon-blocks_heading_color": "#000000",
+        "font_description_custom": false,
+        "icon-blocks_text_font": "poppins_n4",
+        "icon-blocks_text_size": 12,
+        "icon-blocks_text_size_mobile": 12,
+        "icon-blocks_text_height": 120,
+        "icon-blocks_text_mt": 4,
+        "icon-blocks_text_color": "#000000",
+        "icon-blocks_icon_size": 80,
+        "icon-blocks_icon_size_mobile": 56,
+        "icon-blocks_icon_color": "#000000",
+        "background_color": "#f1f1f1",
+        "background_gradient": "",
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "full_width": false,
+        "content_width": 120,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 3.5
+      }
+    },
+    "featured_collection_feMQRb": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "title": "<strong>NOS  CIRES</strong>",
+        "heading_size": "hxl",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "cheveux-boucles",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "scrolling_text_bar_Ngh7Qr": {
+      "type": "scrolling-text-bar",
+      "blocks": {
+        "text_zU6RcP": {
+          "type": "text",
+          "settings": {
+            "text": "Livraison rapide dans toute la Suisse",
+            "text_custom": false,
+            "text_font": "barlow_condensed_n6",
+            "text_color": "#ffffff",
+            "text_size": 30,
+            "text_size_mobile": 20,
+            "text_height": 130,
+            "text_mr": 50,
+            "text_mr_mobile": 40,
+            "url": "",
+            "stencil_all": false,
+            "stencil_text": ""
+          }
+        },
+        "image_Pe8i4z": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC08846.jpg",
+            "image_width": 135,
+            "image_width_mobile": 100,
+            "image_mr": 50,
+            "image_mr_mobile": 40,
+            "image_radius": 0,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000"
+          }
+        },
+        "timer_CNt46P": {
+          "type": "timer",
+          "disabled": true,
+          "settings": {
+            "year": "2026",
+            "month": "01",
+            "day": "01",
+            "hour": "00",
+            "minute": "00",
+            "days_text": "JOUR",
+            "hours_text": "HEURE",
+            "minutes_text": "MIN",
+            "seconds_text": "SEC",
+            "timer_numbers_custom": false,
+            "timer_numbers_font": "poppins_n4",
+            "timer_numbers_color": "#ffffff",
+            "timer_numbers_size": 26,
+            "timer_numbers_size_mobile": 20,
+            "timer_numbers_height": 100,
+            "timer_mr": 50,
+            "timer_mr_mobile": 40,
+            "timer_text_custom": false,
+            "timer_text_font": "poppins_n4",
+            "timer_text_color": "#ffffff",
+            "timer_text_size": 12,
+            "timer_text_size_mobile": 10,
+            "timer_text_height": 100,
+            "timer_text_mt": 8,
+            "timer_text_mt_mobile": 8
+          }
+        },
+        "button_fyDUUJ": {
+          "type": "button",
+          "settings": {
+            "button": "Découvrir Nos Produits",
+            "button_url": "shopify://collections/all",
+            "button_custom": false,
+            "button_font": "poppins_n4",
+            "button_size": 14,
+            "button_size_mobile": 14,
+            "button_height": 100,
+            "button_padding_vertical": 16,
+            "button_padding_vertical_mobile": 10,
+            "button_padding_horizontal": 30,
+            "button_padding_horizontal_mobile": 10,
+            "button_mr": 50,
+            "button_mr_mobile": 40,
+            "button_radius": 4,
+            "button_border_thickness": 1,
+            "button_style": "outline",
+            "button_color": "#000000",
+            "button_hover_color": "#000000",
+            "button_bg_color": "#ffffff",
+            "button_bg_hover_color": "#ffffff",
+            "button_border_color": "#000000",
+            "button_border_hover_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "text_zU6RcP",
+        "image_Pe8i4z",
+        "timer_CNt46P",
+        "button_fyDUUJ"
+      ],
+      "name": "Bannière défilante",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "background_color": "#000000",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "enable_shadow": true,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 0,
+        "shadow_blur": 26,
+        "shadow_spread": 0,
+        "shadow_opacity": 0.1,
+        "shadow_color": "#000000",
+        "scrolling_velocity": 50,
+        "scrolling_velocity_mobile": 40,
+        "reverse_direction": false,
+        "pause_hover": true,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "image_with_text_TQcQB4": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8LBkk6": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>CHARBONNER AVEC STYLE,C’EST NOTRE ENGAGEMENT</strong>",
+            "heading_size": "h0"
+          }
+        },
+        "text_AzLmBr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>La marque Charbon est le résultat de nombreuses années d’expérience dans le milieu de la coiffure et on a voulu créer quelque chose qui nous ressemblait. Des produits de bonne qualité à prix abordable afin que tout le monde puisse profiter du meilleur pour ses cheveux. </p><p>On espère que vous nous rejoindrez dans notre aventure, car on vous prépare quelques surprises…</p><p></p><p></p><p><strong>- HENOK</strong></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8LBkk6",
+        "text_AzLmBr"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "enable_margin_fix": false,
+        "image": "shopify://shop_images/media.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_border_radius": 25,
+        "image_border_thickness": 0,
+        "image_border_color": "#000000",
+        "enable_image_shadow": true,
+        "image_shadow_color": "#000000",
+        "image_shadow_opacity": 0.2,
+        "image_shadow_horizontal": 0,
+        "image_shadow_vertical": 0,
+        "image_shadow_blur": 18,
+        "image_shadow_spread": 0,
+        "align_items_center": true,
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "custom_radius": 0,
+        "image_text_gap": 30,
+        "section_color_scheme": "scheme-4",
+        "color_scheme": "scheme-4",
+        "background_size": "cover",
+        "background_position": "center center",
+        "background_repeat": "no-repeat",
+        "background_attachment": "scroll",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "image_behavior": "zoom-in",
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 20,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 0,
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "max_width_content": 180,
+        "image_with_text_width": 200,
+        "full_width": true
+      }
+    },
+    "reviews_testimonials_fxHBDU": {
+      "type": "reviews-testimonials",
+      "blocks": {
+        "slide_kFfM3K": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "ça a changé ma routine cheveux",
+            "text": "J’ai testé des dizaines de produits, mais aucun n’égale la légèreté et la qualité de Charbon.",
+            "author_name": "Jacob",
+            "review_date": "",
+            "image1": "shopify://shop_images/1_2.png"
+          }
+        },
+        "slide_tF9qx8": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Le produit qu’il me fallait",
+            "text": "Charbon donne à mes cheveux une tenu qui dure toute la journée, sans effet gras et figé. C exactement ce que je cherchais",
+            "author_name": "Thomas",
+            "review_date": "",
+            "image1": "shopify://shop_images/4_1.png"
+          }
+        },
+        "slide_ji7PyV": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Qualité au top",
+            "text": "Je cherchais depuis longtemps une pommade qui laisse pas les cheveux trop brillants et de résidus",
+            "author_name": "Camille",
+            "review_date": "",
+            "image1": "shopify://shop_images/3_2.png"
+          }
+        },
+        "slide_6jUmyj": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Super produit",
+            "text": "On sens dès la première utilisation que c’et un produit de qualité. pas  collant, parfum discret.",
+            "author_name": "James",
+            "review_date": "",
+            "image1": "shopify://shop_images/2_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "slide_kFfM3K",
+        "slide_tF9qx8",
+        "slide_ji7PyV",
+        "slide_6jUmyj"
+      ],
+      "disabled": true,
+      "name": "Testimonial",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "Ils en parlent mieux que nous",
+        "heading_custom": true,
+        "heading_font": "barlow_condensed_n6",
+        "heading_size": 52,
+        "heading_size_mobile": 24,
+        "heading_height": 130,
+        "heading_align": "center",
+        "rating_text_hide": false,
+        "rating_text": "",
+        "rating_text_custom": false,
+        "rating_text_font": "poppins_n5",
+        "rating_text_size": 24,
+        "rating_text_size_mobile": 20,
+        "rating_text_height": 130,
+        "rating_text_mt": 16,
+        "rating_hide": true,
+        "rating": 4.8,
+        "rating_align": "center",
+        "stars_count": 5,
+        "stars_size": 28,
+        "stars_size_mobile": 20,
+        "text": "",
+        "text_custom": false,
+        "text_font": "poppins_n4",
+        "text_size": 20,
+        "text_size_mobile": 16,
+        "text_height": 130,
+        "text_align": "center",
+        "text_mt": 16,
+        "slider_width": 80,
+        "slider_view": 3,
+        "slider_view_mobile": 1.2,
+        "slider_gap": 12,
+        "slider_gap_mobile": 12,
+        "slider_mt": 36,
+        "card_padding_vertical": 32,
+        "card_padding_vertical_mobile": 16,
+        "card_padding_horizontal": 16,
+        "card_padding_horizontal_mobile": 16,
+        "card_radius": 26,
+        "card_border_thickness": 0,
+        "enable_shadow": true,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 0,
+        "shadow_blur": 26,
+        "shadow_spread": 0,
+        "shadow_opacity": 0.2,
+        "shadow_color": "#cccccc",
+        "circle_width": 45,
+        "circle_custom": false,
+        "circle_font": "poppins_n9",
+        "author_font_size": 16,
+        "card_author_name_text_custom": false,
+        "card_author_name_text_font": "poppins_n9",
+        "card_author_name_text_size": 16,
+        "card_author_name_text_size_mobile": 16,
+        "profile_info_margin_bottom": 40,
+        "icon_color": "#333333",
+        "icon_size": 12,
+        "verified_text": "Vérifié",
+        "verified_custom": false,
+        "verified_font": "poppins_n4",
+        "verified_font_size": 12,
+        "verified_color": "#333333",
+        "card_heading_custom": true,
+        "card_heading_font": "poppins_n7",
+        "card_heading_size": 24,
+        "card_heading_size_mobile": 20,
+        "card_heading_height": 130,
+        "card_heading_mt": 16,
+        "card_text_custom": false,
+        "card_text_font": "poppins_n4",
+        "card_text_size": 14,
+        "card_text_size_mobile": 14,
+        "card_text_height": 150,
+        "card_text_mt": 16,
+        "card_text_more": "Voir plus",
+        "card_text_less": "Voir moins",
+        "card_count_words": 20,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "arrow_size": 50,
+        "arrow_size_mobile": 30,
+        "arrow_icon_size": 30,
+        "arrow_icon_size_mobile": 28,
+        "arrow_border_thickness": 0,
+        "dots_show_desktop": false,
+        "dots_show_mobile": false,
+        "dots_size": 12,
+        "dots_size_mobile": 12,
+        "circle_text_color": "#000000",
+        "circle_bg_color": "#ececec",
+        "card_bg_color": "#f5f5f5",
+        "card_border_color": "#000000",
+        "card_heading_color": "#000000",
+        "card_text_color": "#000000",
+        "card_author_name_text_color": "#000000",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#ffffff",
+        "arrow_border_hover_color": "#ffffff",
+        "dots_color": "#000000",
+        "heading_color": "#000000",
+        "rating_text_color": "#000000",
+        "stars_bg_color": "#ffffff",
+        "stars_color": "#000000",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+        "margin_top": 72,
+        "margin_bottom": 72,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "lazy": true
+      }
+    },
+    "1753777723e574844f": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_R7hTQt": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_R7hTQt"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "featured_blog_g3TWnU": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "Blog",
+        "heading_size": "h0",
+        "blog": "charbon-blog",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-4",
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_QdBTX9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ykJdj8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Parler de sa marque",
+            "font_heading_custom": false,
+            "heading_font": "poppins_n9",
+            "heading_size_desktop": 3,
+            "heading_size_mobile": 2.5,
+            "heading_color": "#000000",
+            "heading_alignment": "center",
+            "heading_margin_bottom_desktop": 20,
+            "heading_margin_bottom_mobile": 15
+          }
+        },
+        "text_RthHxh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Partagez des informations sur votre marque. Décrivez un produit, partagez des annonces ou souhaitez la bienvenue à vos clients dans votre boutique.</p>",
+            "font_description_custom": false,
+            "description_font": "poppins_n4",
+            "description_size_desktop": 1.6,
+            "description_size_mobile": 1.4,
+            "description_color": "#000000",
+            "description_alignment": "center"
+          }
+        },
+        "button_ppwcnQ": {
+          "type": "button",
+          "settings": {
+            "button_link": "",
+            "button_label": "Texte du bouton",
+            "font_button_custom": false,
+            "button_font": "poppins_n4",
+            "button_text_size_desktop": 1.6,
+            "button_text_size_mobile": 1.4,
+            "button_text_color": "#ffffff",
+            "button_background_color": "#000000",
+            "buttons_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ykJdj8",
+        "text_RthHxh",
+        "button_ppwcnQ"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "section_width": 100,
+        "content_width": 1200,
+        "fit_content": false,
+        "full_width": true,
+        "desktop_content_position": "center",
+        "rich_text_background_color": "#ffffff",
+        "border_radius": 0,
+        "enable_shadow": false,
+        "shadow_color": "#000000",
+        "shadow_opacity": 0.5,
+        "shadow_horizontal_offset": 0,
+        "shadow_vertical_offset": 10,
+        "shadow_blur_radius": 20,
+        "shadow_spread_radius": 0,
+        "padding_desktop": 20,
+        "padding_mobile": 10,
+        "padding_vertical_desktop": 40,
+        "padding_vertical_mobile": 20,
+        "margin_top_desktop": 20,
+        "margin_bottom_desktop": 20,
+        "margin_top_mobile": 10,
+        "margin_bottom_mobile": 10
+      }
+    },
+    "faq_yRBeaC": {
+      "type": "faq",
+      "blocks": {
+        "text_UFzfmq": {
+          "type": "text",
+          "settings": {
+            "question": "À qui s’adressent les produits Charbon ?",
+            "answer": "<p>Les produits Charbon sont conçus pour les hommes qui souhaitent des coiffants efficaces, naturels et élégants, sans compromis sur la qualité. Que vous ayez les cheveux courts, longs, bouclés ou raides, vous trouverez la texture adaptée à votre style.</p>"
+          }
+        },
+        "text_gkHLeC": {
+          "type": "text",
+          "settings": {
+            "question": "Quels sont les délais de livraison ?",
+            "answer": "<p>Les commandes sont expédiées sous <strong>24 à 48h (hors week-end)</strong>. Les délais de livraison varient ensuite selon votre pays :</p><ul><li><strong>Suisse et France</strong> : 48 heures</li><li><strong>Europe</strong> : 3 à 7 jours ouvrés</li><li> <strong>International</strong> : 7 à 14 jours ouvrés</li></ul>"
+          }
+        },
+        "text_DKj99g": {
+          "type": "text",
+          "settings": {
+            "question": "Combien coûte la livraison ?",
+            "answer": "<p>Livraison <strong>gratuite</strong> à partir de <strong>9.90€ d’achat</strong></p><p>En dessous de ce montant, les frais sont calculés automatiquement à la caisse selon votre pays.</p>"
+          }
+        },
+        "text_TADVRR": {
+          "type": "text",
+          "settings": {
+            "question": "Comment suivre ma commande ?",
+            "answer": "<p>Une fois votre commande expédiée, vous recevrez un email avec un <strong>numéro de suivi </strong>vous permettant de suivre votre colis en temps réel.</p>"
+          }
+        },
+        "text_BCGJMV": {
+          "type": "text",
+          "settings": {
+            "question": "Quels moyens de paiement acceptez-vous ?",
+            "answer": "<p>Nous acceptons les principales cartes de crédit, cartes de débit, PayPal et d’autres moyens de paiement sécurisés pour votre confort.</p>"
+          }
+        },
+        "text_tErWaV": {
+          "type": "text",
+          "settings": {
+            "question": "Puis-je modifier ou annuler ma commande ?",
+            "answer": "<p>Nous préparons les commandes très rapidement. Si vous souhaitez la modifier ou l’annuler, contactez-nous <strong>dans les 5h </strong>suivant votre achat à shop@charbon-pro.com — nous ferons de notre mieux.</p>"
+          }
+        },
+        "text_G6dn8X": {
+          "type": "text",
+          "settings": {
+            "question": "Je me suis trompé d’adresse, que faire ?",
+            "answer": "<p>Contactez-nous <strong>le plus vite possible</strong> avec votre numéro de commande. Si le colis n’est pas encore expédié, nous corrigerons l’adresse. Une fois expédié, il sera malheureusement trop tard.</p>"
+          }
+        },
+        "text_zbEtzY": {
+          "type": "text",
+          "settings": {
+            "question": "Et si je ne reçois pas ma commande ?",
+            "answer": "<p>Si votre colis semble bloqué ou perdu, pas d’inquiétude. Écrivez-nous à shop@charbon-pro.com avec votre numéro de commande et nous trouverons une solution rapidement.</p>"
+          }
+        },
+        "text_MheyzJ": {
+          "type": "text",
+          "settings": {
+            "question": "Proposez-vous des retours ou des remboursements ?",
+            "answer": "<p>Oui, vous avez <strong>14 jours</strong> après réception pour nous retourner un produit non utilisé. Merci de nous contacter avant tout retour. Les frais de retour sont à votre charge sauf erreur de notre part.</p>"
+          }
+        },
+        "text_3VGCkW": {
+          "type": "text",
+          "settings": {
+            "question": "J’ai une question, comment vous contacter ?",
+            "answer": "<p>Notre service client est disponible par email à shop@charbon-pro.com. Nous répondons en général sous <strong>24h (hors week-end)</strong>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_UFzfmq",
+        "text_gkHLeC",
+        "text_DKj99g",
+        "text_TADVRR",
+        "text_BCGJMV",
+        "text_tErWaV",
+        "text_G6dn8X",
+        "text_zbEtzY",
+        "text_MheyzJ",
+        "text_3VGCkW"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "QUESTIONS FRÉQUEMMENT POSÉES",
+        "font_family_custom": true,
+        "title_font_family": "barlow_condensed_n6",
+        "title_font_size_desktop": 3,
+        "title_font_size_mobile": 2.2,
+        "title_color": "#000000",
+        "font_question_custom": false,
+        "question_font_family": "poppins_n5",
+        "questions_font_size": 1.7,
+        "questions_font_size_mobile": 1.5,
+        "question_color": "#000000",
+        "hover_color": "#222222",
+        "background_color": "#ffffff",
+        "question_margin_bottom": 5,
+        "question_border_radius": 5,
+        "border_thickness": 1,
+        "border_color": "#000000",
+        "add_line_between_questions": "non",
+        "line_thickness": 10,
+        "line_color": "#e3e3e3",
+        "font_answer_custom": false,
+        "answer_font_family": "poppins_n5",
+        "answer_font_size_desktop": 1.5,
+        "answer_font_size_mobile": 1.5,
+        "answer_color": "#000000",
+        "answer_bg_color": "#ffffff",
+        "answer_padding_vertical": 9,
+        "answer_padding_horizontal": 24,
+        "answer_margin_top": 10,
+        "answer_margin_bottom": 10,
+        "answer_border_radius": 10,
+        "icon_color": "#ffffff",
+        "accordion_toggle": false,
+        "background_type": "fixed",
+        "section_background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, rgba(216, 248, 255, 1), rgba(255, 255, 255, 1) 100%)",
+        "section_margin_top_desktop": 0,
+        "section_margin_bottom_desktop": 0,
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 20,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0,
+        "section_padding_top_mobile": 10,
+        "section_padding_bottom_mobile": 10
+      }
+    },
+    "double_section_N9HfHT": {
+      "type": "double-section",
+      "disabled": true,
+      "name": "Double section",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "color_scheme": "",
+        "section_1_id": "#shopify-section-template--25619930808707__rich_text_QdBTX9",
+        "padding_top_one": 69,
+        "padding_bottom_one": 15,
+        "mobile_reverse_grid": false,
+        "section_2_id": "#shopify-section-template--25619930808707__faq_yRBeaC",
+        "padding_top_two": 15,
+        "padding_bottom_two": 15,
+        "column_one_width": 50,
+        "alignment": "start",
+        "spacing_desktop": 80,
+        "spacing_mobile": 50,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "content_width": 160
+      }
+    },
+    "pagefly-home": {
+      "type": "pagefly-home",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "image_banner_2_HYERwq",
+    "image_banner_aaTrmn",
+    "tabs_zmH7Rx",
+    "icon_blocks_QFdHLP",
+    "featured_collection_feMQRb",
+    "scrolling_text_bar_Ngh7Qr",
+    "image_with_text_TQcQB4",
+    "reviews_testimonials_fxHBDU",
+    "1753777723e574844f",
+    "featured_blog_g3TWnU",
+    "rich_text_QdBTX9",
+    "faq_yRBeaC",
+    "double_section_N9HfHT",
+    "pagefly-home"
+  ]
+}

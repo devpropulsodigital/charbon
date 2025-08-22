@@ -1,0 +1,169 @@
+<style>
+  .file-upload-{{ section.id }} {
+    margin-top: {{ block.settings.margin_top }}rem;
+    margin-bottom: {{ block.settings.margin_bottom }}rem;
+  }
+  .file-upload-container {
+    display: flex;
+    align-items: center;
+  }
+  .file-name {
+    margin-left: 10px;
+    font-style: italic;
+  }
+  .error-message {
+    margin-top: 0;
+    color: red;
+  }
+</style>
+
+<div class="file-upload-{{ section.id }} product-form__input">
+  <label class="form__label" style="margin-bottom: 0.9rem;">
+    {{ block.settings.label_text }}
+    {% if block.settings.required %} *{% endif %}
+  </label>
+  <div class="file-upload-container">
+    <input id="file-{{ block.settings.label_text 
+                       | replace: ' ', '-' 
+                       | replace: "'", '' 
+                       | replace: '.', '' 
+                       | replace: ',', '' 
+                       | replace: 'é', 'e' 
+                       | replace: ':', ''
+                       | replace: '!', ''
+                       | replace: 'è', 'e'
+                       | replace: 'ê', 'e'
+                       | replace: '?', ''
+                       | replace: '*', ''
+                       | replace: 'à', 'a' 
+                       | replace: '(', ''
+                       | replace: ')', ''
+                       | downcase }}" 
+       form="{{ 'product-form-' | append: section.id }}" 
+       name="properties[{{ block.settings.label_text }} 1]"
+       multiple
+       style="display: none;"
+       type="file"
+       {% if block.settings.required %} required {% endif %}>
+    
+    <button id="button-{{ block.settings.label_text 
+                         | replace: ' ', '-' 
+                         | replace: "'", '' 
+                         | replace: '.', '' 
+                         | replace: ',', '' 
+                         | replace: 'é', 'e' 
+                         | replace: ':', ''
+                         | replace: '!', ''
+                         | replace: 'è', 'e'
+                         | replace: 'ê', 'e'
+                         | replace: '?', ''
+                         | replace: '*', ''
+                         | replace: 'à', 'a' 
+                         | replace: '(', ''
+                         | replace: ')', ''
+                         | downcase }}" class="button">{{ block.settings.button_text }}</button>
+    
+    <p id="fileName-{{ block.settings.label_text 
+                      | replace: ' ', '-' 
+                      | replace: "'", '' 
+                      | replace: '.', '' 
+                      | replace: ',', '' 
+                      | replace: 'é', 'e' 
+                      | replace: ':', ''
+                      | replace: '!', ''
+                      | replace: 'è', 'e'
+                      | replace: 'ê', 'e'
+                      | replace: '?', ''
+                      | replace: '*', ''
+                      | replace: 'à', 'a' 
+                      | replace: '(', ''
+                      | replace: ')', ''
+                      | downcase }}" class="file-name">{{ block.settings.no_file_text }}</p>
+  </div>
+  
+  <p id="errorMessage-{{ block.settings.label_text 
+                        | replace: ' ', '-' 
+                        | replace: "'", '' 
+                        | replace: '.', '' 
+                        | replace: ',', '' 
+                        | replace: 'é', 'e' 
+                        | replace: ':', ''
+                        | replace: '!', ''
+                        | replace: 'è', 'e'
+                        | replace: 'ê', 'e'
+                        | replace: '?', ''
+                        | replace: '*', ''
+                        | replace: 'à', 'a' 
+                        | replace: '(', ''
+                        | replace: ')', ''
+                        | downcase }}" class="error-message" style="display: none;">
+    {{ block.settings.error_message }}
+  </p>
+</div>
+
+
+
+<script>
+  document.getElementById('file-{{ block.settings.label_text | handleize }}').addEventListener('change', function(event) {
+    const files = event.target.files;
+    const fileInput = document.getElementById('file-{{ block.settings.label_text | handleize }}');
+    const originalForm = fileInput.getAttribute('form');
+
+    // Supprimer les anciens inputs cachés
+    fileInput.parentNode.querySelectorAll('.dynamic-hidden-input-{{ block.settings.label_text | handleize }}').forEach(input => input.remove());
+
+    // Créer de nouveaux inputs cachés pour chaque fichier
+    for (let i = 0; i < files.length - 1; i++) {
+      const file = files[i];
+      const hiddenInput = document.createElement('input');
+      hiddenInput.type = 'file';
+      let myindex = i + 2;
+      hiddenInput.name = 'properties[{{ block.settings.label_text }} ' + myindex + ']';
+      hiddenInput.classList.add('dynamic-hidden-input-{{ block.settings.label_text | handleize }}');
+      hiddenInput.style.display = 'none';
+      hiddenInput.setAttribute('form', originalForm);
+
+      const dataTransfer = new DataTransfer();
+      dataTransfer.items.add(file);
+      hiddenInput.files = dataTransfer.files;
+      fileInput.parentNode.appendChild(hiddenInput);
+    }
+
+    // Afficher les noms de fichiers
+    let fileName;
+    if (files.length === 0) {
+      fileName = '{{ block.settings.no_file_text }}';
+    } else if (files.length === 1) {
+      fileName = files[0].name;
+      document.getElementById('errorMessage-{{ block.settings.label_text | handleize }}').style.display = 'none';
+    } else {
+      fileName = files.length + ' {{ block.settings.multiple_files_text }}';
+      document.getElementById('errorMessage-{{ block.settings.label_text | handleize }}').style.display = 'none';
+    }
+    document.getElementById('fileName-{{ block.settings.label_text | handleize }}').textContent = fileName;
+  });
+
+  document.getElementById('button-{{ block.settings.label_text | handleize }}').addEventListener('click', function() {
+    document.getElementById('file-{{ block.settings.label_text | handleize }}').click();
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.product-form__submit').addEventListener('click', function(event) {
+      const inputFile = document.getElementById('file-{{ block.settings.label_text | handleize }}');
+      if (!inputFile.files.length && inputFile.required) {
+        document.getElementById('errorMessage-{{ block.settings.label_text | handleize }}').style.display = 'block';
+      }
+    });
+  });
+</script>
+
+<script>
+ document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form[novalidate]");
+  if (form) {
+    form.removeAttribute("novalidate");
+  }
+});
+</script>

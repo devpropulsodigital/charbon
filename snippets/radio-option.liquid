@@ -1,0 +1,61 @@
+<style>
+.radio-option-{{ section.id }} {
+    margin-top: {{ block.settings.margin_top }}rem;
+    margin-bottom: {{ block.settings.margin_bottom }}rem;
+  }
+  
+.custom-radio {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.custom-radio div {
+    display: flex;
+    align-items: center;
+    padding: .2rem;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px; /* Ajustez selon votre besoin */
+}
+
+.custom-radio input[type="radio"] {
+    margin-right: 5px;
+}
+
+.custom-radio label {
+    margin-bottom: 0;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px; /* Ajustez selon la taille souhaitée */
+}
+
+</style>
+<div class="radio-option-{{ section.id }} product-form__input product-form__input--pill">
+  <label class="form__label">{{ block.settings.label_text }}{% if block.settings.required %} *{% endif %}</label>
+  <div class="custom-radio">
+    {% assign radio_options = block.settings.radio_options | split: ',' %}
+{% for option in radio_options %}
+  <div>
+    <input type="radio"
+           id="radio-{{ option | handleize }}"
+           name="properties[{{ block.settings.label_text }}]"
+           form="{{ 'product-form-' | append: section.id }}"
+           value="{{ option }}"
+           {% if block.settings.required %} required {% endif %}>
+    <label class="form__label" for="radio-{{ option | handleize }}">{{ option }}</label>
+  </div>
+{% endfor %}
+
+  </div>
+</div>
+
+{% if block.settings.required %}
+ <script>
+    document.addEventListener("DOMContentLoaded", ()=>{document.querySelector("form[novalidate]").removeAttribute("novalidate")})
+    </script>
+{% endif %}

@@ -1,0 +1,183 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "icon_blocks_GBXjQ9": {
+      "type": "icon-blocks",
+      "blocks": {
+        "image_YJL8zm": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "Livraison en 48H En Suisse et en France",
+            "icon-blocks_text": "",
+            "icon-blocks_image": "shopify://shop_images/1_1.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        },
+        "image_kRWafb": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "Achat sécurisé Visa, Mastercard, Paypal, Klarna, Twint",
+            "icon-blocks_text": "",
+            "icon-blocks_image": "shopify://shop_images/2_1.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        },
+        "image_LXDKgb": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "Qualité garantie Formules composées par des pros",
+            "icon-blocks_text": "",
+            "icon-blocks_image": "shopify://shop_images/3_1.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        },
+        "image_Ej36nq": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "Service client 7/7 Équipe disponible etréactive",
+            "icon-blocks_text": "",
+            "icon-blocks_image": "shopify://shop_images/4.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        }
+      },
+      "block_order": [
+        "image_YJL8zm",
+        "image_kRWafb",
+        "image_LXDKgb",
+        "image_Ej36nq"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "icon-blocks_row": 4,
+        "icon-blocks_row_mobile": 3,
+        "icon-blocks_gap": 20,
+        "icon-blocks_gap_mobile": 20,
+        "icon-blocks_padding_vertical": 20,
+        "icon-blocks_padding_horizontal": 0,
+        "icon-blocks_radius": 0,
+        "icon-blocks_border_thickness": 0,
+        "icon-blocks_border_color": "#000000",
+        "icon-blocks_shadow": false,
+        "icon-blocks_shadow_color": "#000000",
+        "icon-blocks_bg": "#f1f1f1",
+        "icon-blocks_bg_gradient": "",
+        "transform_to_circle": false,
+        "box_width_desktop": 210,
+        "box_width_mobile": 150,
+        "wrapper_box_width": 100,
+        "wrapper_box_width_mobile": 100,
+        "box_padding_vertical": 20,
+        "box_padding_horizontal": 20,
+        "box_background_color": "#f1f1f1",
+        "box_background_gradient": "",
+        "box_border_thickness": 0,
+        "box_border_color": "#000000",
+        "box_border_radius": 10,
+        "box_shadow_enable": false,
+        "box_shadow_color": "#000000",
+        "box_shadow_opacity": 0.2,
+        "box_shadow_x": 0,
+        "box_shadow_y": 0,
+        "box_shadow_blur": 10,
+        "box_shadow_spread": 0,
+        "font_title_custom": false,
+        "icon-blocks_heading_font": "roboto_n4",
+        "icon-blocks_heading_size": 16,
+        "icon-blocks_heading_size_mobile": 14,
+        "icon-blocks_heading_height": 120,
+        "icon-blocks_heading_mt": 8,
+        "icon-blocks_heading_color": "#000000",
+        "font_description_custom": false,
+        "icon-blocks_text_font": "poppins_n4",
+        "icon-blocks_text_size": 12,
+        "icon-blocks_text_size_mobile": 12,
+        "icon-blocks_text_height": 120,
+        "icon-blocks_text_mt": 4,
+        "icon-blocks_text_color": "#000000",
+        "icon-blocks_icon_size": 66,
+        "icon-blocks_icon_size_mobile": 46,
+        "icon-blocks_icon_color": "#000000",
+        "background_color": "#f1f1f1",
+        "background_gradient": "",
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "full_width": false,
+        "content_width": 120,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "brand_information_3XKtMa": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        },
+        "link_list_RheXWx": {
+          "type": "link_list",
+          "settings": {
+            "heading": "À propos",
+            "menu": "footer-1"
+          }
+        },
+        "link_list_HPkMxw": {
+          "type": "link_list",
+          "disabled": true,
+          "settings": {
+            "heading": "Politique",
+            "menu": "politique"
+          }
+        }
+      },
+      "block_order": [
+        "brand_information_3XKtMa",
+        "link_list_RheXWx",
+        "link_list_HPkMxw"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "newsletter_enable": true,
+        "newsletter_heading": "Recevez nos offres par e-mail",
+        "enable_follow_on_shop": true,
+        "show_social": false,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 12,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "icon_blocks_GBXjQ9",
+    "footer"
+  ]
+}

@@ -1,0 +1,340 @@
+{% style %}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  .section-group__section-one-container {
+    padding-top: {{ section.settings.padding_top_one | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom_one | times: 0.75 | round: 0 }}px;
+  }
+
+  .section-group__section-two-container {
+    padding-top: {{ section.settings.padding_top_two | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom_two | times: 0.75 | round: 0 }}px;
+  }
+  
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+    .section-group__section-one-container {
+      padding-top: {{ section.settings.padding_top_one }}px;
+      padding-bottom: {{ section.settings.padding_bottom_one }}px;
+    }
+
+    .section-group__section-two-container {
+      padding-top: {{ section.settings.padding_top_two }}px;
+      padding-bottom: {{ section.settings.padding_bottom_two }}px;
+    }
+  }
+
+  .section-group-grid-{{ section.id }} {
+    column-gap: {{ section.settings.spacing_desktop | divided_by: 10.0 }}rem;
+    row-gap: {{ section.settings.spacing_mobile | divided_by: 10.0 }}rem;
+  }
+
+   @media screen and (min-width: 1000px) {
+  .section-group-grid-{{ section.id }} {
+    width: {{section.settings.content_width}}rem;
+    grid-template-columns: {{ section.settings.column_one_width }}% 1fr;
+    margin: 0 auto;
+    max-width: 100%;
+    }
+  }   
+
+{% endstyle %}
+
+{%- if section.settings.section_1_id != blank and section.settings.section_2_id != blank-%}
+ <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }} content-for-grouping {% if section.settings.mobile-hidden %} mobile-hidden {% endif %} {% if section.settings.tablet-hidden %} tablet-hidden {% endif %} {% if section.settings.laptop-hidden %} laptop-hidden {% endif %} {% if section.settings.desktop-hidden %} desktop-hidden {% endif %}"> 
+    {% if section.settings.display_id %}
+    <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
+      <span class="copy-text">Cliquez pour copier l'ID de la section</span>
+      <span class="copy-success">ID de la section copié !</span>
+    </copy-button>
+  {% endif %}
+  <section-group 
+    class="animate-section animate--hidden"
+    data-section-one-id="{{ section.settings.section_1_id }}"
+    data-section-two-id="{{ section.settings.section_2_id }}"
+  >
+    <div class="page-width{% if section.settings.desktop_full_page %} desktop-full-page desktop-full-page-no-padding{% endif %}{% if section.settings.mobile_full_page %} mobile-full-page{% endif %}">
+      <div class="section-group-grid section-group-grid-{{ section.id }} section-group-grid-align-{{ section.settings.alignment }}{% if section.settings.mobile_reverse_grid %} section-group-grid--mobile-reverse{% endif %}">
+        <section class="section-group__section-one-container section-group__container {{ section.settings.section_1_alignment }}"></section>
+        <section class="section-group__section-two-container section-group__container {{ section.settings.section_2_alignment }}"></section>
+      </div>
+    </div>
+  </section-group>
+ </div> 
+{%- else -%}
+  <h2 class="title center h1">Collez les IDs des deux sections que vous souhaitez combiner.</h2>
+{%- endif -%}
+ 
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  class SectionsGroup extends HTMLElement {
+    constructor() {
+      super();
+      this.sectionOneContainer = this.querySelector(".section-group__section-one-container");
+      this.sectionTwoContainer = this.querySelector('.section-group__section-two-container');
+      this.transferSections();
+      document.addEventListener("shopify:section:load", this.transferSections.bind(this));
+    }
+    
+    transferSections() {
+      this.sectionOne = document.querySelector(this.dataset.sectionOneId + " .content-for-grouping");
+      this.sectionTwo = document.querySelector(this.dataset.sectionTwoId + " .content-for-grouping");
+
+      if (this.sectionOne && !this.sectionOneContainer.childNodes.length) {
+        this.sectionOneContainer.appendChild(this.sectionOne);
+      }
+      
+      if (this.sectionTwo && !this.sectionTwoContainer.childNodes.length) {
+        this.sectionTwoContainer.appendChild(this.sectionTwo);
+      }
+    }
+  }
+
+  customElements.define('section-group', SectionsGroup);
+});
+</script>
+
+
+
+{% schema %}
+{
+  "name": "Double section",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+     {
+      "type": "paragraph",
+      "content": "Cette section est utilisée pour combiner 2 sections. Collez leurs IDs pour les afficher côte à côte sur ordinateur"
+     },
+     {
+      "type": "header",
+      "content": "ID de la section"
+      },
+      {
+      "type": "checkbox",
+      "id": "display_id",
+      "label": "Afficher le bouton pour copier l'ID de la section",
+      "info": "L'ID peut être utilisé dans la section 'Onglets' pour afficher cette double section dans des onglets. L'ID peut également être utilisé dans un lien de bouton pour faire défiler la page jusqu'à cette section.",
+      "default": false
+      },
+      {
+      "type": "header",
+      "content": "Masquer la section selon le type d'appareil"
+      },
+      {
+        "type": "checkbox",
+        "id": "mobile-hidden",
+        "label": "Masquer sur mobile",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "tablet-hidden",
+        "label": "Masquer sur tablette",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "laptop-hidden",
+        "label": "Masquer sur ordinateur portable",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "desktop-hidden",
+        "label": "Masquer sur ordinateur",
+        "default": false
+      },
+      {
+      "type": "header",
+      "content": "Couleur"
+      },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Section #1"
+    },
+    {
+      "type": "text",
+      "id": "section_1_id",
+      "label": "ID de la section #1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_one",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Marge intérieure haut pour section #1",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_one",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Marge intérieure bas pour section #1",
+      "default": 15
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_reverse_grid",
+      "label": "Afficher la seconde section en premier sur mobile",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Section #2"
+    },
+    {
+      "type": "text",
+      "id": "section_2_id",
+      "label": "ID de la section #2"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_two",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Marge intérieure haut pour section #2",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_two",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Marge intérieure bas section #2",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Largeur des sections"
+    },
+    {
+      "type": "range",
+      "id": "column_one_width",
+      "label": "Largeur de la première section",
+      "min": 10,
+      "max": 90,
+      "step": 1,
+      "unit": "%",
+      "info": "La deuxième section s'ajustera automatiquement en prennant la place restante.",
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Ordinateur"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Alignement vertical des sections",
+      "options": [
+        {
+          "value": "start",
+          "label": "Haut"
+        },
+        {
+          "value": "center",
+          "label": "Centre"
+        },
+        {
+          "value": "end",
+          "label": "Bas"
+        }
+      ],
+      "default": "start"
+    },
+    {
+      "type": "range",
+      "id": "spacing_desktop",
+      "min": 0,
+      "max": 150,
+      "step": 10,
+      "unit": "px",
+      "label": "Espacement",
+      "default": 80
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "range",
+      "id": "spacing_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Espacement",
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Largeur de la section"
+    },
+     {
+      "type": "range",
+      "id": "content_width",
+      "min": 0,
+      "max": 400,
+      "step": 10,
+      "unit": "rem",
+      "label": "Largeur de la section",
+      "default": 160
+    },
+  ],
+  "presets": [
+    {
+      "name": "Double section"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  }
+}
+{% endschema %}

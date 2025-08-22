@@ -1,0 +1,1504 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "product_title_margin_top": 4.9,
+            "product_title_margin_bottom": 2
+          }
+        },
+        "judge_me_reviews_preview_badge_8ptd6t": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "rating_custom_MTL4fB": {
+          "type": "rating_custom",
+          "disabled": true,
+          "settings": {
+            "stars_count": 5,
+            "stars_size_desktop": 25,
+            "stars_size_mobile": 22,
+            "stars_color": "#000000",
+            "stars_bg_color": "#ffffff",
+            "rating_custom_text": "",
+            "font_title_custom": false,
+            "font_title": "poppins_n4",
+            "font_size_desktop": 14,
+            "font_size_mobile": 12,
+            "text_color": "#000000",
+            "link_url": "",
+            "rating_margin_top": 0,
+            "rating_margin_bottom": 4
+          }
+        },
+        "icon_with_text_VX4aMN": {
+          "type": "icon-with-text",
+          "settings": {
+            "hide_on_mobile": false,
+            "hide_on_tablet": false,
+            "hide_on_desktop": false,
+            "layout": "vertical",
+            "icon_1": "heart",
+            "image_1": "shopify://shop_images/tenue.png",
+            "heading_1": "Tenue moyenne qui tient sans figer",
+            "description_1": "",
+            "icon_2": "return",
+            "image_2": "shopify://shop_images/mat.png",
+            "heading_2": "Finition matte, zéro brillance, zéro gras",
+            "description_2": "",
+            "icon_3": "truck",
+            "image_3": "shopify://shop_images/clean_look.png",
+            "heading_3": "Texture clean, look naturel, sans effort",
+            "description_3": "",
+            "font_title_custom": false,
+            "title_font": "poppins_n3",
+            "title_font_size_desktop": 14,
+            "title_font_size_mobile": 14,
+            "title_color": "#000000",
+            "font_description_custom": false,
+            "description_font": "poppins_n4",
+            "description_font_size_desktop": 14,
+            "description_font_size_mobile": 12,
+            "description_color": "#000000",
+            "icon_size_desktop": 20,
+            "icon_size_mobile": 20,
+            "horizontal_gap": 1,
+            "vertical_margin_bottom": 1,
+            "icon_with_text_margin_top": 2,
+            "icon_with_text_margin_bottom": 2
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "display_price_inline": false,
+            "price_margin_top": 2,
+            "price_margin_bottom": 2
+          }
+        },
+        "variant_picker_pr3QfA": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "pack_XCTThJ": {
+          "type": "pack",
+          "settings": {
+            "image0": "shopify://shop_images/DSC00093.jpg",
+            "quantity0": 1,
+            "title0": "1 cire",
+            "price0": "9.90 CHF",
+            "price_before0": "",
+            "additional_text0": "",
+            "disclaimer0": "",
+            "image1": "shopify://shop_images/DSC00093.jpg",
+            "quantity1": 2,
+            "title1": "2 cires",
+            "price1": "17.90 CHF",
+            "price_before1": "",
+            "additional_text1": "",
+            "disclaimer1": "Best Value",
+            "image2": "shopify://shop_images/DSC00093.jpg",
+            "quantity2": 3,
+            "title2": "3 cires",
+            "price2": "19.90 CHF",
+            "price_before2": "",
+            "additional_text2": "",
+            "disclaimer2": "Best Value",
+            "pack_image_width_desktop": 7,
+            "pack_image_width_mobile": 5,
+            "pack_image_border_radius": 4,
+            "font_title_custom": false,
+            "font_title": "poppins_n7",
+            "font_size_title_desktop": 16,
+            "font_size_title_mobile": 14,
+            "font_disclaimer_custom": false,
+            "font_disclaimer": "poppins_n9",
+            "font_size_disclaimer_desktop": 16,
+            "font_size_disclaimer_mobile": 14,
+            "font_price_custom": false,
+            "font_price": "poppins_n7",
+            "font_size_price_desktop": 20,
+            "font_size_price_mobile": 18,
+            "font_price-before_custom": false,
+            "font_price_before": "poppins_n4",
+            "font_size_price_before_desktop": 14,
+            "font_size_price_before_mobile": 12,
+            "font_additional-text_custom": false,
+            "font_additional_text": "poppins_n4",
+            "font_size_additional_text_desktop": 14,
+            "font_size_additional_text_mobile": 12,
+            "font_label_custom": false,
+            "option_label_font": "poppins_n4",
+            "option_label_font_size": 12,
+            "option_label_font_size_mobile": 12,
+            "font_button_custom": false,
+            "option_button_font": "poppins_n4",
+            "option_button_font_size": 12,
+            "option_button_font_size_mobile": 12,
+            "pack_border_thickness": 1,
+            "selected_border_width": 1,
+            "disclaimer_border_thickness": 0,
+            "option_button_border_thickness": 1,
+            "pack_border_radius": 10,
+            "disclaimer_border_radius": 4,
+            "option_button_border_radius": 4,
+            "color_selected": "#2d2a26",
+            "border_color_pack": "#d6d6d6",
+            "disclaimer_border_color": "#000000",
+            "option_button_border_color": "#000000",
+            "pack_selection_border_color": "#cccccc",
+            "pack_selected_selection_background_color": "#000000",
+            "color_selected_background": "#ffffff",
+            "non_selected_background_color": "#ffffff",
+            "disclaimer_background": "#2d2a26",
+            "pack_disclaimer_background_color_selected": "#000000",
+            "option_button_background": "#ffffff",
+            "color_title": "#000000",
+            "pack_title_color_selected": "#000000",
+            "disclaimer_text_color": "#ffffff",
+            "pack_disclaimer_text_color_selected": "#ffffff",
+            "color_price": "#000000",
+            "pack_price_color_selected": "#000000",
+            "color_discount_price": "#ff0000",
+            "pack_price_before_color_selected": "#ff0000",
+            "color_texts": "#545454",
+            "pack_additional_text_color_selected": "#545454",
+            "option_label_color": "#000000",
+            "option_button_text_color": "#000000",
+            "color_background": "#ffffff",
+            "shadow_enabled": false,
+            "shadow_horizontal": 2,
+            "shadow_vertical": 2,
+            "shadow_blur": 10,
+            "shadow_spread_radius": 0,
+            "shadow_color": "#ffffff",
+            "shadow_opacity": 0,
+            "non_selected_shadow_enabled": false,
+            "non_selected_shadow_horizontal": 0,
+            "non_selected_shadow_vertical": 0,
+            "non_selected_shadow_blur": 10,
+            "non_selected_shadow_spread_radius": 0,
+            "non_selected_shadow_color": "#000000",
+            "non_selected_shadow_opacity": 0.1,
+            "button_text": "Ajouter au panier"
+          }
+        },
+        "quantity_selector_F7WTPG": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+            "margin_top_quantity": 2,
+            "margin_bottom_quantity": 2
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true,
+            "margin_top": 2.5,
+            "margin_bottom": 2.5
+          }
+        },
+        "inventory_LPVqQn": {
+          "type": "inventory",
+          "settings": {
+            "inventory_display_type": "real",
+            "fake_inventory_text": "Bientôt en rupture de stock",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true,
+            "font_family": "roboto_n4",
+            "text_color": "#000000",
+            "text_style": "uppercase",
+            "alignment": "center",
+            "font_size_desktop": 12,
+            "font_size_mobile": 10,
+            "margin_top": 2,
+            "margin_bottom": 2
+          }
+        },
+        "icon_with_text_H6amGm": {
+          "type": "icon-with-text",
+          "settings": {
+            "hide_on_mobile": false,
+            "hide_on_tablet": false,
+            "hide_on_desktop": false,
+            "layout": "horizontal",
+            "icon_1": "none",
+            "image_1": "shopify://shop_images/9_1.png",
+            "heading_1": "Livraison gratuite en France et en Suisse",
+            "description_1": "",
+            "icon_2": "return",
+            "image_2": "shopify://shop_images/6_1_088fe88b-8286-4d8e-b788-6bfa44f4622b.png",
+            "heading_2": "Formules clean, sans compromis",
+            "description_2": "",
+            "icon_3": "none",
+            "image_3": "shopify://shop_images/11_1.png",
+            "heading_3": "Par des pros, pour des résultats pro",
+            "description_3": "",
+            "font_title_custom": true,
+            "title_font": "poppins_n3",
+            "title_font_size_desktop": 16,
+            "title_font_size_mobile": 14,
+            "title_color": "#000000",
+            "font_description_custom": false,
+            "description_font": "poppins_n4",
+            "description_font_size_desktop": 14,
+            "description_font_size_mobile": 12,
+            "description_color": "#000000",
+            "icon_size_desktop": 50,
+            "icon_size_mobile": 50,
+            "horizontal_gap": 1,
+            "vertical_margin_bottom": 1,
+            "icon_with_text_margin_top": 1,
+            "icon_with_text_margin_bottom": 2.5
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "description_margin_top": 2,
+            "description_margin_bottom": 2
+          }
+        },
+        "share_WLfB4j": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Partager"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "judge_me_reviews_preview_badge_8ptd6t",
+        "rating_custom_MTL4fB",
+        "icon_with_text_VX4aMN",
+        "price",
+        "variant_picker_pr3QfA",
+        "pack_XCTThJ",
+        "quantity_selector_F7WTPG",
+        "buy_buttons",
+        "inventory_LPVqQn",
+        "icon_with_text_H6amGm",
+        "description",
+        "share_WLfB4j"
+      ],
+      "settings": {
+        "display_id": false,
+        "enable_group_media": false,
+        "media_grouping_option": "Couleur",
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "image_with_text_DM4MNY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_mcnFit": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>L’art de maîtriser sa coiffure.</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "caption_aWye64": {
+          "type": "caption",
+          "settings": {
+            "caption": "Un geste simple. Un résultat professionnel.",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
+        "text_Ncz3bp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Rejoins les milliers d’hommes qui ont déjà adopté Charbon.</p><p>✔️ Tenue longue durée, finition mate</p><p>✔️ Texture enrichie, ajoute de la complexité et du volume</p><p>✔️ Parfaite pour tous les styles — coupes plaqués en arrières, effilées</p><p>✔️ Application facile, se rince sans résidu</p><p>✔️ Convient aux cheveux mi-longs à longs</p><p>✔️ Parfum signature discret et masculin</p>",
+            "text_style": "body"
+          }
+        },
+        "button_x88cqK": {
+          "type": "button",
+          "settings": {
+            "button_label": "CHARBONNE TON STYLE",
+            "button_link": "shopify://products/the-pomade",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_mcnFit",
+        "caption_aWye64",
+        "text_Ncz3bp",
+        "button_x88cqK"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "enable_margin_fix": false,
+        "image": "shopify://shop_images/10.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_border_radius": 10,
+        "image_border_thickness": 0,
+        "image_border_color": "#000000",
+        "enable_image_shadow": false,
+        "image_shadow_color": "#000000",
+        "image_shadow_opacity": 0.7,
+        "image_shadow_horizontal": 0,
+        "image_shadow_vertical": 0,
+        "image_shadow_blur": 10,
+        "image_shadow_spread": 0,
+        "align_items_center": true,
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "custom_radius": 10,
+        "image_text_gap": 30,
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "background_size": "cover",
+        "background_position": "center center",
+        "background_repeat": "no-repeat",
+        "background_attachment": "scroll",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "image_behavior": "none",
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "padding_top_desktop": 40,
+        "padding_bottom_desktop": 40,
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "max_width_content": 150,
+        "image_with_text_width": 200,
+        "full_width": true
+      }
+    },
+    "multicolumn_XMpqaf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_DBX7dW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/bee_wax.png",
+            "title": "Cire d'abeille",
+            "text": "<p>Structure et tenue, naturellement</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XcLXpR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/tea_tree.png",
+            "title": "Tea tree",
+            "text": "<p>Purifie le cuir chevelu</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HYQEDq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ortie_1.png",
+            "title": "Ortie",
+            "text": "<p>Renforce et stimule la pousse</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_AF7iTq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/The_vert_1.png",
+            "title": "<strong>Thé vert</strong>",
+            "text": "<p>Antioxydant, protège la fibre capillaire</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_DBX7dW",
+        "column_XcLXpR",
+        "column_HYQEDq",
+        "column_AF7iTq"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "title": "LES INGRÉDIENTS CLÉS",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "title_over_image": false,
+        "font_title_custom": false,
+        "title_font": "poppins_i9",
+        "title_font_size": 24,
+        "title_font_size_mobile": 18,
+        "title_color": "#000000",
+        "font_description_custom": false,
+        "description_font": "poppins_n4",
+        "description_font_size": 16,
+        "description_font_size_mobile": 12,
+        "description_color": "#2d2a26",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "ingredients_reveal_WRRaaQ": {
+      "type": "ingredients-reveal",
+      "blocks": {
+        "ingredient_bhff8T": {
+          "type": "ingredient",
+          "settings": {
+            "name": "AQUA/WATER/EAU",
+            "subtext": ""
+          }
+        },
+        "ingredient_G4AXP9": {
+          "type": "ingredient",
+          "settings": {
+            "name": "LANOLIN CERA",
+            "subtext": "(LANOLIN WAX (CIRE DE LANOLINE)"
+          }
+        },
+        "ingredient_gTUXCy": {
+          "type": "ingredient",
+          "settings": {
+            "name": "GLYCERIN",
+            "subtext": ""
+          }
+        },
+        "ingredient_RCYgVD": {
+          "type": "ingredient",
+          "settings": {
+            "name": " CERA ALBA",
+            "subtext": "BEESWAX"
+          }
+        },
+        "ingredient_bRn386": {
+          "type": "ingredient",
+          "settings": {
+            "name": "TRIDECYL STEARATE",
+            "subtext": ""
+          }
+        },
+        "ingredient_JqRLeA": {
+          "type": "ingredient",
+          "settings": {
+            "name": "SAMBUCUS NIGRA FLOWER EXTRACT",
+            "subtext": ""
+          }
+        },
+        "ingredient_NhaAXp": {
+          "type": "ingredient",
+          "settings": {
+            "name": "CAMELLIA SINENSIS LEAF EXTRACT",
+            "subtext": ""
+          }
+        },
+        "ingredient_HBwm7x": {
+          "type": "ingredient",
+          "settings": {
+            "name": "CETEARETH25",
+            "subtext": ""
+          }
+        }
+      },
+      "block_order": [
+        "ingredient_bhff8T",
+        "ingredient_G4AXP9",
+        "ingredient_gTUXCy",
+        "ingredient_RCYgVD",
+        "ingredient_bRn386",
+        "ingredient_JqRLeA",
+        "ingredient_NhaAXp",
+        "ingredient_HBwm7x"
+      ],
+      "name": "Popup Ingredients",
+      "settings": {
+        "button_label": "Liste complète des ingrédients",
+        "popup_heading": "Tout afficher"
+      }
+    },
+    "rich_text_raj6DW": {
+      "type": "rich-text",
+      "blocks": {
+        "button_49Vbnn": {
+          "type": "button",
+          "settings": {
+            "button_link": "",
+            "button_label": "Liste complète des ingrédients",
+            "font_button_custom": false,
+            "button_font": "poppins_n4",
+            "button_text_size_desktop": 1.6,
+            "button_text_size_mobile": 1.4,
+            "button_text_color": "#ffffff",
+            "button_background_color": "#000000",
+            "buttons_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "button_49Vbnn"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "section_width": 100,
+        "content_width": 1200,
+        "fit_content": false,
+        "full_width": true,
+        "desktop_content_position": "center",
+        "rich_text_background_color": "#ffffff",
+        "border_radius": 0,
+        "enable_shadow": false,
+        "shadow_color": "#000000",
+        "shadow_opacity": 0.5,
+        "shadow_horizontal_offset": 0,
+        "shadow_vertical_offset": 10,
+        "shadow_blur_radius": 20,
+        "shadow_spread_radius": 0,
+        "padding_desktop": 20,
+        "padding_mobile": 10,
+        "padding_vertical_desktop": 40,
+        "padding_vertical_mobile": 20,
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 20,
+        "margin_top_mobile": 10,
+        "margin_bottom_mobile": 10
+      }
+    },
+    "icon_blocks_EDyGfX": {
+      "type": "icon-blocks",
+      "blocks": {
+        "image_7FB6LE": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "",
+            "icon-blocks_text": "pas de compromis",
+            "icon-blocks_image": "shopify://shop_images/5_1.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        },
+        "image_WWkL9C": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "",
+            "icon-blocks_text": "98% d'origine naturelle",
+            "icon-blocks_image": "shopify://shop_images/6_1.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        },
+        "image_Lh8UjP": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "",
+            "icon-blocks_text": "aucun perturbateur endocrinien",
+            "icon-blocks_image": "shopify://shop_images/7_1.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        },
+        "image_jwyhLE": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "",
+            "icon-blocks_text": "fabriqué en Suisse",
+            "icon-blocks_image": "shopify://shop_images/8_12bb3493-fe1a-4ac2-8343-fb34d496b517.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        }
+      },
+      "block_order": [
+        "image_7FB6LE",
+        "image_WWkL9C",
+        "image_Lh8UjP",
+        "image_jwyhLE"
+      ],
+      "custom_css": [
+        ".icon-blocks-template--25619931070851__icon_blocks_EDyGfX .wrapper-box {display: grid; grid-template-columns: repeat( auto-fit, minmax(150px, calc((100% - 20px * (4 - 1)) / 4)) ); background-color: #f5f5f5; background-image: ; border: 0px solid #000000; border-radius: 0px; padding: 15px 0px; gap: 20px; max-width: 100%; box-sizing: border-box; width: 100%; margin: 0 auto; justify-content: center;}"
+      ],
+      "name": "Blocs d'icônes cliquables",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "icon-blocks_row": 4,
+        "icon-blocks_row_mobile": 4,
+        "icon-blocks_gap": 20,
+        "icon-blocks_gap_mobile": 20,
+        "icon-blocks_padding_vertical": 20,
+        "icon-blocks_padding_horizontal": 0,
+        "icon-blocks_radius": 0,
+        "icon-blocks_border_thickness": 0,
+        "icon-blocks_border_color": "#000000",
+        "icon-blocks_shadow": false,
+        "icon-blocks_shadow_color": "#000000",
+        "icon-blocks_bg": "#ffffff",
+        "icon-blocks_bg_gradient": "",
+        "transform_to_circle": false,
+        "box_width_desktop": 210,
+        "box_width_mobile": 150,
+        "wrapper_box_width": 100,
+        "wrapper_box_width_mobile": 100,
+        "box_padding_vertical": 20,
+        "box_padding_horizontal": 20,
+        "box_background_color": "#ffffff",
+        "box_background_gradient": "",
+        "box_border_thickness": 0,
+        "box_border_color": "#000000",
+        "box_border_radius": 10,
+        "box_shadow_enable": false,
+        "box_shadow_color": "#000000",
+        "box_shadow_opacity": 0.2,
+        "box_shadow_x": 0,
+        "box_shadow_y": 0,
+        "box_shadow_blur": 10,
+        "box_shadow_spread": 0,
+        "font_title_custom": false,
+        "icon-blocks_heading_font": "poppins_n8",
+        "icon-blocks_heading_size": 18,
+        "icon-blocks_heading_size_mobile": 16,
+        "icon-blocks_heading_height": 120,
+        "icon-blocks_heading_mt": 8,
+        "icon-blocks_heading_color": "#000000",
+        "font_description_custom": false,
+        "icon-blocks_text_font": "poppins_n4",
+        "icon-blocks_text_size": 18,
+        "icon-blocks_text_size_mobile": 12,
+        "icon-blocks_text_height": 120,
+        "icon-blocks_text_mt": 4,
+        "icon-blocks_text_color": "#000000",
+        "icon-blocks_icon_size": 30,
+        "icon-blocks_icon_size_mobile": 22,
+        "icon-blocks_icon_color": "#000000",
+        "background_color": "#f5f5f5",
+        "background_gradient": "",
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "full_width": false,
+        "content_width": 120,
+        "margin_top": 40,
+        "margin_bottom": 32,
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "padding_horizontal": 8,
+        "padding_horizontal_mobile": 1.5
+      }
+    },
+    "multicolumn_WBhVEC": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_aYN4gG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/15.png",
+            "title": "Prélevez une petite quantité de produit.",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3aTdWC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/16.png",
+            "title": "Émulsionnez entre les paumes des mains.",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qJKBw6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/17.png",
+            "title": "Appliquez sur cheveux humides ou secs, puis coiffez.",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_aYN4gG",
+        "column_3aTdWC",
+        "column_qJKBw6"
+      ],
+      "custom_css": [
+        "*,*::before,*::after {box-sizing: inherit; border-radius: 25px;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "title": "COMMENT UTILISER CHARBON",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "title_over_image": false,
+        "font_title_custom": true,
+        "title_font": "poppins_n5",
+        "title_font_size": 24,
+        "title_font_size_mobile": 18,
+        "title_color": "#000000",
+        "font_description_custom": true,
+        "description_font": "poppins_n4",
+        "description_font_size": 16,
+        "description_font_size_mobile": 12,
+        "description_color": "#2d2a26",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_XWqHRD": {
+      "type": "rich-text",
+      "blocks": {
+        "text_wLn3gX": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Pour coiffer, répartissez une petite quantité de manière uniforme sur cheveux humides ou secs.</p>",
+            "font_description_custom": false,
+            "description_font": "poppins_n4",
+            "description_size_desktop": 1.6,
+            "description_size_mobile": 1.4,
+            "description_color": "#000000",
+            "description_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "text_wLn3gX"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "section_width": 100,
+        "content_width": 1200,
+        "fit_content": false,
+        "full_width": true,
+        "desktop_content_position": "center",
+        "rich_text_background_color": "#ffffff",
+        "border_radius": 0,
+        "enable_shadow": false,
+        "shadow_color": "#000000",
+        "shadow_opacity": 0.5,
+        "shadow_horizontal_offset": 0,
+        "shadow_vertical_offset": 10,
+        "shadow_blur_radius": 20,
+        "shadow_spread_radius": 0,
+        "padding_desktop": 0,
+        "padding_mobile": 0,
+        "padding_vertical_desktop": 0,
+        "padding_vertical_mobile": 0,
+        "margin_top_desktop": 10,
+        "margin_bottom_desktop": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
+      }
+    },
+    "icon_blocks_6jJJNy": {
+      "type": "icon-blocks",
+      "blocks": {
+        "image_PjRHzV": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "",
+            "icon-blocks_text": "Tenue modulable",
+            "icon-blocks_image": "shopify://shop_images/SPRING_1.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        },
+        "image_N94AJE": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "",
+            "icon-blocks_text": "Sans résidu ni effet collant",
+            "icon-blocks_image": "shopify://shop_images/RESIDUE.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        },
+        "image_7qx6t3": {
+          "type": "image",
+          "settings": {
+            "icon-blocks_title": "",
+            "icon-blocks_text": "Parfum subtil & masculin",
+            "icon-blocks_image": "shopify://shop_images/PERFUM.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        },
+        "image_ka6Az6": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "icon-blocks_title": "",
+            "icon-blocks_text": "fabriqué en Suisse",
+            "icon-blocks_image": "shopify://shop_images/8_12bb3493-fe1a-4ac2-8343-fb34d496b517.png",
+            "icon-blocks_url": "",
+            "hide_image": false
+          }
+        }
+      },
+      "block_order": [
+        "image_PjRHzV",
+        "image_N94AJE",
+        "image_7qx6t3",
+        "image_ka6Az6"
+      ],
+      "name": "Blocs d'icônes cliquables",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "icon-blocks_row": 3,
+        "icon-blocks_row_mobile": 4,
+        "icon-blocks_gap": 20,
+        "icon-blocks_gap_mobile": 20,
+        "icon-blocks_padding_vertical": 20,
+        "icon-blocks_padding_horizontal": 0,
+        "icon-blocks_radius": 0,
+        "icon-blocks_border_thickness": 0,
+        "icon-blocks_border_color": "#000000",
+        "icon-blocks_shadow": false,
+        "icon-blocks_shadow_color": "#000000",
+        "icon-blocks_bg": "#ffffff",
+        "icon-blocks_bg_gradient": "",
+        "transform_to_circle": false,
+        "box_width_desktop": 210,
+        "box_width_mobile": 150,
+        "wrapper_box_width": 100,
+        "wrapper_box_width_mobile": 100,
+        "box_padding_vertical": 20,
+        "box_padding_horizontal": 20,
+        "box_background_color": "#ffffff",
+        "box_background_gradient": "",
+        "box_border_thickness": 0,
+        "box_border_color": "#000000",
+        "box_border_radius": 10,
+        "box_shadow_enable": false,
+        "box_shadow_color": "#000000",
+        "box_shadow_opacity": 0.2,
+        "box_shadow_x": 0,
+        "box_shadow_y": 0,
+        "box_shadow_blur": 10,
+        "box_shadow_spread": 0,
+        "font_title_custom": false,
+        "icon-blocks_heading_font": "poppins_n8",
+        "icon-blocks_heading_size": 18,
+        "icon-blocks_heading_size_mobile": 16,
+        "icon-blocks_heading_height": 120,
+        "icon-blocks_heading_mt": 8,
+        "icon-blocks_heading_color": "#000000",
+        "font_description_custom": false,
+        "icon-blocks_text_font": "poppins_n4",
+        "icon-blocks_text_size": 18,
+        "icon-blocks_text_size_mobile": 12,
+        "icon-blocks_text_height": 120,
+        "icon-blocks_text_mt": 4,
+        "icon-blocks_text_color": "#000000",
+        "icon-blocks_icon_size": 30,
+        "icon-blocks_icon_size_mobile": 22,
+        "icon-blocks_icon_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "full_width": false,
+        "content_width": 120,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 20,
+        "padding_horizontal": 8,
+        "padding_horizontal_mobile": 1.5
+      }
+    },
+    "faq_pWYfr4": {
+      "type": "faq",
+      "blocks": {
+        "text_qrnDT7": {
+          "type": "text",
+          "settings": {
+            "question": "Convient-elle aux cheveux longs, bouclés ou épais ?",
+            "answer": "<p>Oui, elle est idéale pour les longueurs supérieures à 5 cm, quel que soit le type de cheveux.</p>"
+          }
+        },
+        "text_CUtnVH": {
+          "type": "text",
+          "settings": {
+            "question": "Donne-t-elle un effet gras ou cartonné ?",
+            "answer": "<p>Non. Sa formule offre un fini sec et naturel, sans brillance ni rigidité.</p>"
+          }
+        },
+        "text_zEmK7t": {
+          "type": "text",
+          "settings": {
+            "question": "Peut-on l’utiliser au quotidien ?",
+            "answer": "<p>Bien sûr. Sa texture souple n’étouffe pas le cuir chevelu et se nettoie facilement.</p>"
+          }
+        },
+        "text_DV9fB7": {
+          "type": "text",
+          "settings": {
+            "question": "Est-elle testée sur les animaux ?",
+            "answer": "<p>Charbon s’engage contre les tests sur les animaux. Aucun de nos produits n’est testé sur eux.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_qrnDT7",
+        "text_CUtnVH",
+        "text_zEmK7t",
+        "text_DV9fB7"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "QUESTIONS FRÉQUEMMENT POSÉES",
+        "font_family_custom": false,
+        "title_font_family": "poppins_n8",
+        "title_font_size_desktop": 3,
+        "title_font_size_mobile": 2.2,
+        "title_color": "#000000",
+        "font_question_custom": false,
+        "question_font_family": "poppins_n5",
+        "questions_font_size": 1.7,
+        "questions_font_size_mobile": 1.5,
+        "question_color": "#000000",
+        "hover_color": "#222222",
+        "background_color": "#f5f5f5",
+        "question_margin_bottom": 5,
+        "question_border_radius": 5,
+        "border_thickness": 1,
+        "border_color": "#000000",
+        "add_line_between_questions": "non",
+        "line_thickness": 1,
+        "line_color": "#e3e3e3",
+        "font_answer_custom": false,
+        "answer_font_family": "poppins_n5",
+        "answer_font_size_desktop": 1.5,
+        "answer_font_size_mobile": 1.5,
+        "answer_color": "#000000",
+        "answer_bg_color": "#f5f5f5",
+        "answer_padding_vertical": 9,
+        "answer_padding_horizontal": 24,
+        "answer_margin_top": 10,
+        "answer_margin_bottom": 10,
+        "answer_border_radius": 10,
+        "icon_color": "#222222",
+        "accordion_toggle": false,
+        "background_type": "fixed",
+        "section_background_color": "#f5f5f5",
+        "background_gradient": "linear-gradient(180deg, rgba(216, 248, 255, 1), rgba(255, 255, 255, 1) 100%)",
+        "section_margin_top_desktop": 0,
+        "section_margin_bottom_desktop": 0,
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 50,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0,
+        "section_padding_top_mobile": 10,
+        "section_padding_bottom_mobile": 10
+      }
+    },
+    "comparison_table_hMgpHk": {
+      "type": "comparison-table",
+      "blocks": {
+        "features_row_inQWpF": {
+          "type": "features_row",
+          "settings": {
+            "text": "Marque suissesavoir-faire local et une exigence de qualité",
+            "this_store": "yes",
+            "use_custom_color_this_store": false,
+            "svg_color_this_store_yes": "#000000",
+            "svg_color_this_store_no": "#000000",
+            "others_store": "no",
+            "use_custom_color_others_store": false,
+            "svg_color_others_store_yes": "#000000",
+            "svg_color_others_store_no": "#000000"
+          }
+        },
+        "features_row_YQRtQF": {
+          "type": "features_row",
+          "settings": {
+            "text": "Formule à base d’ingrédients d’origine naturelle",
+            "this_store": "yes",
+            "use_custom_color_this_store": false,
+            "svg_color_this_store_yes": "#000000",
+            "svg_color_this_store_no": "#000000",
+            "others_store": "no",
+            "use_custom_color_others_store": false,
+            "svg_color_others_store_yes": "#000000",
+            "svg_color_others_store_no": "#000000"
+          }
+        },
+        "features_row_beiQnj": {
+          "type": "features_row",
+          "settings": {
+            "text": "Convient à tous les types de cheveux",
+            "this_store": "yes",
+            "use_custom_color_this_store": false,
+            "svg_color_this_store_yes": "#000000",
+            "svg_color_this_store_no": "#000000",
+            "others_store": "no",
+            "use_custom_color_others_store": false,
+            "svg_color_others_store_yes": "#000000",
+            "svg_color_others_store_no": "#000000"
+          }
+        },
+        "features_row_QMrYGd": {
+          "type": "features_row",
+          "settings": {
+            "text": "Parfum signature subtil et masculin",
+            "this_store": "yes",
+            "use_custom_color_this_store": false,
+            "svg_color_this_store_yes": "#000000",
+            "svg_color_this_store_no": "#000000",
+            "others_store": "no",
+            "use_custom_color_others_store": false,
+            "svg_color_others_store_yes": "#000000",
+            "svg_color_others_store_no": "#000000"
+          }
+        },
+        "features_row_4WBqfA": {
+          "type": "features_row",
+          "settings": {
+            "text": "Testée et validée en salon",
+            "this_store": "yes",
+            "use_custom_color_this_store": false,
+            "svg_color_this_store_yes": "#000000",
+            "svg_color_this_store_no": "#000000",
+            "others_store": "no",
+            "use_custom_color_others_store": false,
+            "svg_color_others_store_yes": "#000000",
+            "svg_color_others_store_no": "#000000"
+          }
+        },
+        "features_row_xz4Ezw": {
+          "type": "features_row",
+          "settings": {
+            "text": "Prix accessible et livraison rapide",
+            "this_store": "yes",
+            "use_custom_color_this_store": false,
+            "svg_color_this_store_yes": "#000000",
+            "svg_color_this_store_no": "#000000",
+            "others_store": "no",
+            "use_custom_color_others_store": false,
+            "svg_color_others_store_yes": "#000000",
+            "svg_color_others_store_no": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "features_row_inQWpF",
+        "features_row_YQRtQF",
+        "features_row_beiQnj",
+        "features_row_QMrYGd",
+        "features_row_4WBqfA",
+        "features_row_xz4Ezw"
+      ],
+      "name": "Tableau de comparaison",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "headline_text": "<strong>POURQUOI CHOISIR CHARBON</strong>",
+        "font_headline_custom": false,
+        "headline_font_picker": "poppins_i9",
+        "headline_font_size": 48,
+        "headline_font_size_mobile": 36,
+        "headline_text_color": "#2e2a39",
+        "headline_line_height": 60,
+        "headline_line_height_mobile": 45,
+        "headline_alignment": "center",
+        "headline_alignment_mobile": "center",
+        "description_text": "",
+        "font_description_custom": false,
+        "description_font_picker": "poppins_n4",
+        "description_text_color": "#414141",
+        "description_font_size": 17,
+        "description_font_size_mobile": 15,
+        "description_alignment": "center",
+        "description_alignment_mobile": "center",
+        "description_margin_top": 10,
+        "description_margin_bottom": 10,
+        "description_margin_top_mobile": 5,
+        "description_margin_bottom_mobile": 20,
+        "comparison_feature_padding_side": 20,
+        "comparison_feature_padding_vertical": 20,
+        "comparison_feature_padding_side_mobile": 10,
+        "comparison_feature_padding_vertical_mobile": 10,
+        "own_store_logo": "shopify://shop_images/paste.png",
+        "own_store_logo_width": 100,
+        "other_store_text": "Les autres",
+        "font_comparison_text_custom": false,
+        "comparison_text_font_picker": "poppins_n7",
+        "comparison_text_font_size": 14,
+        "other_store_color": "#000000",
+        "comparison_text_margin_top": 10,
+        "comparison_text_margin_bottom": 10,
+        "comparison_text_margin_top_mobile": 7,
+        "comparison_text_margin_bottom_mobile": 11,
+        "font_first_child_custom": false,
+        "first_child_font_picker": "poppins_n5",
+        "features_font_size": 18,
+        "features_font_size_mobile": 14,
+        "features_text_color": "#000000",
+        "features_background_color": "#f5f5f5",
+        "second_column_background_color": "#000000",
+        "svg_size": 40,
+        "svg_size_mobile": 30,
+        "svg_color_yes": "#ffffff",
+        "svg_color_no": "#000000",
+        "enable_shadow": true,
+        "table_shadow_color": "#000000",
+        "shadow_opacity": 0.2,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 0,
+        "shadow_blur": 26,
+        "shadow_spread": 0,
+        "table_border_width": 2,
+        "table_border_color": "#ebebeb",
+        "border_radius_table": 20,
+        "border_radius_brand": 20,
+        "section_height": 300,
+        "section_background_color": "",
+        "section_border_radius": 0,
+        "comparison_table_margin_top": 22,
+        "comparison_table_margin_bottom": 20,
+        "comparison_table_margin_top_mobile": 20,
+        "comparison_table_margin_bottom_mobile": 20,
+        "section_padding_top": 20,
+        "section_padding_bottom": 20,
+        "section_padding_top_mobile": 15,
+        "section_padding_bottom_mobile": 15,
+        "max_width": 120,
+        "single_column": "column",
+        "comparison_table_only": false
+      }
+    },
+    "1753777023ba4bce47": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_UiTH8a": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_UiTH8a"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "reviews_testimonials_bqXhrg": {
+      "type": "reviews-testimonials",
+      "blocks": {
+        "slide_bmQqQg": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "ça a changé ma routine cheveux",
+            "text": "J’ai testé des dizaines deproduits, mais aucunn’égale la légèreté et laqualité de Charbon\t.",
+            "author_name": "Jacob",
+            "review_date": "",
+            "image1": "shopify://shop_images/1_2.png"
+          }
+        },
+        "slide_6kRfUk": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Le produit qu’il me fallait",
+            "text": "Le service et la qualité du produit sont exceptionnels. L'emballage était soigné et la livraison rapide. J'en suis très content.",
+            "author_name": "Thomas",
+            "review_date": "",
+            "image1": "shopify://shop_images/4_1.png"
+          }
+        },
+        "slide_jx7hhL": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Qualité au top",
+            "text": "Je cherchais depuis longtemps une pommade qui laisse pas les cheveux trop brillants et de résidus",
+            "author_name": "Camille",
+            "review_date": "",
+            "image1": "shopify://shop_images/3_2.png"
+          }
+        },
+        "slide_wyaEig": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Super produit",
+            "text": "On sens dès la première utilisation que c’et un produit de qualité. pas  collant, parfum discret.",
+            "author_name": "James",
+            "review_date": "",
+            "image1": "shopify://shop_images/2_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "slide_bmQqQg",
+        "slide_6kRfUk",
+        "slide_jx7hhL",
+        "slide_wyaEig"
+      ],
+      "disabled": true,
+      "name": "Testimonial",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "ILS EN PARLENT MIEUX QUE NOUS",
+        "heading_custom": true,
+        "heading_font": "barlow_condensed_n6",
+        "heading_size": 52,
+        "heading_size_mobile": 24,
+        "heading_height": 130,
+        "heading_align": "center",
+        "rating_text_hide": false,
+        "rating_text": "",
+        "rating_text_custom": false,
+        "rating_text_font": "poppins_n5",
+        "rating_text_size": 24,
+        "rating_text_size_mobile": 20,
+        "rating_text_height": 130,
+        "rating_text_mt": 16,
+        "rating_hide": true,
+        "rating": 4.8,
+        "rating_align": "center",
+        "stars_count": 5,
+        "stars_size": 28,
+        "stars_size_mobile": 20,
+        "text": "",
+        "text_custom": false,
+        "text_font": "poppins_n4",
+        "text_size": 20,
+        "text_size_mobile": 16,
+        "text_height": 130,
+        "text_align": "center",
+        "text_mt": 16,
+        "slider_width": 80,
+        "slider_view": 3,
+        "slider_view_mobile": 1.2,
+        "slider_gap": 12,
+        "slider_gap_mobile": 12,
+        "slider_mt": 36,
+        "card_padding_vertical": 32,
+        "card_padding_vertical_mobile": 16,
+        "card_padding_horizontal": 16,
+        "card_padding_horizontal_mobile": 16,
+        "card_radius": 26,
+        "card_border_thickness": 1,
+        "enable_shadow": true,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 0,
+        "shadow_blur": 26,
+        "shadow_spread": 0,
+        "shadow_opacity": 0.2,
+        "shadow_color": "#cccccc",
+        "circle_width": 45,
+        "circle_custom": false,
+        "circle_font": "poppins_n9",
+        "author_font_size": 16,
+        "card_author_name_text_custom": false,
+        "card_author_name_text_font": "poppins_n9",
+        "card_author_name_text_size": 16,
+        "card_author_name_text_size_mobile": 16,
+        "profile_info_margin_bottom": 40,
+        "icon_color": "#333333",
+        "icon_size": 12,
+        "verified_text": "Vérifié",
+        "verified_custom": false,
+        "verified_font": "poppins_n4",
+        "verified_font_size": 12,
+        "verified_color": "#333333",
+        "card_heading_custom": true,
+        "card_heading_font": "poppins_n7",
+        "card_heading_size": 24,
+        "card_heading_size_mobile": 20,
+        "card_heading_height": 130,
+        "card_heading_mt": 16,
+        "card_text_custom": false,
+        "card_text_font": "poppins_n4",
+        "card_text_size": 14,
+        "card_text_size_mobile": 14,
+        "card_text_height": 150,
+        "card_text_mt": 16,
+        "card_text_more": "Voir plus",
+        "card_text_less": "Voir moins",
+        "card_count_words": 20,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "arrow_size": 50,
+        "arrow_size_mobile": 30,
+        "arrow_icon_size": 30,
+        "arrow_icon_size_mobile": 28,
+        "arrow_border_thickness": 0,
+        "dots_show_desktop": false,
+        "dots_show_mobile": false,
+        "dots_size": 12,
+        "dots_size_mobile": 12,
+        "circle_text_color": "#000000",
+        "circle_bg_color": "#ececec",
+        "card_bg_color": "#f5f5f5",
+        "card_border_color": "#000000",
+        "card_heading_color": "#000000",
+        "card_text_color": "#000000",
+        "card_author_name_text_color": "#000000",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#ffffff",
+        "arrow_border_hover_color": "#ffffff",
+        "dots_color": "#000000",
+        "heading_color": "#000000",
+        "rating_text_color": "#000000",
+        "stars_bg_color": "#ffffff",
+        "stars_color": "#000000",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+        "margin_top": 72,
+        "margin_bottom": 72,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "lazy": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "<strong>VOUS POURRIEZ ÉGALEMENT AIMER</strong>",
+        "heading_size": "h1",
+        "products_to_show": 2,
+        "columns_desktop": 2,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_DM4MNY",
+    "multicolumn_XMpqaf",
+    "ingredients_reveal_WRRaaQ",
+    "rich_text_raj6DW",
+    "icon_blocks_EDyGfX",
+    "multicolumn_WBhVEC",
+    "rich_text_XWqHRD",
+    "icon_blocks_6jJJNy",
+    "faq_pWYfr4",
+    "comparison_table_hMgpHk",
+    "1753777023ba4bce47",
+    "reviews_testimonials_bqXhrg",
+    "related-products"
+  ]
+}

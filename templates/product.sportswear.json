@@ -1,0 +1,1737 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scrolling_text_bar_Ke6CjU": {
+      "type": "scrolling-text-bar",
+      "blocks": {
+        "text_8rVnfn": {
+          "type": "text",
+          "settings": {
+            "text": "LIVRAISON OFFERTE",
+            "text_custom": true,
+            "text_font": "montserrat_i9",
+            "text_color": "#ffffff",
+            "text_size": 16,
+            "text_size_mobile": 14,
+            "text_height": 130,
+            "text_mr": 50,
+            "text_mr_mobile": 40,
+            "url": "",
+            "stencil_all": false,
+            "stencil_text": ""
+          }
+        },
+        "text_fYW7Yz": {
+          "type": "text",
+          "settings": {
+            "text": "30 JOURS SATISFAIT OU REMBOURSÉ",
+            "text_custom": true,
+            "text_font": "montserrat_i9",
+            "text_color": "#ffffff",
+            "text_size": 16,
+            "text_size_mobile": 14,
+            "text_height": 130,
+            "text_mr": 50,
+            "text_mr_mobile": 40,
+            "url": "",
+            "stencil_all": false,
+            "stencil_text": ""
+          }
+        },
+        "text_HDCNyh": {
+          "type": "text",
+          "settings": {
+            "text": "SAV FRANÇAIS",
+            "text_custom": true,
+            "text_font": "montserrat_i9",
+            "text_color": "#ffffff",
+            "text_size": 16,
+            "text_size_mobile": 14,
+            "text_height": 130,
+            "text_mr": 50,
+            "text_mr_mobile": 40,
+            "url": "",
+            "stencil_all": false,
+            "stencil_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_8rVnfn",
+        "text_fYW7Yz",
+        "text_HDCNyh"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "background_color": "#000000",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "enable_shadow": true,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 0,
+        "shadow_blur": 26,
+        "shadow_spread": 0,
+        "shadow_opacity": 0.1,
+        "shadow_color": "#000000",
+        "scrolling_velocity": 50,
+        "scrolling_velocity_mobile": 70,
+        "reverse_direction": false,
+        "pause_hover": true,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 4,
+        "padding_bottom": 4,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "product_title_margin_top": 2,
+            "product_title_margin_bottom": 2
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "display_price_inline": true,
+            "price_margin_top": 2,
+            "price_margin_bottom": 2
+          }
+        },
+        "rating_custom_rRnhmh": {
+          "type": "rating_custom",
+          "settings": {
+            "stars_count": 5,
+            "stars_size_desktop": 25,
+            "stars_size_mobile": 22,
+            "stars_color": "#ffffff",
+            "stars_bg_color": "#00b67a",
+            "rating_custom_text": "<p><strong>4,8/5</strong> basé sur <strong>267 avis.</strong></p>",
+            "font_title_custom": false,
+            "font_title": "roboto_n4",
+            "font_size_desktop": 14,
+            "font_size_mobile": 12,
+            "text_color": "#000000",
+            "link_url": "#shopify-section-template--24817551704404__reviews_testimonials_VN3dzD",
+            "rating_margin_top": 0,
+            "rating_margin_bottom": 4
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "none"
+          }
+        },
+        "size_chart_CihcP4": {
+          "type": "size_chart",
+          "settings": {
+            "text": "Guide des tailles",
+            "title_size": 1.3,
+            "popup_text_color": "#000000",
+            "icon": "icon-size-chart-style6",
+            "icon_size": 2.2,
+            "button_alignment": "left",
+            "page": "guide-des-tailles",
+            "margin_top": 2,
+            "margin_bottom": 2
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "margin_top_quantity": 2,
+            "margin_bottom_quantity": 2
+          }
+        },
+        "inventory_3qDHzY": {
+          "type": "inventory",
+          "settings": {
+            "inventory_display_type": "fake",
+            "fake_inventory_text": "Bientôt en rupture de stock",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true,
+            "font_family": "roboto_n4",
+            "text_color": "#ff0000",
+            "text_style": "uppercase",
+            "alignment": "right",
+            "font_size_desktop": 12,
+            "font_size_mobile": 10,
+            "margin_top": 2,
+            "margin_bottom": 0
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true,
+            "margin_top": 1.5,
+            "margin_bottom": 2.5
+          }
+        },
+        "visitor_indicator_88LgMB": {
+          "type": "visitor_indicator",
+          "settings": {
+            "visitor_text": "X visiteurs consultent actuellement ce produit.",
+            "text_color": "#000000",
+            "min_visitors_offpeak": 0,
+            "max_visitors_offpeak": 5,
+            "min_visitors_midpeak": 5,
+            "max_visitors_midpeak": 15,
+            "min_visitors_peak": 10,
+            "max_visitors_peak": 20,
+            "update_interval": 5,
+            "font_text_custom": false,
+            "text_font": "roboto_n4",
+            "desktop_font_size": 16,
+            "mobile_font_size": 13,
+            "alignment": "center",
+            "desktop_svg_size": 18,
+            "mobile_svg_size": 12,
+            "svg_color": "#000000",
+            "margin_top": 2,
+            "margin_bottom": 2
+          }
+        },
+        "collapsible_tab_pTdXeD": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "content": "<p>Ce site est un site demo. Vous pouvez retrouver les articles sur https://asrv.com 🚀</p>",
+            "page": "",
+            "accordion_bg_color": "#f9f9f9",
+            "accordion_border_radius": 10,
+            "accordion_padding": 1
+          }
+        },
+        "collapsible_tab_CwrA9X": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Livraison & retour",
+            "icon": "none",
+            "content": "<h4><strong>Livraison</strong></h4><ul><li><strong>Livraison Standard (5-7 jours ouvrables)</strong> : Gratuite à partir de 50 €. Sinon, 5 € de frais.</li><li><strong>Livraison Express (1-3 jours ouvrables)</strong> : 10 €.</li><li><strong>Livraison Internationale (7-14 jours ouvrables)</strong> : Tarifs variables selon la destination.</li></ul><p><strong>Traitement</strong> : Les commandes sont expédiées sous 1-2 jours ouvrables.</p><h4><strong>Retours</strong></h4><ul><li><strong>Période de retour</strong> : 30 jours après réception.</li><li><strong>Conditions</strong> : Articles non portés, non lavés, avec étiquettes.</li><li><strong>Frais de retour</strong> : Gratuits en France métropolitaine. À la charge du client à l'international.</li><li><strong>Remboursements</strong> : Traitement en 7 jours ouvrables après réception.</li></ul><p>Pour les <strong>échanges</strong>, suivez la procédure de retour et passez une nouvelle commande.</p>",
+            "page": "",
+            "accordion_bg_color": "#f9f9f9",
+            "accordion_border_radius": 10,
+            "accordion_padding": 1
+          }
+        },
+        "collapsible_tab_Jfh793": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Entretien et soins",
+            "icon": "none",
+            "content": "<p>Pour préserver la qualité de vos vêtements et assurer leur longévité, nous vous recommandons de suivre ces conseils d'entretien :</p><ul><li><strong>Lavage en machine</strong> à 30°C maximum pour éviter de rétrécir ou d'abîmer les fibres.</li><li><strong>Évitez le sèche-linge</strong>, préférez un séchage à l'air libre pour conserver la forme et la texture.</li><li><strong>Repassage à basse température</strong> si nécessaire, en retournant le vêtement à l'envers pour protéger les impressions ou les motifs.</li><li><strong>Utilisez un détergent doux</strong> et évitez les produits chimiques agressifs comme l'eau de javel.</li></ul><p>Ces simples précautions vous aideront à conserver vos vêtements comme neufs plus longtemps.</p>",
+            "page": "",
+            "accordion_bg_color": "#f9f9f9",
+            "accordion_border_radius": 10,
+            "accordion_padding": 1
+          }
+        },
+        "icon_with_text_XbXDVe": {
+          "type": "icon-with-text",
+          "settings": {
+            "hide_on_mobile": false,
+            "hide_on_tablet": false,
+            "hide_on_desktop": false,
+            "layout": "vertical",
+            "icon_1": "check_mark",
+            "image_1": "shopify://shop_images/Relaxed_Fit_Icon_c61ebdd4-9925-4297-94bd-58efc878174c.svg",
+            "heading_1": "RELAXED FIT",
+            "description_1": "<p>Ce produit offre une coupe légèrement plus ample et confortable pour une utilisation quotidienne.</p>",
+            "icon_2": "check_mark",
+            "image_2": "shopify://shop_images/Training_Icon_e4723c56-86b6-434d-a6fc-092b7edad5e1.svg",
+            "heading_2": "DESIGNED FOR TRAINING",
+            "description_2": "<p>Conçu pour l'entraînement en salle, le levage, le HIIT, l'entraînement hybride et le cardio.</p>",
+            "icon_3": "check_mark",
+            "image_3": "shopify://shop_images/Tech-Terry_Icon_88719dd3-d8cc-4ccb-8cb9-5ed1e884dc23.svg",
+            "heading_3": "TECH-TERRY™ FABRICATION",
+            "description_3": "<p>Le French Terry offre une grande performance en matière d'extensibilité, de respirabilité et d'évacuation de l'humidité pour plus de confort et de durabilité.</p>",
+            "font_title_custom": false,
+            "title_font": "montserrat_n7",
+            "title_font_size_desktop": 16,
+            "title_font_size_mobile": 14,
+            "title_color": "#000000",
+            "font_description_custom": false,
+            "description_font": "roboto_n4",
+            "description_font_size_desktop": 14,
+            "description_font_size_mobile": 12,
+            "description_color": "#000000",
+            "icon_size_desktop": 40,
+            "icon_size_mobile": 40,
+            "horizontal_gap": 1.5,
+            "vertical_margin_bottom": 1.5,
+            "icon_with_text_margin_top": 2.5,
+            "icon_with_text_margin_bottom": 2.5
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "rating_custom_rRnhmh",
+        "variant_picker",
+        "size_chart_CihcP4",
+        "quantity_selector",
+        "inventory_3qDHzY",
+        "buy_buttons",
+        "visitor_indicator_88LgMB",
+        "collapsible_tab_pTdXeD",
+        "collapsible_tab_CwrA9X",
+        "collapsible_tab_Jfh793",
+        "icon_with_text_XbXDVe"
+      ],
+      "settings": {
+        "display_id": false,
+        "enable_group_media": true,
+        "media_grouping_option": "Couleur",
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "delivery_date_RLMegR": {
+      "type": "delivery-date",
+      "blocks": {
+        "delivery_step_bT6F8r": {
+          "type": "delivery_step",
+          "settings": {
+            "icon_image_width": 51,
+            "min_days": 0,
+            "enable_range": false,
+            "max_days": 0,
+            "include_weekends": false,
+            "title": "Commande passée"
+          }
+        },
+        "delivery_step_VdLQkR": {
+          "type": "delivery_step",
+          "settings": {
+            "icon_image_width": 50,
+            "min_days": 1,
+            "enable_range": true,
+            "max_days": 2,
+            "include_weekends": false,
+            "title": "Expédiée"
+          }
+        },
+        "delivery_step_rFFFww": {
+          "type": "delivery_step",
+          "settings": {
+            "icon_image_width": 50,
+            "min_days": 2,
+            "enable_range": true,
+            "max_days": 4,
+            "include_weekends": false,
+            "title": "Livrée"
+          }
+        }
+      },
+      "block_order": [
+        "delivery_step_bT6F8r",
+        "delivery_step_VdLQkR",
+        "delivery_step_rFFFww"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "delivery_position": "below_buy",
+        "display_mode": "steps",
+        "text_before_min_date": "Commandez aujourd'hui, recevez votre commande entre le",
+        "text_after_min_date": "et le",
+        "font_family_custom": false,
+        "font_family": "roboto_n4",
+        "text_color": "#000000",
+        "text_size": 16,
+        "text_line_height": 24,
+        "text_alignment": "left",
+        "circle_size_desktop": 40,
+        "icon_svg_size_desktop": 50,
+        "circle_size_mobile": 36,
+        "icon_svg_size_mobile": 50,
+        "icon_color": "#ffffff",
+        "icon_bg_color": "#000000",
+        "line_color": "#000000",
+        "date_format_type": "dd Mmmm",
+        "date_font_custom": false,
+        "date_font": "roboto_n4",
+        "date_color": "#000000",
+        "date_size": 12,
+        "date_line_height": 10,
+        "date_margin_top": 15,
+        "step_font_custom": false,
+        "step_font": "roboto_n4",
+        "step_color": "#000000",
+        "step_size": 12,
+        "step_line_height": 12,
+        "step_margin_top": 5,
+        "widget_margin_top": 20,
+        "widget_margin_bottom": 20,
+        "widget_margin_sides": 0,
+        "widget_padding_top": 15,
+        "widget_padding_bottom": 10,
+        "widget_padding_sides": 15,
+        "widget_background_color": "#f9f9f9",
+        "widget_border_width": 0,
+        "widget_border_color": "#cccccc",
+        "widget_border_radius": 10,
+        "enable_shadow": true,
+        "shadow_color": "#bababa",
+        "shadow_horizontal_offset": 7,
+        "shadow_vertical_offset": 4,
+        "shadow_blur_radius": 16,
+        "shadow_opacity": 0.7,
+        "shadow_spread_radius": -2
+      }
+    },
+    "payment_icons_g4mG7T": {
+      "type": "payment-icons",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "delivery_position": "below_buy",
+        "icon_size_desktop": 40,
+        "icon_size_mobile": 30,
+        "content_alignment": "center",
+        "shadow_enabled": true,
+        "shadow_color": "#000000",
+        "shadow_horizontal": 2,
+        "shadow_vertical": 2,
+        "shadow_blur": 10,
+        "shadow_spread_radius": 0,
+        "shadow_opacity": 0.2,
+        "margin_top": 20,
+        "margin_bottom": 0
+      }
+    },
+    "scrolling_text_bar_rnEwQd": {
+      "type": "scrolling-text-bar",
+      "blocks": {
+        "text_BbqWFV": {
+          "type": "text",
+          "settings": {
+            "text": "PUSH THE BODY. FREE THE MIND.",
+            "text_custom": true,
+            "text_font": "montserrat_i9",
+            "text_color": "#ffffff",
+            "text_size": 30,
+            "text_size_mobile": 20,
+            "text_height": 130,
+            "text_mr": 50,
+            "text_mr_mobile": 40,
+            "url": "",
+            "stencil_all": false,
+            "stencil_text": ""
+          }
+        },
+        "image_wbRL8E": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Fit_01_Winter-22-Lookbook_c5f8885d-76ea-49a4-a494-788f3583f7b8.png",
+            "image_width": 150,
+            "image_width_mobile": 116,
+            "image_mr": 50,
+            "image_mr_mobile": 40,
+            "image_radius": 0,
+            "image_border_thickness": 0,
+            "image_border_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "text_BbqWFV",
+        "image_wbRL8E"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "background_color": "#000000",
+        "background_gradient": "",
+        "border_color": "rgba(0,0,0,0)",
+        "enable_shadow": true,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 19,
+        "shadow_blur": 30,
+        "shadow_spread": 0,
+        "shadow_opacity": 0.2,
+        "shadow_color": "#000000",
+        "scrolling_velocity": 50,
+        "scrolling_velocity_mobile": 40,
+        "reverse_direction": false,
+        "pause_hover": true,
+        "margin_top": 32,
+        "margin_bottom": 52,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "tabs_dgXqTX": {
+      "type": "tabs",
+      "blocks": {
+        "tab_F4xjXk": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Technologie",
+            "tab_image": "shopify://shop_images/atom.png",
+            "image_width": 20,
+            "section_id": "#shopify-section-template--24817551704404__product_features_Ep9jNW"
+          }
+        },
+        "tab_gdQCzc": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Fabric Tech",
+            "tab_image": "shopify://shop_images/textile.png",
+            "image_width": 20,
+            "section_id": "#shopify-section-template--24817551704404__video_gD9n9f"
+          }
+        },
+        "tab_kbfHQL": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Notre philosophie",
+            "tab_image": "shopify://shop_images/info.png",
+            "image_width": 20,
+            "section_id": "#shopify-section-template--24817551704404__image_with_text_rXiY4p"
+          }
+        },
+        "tab_QGmKcb": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Supima",
+            "tab_image": "shopify://shop_images/letter-r.png",
+            "image_width": 20,
+            "section_id": "#shopify-section-template--24817551704404__featured_collection_7PBn6A"
+          }
+        },
+        "tab_DNQ3f6": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Collections",
+            "tab_image": "shopify://shop_images/tshirt.png",
+            "image_width": 20,
+            "section_id": "#shopify-section-template--24817551704404__collage_pTDRyd"
+          }
+        }
+      },
+      "block_order": [
+        "tab_F4xjXk",
+        "tab_gdQCzc",
+        "tab_kbfHQL",
+        "tab_QGmKcb",
+        "tab_DNQ3f6"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "font_family_custom": false,
+        "font_family": "poppins_i7",
+        "tab_font_size": 16,
+        "tab_color": "#000000",
+        "tab_selected_color": "#ffffff",
+        "glider_height": 45,
+        "glider_color": "#000000",
+        "glider_border_radius": 10,
+        "tabs_menu_border_color": "#5e59ff",
+        "tabs_menu_border_width": 0,
+        "tabs_menu_border_style": "solid",
+        "tabs_menu_border_radius": 10,
+        "enable_shadow": true,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 4,
+        "shadow_blur": 18,
+        "shadow_spread": -5,
+        "shadow_opacity": 0.3,
+        "shadow_color": "#0300ff",
+        "tabs_header_padding_top": 20,
+        "tabs_header_padding_bottom": 20,
+        "section_margin_top": 20,
+        "section_background_color": "#ffffff"
+      }
+    },
+    "product_features_Ep9jNW": {
+      "type": "product-features",
+      "blocks": {
+        "hotspot_EKWwMD": {
+          "type": "hotspot",
+          "settings": {
+            "image": "shopify://shop_images/AEROSILVER_padding.png",
+            "title": "",
+            "text": "<p>La nouvelle génération de nos vêtements de performance infusés d'argent. Nous avons collaboré avec Hyosung pour intégrer leur fil AeroSilver®, réputé pour ses propriétés antimicrobiennes et d'évacuation de la transpiration, dans notre tissu Nano-Mesh afin de créer un produit fini doté de caractéristiques de performance d'élite.</p>",
+            "alignment": "center",
+            "offset_x": 24,
+            "offset_y": 39,
+            "enable_mobile_position": true,
+            "mobile_offset_x": 30,
+            "mobile_offset_y": 26
+          }
+        },
+        "hotspot_fmp73M": {
+          "type": "hotspot",
+          "settings": {
+            "image": "shopify://shop_images/LASERVENT_padding.png",
+            "title": "",
+            "text": "<p>Tricot chaine de performance doux et lisse avec une grande élasticité et une bonne rétention de la forme. Traitements antibactériens et d'évacuation de l'humidité. Perforations laser pour une circulation d'air maximale.</p>",
+            "alignment": "center",
+            "offset_x": 56,
+            "offset_y": 26,
+            "enable_mobile_position": true,
+            "mobile_offset_x": 26,
+            "mobile_offset_y": 66
+          }
+        },
+        "hotspot_ciXTqX": {
+          "type": "hotspot",
+          "settings": {
+            "image": "shopify://shop_images/TETRA-LITE_padding.png",
+            "title": "",
+            "text": "<p>Tetra-Lite™ est notre gamme la plus populaire de tous les temps - un mélange technique exceptionnellement doux qui est incroyablement léger et s'étire jusqu'à 6X dans toutes les directions. Ces caractéristiques s'adaptent aux mouvements naturels du corps et permettent une performance optimale et ciblée. </p>",
+            "alignment": "center",
+            "offset_x": 86,
+            "offset_y": 34,
+            "enable_mobile_position": true,
+            "mobile_offset_x": 66,
+            "mobile_offset_y": 36
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_EKWwMD",
+        "hotspot_fmp73M",
+        "hotspot_ciXTqX"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "title": "Notre technologie",
+        "text": "<p>Les vêtements ne sont plus seulement un moyen de parvenir à une fin. Il s'agit plutôt d'une philosophie de vie, d'une célébration de la recherche individuelle et du voyage que nous choisissons.</p>",
+        "button_label": "",
+        "link": "",
+        "button_style_secondary": false,
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "hide_content_on_mobile": false,
+        "mobile_content_position": "top",
+        "content_corner_radius": false,
+        "content_color_scheme": "scheme-1",
+        "color_scheme": "",
+        "content_width": 120,
+        "image": "shopify://shop_images/Caracteristiques.jpg",
+        "desktop_image_width": "unlimited",
+        "image_max_width": 900,
+        "full_page_width": false,
+        "image_corner_radius": false,
+        "mobile_image": "shopify://shop_images/Fall-21-Lookbook33_x1200.progressive_de460c8c-b3da-4571-b575-e4bfda70c2b4.webp",
+        "hotspot_open_event": "click",
+        "hotspots_color_scheme": "scheme-1",
+        "display_hotspots_animation": true,
+        "hotspot_content_color_scheme": "",
+        "hotspot_image_size": "small",
+        "contain_hotspot_modal": false,
+        "hotspot_modal_desktop_width": 340,
+        "hotspot_modal_mobile_width": 200,
+        "bullet_points_color": "",
+        "bullet_size_desktop": 1.5,
+        "bullet_size_mobile": 1,
+        "line_width_desktop": 0.3,
+        "line_width_mobile": 0.2,
+        "contain_bullet_points": false,
+        "bullet_point_desktop_width": 400,
+        "bullet_point_mobile_width": 60,
+        "padding_top": 36,
+        "padding_bottom": 80
+      }
+    },
+    "video_gD9n9f": {
+      "type": "video",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "section_width": 1200,
+        "full_width": true,
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 80
+      }
+    },
+    "image_with_text_rXiY4p": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_864r99": {
+          "type": "heading",
+          "settings": {
+            "heading": "Notre philosophie",
+            "heading_size": "h1"
+          }
+        },
+        "text_6yNtzU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Il existe une expérience optimale qui est universelle à la condition humaine. Cette expérience est marquée par un sentiment d'unité avec une activité, une perte de conscience de soi et un plaisir profond dans le processus. Elle est connue des artistes sous le nom de « flow », des athlètes sous le nom de « zone » et des coureurs sous le nom de « high ». Quel que soit le nom qu'on lui donne, nous avons tous connu des moments dans notre vie où nous avons été totalement absorbés par une activité et où nous avons ressenti un puissant sentiment d'utilité. C'est dans ces moments-là que nous donnons le meilleur de nous-mêmes et que nous prenons vie.<br/><br/>Inspiré par cette expérience de haute performance, ASRV a été fondé pour intégrer l'état d'esprit que nous apprenons à travers l'entraînement et le sport dans tout ce que nous poursuivons.<br/><br/>L'entraînement est un processus qui n'a pas de fin ni de destination finale. Chaque jour d'entraînement est un nouveau défi et une nouvelle opportunité de progrès. Il exige autant de discipline mentale que physique et crée ainsi une harmonie entre le corps et l'esprit. Nos meilleures séances d'entraînement ont lieu lorsque nous poussons notre corps dans ses derniers retranchements et que notre esprit est totalement immergé. Nous perdons la notion du temps et pouvons oublier de changer de chanson pendant une heure entière. Pendant ces séances, nous ressentons une motivation intrinsèque qui nous pousse à aller de l'avant tout en luttant physiquement.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_Jat7Xe": {
+          "type": "button",
+          "settings": {
+            "button_label": "Découvrir",
+            "button_link": "/",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_864r99",
+        "text_6yNtzU",
+        "button_Jat7Xe"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "enable_margin_fix": false,
+        "image": "shopify://shop_images/460944735_18462080233034785_5654970512303371092_n.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_border_radius": 10,
+        "image_border_thickness": 0,
+        "image_border_color": "#000000",
+        "enable_image_shadow": false,
+        "image_shadow_color": "#000000",
+        "image_shadow_opacity": 0.7,
+        "image_shadow_horizontal": 0,
+        "image_shadow_vertical": 0,
+        "image_shadow_blur": 10,
+        "image_shadow_spread": 0,
+        "align_items_center": true,
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "custom_radius": 10,
+        "image_text_gap": 30,
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "background_size": "cover",
+        "background_position": "center center",
+        "background_repeat": "no-repeat",
+        "background_attachment": "scroll",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "image_behavior": "none",
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 80,
+        "padding_top_desktop": 40,
+        "padding_bottom_desktop": 40,
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 80,
+        "max_width_content": 150,
+        "image_with_text_width": 200,
+        "full_width": true
+      }
+    },
+    "featured_collection_7PBn6A": {
+      "type": "featured-collection",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 80
+      }
+    },
+    "collage_pTDRyd": {
+      "type": "collage",
+      "blocks": {
+        "item_xfrAQ7": {
+          "type": "item",
+          "settings": {
+            "column_width": "2",
+            "row_width": "2",
+            "image": "shopify://shop_images/460144361_18461334427034785_1821494402902998038_n.jpg",
+            "collection": "",
+            "bg_overlay": 20,
+            "title": "<h3>TRAINING</h3>",
+            "text": "",
+            "button": "Découvrir",
+            "url": "",
+            "content_align": "middle-center",
+            "content_align_mobile": "bottom-left",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "button_color": "#000000",
+            "button_hover_color": "#000000",
+            "button_bg_color": "#ffffff",
+            "button_bg_hover_color": "#eaeaea",
+            "button_border_color": "#000000",
+            "button_border_hover_color": "#000000"
+          }
+        },
+        "item_cAFHe8": {
+          "type": "item",
+          "settings": {
+            "column_width": "1",
+            "row_width": "1",
+            "image": "shopify://shop_images/ASRV_Spring_22-41_x1200_progressive_png.webp",
+            "collection": "",
+            "bg_overlay": 20,
+            "title": "<h3>RUN</h3>",
+            "text": "",
+            "button": "Découvrir",
+            "url": "",
+            "content_align": "middle-center",
+            "content_align_mobile": "bottom-left",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "button_color": "#000000",
+            "button_hover_color": "#000000",
+            "button_bg_color": "#ffffff",
+            "button_bg_hover_color": "#eaeaea",
+            "button_border_color": "#000000",
+            "button_border_hover_color": "#000000"
+          }
+        },
+        "item_kxtiL8": {
+          "type": "item",
+          "settings": {
+            "column_width": "1",
+            "row_width": "1",
+            "image": "shopify://shop_images/Fall-21-Lookbook33_x1200.progressive_de460c8c-b3da-4571-b575-e4bfda70c2b4.webp",
+            "collection": "",
+            "bg_overlay": 20,
+            "title": "<h3>REC</h3>",
+            "text": "",
+            "button": "Découvrir",
+            "url": "",
+            "content_align": "middle-center",
+            "content_align_mobile": "bottom-left",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "button_color": "#000000",
+            "button_hover_color": "#000000",
+            "button_bg_color": "#ffffff",
+            "button_bg_hover_color": "#eaeaea",
+            "button_border_color": "#000000",
+            "button_border_hover_color": "#000000"
+          }
+        },
+        "item_VRP6xM": {
+          "type": "item",
+          "settings": {
+            "column_width": "1",
+            "row_width": "1",
+            "image": "shopify://shop_images/Summer-11_x1200.progressive_copie.png",
+            "collection": "",
+            "bg_overlay": 20,
+            "title": "<h3>ACCESSOIRES</h3>",
+            "text": "",
+            "button": "Découvrir",
+            "url": "",
+            "content_align": "middle-center",
+            "content_align_mobile": "bottom-left",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "button_color": "#000000",
+            "button_hover_color": "#000000",
+            "button_bg_color": "#ffffff",
+            "button_bg_hover_color": "#eaeaea",
+            "button_border_color": "#000000",
+            "button_border_hover_color": "#000000"
+          }
+        },
+        "item_B36nDR": {
+          "type": "item",
+          "settings": {
+            "column_width": "1",
+            "row_width": "1",
+            "image": "shopify://shop_images/Winter_23_Look_1_-9_x1200.progressive_a93ea5ca-786d-4e53-83a4-6e3d68db4229.webp",
+            "collection": "",
+            "bg_overlay": 20,
+            "title": "<h3>BESTSELLERS</h3>",
+            "text": "",
+            "button": "Découvrir",
+            "url": "",
+            "content_align": "middle-center",
+            "content_align_mobile": "bottom-left",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "button_color": "#000000",
+            "button_hover_color": "#000000",
+            "button_bg_color": "#ffffff",
+            "button_bg_hover_color": "#eaeaea",
+            "button_border_color": "#000000",
+            "button_border_hover_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "item_xfrAQ7",
+        "item_cAFHe8",
+        "item_kxtiL8",
+        "item_VRP6xM",
+        "item_B36nDR"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "",
+        "font_heading_custom": false,
+        "heading_font": "montserrat_n8",
+        "heading_color": "#000000",
+        "heading_size": 48,
+        "heading_size_mobile": 36,
+        "heading_height": 100,
+        "heading_align": "left",
+        "heading_align_mobile": "left",
+        "items_columns": 4,
+        "items_columns_mobile": "2",
+        "items_gap": 6,
+        "items_gap_mobile": 6,
+        "items_mt": 42,
+        "full_width": false,
+        "content_width": 160,
+        "row_height": 600,
+        "row_height_mobile": 260,
+        "item_border_thickness": 0,
+        "item_border_color": "#000000",
+        "item_radius": 0,
+        "item_shadow": false,
+        "item_shadow_color": "#000000",
+        "image_shadow_opacity": 0.2,
+        "image_shadow_horizontal": 0,
+        "image_shadow_vertical": 0,
+        "image_shadow_blur": 15,
+        "image_shadow_spread": 5,
+        "overlay_color": "#000000",
+        "font_title_custom": false,
+        "title_font": "montserrat_n8",
+        "title_size": 36,
+        "title_size_mobile": 16,
+        "title_height": 100,
+        "title_margin_bottom": 10,
+        "font_text_custom": false,
+        "text_font": "roboto_n4",
+        "text_size": 16,
+        "text_size_mobile": 16,
+        "text_height": 100,
+        "text_margin_bottom": 10,
+        "font_button_custom": false,
+        "button_font": "montserrat_n7",
+        "button_size": 14,
+        "button_size_mobile": 12,
+        "button_height": 100,
+        "button_padding_vertical": 10,
+        "button_padding_vertical_mobile": 8,
+        "button_padding_horizontal": 16,
+        "button_padding_horizontal_mobile": 12,
+        "button_radius": 100,
+        "button_border_thickness": 0,
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "image_banner_n4JRgm": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_4mCmpK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Notre univers",
+            "heading_size": "h1"
+          }
+        },
+        "text_4tmp7M": {
+          "type": "text",
+          "settings": {
+            "text": "L'entraînement est un processus qui n'a pas de fin ni de destination finale. Chaque jour où nous nous entraînons représente un nouveau défi et une nouvelle occasion de progresser.",
+            "text_style": "caption-with-letter-spacing"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4mCmpK",
+        "text_4tmp7M"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "enable_margin_fix": false,
+        "image": "shopify://shop_images/kits-banner-2_half_x1200.progressive_1ca7abc8-52f4-46c6-bed7-d0fd8100c851.png",
+        "image_overlay_opacity": 40,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "carrousel_video_7RT6BN": {
+      "type": "carrousel-video",
+      "blocks": {
+        "slide_4DpJ68": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        },
+        "slide_mtcNgk": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        },
+        "slide_zWbRK9": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        },
+        "slide_bGXcab": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        },
+        "slide_9PYJP3": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        },
+        "slide_ybD7Jh": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        },
+        "slide_UxPmyp": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "stars_count": 5
+          }
+        }
+      },
+      "block_order": [
+        "slide_4DpJ68",
+        "slide_mtcNgk",
+        "slide_zWbRK9",
+        "slide_bGXcab",
+        "slide_9PYJP3",
+        "slide_ybD7Jh",
+        "slide_UxPmyp"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "slider_view": 5,
+        "slider_view_mobile": 1.5,
+        "slider_gap": 10,
+        "slider_gap_mobile": 10,
+        "slider_rotate": 30,
+        "card_padding_vertical": 20,
+        "card_padding_vertical_mobile": 20,
+        "card_padding_horizontal": 20,
+        "card_padding_horizontal_mobile": 20,
+        "card_radius": 10,
+        "card_border_thickness": 0,
+        "card_shadow": false,
+        "card_ratio": "portrait",
+        "card_ratio_mobile": "portrait",
+        "card_overlay": 0,
+        "content_horizontal_position": "center",
+        "content_horizontal_position_mobile": "center",
+        "content_vertical_position": "end",
+        "content_vertical_position_mobile": "end",
+        "title_custom": false,
+        "title_font": "montserrat_n6",
+        "title_size": 16,
+        "title_size_mobile": 16,
+        "title_height": 100,
+        "stars_size": 16,
+        "stars_size_mobile": 16,
+        "stars_mt": 16,
+        "stars_mt_mobile": 16,
+        "hide_stars": true,
+        "use_action": true,
+        "action_size": 26,
+        "action_size_mobile": 26,
+        "action_icon_size": 16,
+        "action_icon_size_mobile": 16,
+        "action_border_thickness": 0,
+        "use_sound": true,
+        "sound_size": 26,
+        "sound_size_mobile": 26,
+        "sound_icon_size": 16,
+        "sound_icon_size_mobile": 16,
+        "sound_border_thickness": 0,
+        "arrow_size": 30,
+        "arrow_size_mobile": 30,
+        "arrow_icon_size": 8,
+        "arrow_icon_size_mobile": 8,
+        "arrow_border_thickness": 0,
+        "arrow_radius": 100,
+        "arrow_hover_effect": "scale",
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "card_border_color": "#000000",
+        "card_shadow_color": "#000000",
+        "card_overlay_color": "#000000",
+        "title_color": "#ffffff",
+        "stars_color": "#ffffff",
+        "action_color": "#ffffff",
+        "action_hover_color": "#ffffff",
+        "action_bg_color": "#ffffff",
+        "action_bg_hover_color": "#ffffff",
+        "action_border_color": "#ffffff",
+        "action_border_hover_color": "#ffffff",
+        "arrow_color": "#ffffff",
+        "arrow_hover_color": "#434343",
+        "arrow_bg_color": "#434343",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#000000",
+        "arrow_border_hover_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 36,
+        "margin_bottom": 36,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": false,
+        "content_width": 180,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "separator_hjcAQV": {
+      "type": "separator",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "svg_separator": "divider-style-1.svg",
+        "invert_separator": "yes",
+        "flip_svg": "no",
+        "absolute_position": "disabled",
+        "svg_height": 80,
+        "svg_height_mobile": 50,
+        "svg_color": "#efefef",
+        "solid_color": "rgba(0,0,0,0)",
+        "use_gradient": "no",
+        "background_gradient": "linear-gradient(180deg, rgba(218, 222, 255, 0.34) 4%, rgba(229, 233, 255, 0.43) 50%, rgba(255, 255, 255, 1) 100%)",
+        "margin_top_value": 0,
+        "margin_bottom_value": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "padding_top_value": 0,
+        "padding_bottom_value": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "reviews_testimonials_VN3dzD": {
+      "type": "reviews-testimonials",
+      "blocks": {
+        "slide_iHeTQe": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Excellent produit !",
+            "text": "Je suis vraiment impressionné par la qualité de ce produit. Il dépasse toutes mes attentes et je le recommande vivement à tous ceux qui cherchent quelque chose de fiable.",
+            "author_name": "Sophie",
+            "review_date": "21 sept. 2024",
+            "image1": "shopify://shop_images/HEATHERGREY_MicroTerryHoodie_1400x_0fd6f274-566e-4bdf-add1-d965f6c0b60f.webp",
+            "image2": "shopify://shop_images/0905_Black_TrainingHoodie-5_1400x_275404ac-ce5b-4927-8fd4-fd2aa01e6d3a.webp",
+            "image3": "shopify://shop_images/Grey_Terry_Hoodie_Back_1400x_19b6fa43-81f9-4fbe-9d5b-9e0d5308626c.webp"
+          }
+        },
+        "slide_rzytiw": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Très satisfait",
+            "text": "Le service et la qualité du produit sont exceptionnels. L'emballage était soigné et la livraison rapide. J'en suis très content.",
+            "author_name": "Thomas",
+            "review_date": "23 sept. 2024",
+            "image1": "shopify://shop_images/460957750_18462282889034785_1591377180224593161_n.jpg",
+            "image2": "shopify://shop_images/460144361_18461334427034785_1821494402902998038_n.jpg"
+          }
+        },
+        "slide_p3Pfcn": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Une belle découverte",
+            "text": "J'avais des doutes avant de commander, mais je suis agréablement surpris. Le produit est de bonne qualité et fonctionne parfaitement.",
+            "author_name": "Camille",
+            "review_date": "21 aout 2024",
+            "image1": "shopify://shop_images/Fall22E-Comm-452_1400x_9e04be32-cbf6-44ef-9a2d-184e2e235e6d.webp"
+          }
+        },
+        "slide_p6eL3H": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Produit de qualité",
+            "text": "Ce produit a vraiment répondu à mes attentes. La finition est soignée et il est très performant. Je le recommande sans hésitation.",
+            "author_name": "Marc",
+            "review_date": "28 aout 2024"
+          }
+        },
+        "slide_iQLBUL": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Parfait pour l'usage quotidien",
+            "text": "Utilisé tous les jours depuis plusieurs semaines, ce produit est solide et fiable. Je suis très satisfait de mon achat.",
+            "author_name": "Émilie",
+            "review_date": "7 sept. 2024"
+          }
+        },
+        "slide_hJMFt4": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Très bon rapport qualité-prix",
+            "text": "Pour le prix, je ne m'attendais pas à une telle qualité. C'est un excellent produit qui offre de très bonnes performances.",
+            "author_name": "Antoine",
+            "review_date": "18 sept. 2024"
+          }
+        },
+        "slide_FzLgnU": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Un incontournable",
+            "text": "C'est désormais un produit indispensable pour moi. Très pratique et facile à utiliser, je suis ravi de cet achat.",
+            "author_name": "Marie",
+            "review_date": "15 sept. 2024"
+          }
+        },
+        "slide_yycEV4": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Complètement satisfait",
+            "text": "Tout a été parfait, de la commande à la livraison. Le produit est conforme à la description et fonctionne très bien.",
+            "author_name": "Julien",
+            "review_date": "13 sept. 2024"
+          }
+        },
+        "slide_fNdcmL": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Je recommande sans hésitation",
+            "text": "Si vous cherchez un produit fiable et de bonne qualité, c'est celui qu'il vous faut. J'en suis très content.",
+            "author_name": "Clara",
+            "review_date": "8 sept. 2024"
+          }
+        },
+        "slide_QBCaWA": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Très pratique et efficace",
+            "text": "Ce produit me facilite la vie au quotidien. Je suis impressionné par son efficacité et sa robustesse.",
+            "author_name": "Maxime",
+            "review_date": "2 sept. 2024"
+          }
+        }
+      },
+      "block_order": [
+        "slide_iHeTQe",
+        "slide_rzytiw",
+        "slide_p3Pfcn",
+        "slide_p6eL3H",
+        "slide_iQLBUL",
+        "slide_hJMFt4",
+        "slide_FzLgnU",
+        "slide_yycEV4",
+        "slide_fNdcmL",
+        "slide_QBCaWA"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "Les avis de nos clients",
+        "heading_custom": false,
+        "heading_font": "roboto_n9",
+        "heading_size": 40,
+        "heading_size_mobile": 24,
+        "heading_height": 130,
+        "heading_align": "center",
+        "rating_text_hide": false,
+        "rating_text": "Excellent",
+        "rating_text_custom": false,
+        "rating_text_font": "roboto_n5",
+        "rating_text_size": 24,
+        "rating_text_size_mobile": 20,
+        "rating_text_height": 130,
+        "rating_text_mt": 16,
+        "rating_hide": false,
+        "rating": 4.8,
+        "rating_align": "center",
+        "stars_count": 5,
+        "stars_size": 28,
+        "stars_size_mobile": 20,
+        "text": "<p>basé sur <strong>267</strong> avis</p>",
+        "text_custom": false,
+        "text_font": "roboto_n4",
+        "text_size": 20,
+        "text_size_mobile": 16,
+        "text_height": 130,
+        "text_align": "center",
+        "text_mt": 16,
+        "slider_width": 80,
+        "slider_view": 3,
+        "slider_view_mobile": 1.2,
+        "slider_gap": 12,
+        "slider_gap_mobile": 12,
+        "slider_mt": 36,
+        "card_padding_vertical": 32,
+        "card_padding_vertical_mobile": 16,
+        "card_padding_horizontal": 16,
+        "card_padding_horizontal_mobile": 16,
+        "card_radius": 16,
+        "card_border_thickness": 0,
+        "enable_shadow": true,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 0,
+        "shadow_blur": 26,
+        "shadow_spread": 0,
+        "shadow_opacity": 0.2,
+        "shadow_color": "#000000",
+        "circle_width": 50,
+        "circle_custom": false,
+        "circle_font": "roboto_n9",
+        "author_font_size": 16,
+        "card_author_name_text_custom": false,
+        "card_author_name_text_font": "roboto_n9",
+        "card_author_name_text_size": 16,
+        "card_author_name_text_size_mobile": 16,
+        "profile_info_margin_bottom": 40,
+        "icon_color": "#333333",
+        "icon_size": 12,
+        "verified_text": "Vérifié",
+        "verified_custom": false,
+        "verified_font": "roboto_n4",
+        "verified_font_size": 12,
+        "verified_color": "#333333",
+        "card_heading_custom": false,
+        "card_heading_font": "roboto_n7",
+        "card_heading_size": 24,
+        "card_heading_size_mobile": 20,
+        "card_heading_height": 130,
+        "card_heading_mt": 16,
+        "card_text_custom": false,
+        "card_text_font": "roboto_n4",
+        "card_text_size": 14,
+        "card_text_size_mobile": 14,
+        "card_text_height": 150,
+        "card_text_mt": 16,
+        "card_text_more": "Voir plus",
+        "card_text_less": "Voir moins",
+        "card_count_words": 20,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "arrow_size": 50,
+        "arrow_size_mobile": 30,
+        "arrow_icon_size": 30,
+        "arrow_icon_size_mobile": 28,
+        "arrow_border_thickness": 0,
+        "dots_show_desktop": false,
+        "dots_show_mobile": false,
+        "dots_size": 12,
+        "dots_size_mobile": 12,
+        "circle_text_color": "#000000",
+        "circle_bg_color": "#ececec",
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#000000",
+        "card_heading_color": "#000000",
+        "card_text_color": "#000000",
+        "card_author_name_text_color": "#000000",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#ffffff",
+        "arrow_border_hover_color": "#ffffff",
+        "dots_color": "#000000",
+        "heading_color": "#000000",
+        "rating_text_color": "#000000",
+        "stars_bg_color": "#00b67a",
+        "stars_color": "#ffffff",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, rgba(239, 239, 239, 1), rgba(255, 255, 255, 1) 100%)",
+        "margin_top": 0,
+        "margin_bottom": 72,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "lazy": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Découvrez également",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    },
+    "double_section_KtfwBy": {
+      "type": "double-section",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "color_scheme": "",
+        "section_1_id": "#shopify-section-template--24817551704404__multicolumn_JEjkDm",
+        "padding_top_one": 0,
+        "padding_bottom_one": 0,
+        "mobile_reverse_grid": false,
+        "section_2_id": "#shopify-section-template--24817551704404__faq_Yr36pB",
+        "padding_top_two": 0,
+        "padding_bottom_two": 0,
+        "column_one_width": 50,
+        "alignment": "center",
+        "spacing_desktop": 0,
+        "spacing_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "content_width": 160
+      }
+    },
+    "multicolumn_JEjkDm": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_MHbfcT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Summer-11_x1200.progressive_copie.png",
+            "title": "Par des sportifs, pour des sportifs",
+            "text": "<p>Nous sommes à votre écoute</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_MHbfcT"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 1,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "title_over_image": true,
+        "font_title_custom": false,
+        "title_font": "montserrat_i9",
+        "title_font_size": 30,
+        "title_font_size_mobile": 18,
+        "title_color": "#ffffff",
+        "font_description_custom": false,
+        "description_font": "roboto_n4",
+        "description_font_size": 18,
+        "description_font_size_mobile": 12,
+        "description_color": "#ffffff",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "faq_Yr36pB": {
+      "type": "FAQ",
+      "blocks": {
+        "text_McAgTL": {
+          "type": "text",
+          "settings": {
+            "question": "Comment choisir la bonne taille ?",
+            "answer": "<p>Pour choisir la bonne taille, nous vous recommandons de consulter notre guide des tailles disponible sur chaque page produit. Mesurez votre taille, votre tour de poitrine et votre tour de taille, puis comparez-les avec notre tableau des tailles pour trouver la coupe qui vous convient le mieux.</p>"
+          }
+        },
+        "text_HqJ9ia": {
+          "type": "text",
+          "settings": {
+            "question": "Quels sont les délais de livraison ?",
+            "answer": "<p>Les délais de livraison varient selon votre emplacement. En général, vous pouvez vous attendre à recevoir votre commande dans un délai de 3 à 7 jours ouvrables. Nous proposons également des options de livraison express pour les commandes urgentes. Vous recevrez un numéro de suivi dès que votre commande sera expédiée.</p>"
+          }
+        },
+        "text_8gzkDc": {
+          "type": "text",
+          "settings": {
+            "question": "Puis-je retourner ou échanger un article ?",
+            "answer": "<p>Oui, nous acceptons les retours et échanges dans un délai de 30 jours à compter de la date de réception de votre commande. Les articles doivent être dans leur état d'origine, non portés et avec toutes les étiquettes attachées. Pour initier un retour, veuillez suivre les instructions sur notre page de retour.</p>"
+          }
+        },
+        "text_DDcwfA": {
+          "type": "text",
+          "settings": {
+            "question": "Offrez-vous des réductions pour les étudiants ou les membres de clubs sportifs ?",
+            "answer": "<p>Oui, nous proposons des réductions spéciales pour les étudiants et les membres de clubs sportifs. Pour en bénéficier, il vous suffit de vous inscrire sur notre site et de vérifier votre statut. Les réductions seront automatiquement appliquées lors de votre commande.</p>"
+          }
+        },
+        "text_Nn6KXA": {
+          "type": "text",
+          "settings": {
+            "question": "Puis-je modifier ou annuler ma commande après l’avoir passée ?",
+            "answer": "<p>Une fois votre commande passée, elle est généralement traitée rapidement pour garantir une livraison dans les meilleurs délais. Si vous souhaitez modifier ou annuler votre commande, contactez notre service client dès que possible. Nous ferons de notre mieux pour répondre à votre demande, mais nous ne pouvons garantir des modifications une fois le traitement commencé.</p>"
+          }
+        },
+        "text_VYiP8C": {
+          "type": "text",
+          "settings": {
+            "question": "Quels types de paiement acceptez-vous ?",
+            "answer": "<p>Nous acceptons plusieurs méthodes de paiement, y compris les principales cartes de crédit (Visa, Mastercard, American Express), PayPal, ainsi que les cartes-cadeaux de notre marque. Pour plus de sécurité, toutes les transactions sont cryptées et protégées.</p>"
+          }
+        },
+        "text_jPrHBJ": {
+          "type": "text",
+          "settings": {
+            "question": "Comment puis-je suivre ma commande ?",
+            "answer": "<p>Dès que votre commande est expédiée, vous recevrez un email de confirmation avec un numéro de suivi. Ce numéro vous permettra de suivre en temps réel l’état de votre livraison directement sur notre site ou via le site du transporteur.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_McAgTL",
+        "text_HqJ9ia",
+        "text_8gzkDc",
+        "text_DDcwfA",
+        "text_Nn6KXA",
+        "text_VYiP8C",
+        "text_jPrHBJ"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "",
+        "font_family_custom": false,
+        "title_font_family": "montserrat_n8",
+        "title_font_size_desktop": 3,
+        "title_font_size_mobile": 2.2,
+        "title_color": "#000000",
+        "font_question_custom": false,
+        "question_font_family": "roboto_n5",
+        "questions_font_size": 2,
+        "questions_font_size_mobile": 1.5,
+        "question_color": "#121212",
+        "hover_color": "#686868",
+        "background_color": "rgba(0,0,0,0)",
+        "question_margin_bottom": 3,
+        "question_border_radius": 5,
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "add_line_between_questions": "oui",
+        "line_thickness": 1,
+        "line_color": "#e3e3e3",
+        "font_answer_custom": false,
+        "answer_font_family": "roboto_n5",
+        "answer_font_size_desktop": 1.5,
+        "answer_font_size_mobile": 1.5,
+        "answer_color": "#000000",
+        "answer_bg_color": "#ffffff",
+        "answer_padding_vertical": 9,
+        "answer_padding_horizontal": 24,
+        "answer_margin_top": 10,
+        "answer_margin_bottom": 10,
+        "answer_border_radius": 10,
+        "icon_color": "#121212",
+        "accordion_toggle": true,
+        "background_type": "fixed",
+        "section_background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, rgba(216, 248, 255, 1), rgba(255, 255, 255, 1) 100%)",
+        "section_margin_top_desktop": 0,
+        "section_margin_bottom_desktop": 0,
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 20,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 10
+      }
+    }
+  },
+  "order": [
+    "scrolling_text_bar_Ke6CjU",
+    "main",
+    "delivery_date_RLMegR",
+    "payment_icons_g4mG7T",
+    "scrolling_text_bar_rnEwQd",
+    "tabs_dgXqTX",
+    "product_features_Ep9jNW",
+    "video_gD9n9f",
+    "image_with_text_rXiY4p",
+    "featured_collection_7PBn6A",
+    "collage_pTDRyd",
+    "image_banner_n4JRgm",
+    "carrousel_video_7RT6BN",
+    "separator_hjcAQV",
+    "reviews_testimonials_VN3dzD",
+    "related-products",
+    "double_section_KtfwBy",
+    "multicolumn_JEjkDm",
+    "faq_Yr36pB"
+  ]
+}

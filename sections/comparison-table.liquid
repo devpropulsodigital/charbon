@@ -1,0 +1,1254 @@
+{% style %}
+
+  {{ section.settings.headline_font_picker | font_face: font_display: 'swap' }} 
+  {{ section.settings.description_font_picker | font_face: font_display: 'swap' }} 
+  {{ section.settings.comparison_text_font_picker | font_face: font_display: 'swap' }} 
+  {{ section.settings.first_child_font_picker | font_face: font_display: 'swap' }} 
+
+  
+  #widget-section-{{ section.id }}.comparison-table-section {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: {{ section.settings.max_width }}rem;
+    background-color: {{  section.settings.section_background_color }};
+    border-radius: {{  section.settings.section_border_radius }}px;
+    margin-top: {{ section.settings.comparison_table_margin_top }}px;
+    margin-bottom: {{ section.settings.comparison_table_margin_bottom }}px;
+    padding-top: {{ section.settings.section_padding_top }}px;
+    padding-bottom: {{ section.settings.section_padding_bottom }}px;
+  }
+  @media only screen and (max-width: 768px) {
+  #widget-section-{{ section.id }}.comparison-table-section {
+    margin-top: {{ section.settings.comparison_table_margin_top_mobile }}px;
+    margin-bottom: {{ section.settings.comparison_table_margin_bottom_mobile }}px;
+    padding-top: {{ section.settings.section_padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.section_padding_bottom_mobile }}px;
+  }
+  }
+}
+  .page-width {
+    margin: 0 auto;
+    max-width: 1500px;
+  }
+  #widget-section-{{ section.id }} .compare-box {
+    display: flex;
+    align-items: center;
+    flex-direction: {{  section.settings.single_column }};
+    padding: 20px 0 40px;
+    line-height: 20px;
+    min-height: {{ section.settings.section_height }}px;
+  }
+
+  .left-side,
+  .right-side {
+    flex: 1;
+    display: flex;
+  }
+  .left-side{
+    align-items: center;
+  }
+  .right-side {
+    flex-direction: column;
+    justify-content:center;
+  }
+  
+  /* Left Side */
+
+  {% if section.settings.font_headline_custom %}
+     #widget-section-{{ section.id }}.comparison-table-section .left-side h2.comparison-heading {
+       font-family: {{ section.settings.headline_font_picker.family }}; {{ section.settings.headline_font_picker.fallback_families }};
+       font-weight: {{ section.settings.headline_font_picker.weight }};
+       font-style: {{ section.settings.headline_font_picker.style }};
+    }
+  {% endif %} 
+  
+  #widget-section-{{ section.id }}.comparison-table-section .left-side h2.comparison-heading {
+    font-size:{{ section.settings.headline_font_size }}px;
+    text-transform: initial;
+    letter-spacing: 0;
+    width: 100%;
+    text-align: center;
+    line-height: {{ section.settings.headline_line_height }}px;
+    text-align: {{ section.settings.headline_alignment }};
+    color: {{ section.settings.headline_text_color }};
+  }
+
+  @media only screen and (max-width: 768px) {
+    #widget-section-{{ section.id }}.comparison-table-section .left-side h2.comparison-heading {
+      font-size: {{ section.settings.headline_font_size_mobile }}px;
+      line-height: {{ section.settings.headline_line_height_mobile }}px;
+      text-align: {{ section.settings.headline_alignment_mobile }};
+    }
+  }
+
+    {% if section.settings.font_description_custom %}
+      #widget-section-{{ section.id }}.comparison-table-section .left-side .comparison-description {
+         font-family: {{ section.settings.description_font_picker.family }}; {{ section.settings.description_font_picker.fallback_families }};
+         font-weight: {{ section.settings.description_font_picker.weight }};
+         font-style: {{ section.settings.description_font_picker.style }};
+      }
+    {% endif %} 
+  
+    #widget-section-{{ section.id }}.comparison-table-section .left-side .comparison-description {
+      font-size: {{ section.settings.description_font_size }}px;
+      text-align: {{ section.settings.description_alignment }};
+      color: {{ section.settings.description_text_color }};
+      margin-top: {{ section.settings.description_margin_top }}px;
+      margin-bottom: {{ section.settings.description_margin_bottom }}px; 
+    }
+
+  @media only screen and (max-width: 768px) {
+    #widget-section-{{ section.id }}.comparison-table-section .left-side .comparison-description {
+      font-size: {{ section.settings.description_font_size_mobile }}px;
+      text-align: {{ section.settings.description_alignment_mobile }};
+      margin-top: {{ section.settings.description_margin_top_mobile }}px;
+      margin-bottom: {{ section.settings.description_margin_bottom_mobile }}px; 
+    }
+  }
+  
+  /* Right Side */
+  
+  .right-side {
+    padding-left: 20px;
+  }
+  #widget-section-{{ section.id }}.comparison-table-section .product-comparison-table {
+    width: 100%;
+  }
+
+  /* Right Side > Table  */
+  #widget-section-{{ section.id }}.comparison-table-section table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 0;
+  }
+
+  .top-table-content th.left-top-content {
+    width: 50%;
+  }
+  
+  /* > Table > icon container  */
+  .product-comparison .image-cell {
+    margin-top: 0;
+  }
+  #widget-section-{{ section.id }} .image-cell.table-right-content img {
+    height: auto;
+  }
+
+  {% if section.settings.font_comparison_text_custom %}
+    #widget-section-{{ section.id }}  .comparison-text {
+       font-family: {{ section.settings.comparison_text_font_picker.family }}; {{ section.settings.comparison_text_font_picker.fallback_families }};
+       font-weight: {{ section.settings.comparison_text_font_picker.weight }};
+       font-style: {{ section.settings.comparison_text_font_picker.style }};
+    }
+  {% endif %} 
+  
+  #widget-section-{{ section.id }}  .comparison-text{
+    color: {{ section.settings.other_store_color }}; 
+    font-size: {{ section.settings.comparison_text_font_size }}px;
+    margin-top: {{ section.settings.comparison_text_margin_top }}px;
+    margin-bottom: {{ section.settings.comparison_text_margin_bottom }}px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #widget-section-{{ section.id }} .comparison-text {
+      margin-top: {{ section.settings.comparison_text_margin_top_mobile }}px;
+      margin-bottom: {{ section.settings.comparison_text_margin_bottom_mobile }}px;
+    }
+  }
+
+  /* 2nd Table  */
+  #widget-section-{{ section.id }} .side-by-side-comparison table {
+    background-color: {{ section.settings.features_background_color }} ;
+    margin-bottom: 0;
+    margin-top: 20px;
+    border-radius: {{ section.settings.border_radius_table }}px;
+    width: 100%;
+    box-shadow: 
+        {% if section.settings.enable_shadow %}
+        {{ section.settings.shadow_offset_x }}px 
+        {{ section.settings.shadow_offset_y }}px 
+        {{ section.settings.shadow_blur }}px 
+        {{ section.settings.shadow_spread }}px
+        rgba(
+          {{ section.settings.table_shadow_color | color_extract: 'red' }},
+          {{ section.settings.table_shadow_color | color_extract: 'green' }},
+          {{ section.settings.table_shadow_color | color_extract: 'blue' }},
+          {{ section.settings.shadow_opacity }});
+        {% else %}
+        none;
+        {% endif %};
+  }
+
+  table.product-comparison-table tbody tr th:first-child,
+  .side-by-side-comparison table tbody tr td:first-child {
+    width: 50%;
+  }
+
+  #widget-section-{{ section.id }} .side-by-side-comparison table tbody tr td {
+    border-width: {{ section.settings.table_border_width }}px;
+    border-color: {{ section.settings.table_border_color }};
+    border-style: solid;
+}
+
+  {% if section.settings.font_first_child_custom %}
+     #widget-section-{{ section.id }} .side-by-side-comparison table tbody tr td:first-child {
+       font-family: {{ section.settings.first_child_font_picker.family }}; {{ section.settings.first_child_font_picker.fallback_families }};
+       font-weight: {{ section.settings.first_child_font_picker.weight }};
+       font-style: {{ section.settings.first_child_font_picker.style }};
+    }
+  {% endif %} 
+  
+  /*2nd Table > First Column */
+  #widget-section-{{ section.id }} .side-by-side-comparison table tbody tr td:first-child {
+    font-size: {{ section.settings.features_font_size }}px;
+    line-height: 28px;
+    padding: 15px 10px;
+    color:  {{ section.settings.features_text_color }};
+    text-align: center;
+  }
+  @media only screen and (max-width: 768px) {
+  #widget-section-{{ section.id }} .side-by-side-comparison table tbody tr td:first-child {
+    font-size: {{ section.settings.features_font_size_mobile }}px;
+  }
+}
+  /* Second Column */
+  .side-by-side-comparison table tbody tr td:nth-child(2) {
+    text-align: center;
+    width: 27%;
+  }
+  #brand-logo { 
+    width: 27%;
+  }
+  /* Thrid Column */
+  .side-by-side-comparison table tbody tr td:nth-child(3) {
+    text-align: center;
+    width: 23%;
+  }
+
+  .side-by-side-comparison table tbody tr td img{
+    width:25px;
+  }
+  /* Common Class  */
+  .text-center {
+    text-align: center;
+  }
+
+  /* Code Organize End */
+  @media only screen and (max-width: 600px) {
+    #widget-section-{{ section.id }} .compare-box {
+      flex-direction: column;
+    }
+    .right-side {
+      width: 100%;
+      padding: 0;
+    }
+    #widget-section-{{ section.id }} .image-cell.table-right-content img {
+      width: 66px;
+    }
+    /* Right Side  */
+    /* Right Side > Table  */
+    #widget-section-{{ section.id }} .side-by-side-comparison table tbody tr td img{
+      width:20px;
+    }
+  }
+
+  #widget-section-{{ section.id }} .comparison-feature-details {
+    padding-left: {{ section.settings.comparison_feature_padding_side }}px;
+    padding-right: {{ section.settings.comparison_feature_padding_side }}px;
+    padding-top: {{ section.settings.comparison_feature_padding_vertical }}px;
+    padding-bottom: {{ section.settings.comparison_feature_padding_vertical }}px;
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #widget-section-{{ section.id }} .comparison-feature-details {
+      padding-left: {{ section.settings.comparison_feature_padding_side_mobile }}px;
+      padding-right: {{ section.settings.comparison_feature_padding_side_mobile }}px;
+      padding-top: {{ section.settings.comparison_feature_padding_vertical_mobile }}px;
+      padding-bottom: {{ section.settings.comparison_feature_padding_vertical_mobile }}px;
+    }
+  }
+  
+#widget-section-{{ section.id }} .custom-svg-icon-yes {
+  width: {{ section.settings.svg_size }}px;
+  height: {{ section.settings.svg_size }}px;
+}
+@media only screen and (max-width: 768px) {
+  #widget-section-{{ section.id }} .custom-svg-icon-yes {
+    width: {{ section.settings.svg_size_mobile }}px; 
+    height: {{ section.settings.svg_size_mobile }}px;
+  }
+}
+#widget-section-{{ section.id }} .custom-svg-icon-no {
+  width: {{ section.settings.svg_size }}px;
+  height: {{ section.settings.svg_size }}px;
+}
+@media only screen and (max-width: 768px) {
+  #widget-section-{{ section.id }} .custom-svg-icon-no {
+    width: {{ section.settings.svg_size_mobile }}px; 
+    height: {{ section.settings.svg_size_mobile }}px;
+  }
+}
+
+    .side-by-side-comparison table tr td {
+  border-left: none !important;
+  border-right: none !important; 
+}
+  
+
+.side-by-side-comparison table tr:first-child td:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: -20px; 
+  left: 0;
+  right: 0;
+  height: 20px; 
+  background-color: {{ section.settings.second_column_background_color }};
+  border-top-left-radius: {{ section.settings.border_radius_brand }}px;
+  border-top-right-radius: {{ section.settings.border_radius_brand }}px;
+}
+
+.side-by-side-comparison table tr:last-child td:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  bottom: -20px; 
+  left: 0;
+  right: 0;
+  height: 20px; 
+  background-color: {{ section.settings.second_column_background_color }};
+  border-bottom-left-radius: {{ section.settings.border_radius_brand }}px;
+  border-bottom-right-radius: {{ section.settings.border_radius_brand }}px;
+}
+
+.side-by-side-comparison table tr td:nth-child(2) {
+  position: relative;
+  background-color: {{ section.settings.second_column_background_color }};
+  border: none !important;
+}
+
+{% endstyle %}
+
+<section id="widget-section-{{ section.id }}" class="product-comparison comparison-table-section content-for-grouping {% if section.settings.mobile-hidden %} mobile-hidden {% endif %} {% if section.settings.tablet-hidden %} tablet-hidden {% endif %} {% if section.settings.laptop-hidden %} laptop-hidden {% endif %} {% if section.settings.desktop-hidden %} desktop-hidden {% endif %} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    {% if section.settings.display_id %}
+    <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
+      <span class="copy-text">Cliquez pour copier l'ID de la section</span>
+      <span class="copy-success">ID de la section copié !</span>
+    </copy-button>
+  {% endif %}
+  <div class="page-width">
+    <div class="compare-box">
+      {% if section.settings.comparison_table_only == false %}
+        <div class="left-side">
+          <div class="comparison-feature-details">
+            <h2 class="comparison-heading">{{ section.settings.headline_text }}</h2>
+            <div class="comparison-description">
+              {{ section.settings.description_text }}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+      <div class="right-side">
+        <div class="top-table-content">
+          <table class="product-comparison-table">
+            <tbody>
+              <tr>
+                <th>&nbsp;</th>
+                <th id="brand-logo">
+                 <div class="image-cell table-right-content">
+                    {% if section.settings.own_store_logo != blank %}
+                      <img 
+                        src="{{ section.settings.own_store_logo | image_url: width: section.settings.own_store_logo_width }}" 
+                        srcset="
+                          {{ section.settings.own_store_logo | image_url: format: 'webp', width: '300' }} 300w, 
+                          {{ section.settings.own_store_logo | image_url: format: 'webp', width: '600' }} 600w, 
+                          {{ section.settings.own_store_logo | image_url: format: 'webp', width: '900' }} 900w, 
+                          {{ section.settings.own_store_logo | image_url: format: 'webp', width: '1200' }} 1200w, 
+                          {{ section.settings.own_store_logo | image_url: format: 'webp', width: '1600' }} 1600w
+                        " 
+                        sizes="(max-width: 600px) 600px, (max-width: 900px) 900px, (max-width: 1200px) 1200px, 100vw"
+                        alt="Logo de la boutique"
+                        class="store-logo"
+                        style="width: 100%; max-width: {{ section.settings.own_store_logo_width }}px; height: auto;"
+                      />
+                    {% endif %}
+                  </div>
+
+                </th>
+                <th class="text-center">
+                  <p class="comparison-text">{{ section.settings.other_store_text }}</p>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="side-by-side-comparison">
+          <table>
+            <tbody>
+              {% for block in section.blocks %}
+                <tr class="row-loop">
+                  <td>{{ block.settings.text }}</td>
+                  <td>
+                    {% if block.settings.this_store == 'yes' %}
+                      <svg class="custom-svg-icon-yes" width="100%" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill: {% if block.settings.use_custom_color_this_store %}{{ block.settings.svg_color_this_store_yes }}{% else %}{{ section.settings.svg_color_yes }}{% endif %};">
+<path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z"/>
+</svg>
+                    {%- else %}
+                      <svg class="custom-svg-icon-no" width="100%" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill: {% if block.settings.use_custom_color_this_store %}{{ block.settings.svg_color_this_store_no }}{% else %}{{ section.settings.svg_color_no }}{% endif %};">
+<path d="M10.0303 8.96965C9.73741 8.67676 9.26253 8.67676 8.96964 8.96965C8.67675 9.26255 8.67675 9.73742 8.96964 10.0303L10.9393 12L8.96966 13.9697C8.67677 14.2625 8.67677 14.7374 8.96966 15.0303C9.26255 15.3232 9.73743 15.3232 10.0303 15.0303L12 13.0607L13.9696 15.0303C14.2625 15.3232 14.7374 15.3232 15.0303 15.0303C15.3232 14.7374 15.3232 14.2625 15.0303 13.9696L13.0606 12L15.0303 10.0303C15.3232 9.73744 15.3232 9.26257 15.0303 8.96968C14.7374 8.67678 14.2625 8.67678 13.9696 8.96968L12 10.9393L10.0303 8.96965Z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z"/>
+</svg>
+                    {% endif %}
+                  </td>
+                  <td>
+                    {% if block.settings.others_store == 'yes' %}
+                     <svg class="custom-svg-icon-yes" width="100%" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill: {% if block.settings.use_custom_color_others_store %}{{ block.settings.svg_color_others_store_yes }}{% else %}{{ section.settings.svg_color_yes }}{% endif %};">
+<path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z"/>
+</svg>
+                    {% else %}
+                      <svg class="custom-svg-icon-no" width="100%" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill: {% if block.settings.use_custom_color_others_store %}{{ block.settings.svg_color_others_store_no }}{% else %}{{ section.settings.svg_color_no }}{% endif %};">
+<path d="M10.0303 8.96965C9.73741 8.67676 9.26253 8.67676 8.96964 8.96965C8.67675 9.26255 8.67675 9.73742 8.96964 10.0303L10.9393 12L8.96966 13.9697C8.67677 14.2625 8.67677 14.7374 8.96966 15.0303C9.26255 15.3232 9.73743 15.3232 10.0303 15.0303L12 13.0607L13.9696 15.0303C14.2625 15.3232 14.7374 15.3232 15.0303 15.0303C15.3232 14.7374 15.3232 14.2625 15.0303 13.9696L13.0606 12L15.0303 10.0303C15.3232 9.73744 15.3232 9.26257 15.0303 8.96968C14.7374 8.67678 14.2625 8.67678 13.9696 8.96968L12 10.9393L10.0303 8.96965Z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z"/>
+</svg>
+                    {% endif %}
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Tableau de comparaison",
+  "settings": [
+    {
+      "type": "header",
+      "content": "ID de la section"
+    },
+    {
+      "type": "checkbox",
+      "id": "display_id",
+      "label": "Afficher le bouton pour copier l'ID de la section",
+      "info": "L'ID peut être utilisé dans la section 'Double section' pour afficher 2 sections sur la même ligne ou dans la section 'Onglets' pour afficher la section dans des onglets. L'ID peut également être utilisé dans un lien de bouton pour faire défiler la page jusqu'à cette section.",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Masquer la section selon le type d'appareil"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile-hidden",
+      "label": "Masquer sur mobile",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "tablet-hidden",
+      "label": "Masquer sur tablette",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "laptop-hidden",
+      "label": "Masquer sur ordinateur portable",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "desktop-hidden",
+      "label": "Masquer sur ordinateur",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Titre"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "headline_text",
+      "label": "Texte du titre",
+      "default": "Leader du sportswear premium"
+    },
+    {
+      "type": "checkbox",
+      "id": "font_headline_custom",
+      "label": "Appliquer une police différente du thème",
+      "default": false
+    },
+    {
+      "type": "font_picker",
+      "id": "headline_font_picker",
+      "label": "Police du titre",
+      "default": "poppins_i9"
+    },
+    {
+      "type": "range",
+      "label": "Taille de la police du titre",
+      "id": "headline_font_size",
+      "min": 20,
+      "max": 100,
+      "step": 1,
+      "default": 48
+    },
+    {
+      "type": "range",
+      "label": "Taille de la police du titre sur mobile",
+      "id": "headline_font_size_mobile",
+      "min": 20,
+      "max": 70,
+      "step": 1,
+      "default": 36
+    },
+    {
+      "type": "color",
+      "label": "Couleur du texte du titre",
+      "id": "headline_text_color",
+      "default": "#2E2A39"
+    },
+    {
+      "type": "range",
+      "label": "Interligne du titre",
+      "id": "headline_line_height",
+      "min": 20,
+      "max": 120,
+      "step": 1,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "label": "Interligne du titre sur mobile",
+      "id": "headline_line_height_mobile",
+      "min": 20,
+      "max": 120,
+      "step": 1,
+      "default": 45
+    },
+    {
+      "type": "select",
+      "id": "headline_alignment",
+      "label": "Alignement du titre",
+      "options": [
+        {
+          "value": "left",
+          "label": "Gauche"
+        },
+        {
+          "value": "center",
+          "label": "Centre"
+        },
+        {
+          "value": "right",
+          "label": "Droite"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "headline_alignment_mobile",
+      "label": "Alignement du titre sur mobile",
+      "options": [
+        {
+          "value": "left",
+          "label": "Gauche"
+        },
+        {
+          "value": "center",
+          "label": "Centre"
+        },
+        {
+          "value": "right",
+          "label": "Droite"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Description"
+    },
+    {
+      "type": "richtext",
+      "id": "description_text",
+      "label": "Texte de la description",
+      "default": "<p>Découvrez les raisons de notre <strong>succès</strong>.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "font_description_custom",
+      "label": "Appliquer une police différente du thème",
+      "default": false
+    },
+    {
+      "type": "font_picker",
+      "id": "description_font_picker",
+      "label": "Police de la description",
+      "default": "poppins_n4"
+    },
+    {
+      "type": "color",
+      "label": "Couleur de la description",
+      "id": "description_text_color",
+      "default": "#414141"
+    },
+    {
+      "type": "range",
+      "label": "Taille de la description",
+      "id": "description_font_size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "default": 17
+    },
+    {
+      "type": "range",
+      "label": "Taille de la description sur mobile",
+      "id": "description_font_size_mobile",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "default": 15
+    },
+    {
+      "type": "select",
+      "id": "description_alignment",
+      "label": "Alignement de la description",
+      "options": [
+        {
+          "value": "left",
+          "label": "Gauche"
+        },
+        {
+          "value": "center",
+          "label": "Centre"
+        },
+        {
+          "value": "right",
+          "label": "Droite"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "description_alignment_mobile",
+      "label": "Alignement de la description sur mobile",
+      "options": [
+        {
+          "value": "left",
+          "label": "Gauche"
+        },
+        {
+          "value": "center",
+          "label": "Centre"
+        },
+        {
+          "value": "right",
+          "label": "Droite"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "label": "Marge supérieure de la description",
+      "id": "description_margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "range",
+      "label": "Marge inférieure de la description",
+      "id": "description_margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "range",
+      "label": "Marge supérieure de la description sur mobile",
+      "id": "description_margin_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "range",
+      "label": "Marge inférieure de la description sur mobile",
+      "id": "description_margin_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Marge du bloc 'titre et description'"
+    },
+    {
+      "type": "range",
+      "label": "Marge intérieure latérale",
+      "id": "comparison_feature_padding_side",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "label": "Marge intérieure verticale",
+      "id": "comparison_feature_padding_vertical",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "label": "Marge intérieure latérale sur mobile",
+      "id": "comparison_feature_padding_side_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "range",
+      "label": "Marge intérieure verticale sur mobile",
+      "id": "comparison_feature_padding_vertical_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Entête des colonnes"
+    },
+    {
+      "type": "image_picker",
+      "id": "own_store_logo",
+      "label": "Logo de votre marque"
+    },
+    {
+      "type": "range",
+      "id": "own_store_logo_width",
+      "min": 50,
+      "max": 140,
+      "step": 1,
+      "unit": "px",
+      "label": "Taille du logo",
+      "default": 100
+    },
+    {
+      "type": "text",
+      "id": "other_store_text",
+      "label": "Concurrence",
+      "default": "Les autres"
+    },
+    {
+      "type": "checkbox",
+      "id": "font_comparison_text_custom",
+      "label": "Appliquer une police différente du thème",
+      "default": false
+    },
+    {
+      "type": "font_picker",
+      "id": "comparison_text_font_picker",
+      "label": "Police du texte du concurrent",
+      "default": "poppins_n7"
+    },
+    {
+      "type": "range",
+      "label": "Taille du texte du concurrent",
+      "id": "comparison_text_font_size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "default": 14
+    },
+    {
+      "type": "color",
+      "label": "Couleur du texte du concurrent",
+      "id": "other_store_color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "label": "Marge supérieure du texte du concurrent",
+      "id": "comparison_text_margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "range",
+      "label": "Marge inférieure du texte du concurrent",
+      "id": "comparison_text_margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "range",
+      "label": "Marge supérieure du texte de comparaison sur mobile",
+      "id": "comparison_text_margin_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 7
+    },
+    {
+      "type": "range",
+      "label": "Marge inférieure du texte de comparaison sur mobile",
+      "id": "comparison_text_margin_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 11
+    },
+    {
+      "type": "header",
+      "content": "Personnalisation du tableau"
+    },
+    {
+      "type": "checkbox",
+      "id": "font_first_child_custom",
+      "label": "Appliquer une police différente du thème",
+      "default": false
+    },
+    {
+      "type": "font_picker",
+      "id": "first_child_font_picker",
+      "label": "Police des fonctionnalités",
+      "default": "poppins_n5"
+    },
+    {
+      "type": "range",
+      "label": "Taille des fonctionnalités",
+      "id": "features_font_size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "default": 18
+    },
+    {
+      "type": "range",
+      "label": "Taille des fonctionnalités sur mobile",
+      "id": "features_font_size_mobile",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "default": 14
+    },
+    {
+      "type": "color",
+      "label": "Couleur des fonctionnalités",
+      "id": "features_text_color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "features_background_color",
+      "label": "Couleur de fond du tableau",
+      "default": "#F9F9F9"
+    },
+    {
+      "type": "color",
+      "label": "Couleur du fond 2e colonne",
+      "id": "second_column_background_color",
+      "default": "#101660"
+    },
+    {
+      "type": "range",
+      "label": "Taille des icônes",
+      "id": "svg_size",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "label": "Taille des icônes sur mobile",
+      "id": "svg_size_mobile",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "default": 30
+    },
+    {
+      "type": "color",
+      "label": "Couleur des icônes 'Oui'",
+      "id": "svg_color_yes",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "label": "Couleur des icônes 'Non'",
+      "id": "svg_color_no",
+      "default": "#FF0000"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_shadow",
+      "label": "Activer l'ombre",
+      "default": true
+    },
+    {
+      "type": "color",
+      "label": "Couleur de l'ombre du tableau",
+      "id": "table_shadow_color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "shadow_opacity",
+      "label": "Opacité de l'ombre",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.2
+    },
+    {
+      "type": "range",
+      "id": "shadow_offset_x",
+      "label": "Décalage horizontal (X)",
+      "min": -50,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "shadow_offset_y",
+      "label": "Décalage vertical (Y)",
+      "min": -50,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "shadow_blur",
+      "label": "Flou de l'ombre",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 26
+    },
+    {
+      "type": "range",
+      "id": "shadow_spread",
+      "label": "Propagation de l'ombre",
+      "min": -50,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "label": "Épaisseur de la bordure du tableau",
+      "id": "table_border_width",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "color",
+      "label": "Couleur de la bordure du tableau",
+      "id": "table_border_color",
+      "default": "#EBEBEB"
+    },
+    {
+      "type": "range",
+      "id": "border_radius_table",
+      "label": "Arrondi des angles du tableau",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "border_radius_brand",
+      "label": "Arrondi des angles de la 2e colonne",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Personnalisation de la section"
+    },
+    {
+      "type": "range",
+      "label": "Hauteur de la section",
+      "id": "section_height",
+      "min": 100,
+      "max": 1000,
+      "step": 10,
+      "default": 300
+    },
+    {
+      "type": "color",
+      "label": "Couleur de fond de la section",
+      "id": "section_background_color"
+    },
+    {
+      "type": "range",
+      "label": "Arrondi de la section",
+      "id": "section_border_radius",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Marge extérieure de la section"
+    },
+    {
+      "type": "range",
+      "label": "Marge supérieure",
+      "id": "comparison_table_margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "label": "Marge inférieure",
+      "id": "comparison_table_margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "label": "Marge supérieure sur mobile",
+      "id": "comparison_table_margin_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "label": "Marge inférieure sur mobile",
+      "id": "comparison_table_margin_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Marge intérieure de la section"
+    },
+    {
+      "type": "range",
+      "label": "Marge supérieure",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "label": "Marge inférieure",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "label": "Marge supérieure sur mobile",
+      "id": "section_padding_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 15
+    },
+    {
+      "type": "range",
+      "label": "Marge inférieure sur mobile",
+      "id": "section_padding_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Personnalisation de la section"
+    },
+    {
+      "type": "range",
+      "label": "Largeur maximale de la section",
+      "id": "max_width",
+      "min": 0,
+      "max": 400,
+      "step": 10,
+      "unit": "rem",
+      "default": 120
+    },
+    {
+      "type": "select",
+      "id": "single_column",
+      "label": "Colonne unique",
+      "options": [
+        {
+          "value": "column",
+          "label": "Oui"
+        },
+        {
+          "value": "row",
+          "label": "Non"
+        }
+      ],
+      "default": "row"
+    },
+    {
+      "type": "checkbox",
+      "id": "comparison_table_only",
+      "label": "Masquer le titre et la description",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "features_row",
+      "name": "Fonctionnalité",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Titre de la fonctionnalité",
+          "default": "Fonctionnalité"
+        },
+        {
+          "type": "select",
+          "id": "this_store",
+          "label": "Votre marque",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Oui"
+            },
+            {
+              "value": "no",
+              "label": "Non"
+            }
+          ],
+          "default": "yes"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_custom_color_this_store",
+          "label": "Attribuer une couleur spécifique pour votre marque dans cette ligne ?",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "svg_color_this_store_yes",
+          "label": "Couleur de l'icône 'Oui' pour votre marque",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "svg_color_this_store_no",
+          "label": "Couleur de l'icône 'Non' pour votre marque",
+          "default": "#000000"
+        },
+        {
+          "type": "select",
+          "id": "others_store",
+          "label": "Concurrent",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Oui"
+            },
+            {
+              "value": "no",
+              "label": "Non"
+            }
+          ],
+          "default": "no"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_custom_color_others_store",
+          "label": "Attribuer une couleur spécifique pour le concurrent dans cette ligne ?",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "svg_color_others_store_yes",
+          "label": "Couleur de l'icône 'Oui' pour Concurrent",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "svg_color_others_store_no",
+          "label": "Couleur de l'icône 'Non' pour Concurrent",
+          "default": "#000000"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tableau de comparaison",
+      "blocks": [
+        {
+          "type": "features_row"
+        },
+        {
+          "type": "features_row"
+        },
+        {
+          "type": "features_row"
+        },
+        {
+          "type": "features_row"
+        },
+        {
+          "type": "features_row"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

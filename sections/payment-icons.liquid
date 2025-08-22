@@ -1,0 +1,264 @@
+<style>
+      #payment-icons-{{ section.id }} {
+      margin: {{ section.settings.margin_top }}px 0 {{ section.settings.margin_bottom }}px 0;
+      display:flex;    
+}
+
+     #payment-icons-{{ section.id }} .icon {
+  width: {{ section.settings.icon_size_desktop }}px;
+  height: auto;
+  box-shadow: {% if section.settings.shadow_enabled %}
+                   {{ section.settings.shadow_horizontal }}px 
+                   {{ section.settings.shadow_vertical }}px 
+                   {{ section.settings.shadow_blur }}px 
+                   {{ section.settings.shadow_spread_radius }}px rgba({{ section.settings.shadow_color | color_extract: 'red' }}, {{ section.settings.shadow_color | color_extract: 'green' }}, {{ section.settings.shadow_color | color_extract: 'blue' }}, {{ section.settings.shadow_opacity }});
+                 {% else %} none;
+                 {% endif %};
+}
+    @media (max-width: 767px) {
+  #payment-icons-{{ section.id }} .icon {
+    width: {{ section.settings.icon_size_mobile }}px;
+    height: auto;
+  }
+}
+
+  .product-form__submit {
+    position: relative;
+    z-index: 2; 
+  }
+
+  .list-payment-custom-{{ section.id }} {
+    width: 100%;
+    overflow: visible !important;
+    justify-content:
+      {% if section.settings.content_alignment == 'center' %} center !important
+      {% elsif section.settings.content_alignment == 'right' %} flex-end !important
+      {% else %} flex-start !important
+      {% endif %};
+  }
+</style>
+
+<div id="payment-icons-{{ section.id }}" class="footer__payment custom-section content-for-grouping {% if section.settings.mobile-hidden %} mobile-hidden {% endif %} {% if section.settings.tablet-hidden %} tablet-hidden {% endif %} {% if section.settings.laptop-hidden %} laptop-hidden {% endif %} {% if section.settings.desktop-hidden %} desktop-hidden {% endif %}">
+    {% if section.settings.display_id %}
+    <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
+      <span class="copy-text">Cliquez pour copier l'ID de la section</span>
+      <span class="copy-success">ID de la section copié !</span>
+    </copy-button>
+  {% endif %}
+  <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
+  <ul class="list-payment-custom-{{ section.id }} list list-payment" role="list">
+    {%- for type in shop.enabled_payment_types -%}
+      <li class="list-payment__item">
+        {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>
+
+<script>
+  (function () {
+    function loadPaymentIconsSection() {
+      var productForm = document.querySelector(
+        '{% if section.settings.delivery_position == "below_title" or section.settings.delivery_position == "above_title" %}.product__title{% elsif section.settings.delivery_position == "below_description" %}.product__description{% else %}.product-form__submit, .button--add-to-cart{% endif %}'
+      );
+
+      if (!productForm) return;
+      
+      var paymentSection = document.querySelector('#payment-icons-{{ section.id }}');
+      if (!paymentSection) return;
+
+      productForm.insertAdjacentElement(
+        '{% if section.settings.delivery_position == "below_buy" or section.settings.delivery_position == "below_title" or section.settings.delivery_position == "below_description" %}afterend{% else %}beforebegin{% endif %}',
+        paymentSection
+      );
+    }
+
+    window.addEventListener('DOMContentLoaded', loadPaymentIconsSection);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Icônes de paiement",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Activez un moyen de paiement sur votre boutique pour afficher les icônes de paiement."
+    },
+     {
+      "type": "header",
+      "content": "ID de la section"
+      },
+      {
+      "type": "checkbox",
+      "id": "display_id",
+      "label": "Afficher le bouton pour copier l'ID de la section",
+      "info": "L'ID peut être utilisé dans la section 'Double section' pour afficher 2 sections sur la même ligne ou dans la section 'Onglets' pour afficher la section dans des onglets. L'ID peut également être utilisé dans un lien de bouton pour faire défiler la page jusqu'à cette section.",
+      "default": false
+      },
+      {
+      "type": "header",
+      "content": "Masquer la section selon le type d'appareil"
+      },
+      {
+        "type": "checkbox",
+        "id": "mobile-hidden",
+        "label": "Masquer sur mobile",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "tablet-hidden",
+        "label": "Masquer sur tablette",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "laptop-hidden",
+        "label": "Masquer sur ordinateur portable",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "desktop-hidden",
+        "label": "Masquer sur ordinateur",
+        "default": false
+      },
+    {
+      "type": "select",
+      "id": "delivery_position",
+      "label": "Position de la section",
+      "default": "below_buy",
+      "options": [
+        { "value": "above_buy", "label": "Au-dessus du bouton Ajouter au panier" },
+        { "value": "below_buy", "label": "En dessous du bouton Ajouter au panier" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Taille des icônes"
+    },
+    {
+      "type": "range",
+      "id": "icon_size_desktop",
+      "label": "Taille des icônes sur ordinateur",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "icon_size_mobile",
+      "label": "Taille des icônes sur mobile",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Alignement des icônes"
+    },
+    {
+      "type": "select",
+      "id": "content_alignment",
+      "label": "Alignement",
+      "default": "center",
+      "options": [
+        { "value": "left", "label": "Aligné à gauche" },
+        { "value": "center", "label": "Centré" },
+        { "value": "right", "label": "Aligné à droite" }
+      ]
+    },
+     {
+      "type": "header",
+      "content": "Ombre des icônes"
+    },
+    {
+      "type": "checkbox",
+      "id": "shadow_enabled",
+      "label": "Activer l'ombre",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "shadow_color",
+      "label": "Couleur de l'ombre",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "shadow_horizontal",
+      "label": "Décalage horizontal de l'ombre",
+      "min": -20,
+      "max": 20,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "shadow_vertical",
+      "label": "Décalage vertical de l'ombre",
+      "min": -20,
+      "max": 20,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "shadow_blur",
+      "label": "Flou de l'ombre",
+      "min": 0,
+      "max": 30,
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "shadow_spread_radius",
+      "label": "Étendue de l'ombre",
+      "min": -10,
+      "max": 30,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "shadow_opacity",
+      "label": "Opacité de l'ombre",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.2
+    },
+    {
+      "type": "header",
+      "content": "Marge"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Marge supérieure",
+      "min": 0,
+      "max": 100,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Marge inférieure",
+      "min": 0,
+      "max": 100,
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icônes de paiement",
+      "category": "Paiement"
+    }
+  ]
+}
+
+{% endschema %}

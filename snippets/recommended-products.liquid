@@ -1,0 +1,153 @@
+{%- liquid 
+   assign title_font_family = settings.title_font_family
+   assign text_custom_recommended_product = settings.text_custom_recommended_product
+-%}
+
+{%- style  %}
+
+  {{  text_font | font_face: font_display: 'swap' }}
+  
+.recommended-header {
+  width: 100%; 
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recommended-header h4 {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 10px;
+    flex-basis: 70%;
+    text-align: left;
+    font-size: {{ settings.title_font_size }}rem;
+    color: {{ settings.title_color }};
+    text-align: {{ settings.title_alignment }};
+}
+
+{% if text_custom_recommended_product %}
+    .recommended-header h4 {
+      font-family: {{ title_font_family.family }}, {{ title_font_family.fallback_families }};
+      font-weight: {{ title_font_family.weight }};
+      font-style: {{ title_font_family.style }};
+    }
+{% endif %}  
+
+.recommended-product a {
+  text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+.recommended-product a h3,
+.recommended-product a p {
+  text-decoration: none; /* Assure que le titre et le prix ne sont pas soulignés */
+  text-transform: none;
+}
+
+.recommended-product a h3 {
+  font-size: 1.3rem; /* Modifier la taille du texte */
+}
+
+.recommended-product p {
+  font-size: 1.1rem; /* Modifier la taille du texte */
+  color: #000000BF; /* Modifier la couleur du texte */
+}
+
+.recommended-products-section {
+  text-transform: uppercase;
+  margin-top: 0;
+    padding: 10px 20px;
+    border-top: 1px solid #e8e8e8;
+    width: 100%;
+    background-color: {{ settings.background_color }};
+    border-top: 1px solid #e8e8e8;
+}
+
+.recommended-products-track-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  scrollbar-width: none; /* Masquer la barre de défilement */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Pour un défilement fluide sur iOS */
+}
+
+.recommended-product {
+  text-align: center; /* Centre tout le texte dans le conteneur */
+}
+
+.recommended-product h3, .recommended-product p {
+  display: block; /* S'assure que les éléments sont des blocs pour pouvoir être centrés */
+  margin: 0 auto; /* Centre horizontalement */
+}
+
+.recommended-products-track-wrapper::-webkit-scrollbar {
+  display: none; /* Cacher la barre de défilement dans WebKit */
+}
+
+.recommended-products-track {
+  display: flex;
+  transition: transform 0.3s ease;
+  gap: 5px; 
+  scroll-snap-type: x mandatory;
+}
+
+.recommended-product {
+  flex: 0 0 calc(100% / 2.5 - 10px);
+  box-sizing: border-box;
+}
+
+.recommended-product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .recommended-product {
+    flex: 0 0 calc(95% / 3); 
+    padding: 10px;
+  }
+
+  .recommended-product img {
+    width: 120px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .recommended-product {
+    flex: 0 0 calc(95% / 3); 
+  }
+
+  .recommended-product img {
+    width: auto; 
+    height: auto;
+  }
+}
+
+{%- endstyle  %}
+
+
+<div class="recommended-products-section">
+  <div class="recommended-header">
+    <h4>{{ settings.title_text }}</h4>
+  </div>
+  <div class="recommended-carousel-wrapper">
+    <div class="recommended-products-track-wrapper">
+      <div class="recommended-products-track">
+        {% for product in settings.product_list %}
+        <div class="recommended-product">
+          <a href="{{ product.url }}">
+            <img src="{{ product.featured_image | image_url: width: 300 }}" alt="{{ product.title }}">
+            <h3>{{ product.title }}</h3>
+            <p>{{ product.price | money }}</p>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

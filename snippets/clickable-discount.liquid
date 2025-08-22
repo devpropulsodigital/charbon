@@ -1,0 +1,52 @@
+<div style='--margin-top: {{ block.settings.margin_top | divided_by: 10.0 }}rem;--margin-bottom: {{ block.settings.margin_bottom | divided_by: 10.0 }}rem;' {{ block.shopify_attributes }}>
+                {% if block.settings.discount_code != blank %}
+                  <clickable-discount class='clickable-discount' data-applied='false' data-code="{{ block.settings.discount_code }}" data-loading="false" data-error='false' style='--mobile-text-size: {{ block.settings.mobile_text_size | divided_by: 10.0 }}rem;--desktop-text-size: {{ block.settings.desktop_text_size | divided_by: 10.0 }}rem;--padding:{{ block.settings.padding | divided_by: 7.0 }}em;--corner-radius:{{ block.settings.corner_radius | divided_by: 100.0 }}em;--alignment:{{ block.settings.alignment }};'>
+                    <button class='clickable-discount__btn'>
+                      <div class='clickable-discount__btn__text-1 product__text-container product__text-container--{{ block.settings.alignment }}{% if block.settings.enable_bg %} product__text-container--background{% endif %}'  style='--bg-color:{{ block.settings.bg_color_1 }};--icon-scale:{{ block.settings.icon_scale | divided_by: 100.0 }};' >
+                        <p class="product__text product__text-{{ block.settings.alignment }}" style="--text-color:{{ block.settings.text_color_1 }};--icon-color:{{ block.settings.icon_color_1 }};">
+                          {% if block.settings.custom_icon_1 != blank %}
+                            <img
+                              src="{{ block.settings.custom_icon_1 | image_url }}"
+                              alt="{{ block.settings.custom_icon_1.alt }}"
+                              width='auto'
+                              height='auto'
+                              loading='lazy'
+                            >
+                          {% elsif block.settings.icon_1 != blank %}
+                            {% render 'material-icon', icon: block.settings.icon_1, filled: block.settings.filled_icon_1 %}
+                          {% endif %}
+                          <span class='product__text__text'>{{- block.settings.text_1 -}}</span>
+                          <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            class="spinner"
+                            viewBox="0 0 66 66"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                          </svg>
+                        </p>
+                      </div>
+                      <div class='clickable-discount__btn__text-2 product__text-container product__text-container--{{ block.settings.alignment }}{% if block.settings.enable_bg %} product__text-container--background{% endif %}'  style='--bg-color:{{ block.settings.bg_color_2 }};--icon-scale:{{ block.settings.icon_scale | divided_by: 100.0 }};' >
+                        <p class="product__text product__text-{{ block.settings.alignment }}" style="--text-color:{{ block.settings.text_color_2 }};--icon-color:{{ block.settings.icon_color_2 }};">
+                          {% if block.settings.custom_icon_2 != blank %}
+                            <img
+                              src="{{ block.settings.custom_icon_2 | image_url }}"
+                              alt="{{ block.settings.custom_icon_2.alt }}"
+                              width='auto'
+                              height='auto'
+                              loading='lazy'
+                            >
+                          {% elsif block.settings.icon_2 != blank %}
+                            {% render 'material-icon', icon: block.settings.icon_2, filled: block.settings.filled_icon_2 %}
+                          {% endif %}
+                          <span class='product__text__text'>{{- block.settings.text_2 -}}</span>
+                        </p>
+                      </div>
+                    </button>
+                  </clickable-discount>
+                  <p class='clickable-discount__error'>An error has occured. Please try again.</p>
+                {% else %}
+                  <h4>Renseignez un code promo dans les paramètres du bloc</h4>
+                {% endif %}
+              </div>

@@ -1,0 +1,62 @@
+<style>
+  .long-text-{{ section.id }} {
+    margin-top: {{ block.settings.margin_top }}rem;
+    margin-bottom: {{ block.settings.margin_bottom }}rem;
+  }
+</style>
+
+<div class="long-text-{{ section.id }}">
+  <label class="form__label" for="custom_textarea" style="margin-bottom: 0.9rem;">
+    {{ block.settings.label_text }}{% if block.settings.required %} *{% endif %}
+    <span id="char_count_long" style="display: none; margin-left:1rem;"></span>
+  </label>
+
+  <div class="field custom" style="margin-bottom: 2rem;">
+    <textarea class="text-area field__input"
+           form="{{ 'product-form-' | append: section.id }}"
+           id="custom_textarea"
+           name="properties[{{ block.settings.label_text }}]"
+           placeholder="{{ block.settings.placeholder_text }}"
+           rows="5"
+           {% if block.settings.required %} required {% endif %}
+           {% if block.settings.character_limit > 0 %} maxlength="{{ block.settings.character_limit }}" {% endif %}></textarea>
+  </div>
+</div>
+
+
+{% if block.settings.required or block.settings.character_limit > 0 %}
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var form = document.querySelector("form[novalidate]");
+  if (form) {
+    form.removeAttribute("novalidate");
+  }
+
+  // Ajouter un écouteur d'événements pour afficher le nombre de caractères (long text)
+  const inputFieldLong = document.getElementById('custom_textarea');
+  const charCountLong = document.getElementById('char_count_long');
+  const maxLengthLong = {{ block.settings.character_limit | default: 0 }};
+  
+  inputFieldLong.addEventListener('input', function(event) {
+    const currentLengthLong = event.target.value.length;
+
+    // Bloquer l'ajout de plus de caractères si la limite est atteinte
+    if (maxLengthLong > 0 && currentLengthLong > maxLengthLong) {
+      event.target.value = event.target.value.substring(0, maxLengthLong); // Limiter l'input
+    }
+
+    // Mettre à jour le compteur de caractères
+    const validLengthLong = event.target.value.length;
+    if (maxLengthLong > 0) {
+      charCountLong.style.display = 'inline';
+      charCountLong.textContent = `${validLengthLong} / ${maxLengthLong}`;
+    }
+    
+    if (validLengthLong === 0) {
+      charCountLong.style.display = 'none';
+    }
+  });
+});
+
+</script>
+{% endif %}

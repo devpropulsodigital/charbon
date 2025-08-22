@@ -1,0 +1,58 @@
+<style>
+  .custom-checkbox-{{ section.id }} {
+    margin-top: {{ block.settings.margin_top }}rem;
+    margin-bottom: {{ block.settings.margin_bottom }}rem;
+    display: flex;
+  }
+  .custom-checkbox {
+    display: flex;
+    align-items: center;
+  }
+  .custom-checkbox input {
+    margin-right: 10px;
+  }
+  .error-message {
+    color: red;
+    margin-top: 5px;
+    display: none;
+  }
+</style>
+
+<div class="form__label custom-checkbox-{{ section.id }}">
+  <input type="checkbox"
+         name="properties[{{ block.settings.label_text }}]"
+         form="{{ 'product-form-' | append: section.id }}"
+         value="{{ block.settings.checkbox_value }}"
+         id="checkbox-{{ block.settings.label_text | handleize }}"
+         {% if block.settings.required %} required {% endif %}>
+  
+  <label style="margin-left: 5px; margin-bottom: 0;"
+         class="form__label"
+         for="checkbox-{{ block.settings.label_text | handleize }}">
+    {{ block.settings.label_text }}
+    {% if block.settings.required %} *{% endif %}
+  </label>
+
+  <br>
+
+  {% if block.settings.required %}
+  <p id="errorMessage-{{ block.settings.label_text | handleize }}" class="error-message" style="display: none; margin-top: 0; color: red;">
+    {{ block.settings.error_message }}
+  </p>
+  {% endif %}
+</div>
+
+{% if block.settings.required %}
+  
+ <script>
+   document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form[novalidate]");
+  if (form) {
+    form.removeAttribute("novalidate");
+  }
+});
+</script>
+  
+{% endif %}
+
+

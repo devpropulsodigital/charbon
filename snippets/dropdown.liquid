@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="{{ 'component-product-variant-picker.css' | asset_url }}">
+<style>
+  .product-form__input--dropdown-{{ section.id }} {
+    position: relative;
+    display: block;
+    margin-top: {{ block.settings.margin_top }}rem;
+    margin-bottom: {{ block.settings.margin_bottom }}rem;
+  }
+  .product-form__input--dropdown-{{ section.id }} .select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .product-form__input--dropdown-{{ section.id }} .select__select {
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    width: 100%;
+    height: 50px; /* Same height as circular button */
+    line-height: 1;
+    cursor: pointer;
+    transition: border 0.3s ease, background-color 0.3s ease;
+  }
+
+  .product-form__input--dropdown-{{ section.id }} .select__select:hover {
+    border-color: #aaa;
+  }
+
+  .product-form__input--dropdown-{{ section.id }} .svg-wrapper {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  .product-form__input--dropdown-{{ section.id }} .icon-caret {
+    width: 10px;
+    height: 10px;
+    fill: currentColor;
+  }
+  
+</style>
+
+<div class="product-form__input product-form__input--dropdown-{{ section.id }}">
+  <label class="form__label" style="margin-bottom: 0.9rem;">
+    {{ block.settings.label_text }}
+    {% if block.settings.required %} *{% endif %}
+  </label>
+  <div class="select">
+    <select class="select__select" id="your-label" name="properties[{{ block.settings.label_text }}]" form="{{ 'product-form-' | append: section.id }}" {% if block.settings.required %} required {% endif %}>
+      <option value="" hidden selected>{{ block.settings.placeholder_text }}</option>
+      {% assign options_array = block.settings.dropdown_options | split: ',' %}
+      {% for option in options_array %}
+        <option value="{{ option | escape }}">{{ option | escape }}</option>
+      {% endfor %}
+    </select>
+    <span class="svg-wrapper">
+      <svg class="icon icon-caret" viewBox="0 0 10 6">
+        <path fill="currentColor" fill-rule="evenodd" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708" clip-rule="evenodd"></path>
+      </svg>
+    </span>
+  </div>
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form[novalidate]");
+  if (form) {
+    form.removeAttribute("novalidate");
+  }
+});
+</script>
+

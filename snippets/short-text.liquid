@@ -1,0 +1,55 @@
+<style>
+  #product-info-{{ section.id }} {
+    margin-top: {{ block.settings.margin_top }}rem;
+    margin-bottom: {{ block.settings.margin_bottom }}rem;
+  }
+</style>
+
+<div id="product-info-{{ section.id }}" class="product__info-container default_cursor_cs">
+  <label class="form__label default_cursor_cs" for="custom_label">
+    {{ block.settings.label_text }}{% if block.settings.required %} *{% endif %}
+    <span id="char_count_short" class="form__label" style="display: none; margin-left:1rem;"></span>
+  </label>
+  <div class="field custom default_cursor_cs"> 
+    <input class="field__input" 
+           form="{{ 'product-form-' | append: section.id }}" 
+           type="text" 
+           id="custom_label" 
+           name="properties[{{ block.settings.label_text }}]" 
+           placeholder="{{ block.settings.placeholder_text }}"
+           {% if block.settings.required %} required {% endif %}
+           {% if block.settings.character_limit > 0 %} maxlength="{{ block.settings.character_limit }}" {% endif %}>
+  </div> 
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    var form = document.querySelector("form[novalidate]");
+    if (form) {
+      form.removeAttribute("novalidate");
+    }
+
+    const inputFieldShort = document.getElementById('custom_label');
+    const charCountShort = document.getElementById('char_count_short');
+    const maxLengthShort = {{ block.settings.character_limit | default: 0 }};
+    
+    inputFieldShort.addEventListener('input', function(event) {
+      const currentLengthShort = event.target.value.length;
+
+      if (maxLengthShort > 0 && currentLengthShort > maxLengthShort) {
+        event.target.value = event.target.value.substring(0, maxLengthShort);
+      }
+
+      const validLengthShort = event.target.value.length;
+      if (maxLengthShort > 0) {
+        charCountShort.style.display = 'inline';
+        charCountShort.textContent = `${validLengthShort} / ${maxLengthShort}`;
+      }
+
+      if (validLengthShort === 0) {
+        charCountShort.style.display = 'none';
+      }
+    });
+  });
+</script>

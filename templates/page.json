@@ -1,0 +1,163 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "faq_txX3EB": {
+      "type": "faq",
+      "blocks": {
+        "text_GgiRQJ": {
+          "type": "text",
+          "settings": {
+            "question": "À qui s’adressent les produits Charbon ?",
+            "answer": "<p>Les produits Charbon sont conçus pour les hommes qui souhaitent des coiffants efficaces, naturels et élégants, sans compromis sur la qualité. Que vous ayez les cheveux courts, longs, bouclés ou raides, vous trouverez la texture adaptée à votre style.</p>"
+          }
+        },
+        "text_6XDQNY": {
+          "type": "text",
+          "settings": {
+            "question": "Quels sont les délais de livraison ?",
+            "answer": "<p>Les commandes sont expédiées sous <strong>24 à 48h (hors week-end)</strong>. Les délais de livraison varient ensuite selon votre pays :</p><ul><li><strong>Suisse et France</strong> : 48 heures</li><li><strong>Europe</strong> : 3 à 7 jours ouvrés</li><li> <strong>International</strong> : 7 à 14 jours ouvrés</li></ul>"
+          }
+        },
+        "text_zpUGDC": {
+          "type": "text",
+          "settings": {
+            "question": "Combien coûte la livraison ?",
+            "answer": "<p>Livraison <strong>gratuite</strong> à partir de <strong>9.90€ d’achat</strong></p><p>En dessous de ce montant, les frais sont calculés automatiquement à la caisse selon votre pays.</p>"
+          }
+        },
+        "text_xLAk3r": {
+          "type": "text",
+          "settings": {
+            "question": "Comment suivre ma commande ?",
+            "answer": "<p>Une fois votre commande expédiée, vous recevrez un email avec un<strong>numéro de suivi</strong>vous permettant de suivre votre colis en temps réel.</p>"
+          }
+        },
+        "text_rKCtkk": {
+          "type": "text",
+          "settings": {
+            "question": "Quels moyens de paiement acceptez-vous ?",
+            "answer": "<p>Nous acceptons les principales cartes de crédit, cartes de débit, PayPal et d’autres moyens de paiement sécurisés pour votre confort.</p>"
+          }
+        },
+        "text_P8PKLf": {
+          "type": "text",
+          "settings": {
+            "question": "Puis-je modifier ou annuler ma commande ?",
+            "answer": "<p>Nous préparons les commandes très rapidement. Si vous souhaitez la modifier ou l’annuler, contactez-nous <strong>dans les 5h </strong>suivant votre achat à shop@charbon-pro.com — nous ferons de notre mieux.</p>"
+          }
+        },
+        "text_t8UEGh": {
+          "type": "text",
+          "settings": {
+            "question": "Je me suis trompé d’adresse, que faire ?",
+            "answer": "<p>Contactez-nous <strong>le plus vite possible</strong> avec votre numéro de commande. Si le colis n’est pas encore expédié, nous corrigerons l’adresse. Une fois expédié, il sera malheureusement trop tard.</p>"
+          }
+        },
+        "text_maaaMk": {
+          "type": "text",
+          "settings": {
+            "question": "Et si je ne reçois pas ma commande ?",
+            "answer": "<p>Si votre colis semble bloqué ou perdu, pas d’inquiétude. Écrivez-nous à shop@charbon-pro.com avec votre numéro de commande et nous trouverons une solution rapidement.</p>"
+          }
+        },
+        "text_Rpzx7x": {
+          "type": "text",
+          "settings": {
+            "question": "Proposez-vous des retours ou des remboursements ?",
+            "answer": "<p>Oui, vous avez <strong>14 jours</strong> après réception pour nous retourner un produit non utilisé. Merci de nous contacter avant tout retour. Les frais de retour sont à votre charge sauf erreur de notre part.</p>"
+          }
+        },
+        "text_hMzwWc": {
+          "type": "text",
+          "settings": {
+            "question": "J’ai une question, comment vous contacter ?",
+            "answer": "<p>Notre service client est disponible par email à shop@charbon-pro.com. Nous répondons en général sous <strong>24h (hors week-end)</strong>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_GgiRQJ",
+        "text_6XDQNY",
+        "text_zpUGDC",
+        "text_xLAk3r",
+        "text_rKCtkk",
+        "text_P8PKLf",
+        "text_t8UEGh",
+        "text_maaaMk",
+        "text_Rpzx7x",
+        "text_hMzwWc"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "",
+        "font_family_custom": false,
+        "title_font_family": "poppins_n8",
+        "title_font_size_desktop": 0.8,
+        "title_font_size_mobile": 0.8,
+        "title_color": "#000000",
+        "font_question_custom": false,
+        "question_font_family": "poppins_n5",
+        "questions_font_size": 1.7,
+        "questions_font_size_mobile": 1.5,
+        "question_color": "#fff",
+        "hover_color": "#EFEFEF",
+        "background_color": "#000000",
+        "question_margin_bottom": 5,
+        "question_border_radius": 5,
+        "border_thickness": 1,
+        "border_color": "#000000",
+        "add_line_between_questions": "non",
+        "line_thickness": 1,
+        "line_color": "#E3E3E3",
+        "font_answer_custom": false,
+        "answer_font_family": "poppins_n5",
+        "answer_font_size_desktop": 1.5,
+        "answer_font_size_mobile": 1.5,
+        "answer_color": "#000",
+        "answer_bg_color": "#fff",
+        "answer_padding_vertical": 9,
+        "answer_padding_horizontal": 24,
+        "answer_margin_top": 10,
+        "answer_margin_bottom": 10,
+        "answer_border_radius": 10,
+        "icon_color": "#fff",
+        "accordion_toggle": false,
+        "background_type": "fixed",
+        "section_background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, rgba(216, 248, 255, 1), rgba(255, 255, 255, 1) 100%)",
+        "section_margin_top_desktop": 0,
+        "section_margin_bottom_desktop": 0,
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 20,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 20,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 10
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq_txX3EB"
+  ]
+}

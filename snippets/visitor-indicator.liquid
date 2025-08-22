@@ -1,0 +1,157 @@
+<style>
+
+  {{ block.settings.text_font | font_face: font_display: 'swap' }}
+
+  {% if block.settings.font_text_custom %}
+  .visitor-snippet-{{ section.id }} {
+     font-family: {{ block.settings.text_font.family }}; {{ block.settings.text_font.fallback_families }};
+     font-style: {{ block.settings.text_font.style }};
+     font-weight: {{ block.settings.text_font.weight }};
+  }
+  {% endif %} 
+  
+  .visitor-snippet-{{ section.id }} {
+    font-size: {{ block.settings.desktop_font_size }}px;
+    color: {{ block.settings.text_color }};
+    margin-top: {{ block.settings.margin_top }}rem;
+    margin-bottom: {{ block.settings.margin_bottom }}rem;
+    display: flex;
+    align-items: center;
+    justify-content: {{ block.settings.alignment }};
+}
+
+  .visitor-icon {
+    margin-right: 5px;
+    animation: pulseindicator 2s infinite;
+    display: inline-block;
+    vertical-align: middle;
+    width: {{ block.settings.desktop_svg_size }}px;
+    height: {{ block.settings.desktop_svg_size }}px;
+    max-width: 100%; 
+    max-height: 100%; 
+    overflow: visible; 
+    fill: {{ block.settings.svg_color }};
+    will-change: transform;
+}
+
+  @media (max-width: 768px) {
+    .visitor-snippet-{{ section.id }} {
+        font-size: {{ block.settings.mobile_font_size }}px;
+    }
+
+    .visitor-icon {
+        width: {{ block.settings.mobile_svg_size }}px;
+        height: {{ block.settings.mobile_svg_size }}px;
+    }
+}
+
+  @keyframes pulseindicator {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+</style>
+
+<div class="visitor-snippet-{{ section.id }}">
+  <!-- Plages horaires - valeurs pour les heures creuses, moyennes et de trafic élevé -->
+  <span id="min_visitors_offpeak" style="display: none;">{{ block.settings.min_visitors_offpeak | default: 0 }}</span>
+  <span id="max_visitors_offpeak" style="display: none;">{{ block.settings.max_visitors_offpeak | default: 10 }}</span>
+
+  <span id="min_visitors_midpeak" style="display: none;">{{ block.settings.min_visitors_midpeak | default: 10 }}</span>
+  <span id="max_visitors_midpeak" style="display: none;">{{ block.settings.max_visitors_midpeak | default: 50 }}</span>
+
+  <span id="min_visitors_peak" style="display: none;">{{ block.settings.min_visitors_peak | default: 50 }}</span>
+  <span id="max_visitors_peak" style="display: none;">{{ block.settings.max_visitors_peak | default: 100 }}</span>
+
+  <span id="update_interval" style="display: none;">{{ block.settings.update_interval | default: 10 }}</span>
+
+ <svg class="visitor-icon" width="100%" height="100%" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 12c0-2.25 3.75-7.5 10.5-7.5S22.5 9.75 22.5 12s-3.75 7.5-10.5 7.5S1.5 14.25 1.5 12zM12 16.75a4.75 4.75 0 1 0 0-9.5 4.75 4.75 0 0 0 0 9.5zM14.7 12a2.7 2.7 0 1 1-5.4 0 2.7 2.7 0 0 1 5.4 0z"/>
+  </svg>
+    
+ <span id="visitor-count-text">{{ block.settings.visitor_text | replace: "X", 0 }}</span>
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const visitorCountText = document.getElementById('visitor-count-text');
+    if (!visitorCountText) {
+        return;
+    }
+
+    // Récupérer les valeurs dynamiques des plages horaires
+    const minVisitorsOffpeak = parseInt(document.getElementById('min_visitors_offpeak').innerText, 10);
+    const maxVisitorsOffpeak = parseInt(document.getElementById('max_visitors_offpeak').innerText, 10);
+
+    const minVisitorsMidpeak = parseInt(document.getElementById('min_visitors_midpeak').innerText, 10);
+    const maxVisitorsMidpeak = parseInt(document.getElementById('max_visitors_midpeak').innerText, 10);
+
+    const minVisitorsPeak = parseInt(document.getElementById('min_visitors_peak').innerText, 10);
+    const maxVisitorsPeak = parseInt(document.getElementById('max_visitors_peak').innerText, 10);
+
+    const updateInterval = parseInt(document.getElementById('update_interval').innerText, 10) * 1000; // en millisecondes
+
+    if (
+        isNaN(minVisitorsOffpeak) || isNaN(maxVisitorsOffpeak) ||
+        isNaN(minVisitorsMidpeak) || isNaN(maxVisitorsMidpeak) ||
+        isNaN(minVisitorsPeak) || isNaN(maxVisitorsPeak) ||
+        isNaN(updateInterval)
+    ) {
+        return;
+    }
+
+    // Déterminer l'heure actuelle
+    const currentHour = new Date().getHours();
+
+    // Fonction pour définir la plage des visiteurs en fonction de l'heure actuelle
+    function getVisitorRange() {
+        if (currentHour >= 0 && currentHour < 8) { // Heures creuses
+            return { min: minVisitorsOffpeak, max: maxVisitorsOffpeak };
+        } else if (currentHour >= 8 && currentHour < 16) { // Heures moyennes
+            return { min: minVisitorsMidpeak, max: maxVisitorsMidpeak };
+        } else { // Heures de trafic élevé
+            return { min: minVisitorsPeak, max: maxVisitorsPeak };
+        }
+    }
+
+    let visitorRange = getVisitorRange();
+    let currentVisitors = getRandomVisitorCount(visitorRange.min, visitorRange.max);
+
+    // Fonction pour générer un nombre aléatoire de visiteurs dans la plage donnée
+    function getRandomVisitorCount(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    // Fonction pour générer un nombre de visiteurs dans une plage restreinte
+    function getNextVisitorCount(current, min, max) {
+        const variationMin = Math.max(min, current - 3);
+        const variationMax = Math.min(max, current + 3);
+        return getRandomVisitorCount(variationMin, variationMax);
+    }
+
+    // Fonction pour mettre à jour dynamiquement le nombre de visiteurs
+    function updateVisitorCount() {
+        visitorRange = getVisitorRange(); // Mettre à jour la plage en fonction de l'heure actuelle
+        currentVisitors = getNextVisitorCount(currentVisitors, visitorRange.min, visitorRange.max);
+
+        // Met à jour le texte avec le nouveau nombre de visiteurs
+        visitorCountText.innerHTML = `${currentVisitors} visiteurs consultent actuellement ce produit.`;
+
+        // Relancer la mise à jour après l'intervalle défini
+        setTimeout(updateVisitorCount, updateInterval);
+    }
+
+    // Appel initial pour afficher immédiatement le nombre de visiteurs
+    updateVisitorCount();
+});
+
+</script>
+
+

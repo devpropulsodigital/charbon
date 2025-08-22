@@ -1,0 +1,27 @@
+.list-payment {
+  display: flex;
+  justify-content: center; /* Centre les icônes horizontalement */
+  align-items: center;
+  flex-wrap: nowrap; /* Empêche le retour à la ligne des icônes */
+  overflow: hidden; /* Empêche le débordement horizontal */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px; /* Ajoute un espacement entre les icônes */
+}
+
+.list-payment__item {
+  margin: 0;
+}
+
+.icon {
+  width: auto;
+  height: auto; /* Ajuste la hauteur pour rendre les icônes plus grandes */
+  max-width: 100%; /* Supprime la limitation de largeur pour laisser la hauteur contrôler la taille */
+}
+
+@media screen and (min-width: 750px) {
+  .list-payment {
+    padding-top: 0;
+  }
+}

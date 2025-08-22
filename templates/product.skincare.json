@@ -1,0 +1,1215 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "product_title_margin_top": 2,
+            "product_title_margin_bottom": 0
+          }
+        },
+        "rating_custom_e7fQLG": {
+          "type": "rating_custom",
+          "settings": {
+            "stars_count": 5,
+            "stars_size_desktop": 25,
+            "stars_size_mobile": 22,
+            "stars_color": "#ffffff",
+            "stars_bg_color": "#00b67a",
+            "rating_custom_text": "<p><strong>4,8/5</strong> basé sur <strong>267 avis.</strong></p>",
+            "font_title_custom": false,
+            "font_title": "roboto_n4",
+            "font_size_desktop": 14,
+            "font_size_mobile": 12,
+            "text_color": "#000000",
+            "link_url": "#shopify-section-template--24462592344410__reviews_testimonials_VN3dzD",
+            "rating_margin_top": 3,
+            "rating_margin_bottom": 4
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "display_price_inline": true,
+            "price_margin_top": 2,
+            "price_margin_bottom": 2
+          }
+        },
+        "icon_with_text_XbXDVe": {
+          "type": "icon-with-text",
+          "settings": {
+            "hide_on_mobile": false,
+            "hide_on_tablet": false,
+            "hide_on_desktop": false,
+            "layout": "vertical",
+            "icon_1": "check_mark",
+            "heading_1": "Apaise",
+            "description_1": "",
+            "icon_2": "check_mark",
+            "heading_2": "Rafraîchit",
+            "description_2": "",
+            "icon_3": "check_mark",
+            "heading_3": "Toutes Peaux",
+            "description_3": "",
+            "font_title_custom": false,
+            "title_font": "quattrocento_sans_n4",
+            "title_font_size_desktop": 14,
+            "title_font_size_mobile": 14,
+            "title_color": "#000000",
+            "font_description_custom": false,
+            "description_font": "roboto_n4",
+            "description_font_size_desktop": 14,
+            "description_font_size_mobile": 14,
+            "description_color": "#000000",
+            "icon_size_desktop": 20,
+            "icon_size_mobile": 20,
+            "horizontal_gap": 1.5,
+            "vertical_margin_bottom": 1.5,
+            "icon_with_text_margin_top": 2.5,
+            "icon_with_text_margin_bottom": 1.5
+          }
+        },
+        "icon_with_text_dP7GhP": {
+          "type": "icon-with-text",
+          "settings": {
+            "hide_on_mobile": false,
+            "hide_on_tablet": false,
+            "hide_on_desktop": false,
+            "layout": "vertical",
+            "icon_1": "check_mark",
+            "heading_1": "Cliniquement prouvé",
+            "description_1": "",
+            "icon_2": "return",
+            "heading_2": "",
+            "description_2": "",
+            "icon_3": "pepper",
+            "heading_3": "",
+            "description_3": "",
+            "font_title_custom": false,
+            "title_font": "quattrocento_sans_n4",
+            "title_font_size_desktop": 14,
+            "title_font_size_mobile": 14,
+            "title_color": "#000000",
+            "font_description_custom": false,
+            "description_font": "roboto_n4",
+            "description_font_size_desktop": 14,
+            "description_font_size_mobile": 12,
+            "description_color": "#000000",
+            "icon_size_desktop": 20,
+            "icon_size_mobile": 20,
+            "horizontal_gap": 2.5,
+            "vertical_margin_bottom": 1,
+            "icon_with_text_margin_top": 0,
+            "icon_with_text_margin_bottom": 2.5
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "none"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "margin_top_quantity": 2,
+            "margin_bottom_quantity": 2
+          }
+        },
+        "inventory_And9Ui": {
+          "type": "inventory",
+          "settings": {
+            "inventory_display_type": "fake",
+            "fake_inventory_text": "Bientôt en rupture de stock",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true,
+            "font_family": "roboto_n4",
+            "text_color": "#ff0000",
+            "text_style": "uppercase",
+            "alignment": "right",
+            "font_size_desktop": 12,
+            "font_size_mobile": 10,
+            "margin_top": 2,
+            "margin_bottom": 0
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true,
+            "margin_top": 1.5,
+            "margin_bottom": 2.5
+          }
+        },
+        "visitor_indicator_MEpw7z": {
+          "type": "visitor_indicator",
+          "settings": {
+            "visitor_text": "X visiteurs consultent actuellement ce produit.",
+            "text_color": "#000000",
+            "min_visitors_offpeak": 0,
+            "max_visitors_offpeak": 2,
+            "min_visitors_midpeak": 2,
+            "max_visitors_midpeak": 5,
+            "min_visitors_peak": 5,
+            "max_visitors_peak": 5,
+            "update_interval": 5,
+            "font_text_custom": false,
+            "text_font": "roboto_n4",
+            "desktop_font_size": 16,
+            "mobile_font_size": 12,
+            "alignment": "center",
+            "desktop_svg_size": 18,
+            "mobile_svg_size": 10,
+            "svg_color": "#000000",
+            "margin_top": 2,
+            "margin_bottom": 2
+          }
+        },
+        "collapsible_tab_pTdXeD": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "ACTIONS CLÉS",
+            "icon": "none",
+            "content": "<p>Ce site est un site demo. Vous pouvez retrouver les articles sur www.eisenberg.com ✨</p>",
+            "page": "",
+            "accordion_bg_color": "rgba(0,0,0,0)",
+            "accordion_border_radius": 10,
+            "accordion_padding": 1
+          }
+        },
+        "collapsible_tab_CwrA9X": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "BÉNÉFICES",
+            "icon": "none",
+            "content": "<p>La peau est tonique et souple, prête pour les soins suivants.</p><p>• Apaise<br/>• Rafraîchit<br/>• Visage et Yeux<br/>• Toutes Peaux</p>",
+            "page": "",
+            "accordion_bg_color": "rgba(0,0,0,0)",
+            "accordion_border_radius": 10,
+            "accordion_padding": 1
+          }
+        },
+        "collapsible_tab_Jfh793": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "COMPOSITIONS",
+            "icon": "none",
+            "content": "<p><strong>EXTRAIT D'HAMAMÉLIS</strong></p><p>Cet ingrédient est utilisé pour ses propriétés astringeantes, anti-irritantes et anti-inflammatoires en cosmétique depuis plus d'un siècle. Excellent pour tous les types de peaux même sensibles, il élimine l'excès de sébum et en régule la production, tonifie, resserre les pores, stimule la micro-circulation et calme les irritations.</p><p><strong>EAU DE ROSE</strong></p><p>L'eau de Rose est obtenue par distillation par entraînement à la vapeur. Ses vertus tonifiantes et régénérantes en font l'allié de toutes les peaux, y compris des peaux sensibles. Elle possède également des propriétés astringentes, apaisantes et anti-rides.</p><p>AQUA (WATER) - BUTYLENE GLYCOL - ROSA DAMASCENA FLOWER WATER - HAMAMELIS VIRGINIANA (WITCH HAZEL) WATER - PHENOXYETHANOL - PPG-26-BUTETH-26 - PEG-40 HYDROGENATED CASTOR OIL - ALCOHOL - ETHYLHEXYLGLYCERIN - BENZOPHENONE-4 - GLYCERIN - PROPYLENE GLYCOL - LIMONENE - BENZYL ALCOHOL - CITRUS AURANTIUM DULCIS (ORANGE) PEEL OIL - CITRUS LIMON (LEMON) PEEL OIL - PENTADECALACTONE - CHLORHEXIDINE DIGLUCONATE - FAGUS SYLVATICA BUD EXTRACT - GLYCYRRHIZA GLABRA (LICORICE) ROOT EXTRACT - SODIUM HYDROXIDE - DEHYDROACETIC ACID - BACILLUS FERMENT - RUSCUS ACULEATUS ROOT EXTRACT - LACTOSE - LACTIS PROTEINUM (WHEY PROTEIN) - POTASSIUM SORBATE - CI 14700 (RED 4) - LACTIC ACID - BENZOIC ACID - CI 19140 (YELLOW 5).     I019BB</p><p><em>L’innovation et l’excellence étant au coeur de notre Marque, la liste des ingrédients peut être amenée à évoluer. Nous vous invitons à prendre connaissance des informations figurant sur l’emballage du produit, notamment si vous présentez des risques d’allergies.</em></p>",
+            "page": "",
+            "accordion_bg_color": "rgba(0,0,0,0)",
+            "accordion_border_radius": 10,
+            "accordion_padding": 1
+          }
+        },
+        "complementary_nGJFpX": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "<b>COMPLÉTEZ VOTRE ROUTINE</b>",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 1,
+            "pagination_style": "counter",
+            "image_ratio": "portrait",
+            "enable_quick_add": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "rating_custom_e7fQLG",
+        "price",
+        "icon_with_text_XbXDVe",
+        "icon_with_text_dP7GhP",
+        "variant_picker",
+        "quantity_selector",
+        "inventory_And9Ui",
+        "buy_buttons",
+        "visitor_indicator_MEpw7z",
+        "collapsible_tab_pTdXeD",
+        "collapsible_tab_CwrA9X",
+        "collapsible_tab_Jfh793",
+        "complementary_nGJFpX"
+      ],
+      "settings": {
+        "display_id": false,
+        "enable_group_media": true,
+        "media_grouping_option": "Couleur",
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "features_rRpaKa": {
+      "type": "features",
+      "blocks": {
+        "heading_bhmUtc": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Les résultats de notre étude</h2>",
+            "heading_custom": false,
+            "heading_font": "poppins_n4",
+            "heading_color": "#000000",
+            "heading_size": 28,
+            "heading_size_mobile": 18,
+            "heading_height": 130,
+            "heading_mt": 0,
+            "heading_mt_mobile": 0,
+            "heading_align": "left",
+            "heading_align_mobile": "left"
+          }
+        },
+        "media_pcPYn3": {
+          "type": "media",
+          "settings": {
+            "media_type": "video",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "use_controls": true,
+            "media_width": 100,
+            "media_width_mobile": 100,
+            "media_mt": 30,
+            "media_mt_mobile": 30,
+            "media_ratio": "original",
+            "media_ratio_mobile": "original",
+            "media_radius": 0,
+            "media_border_thickness": 0,
+            "media_border_color": "#000000",
+            "enable_shadow": true,
+            "shadow_offset_x": 0,
+            "shadow_offset_y": 0,
+            "shadow_blur": 26,
+            "shadow_spread": 0,
+            "shadow_opacity": 0.1,
+            "shadow_color": "#000000"
+          }
+        },
+        "item_HzHLaL": {
+          "type": "item",
+          "settings": {
+            "percent": 94,
+            "text": "Trouvent leur peau plus ferme"
+          }
+        },
+        "item_zrkxxt": {
+          "type": "item",
+          "settings": {
+            "percent": 85,
+            "text": "Déclarent avoir un visage plus affiné"
+          }
+        },
+        "item_tnwAFe": {
+          "type": "item",
+          "settings": {
+            "percent": 97,
+            "text": "Trouvent leur peau plus lisse"
+          }
+        },
+        "item_aaAqCa": {
+          "type": "item",
+          "settings": {
+            "percent": 91,
+            "text": "Trouvent leur peau plus tonique"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bhmUtc",
+        "media_pcPYn3",
+        "item_HzHLaL",
+        "item_zrkxxt",
+        "item_tnwAFe",
+        "item_aaAqCa"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "body_gap": 80,
+        "body_gap_mobile": 32,
+        "content_horizontal_align": "center",
+        "content_horizontal_align_mobile": "center",
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "poppins_n4",
+        "heading_size": 36,
+        "heading_size_mobile": 28,
+        "heading_height": 130,
+        "items_mt": 16,
+        "items_mt_mobile": 16,
+        "item_padding_vertical": 14,
+        "item_padding_vertical_mobile": 10,
+        "item_gap": 16,
+        "item_gap_mobile": 16,
+        "item_border_thickness": 1,
+        "circle_size": 70,
+        "circle_size_mobile": 70,
+        "percent_custom": false,
+        "percent_font": "poppins_n4",
+        "percent_size": 18,
+        "percent_size_mobile": 18,
+        "percent_height": 130,
+        "item_text_custom": false,
+        "item_text_font": "poppins_n4",
+        "item_text_size": 16,
+        "item_text_size_mobile": 16,
+        "item_text_height": 150,
+        "bottom_text": "<p>* Étude menée sur 100 femmes de 20 à 60 ans</p>",
+        "bottom_text_custom": false,
+        "bottom_text_font": "poppins_n4",
+        "bottom_text_size": 12,
+        "bottom_text_size_mobile": 12,
+        "bottom_text_height": 130,
+        "bottom_text_mt": 16,
+        "bottom_text_mt_mobile": 16,
+        "bottom_text_align": "left",
+        "bottom_text_align_mobile": "left",
+        "item_border_color": "#f1f1f1",
+        "circle_bg_color": "#ffffff",
+        "circle_progress": "#334fb4",
+        "percent_color": "#2d2a26",
+        "item_text_color": "#2d2a26",
+        "heading_color": "#2d2a26",
+        "bottom_text_color": "#2d2a26",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 160,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "product_features_pWnQCt": {
+      "type": "product-features",
+      "blocks": {
+        "bullet_point_wtTedq": {
+          "type": "bullet_point",
+          "settings": {
+            "title": "La peau est rebondie",
+            "text": "",
+            "offset_x": 58,
+            "offset_y": 47,
+            "direction": "right",
+            "line_bend": "bottom",
+            "enable_mobile_position": true,
+            "mobile_offset_x": 68,
+            "mobile_offset_y": 36,
+            "mobile_direction": "right",
+            "mobile_line_bend": "bottom"
+          }
+        },
+        "bullet_point_Nt7NgF": {
+          "type": "bullet_point",
+          "settings": {
+            "title": "Le visage reposé",
+            "text": "",
+            "offset_x": 36,
+            "offset_y": 46,
+            "direction": "left",
+            "line_bend": "none",
+            "enable_mobile_position": true,
+            "mobile_offset_x": 69,
+            "mobile_offset_y": 61,
+            "mobile_direction": "right",
+            "mobile_line_bend": "top"
+          }
+        },
+        "bullet_point_T4NyTf": {
+          "type": "bullet_point",
+          "settings": {
+            "title": "Le teint est lumineux",
+            "text": "",
+            "offset_x": 39,
+            "offset_y": 74,
+            "direction": "left",
+            "line_bend": "top",
+            "enable_mobile_position": true,
+            "mobile_offset_x": 43,
+            "mobile_offset_y": 55,
+            "mobile_direction": "left",
+            "mobile_line_bend": "top"
+          }
+        }
+      },
+      "block_order": [
+        "bullet_point_wtTedq",
+        "bullet_point_Nt7NgF",
+        "bullet_point_T4NyTf"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "title": "Révéler une peau saine et éclatante",
+        "text": "<p>Inspirée par la science et la nature, HYPERFLOW offre des soins à la pointe de l’innovation et une véritable expertise anti-âge pour révéler la beauté de chaque femme et de chaque homme. </p>",
+        "button_label": "",
+        "link": "",
+        "button_style_secondary": false,
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "hide_content_on_mobile": false,
+        "mobile_content_position": "top",
+        "content_corner_radius": true,
+        "content_color_scheme": "",
+        "color_scheme": "",
+        "content_width": 120,
+        "image": "shopify://shop_images/Caracteristiques-desktop_1.webp",
+        "desktop_image_width": "unlimited",
+        "image_max_width": 1000,
+        "full_page_width": true,
+        "image_corner_radius": false,
+        "mobile_image": "shopify://shop_images/Caracteristiques-mobile_1.webp",
+        "hotspot_open_event": "click",
+        "hotspots_color_scheme": "",
+        "display_hotspots_animation": true,
+        "hotspot_content_color_scheme": "",
+        "hotspot_image_size": "full",
+        "contain_hotspot_modal": false,
+        "hotspot_modal_desktop_width": 340,
+        "hotspot_modal_mobile_width": 200,
+        "bullet_points_color": "scheme-3",
+        "bullet_size_desktop": 0,
+        "bullet_size_mobile": 0,
+        "line_width_desktop": 0.1,
+        "line_width_mobile": 0.1,
+        "contain_bullet_points": true,
+        "bullet_point_desktop_width": 400,
+        "bullet_point_mobile_width": 100,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "before_after_8GCYCT": {
+      "type": "before-after",
+      "blocks": {
+        "item_FjWAXn": {
+          "type": "item",
+          "settings": {
+            "icon": "heart",
+            "custom_icon": "shopify://shop_images/skin-care.png",
+            "title": "Le teint",
+            "text": "est plus lumineux, plus clair, unifié",
+            "column": "1"
+          }
+        },
+        "item_bn7ghF": {
+          "type": "item",
+          "settings": {
+            "icon": "heart",
+            "custom_icon": "shopify://shop_images/moisturizing.png",
+            "title": "La peau",
+            "text": "est fraîche, plus tonique",
+            "column": "1"
+          }
+        },
+        "item_pnA3DP": {
+          "type": "item",
+          "settings": {
+            "icon": "heart",
+            "custom_icon": "shopify://shop_images/skin-cell.png",
+            "title": "Le grain de peau",
+            "text": "est affiné et les pores resserrés",
+            "column": "2"
+          }
+        },
+        "item_GWyjmp": {
+          "type": "item",
+          "settings": {
+            "icon": "heart",
+            "custom_icon": "shopify://shop_images/facial-treatment.png",
+            "title": "Le contour des yeux",
+            "text": "est lissé, lifté, comme modelé, moins fatigué",
+            "column": "2"
+          }
+        }
+      },
+      "block_order": [
+        "item_FjWAXn",
+        "item_bn7ghF",
+        "item_pnA3DP",
+        "item_GWyjmp"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "title": "<h2>Des résultats visibles en 30 jours</h2>",
+        "title_custom": false,
+        "title_font": "poppins_n4",
+        "content_align": "center",
+        "content_align_mobile": "center",
+        "title_size": 24,
+        "title_size_mobile": 26,
+        "title_height": 130,
+        "text": "<p>L'essayer c'est l'adopter</p>",
+        "text_custom": false,
+        "text_font": "poppins_n4",
+        "text_size": 20,
+        "text_size_mobile": 16,
+        "text_height": 130,
+        "text_margin_top": 20,
+        "text_margin_top_mobile": 16,
+        "left_image": "shopify://shop_images/antiaging-beauty-treatment_8d600ecc-25c7-4f4e-acb1-7ec7869da8e8.jpg",
+        "right_image": "shopify://shop_images/antiaging-beauty-treatment2_6ffbfc1a-8628-4dbc-bbae-2d47c9fa18d0.jpg",
+        "image_radius": 0,
+        "image_border_thickness": 0,
+        "image_ratio": "square",
+        "image_ratio_mobile": "square",
+        "enable_shadow": true,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 0,
+        "shadow_blur": 26,
+        "shadow_spread": 0,
+        "shadow_opacity": 0.2,
+        "shadow_color": "#000000",
+        "btn_size": 40,
+        "btn_size_mobile": 36,
+        "btn_arrow_size": 70,
+        "btn_arrow_size_mobile": 70,
+        "btn_border_thickness": 0,
+        "body_gap": 50,
+        "body_gap_mobile": 30,
+        "body_margin_top": 50,
+        "body_margin_top_mobile": 30,
+        "items_gap": 30,
+        "items_gap_mobile": 20,
+        "item_content_align": "center",
+        "item_content_align_mobile": "center",
+        "icon_size": 44,
+        "icon_size_mobile": 36,
+        "item_title_custom": false,
+        "item_title_font": "poppins_n4",
+        "item_title_size": 18,
+        "item_title_size_mobile": 14,
+        "item_title_height": 130,
+        "item_title_margin_top": 10,
+        "item_title_margin_top_mobile": 10,
+        "item_text_custom": false,
+        "item_text_font": "poppins_n4",
+        "item_text_size": 16,
+        "item_text_size_mobile": 13,
+        "item_text_height": 150,
+        "item_text_margin_top": 10,
+        "item_text_margin_top_mobile": 10,
+        "title_color": "#000000",
+        "text_color": "#000000",
+        "icon_color": "#000000",
+        "item_title_color": "#000000",
+        "item_text_color": "#000000",
+        "btn_bg_color": "#ffffff",
+        "btn_arrow_color": "#000000",
+        "btn_border_color": "#000000",
+        "line_color": "#ffffff",
+        "image_border_color": "#000000",
+        "background_color": "#fafafa",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 160,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "delivery_date_RLMegR": {
+      "type": "delivery-date",
+      "blocks": {
+        "delivery_step_xBY8ME": {
+          "type": "delivery_step",
+          "settings": {
+            "icon_image_width": 50,
+            "min_days": 0,
+            "enable_range": false,
+            "max_days": 0,
+            "include_weekends": false,
+            "title": "Commande passée"
+          }
+        },
+        "delivery_step_VdLQkR": {
+          "type": "delivery_step",
+          "settings": {
+            "icon_image_width": 50,
+            "min_days": 1,
+            "enable_range": true,
+            "max_days": 2,
+            "include_weekends": false,
+            "title": "Expédiée"
+          }
+        },
+        "delivery_step_rFFFww": {
+          "type": "delivery_step",
+          "settings": {
+            "icon_image_width": 50,
+            "min_days": 2,
+            "enable_range": true,
+            "max_days": 4,
+            "include_weekends": false,
+            "title": "Livrée"
+          }
+        }
+      },
+      "block_order": [
+        "delivery_step_xBY8ME",
+        "delivery_step_VdLQkR",
+        "delivery_step_rFFFww"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "delivery_position": "below_buy",
+        "display_mode": "simple",
+        "text_before_min_date": "Commandez aujourd'hui, recevez votre commande entre le",
+        "text_after_min_date": "et le",
+        "font_family_custom": false,
+        "font_family": "quattrocento_sans_n4",
+        "text_color": "#000000",
+        "text_size": 14,
+        "text_line_height": 20,
+        "text_alignment": "center",
+        "circle_size_desktop": 40,
+        "icon_svg_size_desktop": 50,
+        "circle_size_mobile": 36,
+        "icon_svg_size_mobile": 50,
+        "icon_color": "#ffffff",
+        "icon_bg_color": "#000000",
+        "line_color": "#000000",
+        "date_format_type": "dd Mmmm",
+        "date_font_custom": false,
+        "date_font": "roboto_n4",
+        "date_color": "#000000",
+        "date_size": 12,
+        "date_line_height": 10,
+        "date_margin_top": 15,
+        "step_font_custom": false,
+        "step_font": "roboto_n4",
+        "step_color": "#000000",
+        "step_size": 12,
+        "step_line_height": 12,
+        "step_margin_top": 5,
+        "widget_margin_top": 20,
+        "widget_margin_bottom": 20,
+        "widget_margin_sides": 0,
+        "widget_padding_top": 15,
+        "widget_padding_bottom": 10,
+        "widget_padding_sides": 15,
+        "widget_background_color": "#fdfbf8",
+        "widget_border_width": 0,
+        "widget_border_color": "#cccccc",
+        "widget_border_radius": 0,
+        "enable_shadow": true,
+        "shadow_color": "#bababa",
+        "shadow_horizontal_offset": 7,
+        "shadow_vertical_offset": 4,
+        "shadow_blur_radius": 16,
+        "shadow_opacity": 0.7,
+        "shadow_spread_radius": -2
+      }
+    },
+    "reviews_testimonials_VN3dzD": {
+      "type": "reviews-testimonials",
+      "blocks": {
+        "slide_iHeTQe": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Excellent produit !",
+            "text": "Je suis vraiment impressionné par la qualité de ce produit. Il dépasse toutes mes attentes et je le recommande vivement à tous ceux qui cherchent quelque chose de fiable.",
+            "author_name": "Sophie",
+            "review_date": "21 sept. 2024"
+          }
+        },
+        "slide_rzytiw": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Très satisfait",
+            "text": "Le service et la qualité du produit sont exceptionnels. L'emballage était soigné et la livraison rapide. J'en suis très content.",
+            "author_name": "Thomas",
+            "review_date": "23 sept. 2024"
+          }
+        },
+        "slide_p3Pfcn": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Une belle découverte",
+            "text": "J'avais des doutes avant de commander, mais je suis agréablement surpris. Le produit est de bonne qualité et fonctionne parfaitement.",
+            "author_name": "Camille",
+            "review_date": "21 aout 2024"
+          }
+        },
+        "slide_p6eL3H": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Produit de qualité",
+            "text": "Ce produit a vraiment répondu à mes attentes. La finition est soignée et il est très performant. Je le recommande sans hésitation.",
+            "author_name": "Marc",
+            "review_date": "28 aout 2024"
+          }
+        },
+        "slide_iQLBUL": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Parfait pour l'usage quotidien",
+            "text": "Utilisé tous les jours depuis plusieurs semaines, ce produit est solide et fiable. Je suis très satisfait de mon achat.",
+            "author_name": "Émilie",
+            "review_date": "7 sept. 2024"
+          }
+        },
+        "slide_hJMFt4": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Très bon rapport qualité-prix",
+            "text": "Pour le prix, je ne m'attendais pas à une telle qualité. C'est un excellent produit qui offre de très bonnes performances.",
+            "author_name": "Antoine",
+            "review_date": "18 sept. 2024"
+          }
+        },
+        "slide_FzLgnU": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Un incontournable",
+            "text": "C'est désormais un produit indispensable pour moi. Très pratique et facile à utiliser, je suis ravi de cet achat.",
+            "author_name": "Marie",
+            "review_date": "15 sept. 2024"
+          }
+        },
+        "slide_yycEV4": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Complètement satisfait",
+            "text": "Tout a été parfait, de la commande à la livraison. Le produit est conforme à la description et fonctionne très bien.",
+            "author_name": "Julien",
+            "review_date": "13 sept. 2024"
+          }
+        },
+        "slide_fNdcmL": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Je recommande sans hésitation",
+            "text": "Si vous cherchez un produit fiable et de bonne qualité, c'est celui qu'il vous faut. J'en suis très content.",
+            "author_name": "Clara",
+            "review_date": "8 sept. 2024"
+          }
+        },
+        "slide_QBCaWA": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Très pratique et efficace",
+            "text": "Ce produit me facilite la vie au quotidien. Je suis impressionné par son efficacité et sa robustesse.",
+            "author_name": "Maxime",
+            "review_date": "2 sept. 2024"
+          }
+        }
+      },
+      "block_order": [
+        "slide_iHeTQe",
+        "slide_rzytiw",
+        "slide_p3Pfcn",
+        "slide_p6eL3H",
+        "slide_iQLBUL",
+        "slide_hJMFt4",
+        "slide_FzLgnU",
+        "slide_yycEV4",
+        "slide_fNdcmL",
+        "slide_QBCaWA"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "Avis clients",
+        "heading_custom": false,
+        "heading_font": "times_new_roman_n7",
+        "heading_size": 24,
+        "heading_size_mobile": 20,
+        "heading_height": 130,
+        "heading_align": "center",
+        "rating_text_hide": false,
+        "rating_text": "Excellent",
+        "rating_text_custom": false,
+        "rating_text_font": "quattrocento_sans_n7",
+        "rating_text_size": 22,
+        "rating_text_size_mobile": 18,
+        "rating_text_height": 130,
+        "rating_text_mt": 16,
+        "rating_hide": false,
+        "rating": 4.8,
+        "rating_align": "center",
+        "stars_count": 5,
+        "stars_size": 28,
+        "stars_size_mobile": 20,
+        "text": "<p>basé sur <strong>267</strong> avis</p>",
+        "text_custom": false,
+        "text_font": "quattrocento_sans_n4",
+        "text_size": 20,
+        "text_size_mobile": 16,
+        "text_height": 130,
+        "text_align": "center",
+        "text_mt": 16,
+        "slider_width": 60,
+        "slider_view": 3,
+        "slider_view_mobile": 1.2,
+        "slider_gap": 12,
+        "slider_gap_mobile": 12,
+        "slider_mt": 36,
+        "card_padding_vertical": 32,
+        "card_padding_vertical_mobile": 16,
+        "card_padding_horizontal": 16,
+        "card_padding_horizontal_mobile": 16,
+        "card_radius": 0,
+        "card_border_thickness": 0,
+        "enable_shadow": true,
+        "shadow_offset_x": 0,
+        "shadow_offset_y": 0,
+        "shadow_blur": 15,
+        "shadow_spread": 0,
+        "shadow_opacity": 0.1,
+        "shadow_color": "#000000",
+        "circle_width": 50,
+        "circle_custom": false,
+        "circle_font": "quattrocento_sans_n4",
+        "author_font_size": 16,
+        "card_author_name_text_custom": false,
+        "card_author_name_text_font": "quattrocento_sans_n4",
+        "card_author_name_text_size": 16,
+        "card_author_name_text_size_mobile": 16,
+        "profile_info_margin_bottom": 40,
+        "icon_color": "#333333",
+        "icon_size": 12,
+        "verified_text": "Vérifié",
+        "verified_custom": false,
+        "verified_font": "roboto_n4",
+        "verified_font_size": 12,
+        "verified_color": "#333333",
+        "card_heading_custom": false,
+        "card_heading_font": "quattrocento_sans_n7",
+        "card_heading_size": 20,
+        "card_heading_size_mobile": 16,
+        "card_heading_height": 130,
+        "card_heading_mt": 16,
+        "card_text_custom": false,
+        "card_text_font": "quattrocento_sans_n4",
+        "card_text_size": 14,
+        "card_text_size_mobile": 14,
+        "card_text_height": 150,
+        "card_text_mt": 16,
+        "card_text_more": "Voir plus",
+        "card_text_less": "Voir moins",
+        "card_count_words": 20,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "arrow_size": 50,
+        "arrow_size_mobile": 30,
+        "arrow_icon_size": 30,
+        "arrow_icon_size_mobile": 28,
+        "arrow_border_thickness": 0,
+        "dots_show_desktop": false,
+        "dots_show_mobile": false,
+        "dots_size": 12,
+        "dots_size_mobile": 12,
+        "circle_text_color": "#000000",
+        "circle_bg_color": "#ececec",
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#000000",
+        "card_heading_color": "#000000",
+        "card_text_color": "#000000",
+        "card_author_name_text_color": "#000000",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#ffffff",
+        "arrow_border_hover_color": "#ffffff",
+        "dots_color": "#000000",
+        "heading_color": "#000000",
+        "rating_text_color": "#000000",
+        "stars_bg_color": "#00b67a",
+        "stars_color": "#ffffff",
+        "text_color": "#000000",
+        "background_color": "#fafafa",
+        "background_gradient": "",
+        "margin_top": 0,
+        "margin_bottom": 72,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 240,
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "lazy": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Découvrez également",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    },
+    "double_section_TeWjmq": {
+      "type": "double-section",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "color_scheme": "",
+        "section_1_id": "#shopify-section-template--24462592344410__multicolumn_tAFfPc",
+        "padding_top_one": 0,
+        "padding_bottom_one": 0,
+        "mobile_reverse_grid": false,
+        "section_2_id": "#shopify-section-template--24462592344410__faq_zeiQpL",
+        "padding_top_two": 0,
+        "padding_bottom_two": 0,
+        "column_one_width": 50,
+        "alignment": "center",
+        "spacing_desktop": 80,
+        "spacing_mobile": 50,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "content_width": 160
+      }
+    },
+    "multicolumn_tAFfPc": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_m7yQDd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_MODEL_Desktop_960x502px.webp",
+            "title": "Où nous trouver",
+            "text": "<p>Venez découvrir notre boutique au <strong>133 rue vieille du Temple 75003 Paris </strong>pour une expérience exceptionnelle</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_m7yQDd"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "title_over_image": false,
+        "font_title_custom": false,
+        "title_font": "times_new_roman_i7",
+        "title_font_size": 35,
+        "title_font_size_mobile": 18,
+        "title_color": "#2d2a26",
+        "font_description_custom": false,
+        "description_font": "quattrocento_n4",
+        "description_font_size": 18,
+        "description_font_size_mobile": 12,
+        "description_color": "#2d2a26",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "faq_zeiQpL": {
+      "type": "FAQ",
+      "blocks": {
+        "text_PMLHkU": {
+          "type": "text",
+          "settings": {
+            "question": "Quels sont les délais de livraison ?",
+            "answer": "<p>Hors circonstances exceptionnelles indiquées sur le site, les délais de livraison sont les suivants: . Pour la France, l'expédition est effectuée par DHL Express/Colissimo et est livrée dans un délai de deux jours ouvrables. Pour l'Europe, l'expédition est effectuée par DHL Express/Colissimo et est livrée dans un délai de trois jours ouvrables. . Pour le reste du monde, la livraison se fait avec DHL Express/Colissimo, dans un délai de quatre à cinq jours ouvrables. Nous vous prions de bien vouloir noter que ce délai peut être allongé si votre commande contient des parfums, du fait de réglementations locales. . Toute commande passée du lundi au vendredi est préparée le jour même ou le jour ouvré suivant.</p>"
+          }
+        },
+        "text_g6WYRy": {
+          "type": "text",
+          "settings": {
+            "question": "Combien coûte la livraison ?",
+            "answer": "<p>L’expédition par DHL Express/Colissimo est gratuite en France Métropolitaine et dans les pays de la Communauté Européenne, y compris la Norvège et la Suisse, pour toutes commandes supérieures à 100€. </p>"
+          }
+        },
+        "text_WtfBNU": {
+          "type": "text",
+          "settings": {
+            "question": "Je souhaite modifier mon adresse de livraison ?",
+            "answer": "<p>Vous pouvez modifier votre adresse de livraison en accédant à la rubrique votre compte. Votre commande sera livrée à l’adresse de livraison indiquée lors de la confirmation de la commande. Il n’est pas possible de modifier votre adresse de livraison après la confirmation de votre commande.</p>"
+          }
+        },
+        "text_jzpVb4": {
+          "type": "text",
+          "settings": {
+            "question": "Je n'ai pas reçu mon colis",
+            "answer": "<p>Sauf indication contraire, votre colis est livré dans un délai de:</p><ul><li>2 jours ouvrables pour la France</li><li>3 jours ouvrables pour l'Europe</li><li>5 jours ouvrables pour le reste du monde</li></ul><p>A partir de la confirmation d'envoi de votre commande. Ces délais ne prennent pas en compte les weekends et les jours fériés, et peuvent également varier pour des raisons que nous ne maîtrisons pas. Ce délai peut être rallongé si votre commande contient des parfums du fait de réglementations locales. Si après plusieurs jours vous n'avez toujours rien reçu, vous pouvez contacter notre service client via le formulaire de contact, à votre disposition du lundi au vendredi de 9h à 18h.</p>"
+          }
+        },
+        "text_bxpbf9": {
+          "type": "text",
+          "settings": {
+            "question": "Quels sont les modes de paiements disponibles ?",
+            "answer": "<p>Vous pouvez effectuer vos achats avec votre carte bancaire ou via votre compte Paypal. Nous n'acceptons ni les chèques bancaires, ni les virements ou encore les paiements à la réception. </p>"
+          }
+        },
+        "text_DgVgGm": {
+          "type": "text",
+          "settings": {
+            "question": "Je ne suis pas satisfait(e) de ma commande, que faire ?",
+            "answer": "<p>Nous vous offrons une garantie \"satisfait ou remboursé\".</p><p><br/>Si, pour n'importe quelle raison, le produit ne convient pas à vos attentes, vous pouvez nous le renvoyer sous 30 jours après réception et nous vous remboursons intégralement le prix de l'article dès qu'il sera arrivé chez nous.</p><p>Cependant, tous les produits renvoyés doivent être en parfait état - donc jamais portés - et les frais de retour doivent être payés par vos soins. La preuve de l'affranchissement devra ensuite nous être envoyée par email comme preuve de livraison. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_PMLHkU",
+        "text_g6WYRy",
+        "text_WtfBNU",
+        "text_jzpVb4",
+        "text_bxpbf9",
+        "text_DgVgGm"
+      ],
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "Questions fréquentes",
+        "font_family_custom": false,
+        "title_font_family": "times_new_roman_n7",
+        "title_font_size_desktop": 3,
+        "title_font_size_mobile": 2.2,
+        "title_color": "#000000",
+        "font_question_custom": false,
+        "question_font_family": "quattrocento_sans_n4",
+        "questions_font_size": 1.7,
+        "questions_font_size_mobile": 1.5,
+        "question_color": "#121212",
+        "hover_color": "#686868",
+        "background_color": "rgba(0,0,0,0)",
+        "question_margin_bottom": 3,
+        "question_border_radius": 5,
+        "border_thickness": 0,
+        "border_color": "#000000",
+        "add_line_between_questions": "oui",
+        "line_thickness": 1,
+        "line_color": "#e3e3e3",
+        "font_answer_custom": false,
+        "answer_font_family": "quattrocento_sans_n4",
+        "answer_font_size_desktop": 1.5,
+        "answer_font_size_mobile": 1.5,
+        "answer_color": "#000000",
+        "answer_bg_color": "#ffffff",
+        "answer_padding_vertical": 9,
+        "answer_padding_horizontal": 24,
+        "answer_margin_top": 10,
+        "answer_margin_bottom": 10,
+        "answer_border_radius": 10,
+        "icon_color": "#121212",
+        "accordion_toggle": true,
+        "background_type": "fixed",
+        "section_background_color": "#fafafa",
+        "background_gradient": "linear-gradient(180deg, rgba(216, 248, 255, 1), rgba(255, 255, 255, 1) 100%)",
+        "section_margin_top_desktop": 0,
+        "section_margin_bottom_desktop": 0,
+        "section_padding_top_desktop": 20,
+        "section_padding_bottom_desktop": 20,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0,
+        "section_padding_top_mobile": 10,
+        "section_padding_bottom_mobile": 10
+      }
+    }
+  },
+  "order": [
+    "main",
+    "features_rRpaKa",
+    "product_features_pWnQCt",
+    "before_after_8GCYCT",
+    "delivery_date_RLMegR",
+    "reviews_testimonials_VN3dzD",
+    "related-products",
+    "double_section_TeWjmq",
+    "multicolumn_tAFfPc",
+    "faq_zeiQpL"
+  ]
+}

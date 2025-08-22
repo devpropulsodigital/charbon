@@ -1,0 +1,44 @@
+{%- if icon != 'none' -%}
+  {%- assign file = icon | replace: '_', '-' | prepend: 'icon-' | append: '.svg' -%}
+  <span class="svg-wrapper-accordion" style="width: 25px; height: 25px;">{{ file | inline_asset_content }}</span>
+{%- endif -%}
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const accordions = document.querySelectorAll(".product__accordion details");
+
+  if (accordions.length === 0) {
+    console.warn('Aucun accordéon trouvé. Vérifiez les sélecteurs.');
+    return;
+  }
+
+  accordions.forEach((accordion) => {
+    accordion.addEventListener("toggle", function() {
+      if (accordion.open) {
+        // Capturer la hauteur de défilement avant la fermeture des autres accordéons
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        const accordionTop = accordion.getBoundingClientRect().top + currentScroll;
+
+        // Fermer les autres accordéons
+        accordions.forEach((otherAccordion) => {
+          if (otherAccordion !== accordion) {
+            otherAccordion.removeAttribute('open'); // Fermer les autres
+          }
+        });
+
+        // Ajuster la position de défilement après la fermeture des autres accordéons
+        const newAccordionTop = accordion.getBoundingClientRect().top + window.pageYOffset;
+
+        // Calculer la différence de hauteur et ajuster le scroll
+        const scrollAdjustment = newAccordionTop - accordionTop;
+
+        window.scrollTo({
+          top: currentScroll + scrollAdjustment,
+          behavior: 'auto' // Pas d'animation pour que la position reste stable
+        });
+      }
+    });
+  });
+});
+
+</script>
