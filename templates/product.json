@@ -23,13 +23,6 @@
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
-        "description": {
-          "type": "description",
-          "settings": {
-            "description_margin_top": 2,
-            "description_margin_bottom": 2
-          }
-        },
         "rating_custom_MTL4fB": {
           "type": "rating_custom",
           "disabled": true,
@@ -58,16 +51,16 @@
             "hide_on_desktop": false,
             "layout": "vertical",
             "icon_1": "heart",
-            "image_1": "shopify://shop_images/anti-frisotti.png",
-            "heading_1": "Définition parfaite - Sculptez vos boucles avec précision et contrôle",
+            "image_1": "shopify://shop_images/tenue.png",
+            "heading_1": "Tenue moyenne qui tient sans figer",
             "description_1": "",
             "icon_2": "return",
-            "image_2": "shopify://shop_images/definition.png",
-            "heading_2": "Hydratation intense - Nourrissez en profondeur grâce à l'huile de coco",
+            "image_2": "shopify://shop_images/mat.png",
+            "heading_2": "Finition matte, zéro brillance, zéro gras",
             "description_2": "",
             "icon_3": "truck",
-            "image_3": "shopify://shop_images/hydratation.png",
-            "heading_3": "Protection anti-casse - Renforcez la fibre capillaire avec les protéines de soie",
+            "image_3": "shopify://shop_images/clean_look.png",
+            "heading_3": "Texture clean, look naturel, sans effort",
             "description_3": "",
             "font_title_custom": false,
             "title_font": "poppins_n3",
@@ -277,6 +270,14 @@
             "icon_with_text_margin_bottom": 2.5
           }
         },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "description_margin_top": 2,
+            "description_margin_bottom": 2
+          }
+        },
         "share_WLfB4j": {
           "type": "share",
           "disabled": true,
@@ -324,7 +325,6 @@
       "block_order": [
         "title",
         "judge_me_reviews_preview_badge_8ptd6t",
-        "description",
         "rating_custom_MTL4fB",
         "icon_with_text_VX4aMN",
         "price",
@@ -334,6 +334,7 @@
         "buy_buttons",
         "inventory_LPVqQn",
         "icon_with_text_H6amGm",
+        "description",
         "share_WLfB4j",
         "collapsible_tab_4WTeNg",
         "collapsible_tab_NhHNYF",
