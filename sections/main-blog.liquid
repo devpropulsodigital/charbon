@@ -18,9 +18,18 @@
 
 {%- paginate blog.articles by 6 -%}
   <div class="main-blog page-width section-{{ section.id }}-padding">
-    <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      {{ blog.title | escape }}
-    </h1>
+    {% if section.settings.title != blank %} <div class="blog_title_center">{% endif %}
+      <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+        {% if section.settings.title != blank %}
+          {{ section.settings.title | escape }}
+        {% else %}
+          {{ blog.title | escape }}
+        {% endif %}
+      </h1>
+      {% if section.settings.subtitle != blank %}
+        <p>{{ section.settings.subtitle }}</p>
+      {% endif %}
+    {% if section.settings.title != blank %} </div> {% endif %}
 
     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
@@ -59,6 +68,16 @@
     {
       "type": "header",
       "content": "t:sections.main-blog.settings.header.content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Blog Title"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "label": "Blog subtitle"
     },
     {
       "type": "select",

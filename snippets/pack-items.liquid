@@ -6,7 +6,7 @@
         <span class="pack__disclaimer">{{ disclaimer }}</span>
       {% endif %}
     </p>
-    {% if text %}
+    {% if text != blank %}
       <p class="price__additional-text price__color--{{ text_color }}">
         {{ text }}
       </p>
@@ -14,7 +14,7 @@
   </div>
   <div class="pack__numbers">
     <p class="pack__price price__color--{{ price_color }}">{{ price }}</p>
-    {% if price_before %}
+    {% if price_before != blank %}
       <p class="pack__price-before">{{ price_before }}</p>
     {% endif %}
   </div>

@@ -1,0 +1,203 @@
+{{ 'component-tabs.css' | asset_url | stylesheet_tag }}
+
+<div class="product-tabs-container page-width">
+    <div class="product-tabs-header">
+      {% for block in section.blocks %}
+        <button class="tab-btn {% if forloop.first %}active{% endif %}" data-tab="tab-{{ forloop.index }}">
+          {{ block.settings.tab_title }}
+        </button>
+      {% endfor %}
+    </div>
+    
+    <div class="tab-content">
+      {% for block in section.blocks %}
+        <div id="tab-{{ forloop.index }}" class="tab-pane {% if forloop.first %}active{% endif %}">
+          {% if block.settings.content_type == 'text' %}
+            <div class="text-content">
+              {{ block.settings.text_content }}
+            </div>
+          {% elsif block.settings.content_type == 'grid' %}
+            <div class="ingredients-grid">
+              {% assign items = block.settings.grid_items_textarea | newline_to_br | split: '<br />' %}
+              {% for item in items %}
+                <div class="ingredient-item">{{ item }}</div>
+              {% endfor %}
+            </div>
+          {% elsif block.settings.content_type == 'mixed' %}
+            {% if block.settings.show_title %}
+              <h3 class="tab-subtitle">{{ block.settings.content_title }}</h3>
+            {% endif %}
+            
+            {% if block.settings.description != blank %}
+              <div class="tab-description">{{ block.settings.description }}</div>
+            {% endif %}
+            
+            {% if block.settings.grid_items_textarea != blank %}
+              <div class="ingredients-grid">
+                {% assign items = block.settings.grid_items_textarea | newline_to_br | split: '<br />' %}
+                {% for item in items %}
+                  <div class="ingredient-item">{{ item }}</div>
+                {% endfor %}
+              </div>
+            {% endif %}
+            
+            {% if block.settings.bottom_text != blank %}
+              <div class="bottom-text">{{ block.settings.bottom_text }}</div>
+            {% endif %}
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+        
+        tabButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const tabId = button.getAttribute('data-tab');
+            
+            // Remove active class from all buttons and panes
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabPanes.forEach(pane => pane.classList.remove('active'));
+            
+            // Add active class to clicked button and corresponding pane
+            button.classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+          });
+        });
+    });
+</script>
+
+{% schema %}
+{
+  "name": "Dynamic Product Tabs",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Tab Settings"
+    },
+    {
+      "type": "paragraph",
+      "content": "Add and configure tabs in the content blocks below"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_title",
+          "label": "Tab Title",
+          "default": "New Tab"
+        },
+        {
+          "type": "select",
+          "id": "content_type",
+          "label": "Content Type",
+          "options": [
+            {
+              "value": "text",
+              "label": "Rich Text"
+            },
+            {
+              "value": "grid",
+              "label": "Grid Items"
+            },
+            {
+              "value": "mixed",
+              "label": "Mixed Content"
+            }
+          ],
+          "default": "mixed"
+        },
+        {
+          "type": "header",
+          "content": "Text Content Options"
+        },
+        {
+          "type": "richtext",
+          "id": "text_content",
+          "label": "Text Content",
+          "default": "<p>Add your detailed text content here.</p>"
+        },
+        {
+          "type": "header",
+          "content": "Grid Content Options"
+        },
+        {
+          "type": "textarea",
+          "id": "grid_items_textarea",
+          "label": "Grid Items",
+          "info": "Enter each item on a new line",
+          "default": "Grid item 1\nGrid item 2\nGrid item 3\nGrid item 4"
+        },
+        {
+          "type": "header",
+          "content": "Mixed Content Options"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_title",
+          "label": "Show Content Title",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "content_title",
+          "label": "Content Title",
+          "default": "Section Title"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Describe the content of this tab section.</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "bottom_text",
+          "label": "Bottom Text",
+          "default": "<p>Additional information or notes.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Dynamic Product Tabs",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Cheveux bouclés/ondulés",
+            "content_type": "mixed",
+            "show_title": false,
+            "content_title": "Instructions",
+            "description": "<p></p>",
+            "grid_items_textarea": "1. Appliquez une noisette sur cheveux humides ou légèrement mouillés\n2. Répartissez uniformément des longueurs aux pointes\n3. Froissez délicatement pour définir les boucles\n4. Laissez sécher naturellement ou utilisez un diffuseur",
+            "bottom_text": "<p><strong>Retouches :</strong> Réactivez le produit en humidifiant légèrement vos mains et en reformant vos boucles.</p>"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Cheveux crépus/très frisés",
+            "content_type": "mixed",
+            "show_title": false,
+            "content_title": "Instructions",
+            "description": "<p></p>",
+            "grid_items_textarea": "1. Appliquez généreusement sur cheveux mouillés, section par section\n2. Démêlez avec un peigne à dents larges\n3. Twistez chaque mèche avec les doigts\n4. Laissez sécher à l'air libre pour un résultat optimal",
+            "bottom_text": "<p><strong>Retouches :</strong> Réactivez le produit en humidifiant légèrement vos mains et en reformant vos boucles.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

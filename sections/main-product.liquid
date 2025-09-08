@@ -345,14 +345,22 @@
               {%- endif -%}
             {%- endif -%}
           </p>
-              {%- when 'description' -%}
-                {%- if product.description != blank -%}
-                  <div class="product__description rte quick-add-hidden"
-                       style="margin-top: {{ block.settings.description_margin_top }}rem; margin-bottom: {{ block.settings.description_margin_bottom }}rem;"
-                       {{ block.shopify_attributes }}>
-                    {{ product.description }}
-                  </div>
-                {%- endif -%}
+
+            {%- when 'description' -%}
+              {%- if block.settings.product_description != blank -%}
+                <div class="product__description rte quick-add-hidden"
+                  style="margin-top: {{ block.settings.description_margin_top }}rem; margin-bottom: {{ block.settings.description_margin_bottom }}rem;"
+                  {{ block.shopify_attributes }}>
+                  {{ product.metafields.custom.product_description }}
+                </div>
+              {%- else -%}
+                <div class="product__description rte quick-add-hidden"
+                  style="margin-top: {{ block.settings.description_margin_top }}rem; margin-bottom: {{ block.settings.description_margin_bottom }}rem;"
+                  {{ block.shopify_attributes }}>
+                  {{ product.description }}
+                </div>
+              {%- endif -%}
+
               {%- when 'sku' -%}
                 <p
                   class="product__sku{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
@@ -382,9 +390,16 @@
                       padding: {{ block.settings.accordion_padding }}rem;">
                       {{ block.settings.content }}
                       {{ block.settings.page.content }}
+                      {%- if block.settings.popup_link_text != blank and block.settings.popup_content != blank -%}
+                        <p>
+                          <span class="popup-trigger" data-popup-id="ingredients-popup-link">
+                            {{ block.settings.popup_link_text }}
+                          </span>
+                        </p>
+                      {%- endif -%}
                     </div>
                   </details>
-                </div>
+                </div>                
               {%- when 'quantity_selector' -%}
                 <div
                   id="Quantity-Form-{{ section.id }}" style="margin-top: {{ block.settings.margin_top_quantity }}rem; margin-bottom: {{ block.settings.margin_bottom_quantity }}rem;"
@@ -822,6 +837,15 @@
         </section>
       </div>
     </div>
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'collapsible_tab' and block.settings.popup_link_text != blank and block.settings.popup_content != blank -%}
+      {%- render 'ingredients-popup', 
+        id: "ingredients-popup-link",
+        title: block.settings.popup_link_text,
+        content: block.settings.popup_content
+      -%}
+    {%- endif -%}
+  {%- endfor -%}
 
     {% render 'product-media-modal', variant_images: variant_images %}
 
@@ -3033,6 +3057,11 @@
       "limit": 1,
       "settings": [
         {
+          "type": "richtext",
+          "id": "product_description",
+          "label": "Product Description",
+        },
+        {
           "type": "range",
           "id": "description_margin_top",
           "label": "Marge supérieure",
@@ -3286,6 +3315,16 @@
           "type": "richtext",
           "id": "content",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.content.label"
+        },
+        {
+          "type": "text",
+          "id": "popup_link_text",
+          "label": "Popup link text"
+        },
+        {
+          "type": "html",
+          "id": "popup_content",
+          "label": "Popup content"        
         },
         {
           "type": "page",
@@ -4514,6 +4553,10 @@
         {
           "value": "thumbnail_slider",
           "label": "t:sections.main-product.settings.gallery_layout.options__4.label"
+        },
+        {
+          "value": "thumbnail_left",
+          "label": "Thumbnail Left"
         }
       ],
       "default": "stacked",

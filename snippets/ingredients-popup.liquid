@@ -1,0 +1,175 @@
+<style>
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .popup-overlay.active {
+      background-color: rgba(0, 0, 0, 0.7);
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .popup-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      max-width: 800px;
+      width: 90%;
+      max-height: 80vh;
+      overflow-y: auto;
+      position: relative;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+      opacity: 0;
+    }
+    
+    .popup-overlay.active .popup-box {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    
+    .popup-title {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #333;
+      line-height: 1;
+      transition: color 0.2s ease;
+    }
+    
+    .close-btn:hover {
+      color: #000;
+    }
+    
+    .popup-trigger {      
+      transition: opacity 0.2s ease;
+    }
+    
+    .popup-trigger:hover {
+      opacity: 0.8;
+    }
+    
+    .popup-content {
+      transition: opacity 0.3s ease;
+    }
+  </style>
+  
+  <div class="popup-overlay" id="{{ id }}">
+    <div class="popup-box">
+      <span class="close-btn" data-popup-id="{{ id }}">&times;</span>
+      {% if title != blank %}
+        {% comment %} <h2 class="popup-title">{{ title }}</h2> {% endcomment %}
+      {% endif %}
+      <div class="popup-content">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  
+  <script>    
+    class GlobalPopup {
+      constructor() {
+        this.initTriggers();
+        this.initCloseButtons();
+        this.initOverlayClicks();
+        this.initEscapeKey();
+        this.transitionDuration = 300; // Match CSS transition duration
+      }
+    
+      initTriggers() {
+        document.querySelectorAll('.popup-trigger').forEach(trigger => {
+          trigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            const popupId = trigger.getAttribute('data-popup-id');
+            this.openPopup(popupId);
+          });
+        });
+      }
+    
+      initCloseButtons() {
+        document.querySelectorAll('.close-btn').forEach(button => {
+          button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const popupId = button.getAttribute('data-popup-id');
+            this.closePopup(popupId);
+          });
+        });
+      }
+    
+      initOverlayClicks() {
+        document.querySelectorAll('.popup-overlay').forEach(overlay => {
+          overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) {
+              const popupId = overlay.id;
+              this.closePopup(popupId);
+            }
+          });
+        });
+      }
+    
+      initEscapeKey() {
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            const activePopups = document.querySelectorAll('.popup-overlay.active');
+            activePopups.forEach(popup => {
+              this.closePopup(popup.id);
+            });
+          }
+        });
+      }
+    
+      openPopup(popupId) {
+        const popup = document.getElementById(popupId);
+        if (popup) {
+          // First make overlay visible (but still transparent)
+          popup.style.display = 'flex';
+          
+          // Trigger reflow to ensure CSS applies
+          void popup.offsetWidth;
+          
+          // Add active class to trigger transitions
+          popup.classList.add('active');
+          
+          // Disable body scrolling
+          document.body.style.overflow = 'hidden';
+        }
+      }
+    
+      closePopup(popupId) {
+        const popup = document.getElementById(popupId);
+        if (popup && popup.classList.contains('active')) {          
+          popup.classList.remove('active');                    
+          setTimeout(() => {
+            popup.style.display = 'none';
+            document.body.style.overflow = '';
+          }, this.transitionDuration);
+        }
+      }
+    }
+    
+    // Initialize when DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      new GlobalPopup();
+    });
+  </script>

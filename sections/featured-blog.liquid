@@ -33,7 +33,7 @@
   {% endif %}
   <div class="page-width-desktop isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding">
     {%- unless section.settings.heading == blank -%}
-      <div class="title-wrapper-with-link{% if posts_displayed > 2 %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
+      <div class="title-wrapper-with-link {% if posts_displayed > 3 %}{% else %} text-center {% endif %}{% if posts_displayed > 2 %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
         <h2
           id="SectionHeading-{{ section.id }}"
           class="blog__title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -204,13 +204,13 @@
     {
       "type": "header",
       "content": "ID de la section"
-      },
-      {
-      "type": "checkbox",
-      "id": "display_id",
-      "label": "Afficher le bouton pour copier l'ID de la section",
-      "info": "L'ID peut être utilisé dans la section 'Double section' pour afficher 2 sections sur la même ligne ou dans la section 'Onglets' pour afficher la section dans des onglets. L'ID peut également être utilisé dans un lien de bouton pour faire défiler la page jusqu'à cette section.",
-      "default": false
+    },
+    {
+        "type": "checkbox",
+        "id": "display_id",
+        "label": "Afficher le bouton pour copier l'ID de la section",
+        "info": "L'ID peut être utilisé dans la section 'Double section' pour afficher 2 sections sur la même ligne ou dans la section 'Onglets' pour afficher la section dans des onglets. L'ID peut également être utilisé dans un lien de bouton pour faire défiler la page jusqu'à cette section.",
+        "default": false
       },
       {
       "type": "header",

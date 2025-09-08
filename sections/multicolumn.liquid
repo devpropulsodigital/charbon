@@ -225,21 +225,35 @@
     </slider-component>
     <div class="center{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
       {%- if section.settings.button_label != blank -%}
-        <a
-          class="button button--primary"
-          {% if section.settings.button_link == blank %}
-            role="link" aria-disabled="true"
-          {% else %}
-            href="{{ section.settings.button_link }}"
-          {% endif %}
-        >
-          {{ section.settings.button_label | escape }}
-        </a>
+        {%- if section.settings.popup_content != blank -%}
+          <button class="button button--primary popup-trigger" data-popup-id="ingredients-popup-button">
+            {{ section.settings.button_label | escape }}
+          </button>
+        {%- else -%}
+          <a class="button button--primary"
+            {% if section.settings.button_link == blank %}
+              role="link" aria-disabled="true"
+            {% else %}
+              href="{{ section.settings.button_link }}"
+            {% endif %}
+          >
+            {{ section.settings.button_label | escape }}
+          </a>
+        {%- endif -%}
       {%- endif -%}
+      
     </div>
   </div>
 </div>
 
+
+{%- if section.settings.popup_content != blank -%}
+  {%- render 'ingredients-popup', 
+    id: "ingredients-popup-button",
+    title: section.settings.popup_link_text,
+    content: section.settings.popup_content
+  -%}
+{%- endif -%}
 
 {% schema %}
 {
@@ -419,6 +433,11 @@
       "type": "url",
       "id": "button_link",
       "label": "t:sections.multicolumn.settings.button_link.label"
+    },
+    {
+      "type": "html",
+      "id": "popup_content",
+      "label": "Popup content"        
     },
     {
       "type": "color_scheme",

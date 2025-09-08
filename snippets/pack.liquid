@@ -205,13 +205,14 @@
       </div>
     </div>
   </div>
-
-  <div class="pack__options">
-    {%- render "pack-selects",
-       product: product,
-       quantity: quantity
-    -%}
-  </div>
+  {%- if product.variants.size > 1 -%}
+    <div class="pack__options">
+      {%- render "pack-selects",
+        product: product,
+        quantity: quantity
+      -%}
+    </div>
+  {%- endif -%}
 </component-pack>
 
         {% endif %}
