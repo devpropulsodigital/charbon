@@ -136,7 +136,7 @@
         "brand_information_3XKtMa": {
           "type": "brand_information",
           "settings": {
-            "show_social": true
+            "show_social": false
           }
         },
         "link_list_RheXWx": {
@@ -164,8 +164,8 @@
         "color_scheme": "scheme-3",
         "newsletter_enable": true,
         "newsletter_heading": "Recevez nos offres par e-mail",
-        "enable_follow_on_shop": true,
-        "show_social": false,
+        "enable_follow_on_shop": false,
+        "show_social": true,
         "enable_country_selector": true,
         "enable_language_selector": true,
         "payment_enable": true,
