@@ -274,6 +274,7 @@
           "type": "description",
           "disabled": true,
           "settings": {
+            "product_description": "",
             "description_margin_top": 2,
             "description_margin_bottom": 2
           }
@@ -291,6 +292,8 @@
             "heading": "Description",
             "icon": "none",
             "content": "<p>La crème Curl Cream CHARBON sculpte tes boucles avec précision sans les alourdir, ni les assécher. Grâce à son mélange d'huile de coco et d'extrait de baobab, elle nourrit tes cheveux en profondeur tout en les protégeant. Tes boucles sont définies, souples et naturellement brillantes.</p>",
+            "popup_link_text": "",
+            "popup_content": "",
             "page": "",
             "accordion_bg_color": "#f9f9f9",
             "accordion_border_radius": 10,
@@ -303,6 +306,8 @@
             "heading": "Nos conseils d’utilisation",
             "icon": "none",
             "content": "<h3>Pour cheveux bouclés/ondulés :</h3><ol><li>Appliquez une noisette sur cheveux humides ou légèrement mouillés</li><li>Répartissez uniformément des longueurs aux pointes</li><li>Froissez délicatement pour définir les boucles</li><li>Laissez sécher naturellement ou utilisez un diffuseur</li></ol><h3>Pour cheveux crépus/très frisés :</h3><ol><li>Appliquez généreusement sur cheveux mouillés, section par section</li><li>Démêlez avec un peigne à dents larges</li><li>Twistez chaque mèche avec les doigts</li><li>Laissez sécher à l'air libre pour un résultat optimal</li></ol><h3>Retouches :</h3><h3>Réactivez le produit en humidifiant légèrement vos mains et en reformant vos boucles.</h3>",
+            "popup_link_text": "",
+            "popup_content": "",
             "page": "",
             "accordion_bg_color": "#f9f9f9",
             "accordion_border_radius": 10,
@@ -315,6 +320,8 @@
             "heading": "Ingrédients",
             "icon": "none",
             "content": "<p>Ce qui fait la différence :</p><ul><li>97% d'ingrédients d'origine naturelle</li><li>Sans sulfates, sans parabènes</li></ul><h5>🥥 HUILE DE COCO</h5><h5>Hydrate et protège les cheveux en réduisant la casse. Apporte brillance et souplesse naturelle.</h5><h5>🥭 PROTÉINE DE SOIE</h5><h5>Adoucit les cheveux pour une sensation douce et soyeuse au toucher.</h5><h5>🌳 EXTRAIT DE BAOBAB</h5><h5>Riche en protéines, acides gras et antioxydants. Nourrit, fortifie et donne de l'éclat.</h5><h5>💧 BASE HYDRATANTE</h5><h5>Formule à base d'eau et glycérine pour une hydratation optimale sans alourdissement.</h5><p><a href=\"#\" title=\"#\"><span style=\"text-decoration:underline\"><strong>Liste complète des ingrédients</strong></span></a></p>",
+            "popup_link_text": "",
+            "popup_content": "",
             "page": "",
             "accordion_bg_color": "#f9f9f9",
             "accordion_border_radius": 10,
@@ -349,7 +356,7 @@
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "cover",
-        "gallery_layout": "thumbnail_slider",
+        "gallery_layout": "thumbnail_left",
         "media_position": "left",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
@@ -516,6 +523,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
+        "popup_content": "",
         "color_scheme": "",
         "title_over_image": false,
         "font_title_custom": false,
@@ -715,6 +723,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
+        "popup_content": "",
         "color_scheme": "",
         "title_over_image": false,
         "font_title_custom": true,
@@ -1009,7 +1018,7 @@
         "features_row_inQWpF": {
           "type": "features_row",
           "settings": {
-            "text": "Marque suisse avec savoir-faire professionnel",
+            "text": "<p>Marque suisse avec savoir-faire professionnel</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1023,7 +1032,7 @@
         "features_row_YQRtQF": {
           "type": "features_row",
           "settings": {
-            "text": "Formule à base d’ingrédients d’origine naturelle",
+            "text": "<p>Formule à base d’ingrédients d’origine naturelle</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1037,7 +1046,7 @@
         "features_row_QMrYGd": {
           "type": "features_row",
           "settings": {
-            "text": "Convient à tous les types de cheveux",
+            "text": "<p>Convient à tous les types de cheveux</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1051,7 +1060,7 @@
         "features_row_beiQnj": {
           "type": "features_row",
           "settings": {
-            "text": "Parfum signature subtil et masculin",
+            "text": "<p>Parfum signature subtil et masculin</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1065,7 +1074,7 @@
         "features_row_4WBqfA": {
           "type": "features_row",
           "settings": {
-            "text": "Testée et validée en salon",
+            "text": "<p>Testée et validée en salon</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1079,7 +1088,7 @@
         "features_row_xz4Ezw": {
           "type": "features_row",
           "settings": {
-            "text": "Prix accessible et livraison rapide",
+            "text": "<p>Prix accessible et livraison rapide</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
