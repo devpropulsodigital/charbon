@@ -43,6 +43,14 @@
             "rating_margin_bottom": 4
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {
+            "product_description": "<p>{{ product.metafields.custom.product_description | metafield_tag }}</p>",
+            "description_margin_top": 2,
+            "description_margin_bottom": 2
+          }
+        },
         "icon_with_text_VX4aMN": {
           "type": "icon-with-text",
           "settings": {
@@ -270,15 +278,6 @@
             "icon_with_text_margin_bottom": 2.5
           }
         },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-            "product_description": "",
-            "description_margin_top": 2,
-            "description_margin_bottom": 2
-          }
-        },
         "share_WLfB4j": {
           "type": "share",
           "disabled": true,
@@ -333,6 +332,7 @@
         "title",
         "judge_me_reviews_preview_badge_8ptd6t",
         "rating_custom_MTL4fB",
+        "description",
         "icon_with_text_VX4aMN",
         "price",
         "variant_picker_pr3QfA",
@@ -341,7 +341,6 @@
         "buy_buttons",
         "inventory_LPVqQn",
         "icon_with_text_H6amGm",
-        "description",
         "share_WLfB4j",
         "collapsible_tab_4WTeNg",
         "collapsible_tab_NhHNYF",
