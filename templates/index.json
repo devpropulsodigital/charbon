@@ -188,7 +188,7 @@
         "body_gap_mobile": 22,
         "content_align": "right",
         "content_align_mobile": "center",
-        "content_vertical_align": "center",
+        "content_vertical_align": "end",
         "image": "shopify://shop_images/charbon1.webp",
         "image_mobile": "shopify://shop_images/charbon1.webp",
         "image_width": 40,
