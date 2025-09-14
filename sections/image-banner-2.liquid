@@ -112,6 +112,14 @@
     border-radius: {{ content_radius }}px;
     grid-area: content;
   }
+  
+  @media (min-width: 1024px) {
+    .content_at_center {
+      justify-content: center;
+      align-items: end;
+      margin-right: 200px;
+    }
+  }
 
   .image-banner-image-{{ section.id }} {
     grid-area: image;
@@ -714,7 +722,7 @@
   {% endif %}  
   <div class="section-{{ section.id }}-settings">
       <div class="image-banner-body-{{ section.id }}">
-        <div class="image-banner-content-{{ section.id }}">
+        <div class="image-banner-content-{{ section.id }} content_at_center">
           {% for block in section.blocks %}
             {% case block.type %}
               {% when 'review' %}
