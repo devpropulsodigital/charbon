@@ -107,21 +107,21 @@
         "pack_XCTThJ": {
           "type": "pack",
           "settings": {
-            "image0": "shopify://shop_images/DSC095542.jpg",
+            "image0": "shopify://shop_images/charbon_curl_cream_pack_unite.webp",
             "quantity0": 1,
             "title0": "1 cire",
             "price0": "9.90 CHF",
             "price_before0": "",
             "additional_text0": "",
             "disclaimer0": "",
-            "image1": "shopify://shop_images/DSC095542.jpg",
+            "image1": "shopify://shop_images/charbon_curl_cream_pack_duo.webp",
             "quantity1": 2,
             "title1": "2 cires",
             "price1": "17.90 CHF",
             "price_before1": "",
             "additional_text1": "",
             "disclaimer1": "Best Value",
-            "image2": "shopify://shop_images/DSC095542.jpg",
+            "image2": "shopify://shop_images/charbon_curl_cream_pack_trio.webp",
             "quantity2": 3,
             "title2": "3 cires",
             "price2": "19.90 CHF",
@@ -243,6 +243,7 @@
         },
         "icon_with_text_H6amGm": {
           "type": "icon-with-text",
+          "disabled": true,
           "settings": {
             "hide_on_mobile": false,
             "hide_on_tablet": false,
@@ -318,9 +319,9 @@
           "settings": {
             "heading": "Ingrédients",
             "icon": "none",
-            "content": "<p>Ce qui fait la différence :</p><ul><li>97% d'ingrédients d'origine naturelle</li><li>Sans sulfates, sans parabènes</li></ul><h5>🥥 HUILE DE COCO</h5><h5>Hydrate et protège les cheveux en réduisant la casse. Apporte brillance et souplesse naturelle.</h5><h5>🥭 PROTÉINE DE SOIE</h5><h5>Adoucit les cheveux pour une sensation douce et soyeuse au toucher.</h5><h5>🌳 EXTRAIT DE BAOBAB</h5><h5>Riche en protéines, acides gras et antioxydants. Nourrit, fortifie et donne de l'éclat.</h5><h5>💧 BASE HYDRATANTE</h5><h5>Formule à base d'eau et glycérine pour une hydratation optimale sans alourdissement.</h5><p><a href=\"#\" title=\"#\"><span style=\"text-decoration:underline\"><strong>Liste complète des ingrédients</strong></span></a></p>",
-            "popup_link_text": "",
-            "popup_content": "",
+            "content": "<p>Ce qui fait la différence :</p><ul><li>97% d'ingrédients d'origine naturelle</li><li>Sans sulfates, sans parabènes</li></ul><p>🥥 HUILE DE COCO<br/>Hydrate et protège les cheveux en réduisant la casse. Apporte brillance et souplesse naturelle.<br/><br/>🥭 PROTÉINE DE SOIE<br/>Adoucit les cheveux pour une sensation douce et soyeuse au toucher.<br/><br/>🌳 EXTRAIT DE BAOBAB<br/>Riche en protéines, acides gras et antioxydants. Nourrit, fortifie et donne de l'éclat.<br/><br/>💧 BASE HYDRATANTE<br/>Formule à base d'eau et glycérine pour une hydratation optimale sans alourdissement.<br/></p><p></p>",
+            "popup_link_text": "Liste complète des ingrédients",
+            "popup_content": "AQUA/WATER/EAU, PEG-25 HYDROGENATED CASTOR OIL, OLETH-10, LANOLIN, OLETH-20, DIISOPROPYL DIMER DILINOLEATE, GLYCERIN, HYDROXYPROPYL BISSTEARYLDIMONIUM CHLORIDE, ALCOHOL DENAT., PVP, PROPYLENE GLYCOL, CARTHAMUS TINCTORIUS (SAFFLOWER) SEED OIL, SALVIA OFFICINALIS (SAGE) LEAF EXTRACT, PANAX GINSENG ROOT EXTRACT, QUILLAJA SAPONARIA BARK EXTRACT, PARFUM (FRAGRANCE), LINALOOL, LIMONENE, HEXYL CINNAMAL, BENZYL SALICYLATE, ALPHA-ISOMETHYL IONONE, CITRONELLOL, HYDROXYCITRONELLAL, GERANIOL, CITRAL, DIAZOLIDINYL UREA, METHYLPARABEN, BENZOIC ACID, PROPYLPARABEN.",
             "page": "",
             "accordion_bg_color": "#f9f9f9",
             "accordion_border_radius": 10,
@@ -363,6 +364,104 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "delivery_date_JMPfnm": {
+      "type": "delivery-date",
+      "blocks": {
+        "delivery_step_ax46ne": {
+          "type": "delivery_step",
+          "settings": {
+            "icon_image_width": 50,
+            "min_days": 0,
+            "enable_range": false,
+            "max_days": 0,
+            "include_weekends": false,
+            "title": "Commande passée"
+          }
+        },
+        "delivery_step_rq3RkB": {
+          "type": "delivery_step",
+          "settings": {
+            "icon_image_width": 50,
+            "min_days": 2,
+            "enable_range": true,
+            "max_days": 5,
+            "include_weekends": false,
+            "title": "Expédiée"
+          }
+        },
+        "delivery_step_aLpRih": {
+          "type": "delivery_step",
+          "settings": {
+            "icon_image_width": 50,
+            "min_days": 4,
+            "enable_range": true,
+            "max_days": 7,
+            "include_weekends": true,
+            "title": "Livrée"
+          }
+        }
+      },
+      "block_order": [
+        "delivery_step_ax46ne",
+        "delivery_step_rq3RkB",
+        "delivery_step_aLpRih"
+      ],
+      "name": "Date de livraison",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "delivery_position": "below_buy",
+        "display_mode": "steps",
+        "text_before_min_date": "Commandez aujourd'hui, recevez votre commande entre le",
+        "text_after_min_date": "et le",
+        "font_family_custom": false,
+        "font_family": "poppins_n4",
+        "text_color": "#000000",
+        "text_size": 16,
+        "text_line_height": 24,
+        "text_alignment": "left",
+        "circle_size_desktop": 40,
+        "icon_svg_size_desktop": 50,
+        "circle_size_mobile": 36,
+        "icon_svg_size_mobile": 50,
+        "icon_color": "#ffffff",
+        "icon_bg_color": "#000000",
+        "line_color": "#000000",
+        "date_format_type": "dd Mmmm",
+        "date_font_custom": false,
+        "date_font": "poppins_n4",
+        "date_color": "#000000",
+        "date_size": 12,
+        "date_line_height": 10,
+        "date_margin_top": 15,
+        "step_font_custom": false,
+        "step_font": "poppins_n4",
+        "step_color": "#000000",
+        "step_size": 12,
+        "step_line_height": 12,
+        "step_margin_top": 5,
+        "widget_margin_top": 20,
+        "widget_margin_bottom": 20,
+        "widget_margin_sides": 0,
+        "widget_padding_top": 15,
+        "widget_padding_bottom": 10,
+        "widget_padding_sides": 15,
+        "widget_background_color": "#f9f9f9",
+        "widget_border_width": 0,
+        "widget_border_color": "#cccccc",
+        "widget_border_radius": 10,
+        "enable_shadow": true,
+        "shadow_color": "#bababa",
+        "shadow_horizontal_offset": 7,
+        "shadow_vertical_offset": 4,
+        "shadow_blur_radius": 16,
+        "shadow_opacity": 0.7,
+        "shadow_spread_radius": -2
       }
     },
     "image_with_text_DM4MNY": {
@@ -506,6 +605,7 @@
         "column_HYQEDq",
         "column_AF7iTq"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "display_id": false,
@@ -591,6 +691,7 @@
         "image_Lh8UjP",
         "image_jwyhLE"
       ],
+      "disabled": true,
       "custom_css": [
         ".icon-blocks-template--25619931070851__icon_blocks_EDyGfX .wrapper-box {display: grid; grid-template-columns: repeat( auto-fit, minmax(150px, calc((100% - 20px * (4 - 1)) / 4)) ); background-color: #f5f5f5; background-image: ; border: 0px solid #000000; border-radius: 0px; padding: 15px 0px; gap: 20px; max-width: 100%; box-sizing: border-box; width: 100%; margin: 0 auto; justify-content: center;}"
       ],
@@ -664,13 +765,130 @@
         "padding_horizontal_mobile": 1.5
       }
     },
+    "key_ingredients_section_mHrGWF": {
+      "type": "key-ingredients-section",
+      "blocks": {
+        "ingredient_rGgfP8": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Extrait de Sauce",
+            "description": "<p>grunça vasdin nó vaglib vaglibvajadin vaasd vidadin vajn</p>",
+            "background_image": "shopify://shop_images/EXTRAIT_DE_BAOBAB.png",
+            "text_color_scheme": "dark"
+          }
+        },
+        "ingredient_Q8DxVm": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Extrait de Sauce",
+            "description": "<p>grunça vasdin nó vaglib vaglib vajadin vaasd vidadin vajn</p>",
+            "background_image": "shopify://shop_images/BASE_HYDRATANTE.png",
+            "text_color_scheme": "dark"
+          }
+        },
+        "ingredient_ghCLpM": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Extrait de Sauce",
+            "description": "<p>grunça vasdin nó vaglib vaglib vajadin vaasd vidadin vajn</p>",
+            "background_image": "shopify://shop_images/huile_de_coco.png",
+            "text_color_scheme": "dark"
+          }
+        },
+        "ingredient_KAcR94": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Extrait de Sauce",
+            "description": "<p>grunça vasdin nó vaglib vaglib vajadin vaasd vidadin vajn</p>",
+            "background_image": "shopify://shop_images/PROTEINE_DE_SOIE.png",
+            "text_color_scheme": "light"
+          }
+        },
+        "feature_N9yEYi": {
+          "type": "feature",
+          "settings": {
+            "text": "pas de compromis",
+            "icon": "shopify://shop_images/5_1.png",
+            "icon_position": "left",
+            "icon_size": 24
+          }
+        },
+        "feature_frixkw": {
+          "type": "feature",
+          "settings": {
+            "text": "98% d’origine naturelle",
+            "icon": "shopify://shop_images/6_1.png",
+            "icon_position": "left",
+            "icon_size": 24
+          }
+        },
+        "feature_M8QRPU": {
+          "type": "feature",
+          "settings": {
+            "text": "aucun perturbateur endoctrinien",
+            "icon": "shopify://shop_images/7_1.png",
+            "icon_position": "left",
+            "icon_size": 24
+          }
+        },
+        "feature_YFj8Kd": {
+          "type": "feature",
+          "settings": {
+            "text": "fabriqué en Suisse",
+            "icon": "shopify://shop_images/8.png",
+            "icon_position": "left",
+            "icon_size": 24
+          }
+        },
+        "button_YPHALx": {
+          "type": "button",
+          "settings": {
+            "button_text": "LISTE COMPPLèTE DES INGRéDIENTS",
+            "button_link": "",
+            "btn_layout": "btn_outline"
+          }
+        },
+        "button_LYfTyy": {
+          "type": "button",
+          "settings": {
+            "button_text": "ESSAIE MAINTENANT",
+            "button_link": "",
+            "btn_layout": "btn_solid"
+          }
+        }
+      },
+      "block_order": [
+        "ingredient_rGgfP8",
+        "ingredient_Q8DxVm",
+        "ingredient_ghCLpM",
+        "ingredient_KAcR94",
+        "feature_N9yEYi",
+        "feature_frixkw",
+        "feature_M8QRPU",
+        "feature_YFj8Kd",
+        "button_YPHALx",
+        "button_LYfTyy"
+      ],
+      "name": "Key Ingredients",
+      "settings": {
+        "heading": "LES INGRÉDIENTS CLÉS",
+        "subheading": "Simples, efficaces, validés par les pros.",
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "accent_color": "#121212",
+        "show_overlay": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "enable_hover_effects": true
+      }
+    },
     "multicolumn_WBhVEC": {
       "type": "multicolumn",
       "blocks": {
         "column_aYN4gG": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/15.png",
+            "image": "shopify://shop_images/curls_cream_avant.webp",
             "title": "AVANT",
             "text": "",
             "link_label": "",
@@ -680,7 +898,7 @@
         "column_3aTdWC": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/16.png",
+            "image": "shopify://shop_images/curls_cream_application.webp",
             "title": "APPLICATION FACILE",
             "text": "",
             "link_label": "",
@@ -690,7 +908,7 @@
         "column_qJKBw6": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/17.png",
+            "image": "shopify://shop_images/curls_cream_apres.webp",
             "title": "APRÈS",
             "text": "",
             "link_label": "",
@@ -791,6 +1009,43 @@
         "margin_bottom_mobile": 0
       }
     },
+    "product_tabs_R7KTdE": {
+      "type": "product-tabs",
+      "blocks": {
+        "tab_7KmUDq": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Cheveux bouclés/ondulés",
+            "content_type": "mixed",
+            "text_content": "<p>Add your detailed text content here.</p>",
+            "grid_items_textarea": "1. Appliquez une noisette sur cheveux humides ou légèrement mouillés\n2. Répartissez uniformément des longueurs aux pointes\n3. Froissez délicatement pour définir les boucles\n4. Laissez sécher naturellement ou utilisez un diffuseur",
+            "show_title": false,
+            "content_title": "Instructions",
+            "description": "<p></p>",
+            "bottom_text": "<p><strong>Retouches :</strong> Réactivez le produit en humidifiant légèrement vos mains et en reformant vos boucles.</p>"
+          }
+        },
+        "tab_dwHRiw": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Cheveux crépus/très frisés",
+            "content_type": "mixed",
+            "text_content": "<p>Add your detailed text content here.</p>",
+            "grid_items_textarea": "1. Appliquez généreusement sur cheveux mouillés, section par section\n2. Démêlez avec un peigne à dents larges\n3. Twistez chaque mèche avec les doigts\n4. Laissez sécher à l'air libre pour un résultat optimal",
+            "show_title": false,
+            "content_title": "Instructions",
+            "description": "<p></p>",
+            "bottom_text": "<p><strong>Retouches :</strong> Réactivez le produit en humidifiant légèrement vos mains et en reformant vos boucles.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "tab_7KmUDq",
+        "tab_dwHRiw"
+      ],
+      "name": "Dynamic Product Tabs",
+      "settings": {}
+    },
     "icon_blocks_6jJJNy": {
       "type": "icon-blocks",
       "blocks": {
@@ -842,6 +1097,7 @@
         "image_7qx6t3",
         "image_ka6Az6"
       ],
+      "disabled": true,
       "name": "Blocs d'icônes cliquables",
       "settings": {
         "display_id": false,
@@ -1017,7 +1273,7 @@
         "features_row_inQWpF": {
           "type": "features_row",
           "settings": {
-            "text": "<p>Marque suisse avec savoir-faire professionnel</p>",
+            "text": "<p><strong>Marque suisse</strong><br/>savoir-faire local et une exigence de qualité</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1031,7 +1287,7 @@
         "features_row_YQRtQF": {
           "type": "features_row",
           "settings": {
-            "text": "<p>Formule à base d’ingrédients d’origine naturelle</p>",
+            "text": "<p><strong>Formule à base d’ingrédients d’origine naturelle</strong><br/>Pour prendre soin de tes cheveux au quotidien</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1045,7 +1301,7 @@
         "features_row_QMrYGd": {
           "type": "features_row",
           "settings": {
-            "text": "<p>Convient à tous les types de cheveux</p>",
+            "text": "<p><strong>Convient à tous les types de cheveux</strong><br/>Cheveux lisses, bouclés, ondulés ou crépus</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1059,7 +1315,7 @@
         "features_row_beiQnj": {
           "type": "features_row",
           "settings": {
-            "text": "<p>Parfum signature subtil et masculin</p>",
+            "text": "<p><strong>Parfum signature subtil et masculin</strong><br/>Une fragrance discrète qui laisse ta signature</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1073,7 +1329,7 @@
         "features_row_4WBqfA": {
           "type": "features_row",
           "settings": {
-            "text": "<p>Testée et validée en salon</p>",
+            "text": "<p><strong>Testée et validée en salon</strong><br/>Développée avec des coiffeurs professionnels pour garantir un résultat de qualité</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1087,7 +1343,7 @@
         "features_row_xz4Ezw": {
           "type": "features_row",
           "settings": {
-            "text": "<p>Prix accessible et livraison rapide</p>",
+            "text": "<p><strong>Prix accessible et livraison rapide</strong><br/>Un produit accessible à tous, livré en 48h en Suisse</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1140,7 +1396,8 @@
         "comparison_feature_padding_vertical": 20,
         "comparison_feature_padding_side_mobile": 10,
         "comparison_feature_padding_vertical_mobile": 10,
-        "own_store_logo": "shopify://shop_images/Untitled_design.png",
+        "own_store_logo": "shopify://shop_images/curls_cream_charbon.webp",
+        "other_store_logo": "shopify://shop_images/autres_curl_cream_other_brand.webp",
         "own_store_logo_width": 100,
         "other_store_text": "Les autres",
         "font_comparison_text_custom": false,
@@ -1459,11 +1716,14 @@
   },
   "order": [
     "main",
+    "delivery_date_JMPfnm",
     "image_with_text_DM4MNY",
     "multicolumn_XMpqaf",
     "icon_blocks_EDyGfX",
+    "key_ingredients_section_mHrGWF",
     "multicolumn_WBhVEC",
     "rich_text_XWqHRD",
+    "product_tabs_R7KTdE",
     "icon_blocks_6jJJNy",
     "faq_pWYfr4",
     "comparison_table_hMgpHk",
