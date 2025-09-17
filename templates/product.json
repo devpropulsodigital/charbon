@@ -1707,6 +1707,7 @@
         "ingredient_dfxk84",
         "ingredient_jBpmFC"
       ],
+      "disabled": true,
       "name": "Popup Ingredients",
       "settings": {
         "button_label": "Liste complète des ingrédients",
