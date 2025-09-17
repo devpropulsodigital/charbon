@@ -12,6 +12,8 @@
     "main": {
       "type": "main-blog",
       "settings": {
+        "title": "Le Magazine Charbon",
+        "subtitle": "<p>Conseils & Tendances Coiffure Homme</p>",
         "layout": "grid",
         "show_image": true,
         "image_height": "medium",

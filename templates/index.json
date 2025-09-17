@@ -38,6 +38,12 @@
             "review_bg_color": "#ffffff"
           }
         },
+        "judge_me_reviews_preview_badge_homepage_CirVdz": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": ""
+          }
+        },
         "heading_pRpcqD": {
           "type": "heading",
           "settings": {
@@ -162,6 +168,7 @@
       },
       "block_order": [
         "review_YCmiU9",
+        "judge_me_reviews_preview_badge_homepage_CirVdz",
         "heading_pRpcqD",
         "text_LUgw8T",
         "feature_yRcBBt",

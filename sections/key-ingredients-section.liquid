@@ -1,0 +1,699 @@
+<!-- Key Ingredients Section -->
+{% schema %}
+{
+  "name": "Key Ingredients",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "LES INGRÉDIENTS CLÉS"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Simples, efficaces, validés par les pros."
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#4a8e62"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_overlay",
+      "label": "Show overlay on image backgrounds",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay Opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 30
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_hover_effects",
+      "label": "Enable Hover Effects",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "ingredient",
+      "name": "Ingredient",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Extrait de Sauce"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>grunça vasdin nó vaglib vaglib</p><p>vajadin vaasd vidadin vajn</p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "Background Image (Optional)"
+        },
+        {
+          "type": "select",
+          "id": "text_color_scheme",
+          "label": "Text Color Scheme (when using background image)",
+          "options": [
+            {
+              "value": "light",
+              "label": "Light"
+            },
+            {
+              "value": "dark",
+              "label": "Dark"
+            }
+          ],
+          "default": "light"
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Feature Text",
+          "default": "pas de compromis"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon (Optional)"
+        },
+        {
+          "type": "select",
+          "id": "icon_position",
+          "label": "Icon Position",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "top",
+              "label": "Top"
+            },
+            {
+              "value": "bottom",
+              "label": "Bottom"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "range",
+          "id": "icon_size",
+          "label": "Icon Size",
+          "min": 16,
+          "max": 48,
+          "step": 4,
+          "unit": "px",
+          "default": 24
+        }
+      ]
+    },
+    {
+      "type": "side_by_side",
+      "name": "Side by Side Content",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Your content here</p>"
+        },
+        {
+          "type": "select",
+          "id": "layout",
+          "label": "Layout",
+          "options": [
+            {
+              "value": "image_left",
+              "label": "Image on Left"
+            },
+            {
+              "value": "image_right",
+              "label": "Image on Right"
+            }
+          ],
+          "default": "image_left"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link (Optional)"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "ESSAYE MAINTENANT"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+        {
+            "type": "select",
+            "id": "btn_layout",
+            "label": "Button Layout",
+            "options": [
+              {
+                "value": "btn_outline",
+                "label": "Button with outline"
+              },
+              {
+                "value": "btn_solid",
+                "label": "Button with solid"
+              }
+            ],
+            "default": "btn_solid"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Key Ingredients",
+      "category": "Custom Sections",
+      "blocks": [
+        {
+          "type": "ingredient",
+          "settings": {
+            "title": "Extrait de Sauce"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "title": "Extrait de Sauce"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "title": "Extrait de Sauce"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "text": "pas de compromis"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "text": "98% d'origine naturelle"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "text": "aucun perturbateur endoctrinien"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "text": "fabriqué en Suisse"
+          }
+        },
+        {
+          "type": "button",
+          "settings": {
+            "button_text": "ESSAYE MAINTENANT"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .key-ingredients {
+    padding: 30px 0px;
+    background-color: {{ section.settings.background_color }};
+    color: {{ section.settings.text_color }};
+  }  
+
+  .key-ingredients__heading {
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;    
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .key-ingredients__subheading {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+
+  .key-ingredients__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(326px, 1fr));
+    gap: 30px;    
+    max-width: 720px;
+    margin: 0 auto 40px;
+  }
+
+  .ingredient-card {
+    padding: 20px;
+    border-radius: 28px;
+    background-color: rgba(0,0,0,0.03);
+    position: relative;
+    overflow: hidden;
+    max-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.5s ease;
+  }
+
+  {% if section.settings.enable_hover_effects %}
+  .ingredient-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+  {% endif %}
+
+  .ingredient-card.has-bg-image {
+    background-color: transparent;
+  }
+
+  .ingredient-card__bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .ingredient-card__bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.7s ease;
+  }
+
+  {% if section.settings.enable_hover_effects %}
+  .ingredient-card:hover .ingredient-card__bg-image {
+    transform: scale(1.1);
+  }
+  {% endif %}
+
+  .ingredient-card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: {{ section.settings.overlay_color }};
+    opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+    z-index: 2;
+    display: block !important;
+    transition: all 0.5s ease;
+  }
+
+  {% if section.settings.enable_hover_effects %}
+  .ingredient-card:hover .ingredient-card__overlay {
+    opacity: calc({{ section.settings.overlay_opacity | divided_by: 100.0 }} - 0.1);
+  }
+  {% endif %}
+
+  .ingredient-card__content {
+    position: relative;
+    z-index: 2;
+    transition: all 0.4s ease;
+  }
+
+  {% if section.settings.enable_hover_effects %}
+  .ingredient-card:hover .ingredient-card__content {
+    transform: translateY(-3px);
+  }
+  {% endif %}
+
+  .ingredient-card__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: {{ section.settings.accent_color }};
+    transition: all 0.4s ease;
+  }
+
+  .ingredient-card.has-bg-image .ingredient-card__title {
+    {% if section.settings.show_overlay %}
+      color: #ffffff;
+    {% else %}
+      color: inherit;
+    {% endif %}
+  }
+
+  .ingredient-card__description {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .ingredient-card__description p {
+    margin:0;
+  }
+  .ingredient-card.has-bg-image .ingredient-card__description {
+    {% if section.settings.show_overlay %}
+    color: #ffffff;
+    {% else %}
+    color: inherit;
+    {% endif %}
+  }
+
+  /* Feature items with icons */
+  .key-ingredients__features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 6rem;
+    row-gap: 3rem;
+    margin-bottom: 30px;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+
+  .feature-item--top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-item--bottom {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .feature-item--left {
+    flex-direction: row;
+  }
+
+  .feature-item--right {
+    flex-direction: row-reverse;
+  }
+
+  .feature-item__icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  {% if section.settings.enable_hover_effects %}
+  .feature-item:hover {    
+    color: {{ section.settings.accent_color }};
+  }
+  
+  .feature-item:hover .feature-item__icon {
+    transform: scale(1.1);
+  }
+  {% endif %}
+
+  /* Side by side content */
+  .side-by-side {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+  }
+
+  .side-by-side--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .side-by-side__image {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .side-by-side__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.5s ease;
+  }
+
+  .side-by-side__content {
+    flex: 1;
+  }
+
+  {% if section.settings.enable_hover_effects %}
+  .side-by-side__image:hover img {
+    transform: scale(1.05);
+  }
+  {% endif %}
+
+  .key-ingredients__button-container {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .key-ingredients__button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: {{ section.settings.accent_color }};
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  {% if section.settings.enable_hover_effects %}
+  .key-ingredients__button:hover {    
+    box-shadow: 0 8px 15px {{ section.settings.accent_color | color_modify: 'alpha', 0.3 }};
+    padding: 15px 45px;
+  }
+
+  .key-ingredients__button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+  }
+
+  .key-ingredients__button:hover:after {
+    animation: ripple 1s ease-out;
+  }
+
+  @keyframes ripple {
+    0% {
+      transform: scale(0, 0);
+      opacity: 0.5;
+    }
+    20% {
+      transform: scale(30, 30);
+      opacity: 0.3;
+    }
+    100% {
+      transform: scale(50, 50);
+      opacity: 0;
+    }
+  }
+  {% endif %}
+
+    
+    @media (max-width: 768px) {
+        .key-ingredients__button-container {
+            flex-direction: column;
+        }
+        .key-ingredients__button-container .button {
+            width: 100%;
+        }
+        .key-ingredients__grid {
+            grid-template-columns: 1fr;
+        }
+
+        .key-ingredients__features {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+
+        .ingredient-card {
+            min-height: 150px;
+        }
+
+        .side-by-side {
+            flex-direction: column;
+        }
+        
+        .side-by-side--reverse {
+            flex-direction: column;
+        }
+
+        {% if section.settings.enable_hover_effects %}
+            .ingredient-card:hover {
+                transform: translateY(-5px);
+            }
+        {% endif %}
+    }
+    @media (min-width: 1200px) {
+        .key-ingredients__button-container>.button {
+            max-width: 240px;
+        }
+    }
+</style>
+
+<div class="key-ingredients">
+  <div class="key-ingredients__container page-width">
+    <h2 class="key-ingredients__heading">{{ section.settings.heading }}</h2>
+    <p class="key-ingredients__subheading">{{ section.settings.subheading }}</p>
+
+    <div class="key-ingredients__grid">
+      {% for block in section.blocks %}
+        {% if block.type == 'ingredient' %}
+          {% assign has_bg_image = false %}
+          {% if block.settings.background_image != blank %}
+            {% assign has_bg_image = true %}
+          {% endif %}
+
+          <div class="ingredient-card {% if has_bg_image %}has-bg-image{% endif %}" {{ block.shopify_attributes }}>
+            {% if has_bg_image %}
+              <div class="ingredient-card__bg-container">
+                <img class="ingredient-card__bg-image" src="{{ block.settings.background_image | img_url: '500x' }}" alt="{{ block.settings.title }}">
+                {% if section.settings.show_overlay %}
+                  <div class="ingredient-card__overlay"></div>
+                {% endif %}
+              </div>
+            {% endif %}
+
+            <div class="ingredient-card__content">
+              <h3 class="ingredient-card__title">{{ block.settings.title }}</h3>
+              <div class="ingredient-card__description">{{ block.settings.description }}</div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="key-ingredients__features">
+      {% for block in section.blocks %}
+        {% if block.type == 'feature' %}
+          <div class="feature-item feature-item--{{ block.settings.icon_position }}" {{ block.shopify_attributes }}>
+            {% if block.settings.icon != blank %}
+              <div class="feature-item__icon" style="width: {{ block.settings.icon_size }}px;">
+                <img src="{{ block.settings.icon | img_url: '100x100' }}" alt="{{ block.settings.text }}" style="width: {{ block.settings.icon_size }}px; height: {{ block.settings.icon_size }}px;">
+              </div>
+            {% endif %}
+            <div class="feature-item__text">{{ block.settings.text }}</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% for block in section.blocks %}
+      {% if block.type == 'side_by_side' %}
+        <div class="side-by-side {% if block.settings.layout == 'image_right' %}side-by-side--reverse{% endif %}" {{ block.shopify_attributes }}>
+          <div class="side-by-side__image">
+            {% if block.settings.link != blank %}
+              <a href="{{ block.settings.link }}">
+            {% endif %}
+            <img src="{{ block.settings.image | img_url: '600x' }}" alt="Side by side content">
+            {% if block.settings.link != blank %}
+              </a>
+            {% endif %}
+          </div>
+          <div class="side-by-side__content">
+            {{ block.settings.text }}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+
+    <div class="key-ingredients__button-container" {{ block.shopify_attributes }}>
+        {% for block in section.blocks %}
+            {% if block.type == 'button' %}
+                <a href="{{ block.settings.button_link }}" class="{% if block.settings.btn_layout == 'btn_solid' %}button button--primary{% else %} button button--secondary{% endif %}">{{ block.settings.button_text }}</a>
+            {% endif %}
+        {% endfor %}
+    </div>
+  </div>
+</div>

@@ -358,7 +358,7 @@
               <tr>
                 <th>&nbsp;</th>
                 <th id="brand-logo">
-                 <div class="image-cell table-right-content">
+                  <div class="image-cell table-right-content">
                     {% if section.settings.own_store_logo != blank %}
                       <img 
                         src="{{ section.settings.own_store_logo | image_url: width: section.settings.own_store_logo_width }}" 
@@ -376,10 +376,27 @@
                       />
                     {% endif %}
                   </div>
-
                 </th>
                 <th class="text-center">
-                  <p class="comparison-text">{{ section.settings.other_store_text }}</p>
+                  {% comment %} <p class="comparison-text">{{ section.settings.other_store_text }}</p> {% endcomment %}
+                  <div class="image-cell table-right-content">
+                    {% if section.settings.other_store_logo != blank %}
+                      <img 
+                        src="{{ section.settings.other_store_logo | image_url: width: section.settings.own_store_logo_width }}" 
+                        srcset="
+                          {{ section.settings.other_store_logo | image_url: format: 'webp', width: '300' }} 300w, 
+                          {{ section.settings.other_store_logo | image_url: format: 'webp', width: '600' }} 600w, 
+                          {{ section.settings.other_store_logo | image_url: format: 'webp', width: '900' }} 900w, 
+                          {{ section.settings.other_store_logo | image_url: format: 'webp', width: '1200' }} 1200w, 
+                          {{ section.settings.other_store_logo | image_url: format: 'webp', width: '1600' }} 1600w
+                        " 
+                        sizes="(max-width: 600px) 600px, (max-width: 900px) 900px, (max-width: 1200px) 1200px, 100vw"
+                        alt="Logo de la boutique"
+                        class="store-logo"
+                        style="width: 100%; max-width: {{ section.settings.own_store_logo_width }}px; height: auto;"
+                      />
+                    {% endif %}
+                  </div>
                 </th>
               </tr>
             </tbody>
@@ -745,6 +762,11 @@
       "type": "image_picker",
       "id": "own_store_logo",
       "label": "Logo de votre marque"
+    },
+    {
+      "type": "image_picker",
+      "id": "other_store_logo",
+      "label": "Logo d'une autre marque"
     },
     {
       "type": "range",
