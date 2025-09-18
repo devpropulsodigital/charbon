@@ -843,7 +843,7 @@
         "button_YPHALx": {
           "type": "button",
           "settings": {
-            "button_text": "LISTE COMPPLèTE DES INGRéDIENTS",
+            "button_text": "LISTE COMPLÈTE",
             "button_link": "",
             "btn_layout": "btn_outline"
           }
@@ -1235,9 +1235,9 @@
         "hover_color": "#222222",
         "background_color": "#f5f5f5",
         "question_margin_bottom": 5,
-        "question_border_radius": 5,
+        "question_border_radius": 15,
         "border_thickness": 1,
-        "border_color": "#000000",
+        "border_color": "#121212",
         "add_line_between_questions": "non",
         "line_thickness": 1,
         "line_color": "#e3e3e3",
@@ -1246,7 +1246,7 @@
         "answer_font_size_desktop": 1.5,
         "answer_font_size_mobile": 1.5,
         "answer_color": "#000000",
-        "answer_bg_color": "#f5f5f5",
+        "answer_bg_color": "#ffffff",
         "answer_padding_vertical": 9,
         "answer_padding_horizontal": 24,
         "answer_margin_top": 10,
@@ -1452,7 +1452,7 @@
         "judge_me_reviews_review_widget_UiTH8a": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "review_data": "real_data",
+            "review_data": "sample_data",
             "max_width": 1200
           }
         }
