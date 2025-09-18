@@ -154,7 +154,7 @@
             "button_border_thickness": 1,
             "button_border_color": "#000000",
             "button_border_hover_color": "#000000",
-            "button_radius": 8,
+            "button_radius": 30,
             "button_padding_horizontal": 62,
             "button_padding_horizontal_mobile": 62,
             "button_padding_vertical": 26,
