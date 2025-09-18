@@ -460,7 +460,9 @@
     },
     "featured_collection_feMQRb": {
       "type": "featured-collection",
-      "custom_css": [],
+      "custom_css": [
+        "button, .btn, .product-form__submit {background-color: #000000; /* Noir */ color: #ffffff; /* Blanc */ border-radius: 8px; /* Coins arrondis */ border: none; padding: 12px 20px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.3s ease;}"
+      ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "display_id": false,
