@@ -60,15 +60,15 @@
             "layout": "vertical",
             "icon_1": "heart",
             "image_1": "shopify://shop_images/definition.png",
-            "heading_1": "Définition parfaite - Sculptez vos boucles avec précision et contrôle",
+            "heading_1": "Confort optimal – Structure ergonomique pour une prise en main agréable",
             "description_1": "",
             "icon_2": "return",
             "image_2": "shopify://shop_images/hydratation.png",
-            "heading_2": "Hydratation intense - Nourrissez en profondeur grâce à l'huile de coco",
+            "heading_2": "Contrôle précis – Épouse la forme de la tête pour des résultats réguliers",
             "description_2": "",
             "icon_3": "truck",
             "image_3": "shopify://shop_images/anti-frisotti.png",
-            "heading_3": "Protection anti-casse - Renforcez la fibre capillaire avec les protéines de soie",
+            "heading_3": "Léger & robuste – Réduit la fatigue et résiste à une utilisation professionnelle",
             "description_3": "",
             "font_title_custom": false,
             "title_font": "poppins_n3",
@@ -106,6 +106,7 @@
         },
         "pack_XCTThJ": {
           "type": "pack",
+          "disabled": true,
           "settings": {
             "image0": "shopify://shop_images/charbon_curl_cream_pack_unite.webp",
             "quantity0": 1,
@@ -316,6 +317,7 @@
         },
         "collapsible_tab_bRHYFV": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Ingrédients",
             "icon": "none",
@@ -384,9 +386,9 @@
           "type": "delivery_step",
           "settings": {
             "icon_image_width": 50,
-            "min_days": 2,
-            "enable_range": true,
-            "max_days": 5,
+            "min_days": 1,
+            "enable_range": false,
+            "max_days": 1,
             "include_weekends": false,
             "title": "Expédiée"
           }
@@ -395,9 +397,9 @@
           "type": "delivery_step",
           "settings": {
             "icon_image_width": 50,
-            "min_days": 4,
+            "min_days": 2,
             "enable_range": true,
-            "max_days": 7,
+            "max_days": 3,
             "include_weekends": true,
             "title": "Livrée"
           }
