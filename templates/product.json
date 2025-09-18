@@ -227,10 +227,10 @@
         "inventory_LPVqQn": {
           "type": "inventory",
           "settings": {
-            "inventory_display_type": "real",
-            "fake_inventory_text": "Bientôt en rupture de stock",
+            "inventory_display_type": "fake",
+            "fake_inventory_text": "Nos stocks s'écoulent rapidement !",
             "inventory_threshold": 10,
-            "show_inventory_quantity": true,
+            "show_inventory_quantity": false,
             "font_family": "roboto_n4",
             "text_color": "#000000",
             "text_style": "uppercase",
