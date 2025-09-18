@@ -506,6 +506,7 @@
         "text_Ncz3bp",
         "button_x88cqK"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "display_id": false,
@@ -871,6 +872,7 @@
         "button_YPHALx",
         "button_LYfTyy"
       ],
+      "disabled": true,
       "name": "Key Ingredients",
       "settings": {
         "heading": "LES INGRÉDIENTS CLÉS",
@@ -923,6 +925,7 @@
         "column_3aTdWC",
         "column_qJKBw6"
       ],
+      "disabled": true,
       "custom_css": [
         "*,*::before,*::after {box-sizing: inherit; border-radius: 25px;}"
       ],
@@ -980,6 +983,7 @@
       "block_order": [
         "text_wLn3gX"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "display_id": false,
@@ -1045,6 +1049,7 @@
         "tab_7KmUDq",
         "tab_dwHRiw"
       ],
+      "disabled": true,
       "name": "Dynamic Product Tabs",
       "settings": {}
     },
@@ -1216,6 +1221,7 @@
         "text_DV9fB7",
         "text_txqVgB"
       ],
+      "disabled": true,
       "name": "FAQ",
       "settings": {
         "display_id": false,
@@ -1365,6 +1371,7 @@
         "features_row_4WBqfA",
         "features_row_xz4Ezw"
       ],
+      "disabled": true,
       "name": "Tableau de comparaison",
       "settings": {
         "display_id": false,
