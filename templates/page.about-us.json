@@ -275,7 +275,7 @@
         "text_hA9feT": {
           "type": "text",
           "settings": {
-            "text": "<p>Quand j'ai commencé à réfléchir sur le produit en lui-même, je me suis vite aperçu que si je voulais avoir quelque chose dont je veux être fier, j'allais devoir donner tout ce que j'avais. On ne parle pas d'un simple t-shirt avec un logo. On parle de vos cheveux, et ce n'est pas quelque chose que je prends à la légère. C'est pour cette raison que je voulais trouver les meilleurs ingrédients et la meilleure composition pour trouver l'équilibre parfait entre qualité et prix. Et je pense avoir fait les bon choix. Si tu souhaites en apprendre plus sur la création des produits, clique sur le bouton en dessous.<br/><br/></p>",
+            "text": "<p>Quand j'ai commencé à réfléchir sur le produit en lui-même, je me suis vite aperçu que si je voulais avoir quelque chose dont je veux être fier, j'allais devoir donner tout ce que j'avais. On ne parle pas d'un simple t-shirt avec un logo. On parle de vos cheveux, et ce n'est pas quelque chose que je prends à la légère. C'est pour cette raison que je voulais trouver les meilleurs ingrédients et la meilleure composition pour trouver l'équilibre parfait entre qualité et prix. Et je pense avoir fait les bon choix. Si tu souhaites en apprendre plus sur la création des produits, clique sur le bouton en dessous.</p>",
             "text_style": "body"
           }
         },
@@ -283,7 +283,7 @@
           "type": "button",
           "settings": {
             "button_label": "DÉCOUVRIR LES PRODUITS",
-            "button_link": "shopify://collections/all",
+            "button_link": "shopify://collections/tous-les-produits",
             "button_style_secondary": false
           }
         }
