@@ -106,6 +106,7 @@
         },
         "pack_XCTThJ": {
           "type": "pack",
+          "disabled": true,
           "settings": {
             "image0": "shopify://shop_images/charbon_curl_cream_pack_unite.webp",
             "quantity0": 1,
@@ -291,7 +292,7 @@
           "settings": {
             "heading": "Description",
             "icon": "none",
-            "content": "<p>La crème Curl Cream CHARBON sculpte tes boucles avec précision sans les alourdir, ni les assécher. Grâce à son mélange d'huile de coco et d'extrait de baobab, elle nourrit tes cheveux en profondeur tout en les protégeant. Tes boucles sont définies, souples et naturellement brillantes.</p>",
+            "content": "<p>Sublimez le volume et la texture avec notre Peigne Afro Charbon, spécialement conçu pour les cheveux crépus, bouclés ou texturés. Ses dents longues et robustes permettent de démêler en douceur, de donner du volume et de définir la forme sans casser la fibre capillaire. Avec son design unique et sa prise en main confortable, il allie efficacité et style, offrant un accessoire à la fois pratique et emblématique.</p><p>L’outil parfait pour mettre en valeur toute la puissance et la beauté du cheveu afro.</p>",
             "popup_link_text": "",
             "popup_content": "",
             "page": "",
@@ -305,7 +306,7 @@
           "settings": {
             "heading": "Nos conseils d’utilisation",
             "icon": "none",
-            "content": "<h3>Pour cheveux bouclés/ondulés :</h3><ol><li>Appliquez une noisette sur cheveux humides ou légèrement mouillés</li><li>Répartissez uniformément des longueurs aux pointes</li><li>Froissez délicatement pour définir les boucles</li><li>Laissez sécher naturellement ou utilisez un diffuseur</li></ol><h3>Pour cheveux crépus/très frisés :</h3><ol><li>Appliquez généreusement sur cheveux mouillés, section par section</li><li>Démêlez avec un peigne à dents larges</li><li>Twistez chaque mèche avec les doigts</li><li>Laissez sécher à l'air libre pour un résultat optimal</li></ol><h3>Retouches :</h3><h3>Réactivez le produit en humidifiant légèrement vos mains et en reformant vos boucles.</h3>",
+            "content": "<p>Utilisez sur cheveux secs ou légèrement humidifiés pour un démêlage en douceur.</p><p>Pour encore plus de volume, peignez délicatement les cheveux par section.</p>",
             "popup_link_text": "",
             "popup_content": "",
             "page": "",
@@ -316,6 +317,7 @@
         },
         "collapsible_tab_bRHYFV": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Ingrédients",
             "icon": "none",
