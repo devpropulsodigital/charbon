@@ -106,6 +106,7 @@
         },
         "pack_XCTThJ": {
           "type": "pack",
+          "disabled": true,
           "settings": {
             "image0": "shopify://shop_images/charbon_curl_cream_pack_unite.webp",
             "quantity0": 1,
@@ -316,6 +317,7 @@
         },
         "collapsible_tab_bRHYFV": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Ingrédients",
             "icon": "none",
@@ -384,9 +386,9 @@
           "type": "delivery_step",
           "settings": {
             "icon_image_width": 50,
-            "min_days": 2,
-            "enable_range": true,
-            "max_days": 5,
+            "min_days": 1,
+            "enable_range": false,
+            "max_days": 1,
             "include_weekends": false,
             "title": "Expédiée"
           }
@@ -395,10 +397,10 @@
           "type": "delivery_step",
           "settings": {
             "icon_image_width": 50,
-            "min_days": 4,
+            "min_days": 2,
             "enable_range": true,
-            "max_days": 7,
-            "include_weekends": true,
+            "max_days": 3,
+            "include_weekends": false,
             "title": "Livrée"
           }
         }
@@ -869,6 +871,7 @@
         "button_YPHALx",
         "button_LYfTyy"
       ],
+      "disabled": true,
       "name": "Key Ingredients",
       "settings": {
         "heading": "LES INGRÉDIENTS CLÉS",
@@ -921,6 +924,7 @@
         "column_3aTdWC",
         "column_qJKBw6"
       ],
+      "disabled": true,
       "custom_css": [
         "*,*::before,*::after {box-sizing: inherit; border-radius: 25px;}"
       ],
@@ -978,6 +982,7 @@
       "block_order": [
         "text_wLn3gX"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "display_id": false,
@@ -1043,6 +1048,7 @@
         "tab_7KmUDq",
         "tab_dwHRiw"
       ],
+      "disabled": true,
       "name": "Dynamic Product Tabs",
       "settings": {}
     },
@@ -1214,6 +1220,7 @@
         "text_DV9fB7",
         "text_txqVgB"
       ],
+      "disabled": true,
       "name": "FAQ",
       "settings": {
         "display_id": false,
@@ -1363,6 +1370,7 @@
         "features_row_4WBqfA",
         "features_row_xz4Ezw"
       ],
+      "disabled": true,
       "name": "Tableau de comparaison",
       "settings": {
         "display_id": false,
