@@ -27,7 +27,7 @@
         "image_kRWafb": {
           "type": "image",
           "settings": {
-            "icon-blocks_title": "Achat sécurisé Visa, Mastercard, Paypal, Klarna, Twint",
+            "icon-blocks_title": "Achat sécurisé Carte de crédit, Paypal, Klarna, Twint",
             "icon-blocks_text": "",
             "icon-blocks_image": "shopify://shop_images/2_1.png",
             "icon-blocks_url": "",
@@ -37,7 +37,7 @@
         "image_LXDKgb": {
           "type": "image",
           "settings": {
-            "icon-blocks_title": "Qualité garantie Formules composées par des pros",
+            "icon-blocks_title": "Qualité garantie Composées par des pros",
             "icon-blocks_text": "",
             "icon-blocks_image": "shopify://shop_images/3_1.png",
             "icon-blocks_url": "",
@@ -47,7 +47,7 @@
         "image_Ej36nq": {
           "type": "image",
           "settings": {
-            "icon-blocks_title": "Service client 7/7 Équipe disponible etréactive",
+            "icon-blocks_title": "Service client 7/7 Équipe disponible et réactive",
             "icon-blocks_text": "",
             "icon-blocks_image": "shopify://shop_images/4.png",
             "icon-blocks_url": "",
@@ -70,8 +70,8 @@
         "icon-blocks_row": 4,
         "icon-blocks_row_mobile": 2,
         "icon-blocks_gap": 20,
-        "icon-blocks_gap_mobile": 20,
-        "icon-blocks_padding_vertical": 20,
+        "icon-blocks_gap_mobile": 10,
+        "icon-blocks_padding_vertical": 10,
         "icon-blocks_padding_horizontal": 0,
         "icon-blocks_radius": 0,
         "icon-blocks_border_thickness": 0,
@@ -81,8 +81,8 @@
         "icon-blocks_bg": "#f1f1f1",
         "icon-blocks_bg_gradient": "",
         "transform_to_circle": false,
-        "box_width_desktop": 210,
-        "box_width_mobile": 150,
+        "box_width_desktop": 205,
+        "box_width_mobile": 200,
         "wrapper_box_width": 100,
         "wrapper_box_width_mobile": 100,
         "box_padding_vertical": 20,
