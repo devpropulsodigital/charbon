@@ -68,7 +68,7 @@
         "laptop-hidden": false,
         "desktop-hidden": false,
         "icon-blocks_row": 4,
-        "icon-blocks_row_mobile": 3,
+        "icon-blocks_row_mobile": 2,
         "icon-blocks_gap": 20,
         "icon-blocks_gap_mobile": 20,
         "icon-blocks_padding_vertical": 20,
