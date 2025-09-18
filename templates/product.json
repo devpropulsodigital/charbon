@@ -384,9 +384,9 @@
           "type": "delivery_step",
           "settings": {
             "icon_image_width": 50,
-            "min_days": 2,
-            "enable_range": true,
-            "max_days": 5,
+            "min_days": 1,
+            "enable_range": false,
+            "max_days": 1,
             "include_weekends": false,
             "title": "Expédiée"
           }
@@ -395,7 +395,7 @@
           "type": "delivery_step",
           "settings": {
             "icon_image_width": 50,
-            "min_days": 4,
+            "min_days": 2,
             "enable_range": true,
             "max_days": 7,
             "include_weekends": true,
