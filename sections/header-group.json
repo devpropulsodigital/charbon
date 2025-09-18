@@ -14,7 +14,7 @@
     "header": {
       "type": "header",
       "settings": {
-        "enable_modern_design": false,
+        "enable_modern_design": true,
         "border_radius": 10,
         "background_opacity": 1,
         "shadow_enabled": true,
