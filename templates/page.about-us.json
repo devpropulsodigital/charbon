@@ -37,7 +37,7 @@
         "button_6RBbJw": {
           "type": "button",
           "settings": {
-            "button_label": "Voir le process de création",
+            "button_label": "VOIR LE PROCESS DE CRÉATION",
             "button_link": "#",
             "button_style_secondary": false
           }
@@ -87,7 +87,7 @@
         "overlay_opacity": 0,
         "image_behavior": "none",
         "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20,
+        "padding_bottom_mobile": 0,
         "margin_top_mobile": 0,
         "margin_bottom_mobile": 0,
         "padding_top_desktop": 40,
@@ -330,11 +330,11 @@
         "background_attachment": "scroll",
         "overlay_color": "#000000",
         "overlay_opacity": 0,
-        "image_behavior": "none",
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20,
-        "margin_top_mobile": 0,
-        "margin_bottom_mobile": 0,
+        "image_behavior": "zoom-in",
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0,
+        "margin_top_mobile": 36,
+        "margin_bottom_mobile": 36,
         "padding_top_desktop": 40,
         "padding_bottom_desktop": 40,
         "margin_top_desktop": 0,
