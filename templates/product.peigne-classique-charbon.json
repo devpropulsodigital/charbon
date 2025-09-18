@@ -59,15 +59,15 @@
             "hide_on_desktop": false,
             "layout": "vertical",
             "icon_1": "heart",
-            "image_1": "shopify://shop_images/definition.png",
+            "image_1": "shopify://shop_images/hair-brush.png",
             "heading_1": "Confort optimal – Structure ergonomique pour une prise en main agréable",
             "description_1": "",
             "icon_2": "return",
-            "image_2": "shopify://shop_images/hydratation.png",
+            "image_2": "shopify://shop_images/man-hair.png",
             "heading_2": "Contrôle précis – Épouse la forme de la tête pour des résultats réguliers",
             "description_2": "",
             "icon_3": "truck",
-            "image_3": "shopify://shop_images/anti-frisotti.png",
+            "image_3": "shopify://shop_images/good-quality.png",
             "heading_3": "Léger & robuste – Réduit la fatigue et résiste à une utilisation professionnelle",
             "description_3": "",
             "font_title_custom": false,
@@ -292,7 +292,7 @@
           "settings": {
             "heading": "Description",
             "icon": "none",
-            "content": "<p>La crème Curl Cream CHARBON sculpte tes boucles avec précision sans les alourdir, ni les assécher. Grâce à son mélange d'huile de coco et d'extrait de baobab, elle nourrit tes cheveux en profondeur tout en les protégeant. Tes boucles sont définies, souples et naturellement brillantes.</p>",
+            "content": "<p>Alliez confort et précision avec notre Peigne Charbon Classique, spécialement conçu pour épouser la forme de la tête. Sa structure ergonomique permet un coiffage fluide et naturel tout en offrant un contrôle optimal. Léger, solide et agréable en main, il facilite le travail du<br/>coiffeur ou du barbier en réduisant la fatigue et en assurant des résultats réguliers et impeccables.</p><p>Un indispensable pour un coiffage professionnel au quotidien.</p>",
             "popup_link_text": "",
             "popup_content": "",
             "page": "",
@@ -306,7 +306,7 @@
           "settings": {
             "heading": "Nos conseils d’utilisation",
             "icon": "none",
-            "content": "<h3>Pour cheveux bouclés/ondulés :</h3><ol><li>Appliquez une noisette sur cheveux humides ou légèrement mouillés</li><li>Répartissez uniformément des longueurs aux pointes</li><li>Froissez délicatement pour définir les boucles</li><li>Laissez sécher naturellement ou utilisez un diffuseur</li></ol><h3>Pour cheveux crépus/très frisés :</h3><ol><li>Appliquez généreusement sur cheveux mouillés, section par section</li><li>Démêlez avec un peigne à dents larges</li><li>Twistez chaque mèche avec les doigts</li><li>Laissez sécher à l'air libre pour un résultat optimal</li></ol><h3>Retouches :</h3><h3>Réactivez le produit en humidifiant légèrement vos mains et en reformant vos boucles.</h3>",
+            "content": "<p>Utilisez sur cheveux secs ou légèrement humides.</p><p>Pour un résultat optimal, associez-le à nos produits de coiffage CHARBON.</p>",
             "popup_link_text": "",
             "popup_content": "",
             "page": "",
@@ -472,12 +472,13 @@
         "heading_mcnFit": {
           "type": "heading",
           "settings": {
-            "heading": "L'art de sublimer vos boucles naturellement.",
+            "heading": "<strong>Pourquoi choisir CHARBON </strong>",
             "heading_size": "h1"
           }
         },
         "caption_aWye64": {
           "type": "caption",
+          "disabled": true,
           "settings": {
             "caption": "Un geste expert. Un résultat professionnel. Rejoignez les milliers d'hommes qui ont déjà adopté CHARBON",
             "text_style": "subtitle",
@@ -487,7 +488,7 @@
         "text_Ncz3bp": {
           "type": "text",
           "settings": {
-            "text": "<p>Rejoins les milliers d’hommes qui ont déjà adopté Charbon.</p><p>✔️ Boucles parfaitement sculptées sans rigidité ni effet carton</p><p>✔️ Hydratation longue durée grâce à l'huile de coco et au baobab</p><p>✔️ Texture crémeuse premium facile à appliquer et à retravailler</p><p>✔️ Protection anti-casse avec les protéines de soie adoucissantes</p><p>✔️ Finition naturelle avec une brillance subtile et saine</p><p>✔️ Parfum gourmand coco-mangue, frais et masculin</p><p>✔️ Formule 97% organique respectueuse de vos cheveux et de l'environnement</p><p>✔️ Convient à tous types de boucles ondulées, frisées ou crépues<br/><br/></p>",
+            "text": "<p>Parce que chaque détail compte : nos accessoires sont pensés pour les professionnels, avec un design élégant et une qualité exceptionnelle. Adoptez le style CHARBON avec des accessoires qui subliment votre quotidien.</p>",
             "text_style": "body"
           }
         },
@@ -506,6 +507,7 @@
         "text_Ncz3bp",
         "button_x88cqK"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "display_id": false,
@@ -871,6 +873,7 @@
         "button_YPHALx",
         "button_LYfTyy"
       ],
+      "disabled": true,
       "name": "Key Ingredients",
       "settings": {
         "heading": "LES INGRÉDIENTS CLÉS",
@@ -923,6 +926,7 @@
         "column_3aTdWC",
         "column_qJKBw6"
       ],
+      "disabled": true,
       "custom_css": [
         "*,*::before,*::after {box-sizing: inherit; border-radius: 25px;}"
       ],
@@ -980,6 +984,7 @@
       "block_order": [
         "text_wLn3gX"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "display_id": false,
@@ -1045,6 +1050,7 @@
         "tab_7KmUDq",
         "tab_dwHRiw"
       ],
+      "disabled": true,
       "name": "Dynamic Product Tabs",
       "settings": {}
     },
@@ -1170,105 +1176,6 @@
         "padding_horizontal_mobile": 1.5
       }
     },
-    "faq_pWYfr4": {
-      "type": "faq",
-      "blocks": {
-        "text_qrnDT7": {
-          "type": "text",
-          "settings": {
-            "question": "Ce produit convient-il aux cheveux très secs ?",
-            "answer": "<ul><li>Absolument ! L'huile de coco et l'extrait de baobab offrent une nutrition intense, idéale pour les cheveux secs et abîmés.</li></ul>"
-          }
-        },
-        "text_CUtnVH": {
-          "type": "text",
-          "settings": {
-            "question": "Peut-on l'utiliser quotidiennement ?",
-            "answer": "<ul><li>Oui, sa formule douce permet une utilisation quotidienne sans risque d'accumulation.</li></ul>"
-          }
-        },
-        "text_zEmK7t": {
-          "type": "text",
-          "settings": {
-            "question": "Le produit laisse-t-il un film gras ?",
-            "answer": "<ul><li>Non, sa texture se fond parfaitement dans le cheveu pour un fini naturel sans résidu.</li></ul>"
-          }
-        },
-        "text_DV9fB7": {
-          "type": "text",
-          "settings": {
-            "question": "Convient-il aux cheveux colorés ?",
-            "answer": "<p>Parfaitement ! Les ingrédients naturels préservent et subliment les cheveux colorés.</p>"
-          }
-        },
-        "text_txqVgB": {
-          "type": "text",
-          "settings": {
-            "question": "Quelle quantité utiliser ?",
-            "answer": "<p>Une noisette suffit pour cheveux mi-longs. Ajustez selon la longueur et l'épaisseur de vos cheveux.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_qrnDT7",
-        "text_CUtnVH",
-        "text_zEmK7t",
-        "text_DV9fB7",
-        "text_txqVgB"
-      ],
-      "name": "FAQ",
-      "settings": {
-        "display_id": false,
-        "mobile-hidden": false,
-        "tablet-hidden": false,
-        "laptop-hidden": false,
-        "desktop-hidden": false,
-        "heading": "QUESTIONS FRÉQUEMMENT POSÉES",
-        "font_family_custom": false,
-        "title_font_family": "poppins_n8",
-        "title_font_size_desktop": 3,
-        "title_font_size_mobile": 2.2,
-        "title_color": "#000000",
-        "font_question_custom": false,
-        "question_font_family": "poppins_n5",
-        "questions_font_size": 1.7,
-        "questions_font_size_mobile": 1.5,
-        "question_color": "#ffffff",
-        "hover_color": "#ffffff",
-        "background_color": "#121212",
-        "question_margin_bottom": 5,
-        "question_border_radius": 15,
-        "border_thickness": 1,
-        "border_color": "#000000",
-        "add_line_between_questions": "non",
-        "line_thickness": 1,
-        "line_color": "#e3e3e3",
-        "font_answer_custom": false,
-        "answer_font_family": "poppins_n5",
-        "answer_font_size_desktop": 1.5,
-        "answer_font_size_mobile": 1.5,
-        "answer_color": "#000000",
-        "answer_bg_color": "#ffffff",
-        "answer_padding_vertical": 9,
-        "answer_padding_horizontal": 24,
-        "answer_margin_top": 10,
-        "answer_margin_bottom": 10,
-        "answer_border_radius": 10,
-        "icon_color": "#222222",
-        "accordion_toggle": false,
-        "background_type": "fixed",
-        "section_background_color": "#f5f5f5",
-        "background_gradient": "linear-gradient(180deg, rgba(216, 248, 255, 1), rgba(255, 255, 255, 1) 100%)",
-        "section_margin_top_desktop": 0,
-        "section_margin_bottom_desktop": 0,
-        "section_padding_top_desktop": 0,
-        "section_padding_bottom_desktop": 50,
-        "section_margin_top_mobile": 0,
-        "section_margin_bottom_mobile": 0,
-        "section_padding_top_mobile": 10,
-        "section_padding_bottom_mobile": 10
-      }
-    },
     "comparison_table_hMgpHk": {
       "type": "comparison-table",
       "blocks": {
@@ -1365,6 +1272,7 @@
         "features_row_4WBqfA",
         "features_row_xz4Ezw"
       ],
+      "disabled": true,
       "name": "Tableau de comparaison",
       "settings": {
         "display_id": false,
@@ -1464,6 +1372,106 @@
       ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "faq_pWYfr4": {
+      "type": "faq",
+      "blocks": {
+        "text_qrnDT7": {
+          "type": "text",
+          "settings": {
+            "question": "Est-ce que ce peigne convient aux cheveux épais ?",
+            "answer": "<ul><li>Oui, sa forme ergonomique et ses dents régulières facilitent le coiffage même des cheveux épais.</li></ul>"
+          }
+        },
+        "text_CUtnVH": {
+          "type": "text",
+          "settings": {
+            "question": "Peut-on l'utiliser quotidiennement ?",
+            "answer": "<ul><li>Oui, sa formule douce permet une utilisation quotidienne sans risque d'accumulation.</li></ul>"
+          }
+        },
+        "text_zEmK7t": {
+          "type": "text",
+          "settings": {
+            "question": "Le produit laisse-t-il un film gras ?",
+            "answer": "<ul><li>Non, sa texture se fond parfaitement dans le cheveu pour un fini naturel sans résidu.</li></ul>"
+          }
+        },
+        "text_DV9fB7": {
+          "type": "text",
+          "settings": {
+            "question": "Convient-il aux cheveux colorés ?",
+            "answer": "<p>Parfaitement ! Les ingrédients naturels préservent et subliment les cheveux colorés.</p>"
+          }
+        },
+        "text_txqVgB": {
+          "type": "text",
+          "settings": {
+            "question": "Quelle quantité utiliser ?",
+            "answer": "<p>Une noisette suffit pour cheveux mi-longs. Ajustez selon la longueur et l'épaisseur de vos cheveux.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_qrnDT7",
+        "text_CUtnVH",
+        "text_zEmK7t",
+        "text_DV9fB7",
+        "text_txqVgB"
+      ],
+      "disabled": true,
+      "name": "FAQ",
+      "settings": {
+        "display_id": false,
+        "mobile-hidden": false,
+        "tablet-hidden": false,
+        "laptop-hidden": false,
+        "desktop-hidden": false,
+        "heading": "QUESTIONS FRÉQUEMMENT POSÉES",
+        "font_family_custom": false,
+        "title_font_family": "poppins_n8",
+        "title_font_size_desktop": 3,
+        "title_font_size_mobile": 2.2,
+        "title_color": "#000000",
+        "font_question_custom": false,
+        "question_font_family": "poppins_n5",
+        "questions_font_size": 1.7,
+        "questions_font_size_mobile": 1.5,
+        "question_color": "#ffffff",
+        "hover_color": "#ffffff",
+        "background_color": "#121212",
+        "question_margin_bottom": 5,
+        "question_border_radius": 15,
+        "border_thickness": 1,
+        "border_color": "#000000",
+        "add_line_between_questions": "non",
+        "line_thickness": 1,
+        "line_color": "#e3e3e3",
+        "font_answer_custom": false,
+        "answer_font_family": "poppins_n5",
+        "answer_font_size_desktop": 1.5,
+        "answer_font_size_mobile": 1.5,
+        "answer_color": "#000000",
+        "answer_bg_color": "#ffffff",
+        "answer_padding_vertical": 9,
+        "answer_padding_horizontal": 24,
+        "answer_margin_top": 10,
+        "answer_margin_bottom": 10,
+        "answer_border_radius": 10,
+        "icon_color": "#222222",
+        "accordion_toggle": false,
+        "background_type": "fixed",
+        "section_background_color": "#f5f5f5",
+        "background_gradient": "linear-gradient(180deg, rgba(216, 248, 255, 1), rgba(255, 255, 255, 1) 100%)",
+        "section_margin_top_desktop": 0,
+        "section_margin_bottom_desktop": 0,
+        "section_padding_top_desktop": 0,
+        "section_padding_bottom_desktop": 50,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0,
+        "section_padding_top_mobile": 10,
+        "section_padding_bottom_mobile": 10
       }
     },
     "reviews_testimonials_bqXhrg": {
@@ -1728,9 +1736,9 @@
     "rich_text_XWqHRD",
     "product_tabs_R7KTdE",
     "icon_blocks_6jJJNy",
-    "faq_pWYfr4",
     "comparison_table_hMgpHk",
     "1753777023ba4bce47",
+    "faq_pWYfr4",
     "reviews_testimonials_bqXhrg",
     "related-products",
     "ingredients_reveal_J7hWVX"
