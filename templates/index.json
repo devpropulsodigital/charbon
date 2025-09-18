@@ -460,6 +460,7 @@
     },
     "featured_collection_feMQRb": {
       "type": "featured-collection",
+      "custom_css": [],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "display_id": false,
