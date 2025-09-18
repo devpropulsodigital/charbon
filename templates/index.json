@@ -468,8 +468,8 @@
         "tablet-hidden": false,
         "laptop-hidden": false,
         "desktop-hidden": false,
-        "title": "<strong>Nouveautés</strong>",
-        "heading_size": "hxl",
+        "title": "NOUVEAUTÉS",
+        "heading_size": "h0",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -631,7 +631,7 @@
         "heading_8LBkk6": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>CHARBONNER AVEC STYLE,C’EST NOTRE ENGAGEMENT</strong>",
+            "heading": "<strong>CHARBONNER AVEC STYLE, C’EST NOTRE ENGAGEMENT</strong>",
             "heading_size": "h0"
           }
         },
