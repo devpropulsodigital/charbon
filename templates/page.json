@@ -44,7 +44,7 @@
           "type": "text",
           "settings": {
             "question": "Comment suivre ma commande ?",
-            "answer": "<p>Une fois votre commande expédiée, vous recevrez un email avec un<strong>numéro de suivi</strong>vous permettant de suivre votre colis en temps réel.</p>"
+            "answer": "<p>Une fois votre commande expédiée, vous recevrez un email avec un <strong>numéro de suivi </strong>vous permettant de suivre votre colis en temps réel.</p>"
           }
         },
         "text_rKCtkk": {
