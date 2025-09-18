@@ -561,7 +561,7 @@
           "type": "button",
           "settings": {
             "button": "Découvrir Nos Produits",
-            "button_url": "shopify://collections/all",
+            "button_url": "shopify://collections/tous-les-produits",
             "button_custom": false,
             "button_font": "poppins_n4",
             "button_size": 14,
