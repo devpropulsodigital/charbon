@@ -30,7 +30,7 @@
           "type": "text",
           "settings": {
             "question": "Quels sont les délais de livraison ?",
-            "answer": "<p>Les commandes sont expédiées sous <strong>24 à 48h (hors week-end)</strong>. Les délais de livraison varient ensuite selon votre pays :</p><ul><li><strong>Suisse et France</strong> : 48 heures</li><li><strong>Europe</strong> : 3 à 7 jours ouvrés</li><li> <strong>International</strong> : 7 à 14 jours ouvrés</li></ul>"
+            "answer": "<p>Les commandes sont expédiées sous <strong>24 à 48h (hors week-end)</strong>. Les délais de livraison varient ensuite selon votre pays :</p><ul><li><strong>Suisse et France</strong> : 2 jours livrés</li></ul>"
           }
         },
         "text_zpUGDC": {
@@ -119,8 +119,8 @@
         "question_font_family": "poppins_n5",
         "questions_font_size": 1.7,
         "questions_font_size_mobile": 1.5,
-        "question_color": "#fff",
-        "hover_color": "#EFEFEF",
+        "question_color": "#ffffff",
+        "hover_color": "#efefef",
         "background_color": "#000000",
         "question_margin_bottom": 5,
         "question_border_radius": 5,
@@ -128,19 +128,19 @@
         "border_color": "#000000",
         "add_line_between_questions": "non",
         "line_thickness": 1,
-        "line_color": "#E3E3E3",
+        "line_color": "#e3e3e3",
         "font_answer_custom": false,
         "answer_font_family": "poppins_n5",
         "answer_font_size_desktop": 1.5,
         "answer_font_size_mobile": 1.5,
-        "answer_color": "#000",
-        "answer_bg_color": "#fff",
+        "answer_color": "#000000",
+        "answer_bg_color": "#ffffff",
         "answer_padding_vertical": 9,
         "answer_padding_horizontal": 24,
         "answer_margin_top": 10,
         "answer_margin_bottom": 10,
         "answer_border_radius": 10,
-        "icon_color": "#fff",
+        "icon_color": "#ffffff",
         "accordion_toggle": false,
         "background_type": "fixed",
         "section_background_color": "#ffffff",

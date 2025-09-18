@@ -397,7 +397,7 @@
             "icon_image_width": 50,
             "min_days": 2,
             "enable_range": true,
-            "max_days": 7,
+            "max_days": 3,
             "include_weekends": true,
             "title": "Livrée"
           }
