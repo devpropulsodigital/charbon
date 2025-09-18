@@ -37,7 +37,7 @@
           "type": "text",
           "settings": {
             "question": "Combien coûte la livraison ?",
-            "answer": "<p>Livraison <strong>gratuite</strong> à partir de <strong>9.90€ d’achat</strong></p><p>En dessous de ce montant, les frais sont calculés automatiquement à la caisse selon votre pays.</p>"
+            "answer": "<p>La livraison est gratuite en Suisse.</p><p>Les coûts de livraison pour la France sont de  5.35 EUROS.</p>"
           }
         },
         "text_xLAk3r": {
