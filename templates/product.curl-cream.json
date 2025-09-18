@@ -102,7 +102,7 @@
             "image0": "shopify://shop_images/charbon-forming-cream.webp",
             "quantity0": 1,
             "title0": "1 cire",
-            "price0": "9.90 CHF",
+            "price0": "12.90 CHF",
             "price_before0": "",
             "additional_text0": "",
             "disclaimer0": "",
@@ -274,6 +274,7 @@
           "type": "description",
           "disabled": true,
           "settings": {
+            "product_description": "",
             "description_margin_top": 2,
             "description_margin_bottom": 2
           }
@@ -477,6 +478,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
+        "popup_content": "",
         "color_scheme": "",
         "title_over_image": false,
         "font_title_custom": false,
@@ -752,6 +754,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
+        "popup_content": "",
         "color_scheme": "",
         "title_over_image": false,
         "font_title_custom": true,
@@ -1039,7 +1042,7 @@
         "features_row_inQWpF": {
           "type": "features_row",
           "settings": {
-            "text": "Marque suisse avec savoir-faire local",
+            "text": "<p>Marque suisse avec savoir-faire local</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1053,7 +1056,7 @@
         "features_row_YQRtQF": {
           "type": "features_row",
           "settings": {
-            "text": "Formule à base d’ingrédients d’origine naturelle",
+            "text": "<p>Formule à base d’ingrédients d’origine naturelle</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1067,7 +1070,7 @@
         "features_row_QMrYGd": {
           "type": "features_row",
           "settings": {
-            "text": "Convient à tous les types de cheveux",
+            "text": "<p>Convient à tous les types de cheveux</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1081,7 +1084,7 @@
         "features_row_beiQnj": {
           "type": "features_row",
           "settings": {
-            "text": "Parfum signature subtil et masculin",
+            "text": "<p>Parfum signature subtil et masculin</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1095,7 +1098,7 @@
         "features_row_4WBqfA": {
           "type": "features_row",
           "settings": {
-            "text": "Testée et validée en salon",
+            "text": "<p>Testée et validée en salon</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1109,7 +1112,7 @@
         "features_row_xz4Ezw": {
           "type": "features_row",
           "settings": {
-            "text": "Prix accessible et livraison rapide",
+            "text": "<p>Prix accessible et livraison rapide</p>",
             "this_store": "yes",
             "use_custom_color_this_store": false,
             "svg_color_this_store_yes": "#000000",
@@ -1216,7 +1219,10 @@
       "blocks": {
         "judge_me_reviews_review_widget_UiTH8a": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
         }
       },
       "block_order": [
