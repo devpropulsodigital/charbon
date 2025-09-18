@@ -771,8 +771,8 @@
         "ingredient_rGgfP8": {
           "type": "ingredient",
           "settings": {
-            "title": "Extrait de Sauce",
-            "description": "<p>grunça vasdin nó vaglib vaglibvajadin vaasd vidadin vajn</p>",
+            "title": "HUILE DE COCO",
+            "description": "<p>Hydrate et protège les cheveux en réduisant la casse. Apporte brillance et souplesse naturelle.</p>",
             "background_image": "shopify://shop_images/EXTRAIT_DE_BAOBAB.png",
             "text_color_scheme": "dark"
           }
@@ -780,8 +780,8 @@
         "ingredient_Q8DxVm": {
           "type": "ingredient",
           "settings": {
-            "title": "Extrait de Sauce",
-            "description": "<p>grunça vasdin nó vaglib vaglib vajadin vaasd vidadin vajn</p>",
+            "title": "PROTÉINE DE SOIE",
+            "description": "<p>Adoucit les cheveux pour une sensation douce et soyeuse au toucher.</p>",
             "background_image": "shopify://shop_images/BASE_HYDRATANTE.png",
             "text_color_scheme": "dark"
           }
@@ -789,8 +789,8 @@
         "ingredient_ghCLpM": {
           "type": "ingredient",
           "settings": {
-            "title": "Extrait de Sauce",
-            "description": "<p>grunça vasdin nó vaglib vaglib vajadin vaasd vidadin vajn</p>",
+            "title": "EXTRAIT DE BAOBAB",
+            "description": "<p>Riche en protéines, acides gras et antioxydants. Nourrit, fortifie et donne de l'éclat.</p>",
             "background_image": "shopify://shop_images/huile_de_coco.png",
             "text_color_scheme": "dark"
           }
@@ -798,8 +798,8 @@
         "ingredient_KAcR94": {
           "type": "ingredient",
           "settings": {
-            "title": "Extrait de Sauce",
-            "description": "<p>grunça vasdin nó vaglib vaglib vajadin vaasd vidadin vajn</p>",
+            "title": "BASE HYDRATANTE",
+            "description": "<p>Formule à base d'eau et glycérine pour une hydratation optimale sans alourdissement.</p>",
             "background_image": "shopify://shop_images/PROTEINE_DE_SOIE.png",
             "text_color_scheme": "light"
           }
@@ -1015,13 +1015,13 @@
         "tab_7KmUDq": {
           "type": "tab",
           "settings": {
-            "tab_title": "Cheveux bouclés/ondulés",
+            "tab_title": "Cheveux bouclés/ ondulés",
             "content_type": "mixed",
             "text_content": "<p>Add your detailed text content here.</p>",
             "grid_items_textarea": "1. Appliquez une noisette sur cheveux humides ou légèrement mouillés\n2. Répartissez uniformément des longueurs aux pointes\n3. Froissez délicatement pour définir les boucles\n4. Laissez sécher naturellement ou utilisez un diffuseur",
             "show_title": false,
             "content_title": "Instructions",
-            "description": "<p></p>",
+            "description": "",
             "bottom_text": "<p><strong>Retouches :</strong> Réactivez le produit en humidifiant légèrement vos mains et en reformant vos boucles.</p>"
           }
         },
