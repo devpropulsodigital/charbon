@@ -146,7 +146,7 @@
             "button_custom": false,
             "button_font": "poppins_n4",
             "button_color": "#000000",
-            "button_hover_color": "#000000",
+            "button_hover_color": "#ffffff",
             "button_size": 16,
             "button_size_mobile": 14,
             "button_height": 100,
@@ -162,7 +162,7 @@
             "button_mt": 36,
             "button_mt_mobile": 24,
             "button_bg_color": "#ffffff",
-            "button_bg_hover_color": "#ffffff"
+            "button_bg_hover_color": "#121212"
           }
         }
       },
