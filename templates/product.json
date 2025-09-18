@@ -801,7 +801,7 @@
             "title": "BASE HYDRATANTE",
             "description": "<p>Formule à base d'eau et glycérine pour une hydratation optimale sans alourdissement.</p>",
             "background_image": "shopify://shop_images/PROTEINE_DE_SOIE.png",
-            "text_color_scheme": "light"
+            "text_color_scheme": "dark"
           }
         },
         "feature_N9yEYi": {
@@ -1235,7 +1235,7 @@
         "hover_color": "#222222",
         "background_color": "#f5f5f5",
         "question_margin_bottom": 5,
-        "question_border_radius": 15,
+        "question_border_radius": 18,
         "border_thickness": 1,
         "border_color": "#121212",
         "add_line_between_questions": "non",
@@ -1245,8 +1245,8 @@
         "answer_font_family": "poppins_n5",
         "answer_font_size_desktop": 1.5,
         "answer_font_size_mobile": 1.5,
-        "answer_color": "#000000",
-        "answer_bg_color": "#ffffff",
+        "answer_color": "#ffffff",
+        "answer_bg_color": "#000000",
         "answer_padding_vertical": 9,
         "answer_padding_horizontal": 24,
         "answer_margin_top": 10,
