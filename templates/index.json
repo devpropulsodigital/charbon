@@ -1122,7 +1122,7 @@
         "answer_font_size_desktop": 1.5,
         "answer_font_size_mobile": 1.5,
         "answer_color": "#ffffff",
-        "answer_bg_color": "#e3e3e3",
+        "answer_bg_color": "#000000",
         "answer_padding_vertical": 9,
         "answer_padding_horizontal": 24,
         "answer_margin_top": 10,
