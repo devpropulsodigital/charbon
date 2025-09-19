@@ -896,6 +896,9 @@
       "block_order": [
         "judge_me_reviews_featured_carousel_R7hTQt"
       ],
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.jdgm-carousel-wrapper {width: 100% !important; padding: 20px 0 !important; }}"
+      ],
       "settings": {
         "include_margins": true
       }

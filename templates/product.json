@@ -848,6 +848,13 @@
             "btn_layout": "btn_outline"
           }
         },
+        "popup_ingredient_PUrjyd": {
+          "type": "popup_ingredient",
+          "settings": {
+            "name": "LISTE COMPLÈTE",
+            "subtext": "<p>AQUA/WATER/EAU, PEG-25 HYDROGENATED CASTOR OIL, OLETH-10, LANOLIN, OLETH-20, DIISOPROPYL DIMER DILINOLEATE, GLYCERIN, HYDROXYPROPYL BISSTEARYLDIMONIUM CHLORIDE, ALCOHOL DENAT., PVP, PROPYLENE GLYCOL, CARTHAMUS TINCTORIUS (SAFFLOWER) SEED OIL, SALVIA OFFICINALIS (SAGE) LEAF EXTRACT, PANAX GINSENG ROOT EXTRACT, QUILLAJA SAPONARIA BARK EXTRACT, PARFUM (FRAGRANCE), LINALOOL, LIMONENE, HEXYL CINNAMAL, BENZYL SALICYLATE, ALPHA-ISOMETHYL IONONE, CITRONELLOL, HYDROXYCITRONELLAL, GERANIOL, CITRAL, DIAZOLIDINYL UREA, METHYLPARABEN, BENZOIC ACID, PROPYLPARABEN.</p>"
+          }
+        },
         "button_LYfTyy": {
           "type": "button",
           "settings": {
@@ -867,6 +874,7 @@
         "feature_M8QRPU",
         "feature_YFj8Kd",
         "button_YPHALx",
+        "popup_ingredient_PUrjyd",
         "button_LYfTyy"
       ],
       "name": "Key Ingredients",
@@ -879,7 +887,8 @@
         "show_overlay": true,
         "overlay_color": "#000000",
         "overlay_opacity": 30,
-        "enable_hover_effects": true
+        "enable_hover_effects": true,
+        "popup_heading": "Liste complète des ingrédients"
       }
     },
     "multicolumn_WBhVEC": {
