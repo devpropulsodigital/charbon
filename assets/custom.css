@@ -144,6 +144,10 @@ pack-hyperflow .pack__wrapper .pack.pack__with-image {
     font-size: 32px !important;
 }
 
+.product--thumbnail_left media-gallery .thumbnail-slider .thumbnail-list {
+    padding: 2px;
+}
+
 @media screen and (max-width: 767px) {
     .jdgm-carousel-wrapper {
         width: 100% !important;
