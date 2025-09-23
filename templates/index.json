@@ -1042,7 +1042,7 @@
           "type": "text",
           "settings": {
             "question": "Quels moyens de paiement acceptez-vous ?",
-            "answer": "<p>Nous acceptons les principales cartes de crédit, cartes de débit, PayPal et d’autres moyens de paiement sécurisés pour votre confort.</p>"
+            "answer": "<p>Nous acceptons les principales cartes de crédit, cartes de débit, PayPal, Twint et d’autres moyens de paiement sécurisés pour votre confort.</p>"
           }
         },
         "text_tErWaV": {
