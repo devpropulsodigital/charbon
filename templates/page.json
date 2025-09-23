@@ -11,6 +11,9 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "custom_css": [
+        "p {text-align: center; margin: 0 auto; max-width: 800px;}"
+      ],
       "settings": {
         "padding_top": 28,
         "padding_bottom": 0
