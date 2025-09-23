@@ -1021,7 +1021,7 @@
           "type": "text",
           "settings": {
             "question": "Quels sont les délais de livraison ?",
-            "answer": "<p>Les commandes sont expédiées sous <strong>24 à 48h (hors week-end)</strong>. Les délais de livraison varient ensuite selon votre pays :</p><ul><li><strong>Suisse et France</strong> : 48 heures</li><li><strong>Europe</strong> : 3 à 7 jours ouvrés</li><li> <strong>International</strong> : 7 à 14 jours ouvrés</li></ul>"
+            "answer": "<p>Nos commandes sont préparées et expédiées rapidement.</p><ul><li><strong>En Suisse</strong> : la livraison s’effectue généralement sous <strong>2 à 3 jours ouvrés</strong> après expédition.</li><li><strong>En France</strong> : la livraison prend en moyenne <strong>3 à 4 jours ouvrés</strong> après expédition.</li></ul><p>Les délais s’entendent hors week-end et jours fériés.</p>"
           }
         },
         "text_DKj99g": {
